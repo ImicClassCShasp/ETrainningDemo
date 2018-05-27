@@ -1,0 +1,34 @@
+E:\5-PROJECTS\Projects 2014\Phan mem eTranning\16-10-2013\eCenterTrainning\sourcecode\SECURITYs\bin\Debug\SECURITYs.exe
+E:\5-PROJECTS\Projects 2014\Phan mem eTranning\16-10-2013\eCenterTrainning\sourcecode\SECURITYs\bin\Debug\SECURITYs.pdb
+E:\5-PROJECTS\Projects 2014\Phan mem eTranning\16-10-2013\eCenterTrainning\sourcecode\SECURITYs\obj\x86\Debug\SECURITYs.frmSecurity.resources
+E:\5-PROJECTS\Projects 2014\Phan mem eTranning\16-10-2013\eCenterTrainning\sourcecode\SECURITYs\obj\x86\Debug\SECURITYs.Properties.Resources.resources
+E:\5-PROJECTS\Projects 2014\Phan mem eTranning\16-10-2013\eCenterTrainning\sourcecode\SECURITYs\obj\x86\Debug\SECURITYs.csproj.GenerateResource.Cache
+E:\5-PROJECTS\Projects 2014\Phan mem eTranning\16-10-2013\eCenterTrainning\sourcecode\SECURITYs\obj\x86\Debug\SECURITYs.exe
+E:\5-PROJECTS\Projects 2014\Phan mem eTranning\16-10-2013\eCenterTrainning\sourcecode\SECURITYs\obj\x86\Debug\SECURITYs.pdb
+D:\Projects\ETRAINING 2017\SECURITYs\bin\Debug\SECURITYs.exe
+D:\Projects\ETRAINING 2017\SECURITYs\bin\Debug\SECURITYs.pdb
+D:\Projects\ETRAINING 2017\SECURITYs\obj\x86\Debug\SECURITYs.csprojResolveAssemblyReference.cache
+D:\Projects\ETRAINING 2017\SECURITYs\obj\x86\Debug\SECURITYs.frmSecurity.resources
+D:\Projects\ETRAINING 2017\SECURITYs\obj\x86\Debug\SECURITYs.Properties.Resources.resources
+D:\Projects\ETRAINING 2017\SECURITYs\obj\x86\Debug\SECURITYs.csproj.GenerateResource.Cache
+D:\Projects\ETRAINING 2017\SECURITYs\obj\x86\Debug\SECURITYs.exe
+D:\Projects\ETRAINING 2017\SECURITYs\obj\x86\Debug\SECURITYs.pdb
+D:\Projects\ETRAINING 2017\SECURITYs\obj\x86\Debug\SECURITYs.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\eTraining2018\SECURITYs\bin\Debug\SECURITYs.exe
+C:\Users\admin\Desktop\eTraining2018\SECURITYs\bin\Debug\SECURITYs.pdb
+C:\Users\admin\Desktop\eTraining2018\SECURITYs\obj\x86\Debug\SECURITYs.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\eTraining2018\SECURITYs\obj\x86\Debug\SECURITYs.frmSecurity.resources
+C:\Users\admin\Desktop\eTraining2018\SECURITYs\obj\x86\Debug\SECURITYs.Properties.Resources.resources
+C:\Users\admin\Desktop\eTraining2018\SECURITYs\obj\x86\Debug\SECURITYs.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\eTraining2018\SECURITYs\obj\x86\Debug\SECURITYs.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\eTraining2018\SECURITYs\obj\x86\Debug\SECURITYs.exe
+C:\Users\admin\Desktop\eTraining2018\SECURITYs\obj\x86\Debug\SECURITYs.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\SECURITYs\bin\Debug\SECURITYs.exe
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\SECURITYs\bin\Debug\SECURITYs.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\SECURITYs\obj\x86\Debug\SECURITYs.csprojResolveAssemblyReference.cache
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\SECURITYs\obj\x86\Debug\SECURITYs.frmSecurity.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\SECURITYs\obj\x86\Debug\SECURITYs.Properties.Resources.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\SECURITYs\obj\x86\Debug\SECURITYs.csproj.GenerateResource.cache
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\SECURITYs\obj\x86\Debug\SECURITYs.csproj.CoreCompileInputs.cache
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\SECURITYs\obj\x86\Debug\SECURITYs.exe
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\SECURITYs\obj\x86\Debug\SECURITYs.pdb

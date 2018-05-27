@@ -1,0 +1,14 @@
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\bin\Release\IMIC.SyncModule.dll.config
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\bin\Release\IMIC.SyncModule.dll
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\bin\Release\IMIC.SyncModule.pdb
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\bin\Release\EntityFramework.dll
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\bin\Release\IMIC.OfflineDB.dll
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\bin\Release\IMIC.OnlineDB.dll
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\bin\Release\IMIC.WEBIMIC.dll
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\bin\Release\IMIC.OfflineDB.pdb
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\bin\Release\IMIC.OnlineDB.pdb
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\bin\Release\IMIC.WEBIMIC.pdb
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\bin\Release\EntityFramework.xml
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\obj\Release\IMIC.SyncModule.csprojResolveAssemblyReference.cache
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\obj\Release\IMIC.SyncModule.dll
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\obj\Release\IMIC.SyncModule.pdb

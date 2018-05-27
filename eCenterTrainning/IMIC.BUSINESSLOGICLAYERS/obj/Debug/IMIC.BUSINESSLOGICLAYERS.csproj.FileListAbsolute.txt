@@ -1,0 +1,75 @@
+C:\Users\admin\Desktop\eTraining2018\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.BUSINESSLOGICLAYERS.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.BUSINESSLOGICLAYERS.pdb
+C:\Users\admin\Desktop\eTraining2018\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\eTraining2018\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\eTraining2018\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.pdb
+C:\Users\admin\Desktop\eTraining2018\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.VALUEOBJECTS.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.BUSINESSLOGICLAYERS\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.pdb
+C:\Users\admin\Desktop\eTraining2018\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.dll.config
+C:\Users\admin\Desktop\eTraining2018\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.VALUEOBJECTS.pdb
+C:\Users\admin\Desktop\eTraining2018\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.VALUEOBJECTS.dll.config
+C:\Users\admin\Desktop\eTraining2018\IMIC.BUSINESSLOGICLAYERS\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\eTraining2018\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.csproj.CopyComplete
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.BUSINESSLOGICLAYERS.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.BUSINESSLOGICLAYERS.pdb
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.VALUEOBJECTS.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.BUSINESSLOGICLAYERS\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.pdb
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.dll.config
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.VALUEOBJECTS.pdb
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.VALUEOBJECTS.dll.config
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.BUSINESSLOGICLAYERS\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.csproj.CopyComplete
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.BUSINESSLOGICLAYERS.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.BUSINESSLOGICLAYERS.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.VALUEOBJECTS.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.dll.config
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.VALUEOBJECTS.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.VALUEOBJECTS.dll.config
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.csproj.CopyComplete
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.pdb
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.BUSINESSLOGICLAYERS.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.BUSINESSLOGICLAYERS.pdb
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.VALUEOBJECTS.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.pdb
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.dll.config
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.VALUEOBJECTS.pdb
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.VALUEOBJECTS.dll.config
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.csproj.CopyComplete
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.BUSINESSLOGICLAYERS.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.BUSINESSLOGICLAYERS.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.VALUEOBJECTS.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\EntityFramework.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.dll.config
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.VALUEOBJECTS.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.VALUEOBJECTS.dll.config
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\EntityFramework.xml
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.csprojResolveAssemblyReference.cache
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.csproj.CoreCompileInputs.cache
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.csproj.CopyComplete
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.pdb

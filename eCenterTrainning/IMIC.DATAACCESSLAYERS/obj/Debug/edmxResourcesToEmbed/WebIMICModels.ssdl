@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebIMICModelOnline.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <Function Name="SP_IMIC_RegisterDetail_Update_IsSeen" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="WEB_IMIC_SP_RegisterDetail_ByTime" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="EndDate" Type="datetime" Mode="In" />
+    <Parameter Name="IsSeen" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="WEB_IMIC_SP_RegisterDetail_GetAll_NotSeen" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="WEB_IMIC_SP_RegisterDetail_GetAll_Seen" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="WEB_IMIC_SP_RegisterDetail_GetById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="WEB_IMIC_SP_RegisterDetail_GetbyId_New" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RegisterDetailId" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="WEB_IMIC_SP_RegisterDetail_GetForEtraining" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="WEB_IMIC_SP_RegisterDetail_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RegisterDetailId" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="ClassId" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="RegisterPersonId" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="Message" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Comment" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Status" Type="tinyint" Mode="In" />
+    <Parameter Name="IsSeen" Type="bit" Mode="In" />
+    <Parameter Name="CreatedTime" Type="datetime" Mode="In" />
+    <Parameter Name="CourseId" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="Flag" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="WEB_IMIC_SP_RegisterDetail_UpdateIsSeen" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RegisterPersonId" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <EntityContainer Name="WebIMICModelOnlineStoreContainer" />
+</Schema>

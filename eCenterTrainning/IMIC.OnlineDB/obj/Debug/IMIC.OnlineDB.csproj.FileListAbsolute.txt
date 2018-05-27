@@ -1,0 +1,55 @@
+D:\Projects\ETRAINING 2017\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.dll.config
+D:\Projects\ETRAINING 2017\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.dll
+D:\Projects\ETRAINING 2017\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.pdb
+D:\Projects\ETRAINING 2017\IMIC.OnlineDB\bin\Debug\EntityFramework.dll
+D:\Projects\ETRAINING 2017\IMIC.OnlineDB\bin\Debug\EntityFramework.xml
+D:\Projects\ETRAINING 2017\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.csprojResolveAssemblyReference.cache
+D:\Projects\ETRAINING 2017\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.dll
+D:\Projects\ETRAINING 2017\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.pdb
+C:\Users\admin\Desktop\eTraining2018\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.dll.config
+C:\Users\admin\Desktop\eTraining2018\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.pdb
+C:\Users\admin\Desktop\eTraining2018\IMIC.OnlineDB\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.OnlineDB\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\eTraining2018\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\eTraining2018\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.csproj.CopyComplete
+C:\Users\admin\Desktop\eTraining2018\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.pdb
+C:\Users\admin\Desktop\eTraining2018\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.dll.config
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.pdb
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.OnlineDB\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.OnlineDB\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.csproj.CopyComplete
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.dll.config
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.OnlineDB\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.OnlineDB\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.csproj.CopyComplete
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.dll.config
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.pdb
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.csproj.CopyComplete
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.dll.config
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\bin\Debug\EntityFramework.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\bin\Debug\EntityFramework.xml
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.csproj.CoreCompileInputs.cache
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.csproj.CopyComplete
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.pdb

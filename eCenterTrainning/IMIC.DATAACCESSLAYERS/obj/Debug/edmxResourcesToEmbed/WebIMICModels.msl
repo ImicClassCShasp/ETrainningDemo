@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WebIMICModelOnlineStoreContainer" CdmEntityContainer="WebIMICEntities">
+    <FunctionImportMapping FunctionImportName="WEB_IMIC_SP_RegisterDetail_ByTime" FunctionName="WebIMICModelOnline.Store.WEB_IMIC_SP_RegisterDetail_ByTime">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebIMICModelOnline.WEB_IMIC_SP_RegisterDetail_ByTime_Result">
+          <ScalarProperty Name="RegisterDetailId" ColumnName="RegisterDetailId" />
+          <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+          <ScalarProperty Name="RegisterPersonId" ColumnName="RegisterPersonId" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IsSeen" ColumnName="IsSeen" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="JobObjectId" ColumnName="JobObjectId" />
+          <ScalarProperty Name="CourseCodeNumber" ColumnName="CourseCodeNumber" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+          <ScalarProperty Name="CourseImage" ColumnName="CourseImage" />
+          <ScalarProperty Name="CourseSummary" ColumnName="CourseSummary" />
+          <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+          <ScalarProperty Name="BeginDate" ColumnName="BeginDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StudentNo" ColumnName="StudentNo" />
+          <ScalarProperty Name="IsStatus" ColumnName="IsStatus" />
+          <ScalarProperty Name="Teached" ColumnName="Teached" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WEB_IMIC_SP_RegisterDetail_GetAll_NotSeen" FunctionName="WebIMICModelOnline.Store.WEB_IMIC_SP_RegisterDetail_GetAll_NotSeen">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebIMICModelOnline.WEB_IMIC_SP_RegisterDetail_GetAll_NotSeen_Result">
+          <ScalarProperty Name="RegisterDetailId" ColumnName="RegisterDetailId" />
+          <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+          <ScalarProperty Name="RegisterPersonId" ColumnName="RegisterPersonId" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IsSeen" ColumnName="IsSeen" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WEB_IMIC_SP_RegisterDetail_GetAll_Seen" FunctionName="WebIMICModelOnline.Store.WEB_IMIC_SP_RegisterDetail_GetAll_Seen">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebIMICModelOnline.WEB_IMIC_SP_RegisterDetail_GetAll_Seen_Result">
+          <ScalarProperty Name="RegisterDetailId" ColumnName="RegisterDetailId" />
+          <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+          <ScalarProperty Name="RegisterPersonId" ColumnName="RegisterPersonId" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IsSeen" ColumnName="IsSeen" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WEB_IMIC_SP_RegisterDetail_GetById" FunctionName="WebIMICModelOnline.Store.WEB_IMIC_SP_RegisterDetail_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebIMICModelOnline.WEB_IMIC_SP_RegisterDetail_GetById_Result">
+          <ScalarProperty Name="RegisterDetailId" ColumnName="RegisterDetailId" />
+          <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+          <ScalarProperty Name="RegisterPersonId" ColumnName="RegisterPersonId" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IsSeen" ColumnName="IsSeen" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WEB_IMIC_SP_RegisterDetail_GetbyId_New" FunctionName="WebIMICModelOnline.Store.WEB_IMIC_SP_RegisterDetail_GetbyId_New">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebIMICModelOnline.WEB_IMIC_SP_RegisterDetail_GetbyId_New_Result">
+          <ScalarProperty Name="RegisterDetailId" ColumnName="RegisterDetailId" />
+          <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+          <ScalarProperty Name="RegisterPersonId" ColumnName="RegisterPersonId" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IsSeen" ColumnName="IsSeen" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="JobObjectId" ColumnName="JobObjectId" />
+          <ScalarProperty Name="JobObjectName" ColumnName="JobObjectName" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+          <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WEB_IMIC_SP_RegisterDetail_GetForEtraining" FunctionName="WebIMICModelOnline.Store.WEB_IMIC_SP_RegisterDetail_GetForEtraining">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebIMICModelOnline.WEB_IMIC_SP_RegisterDetail_GetForEtraining_Result">
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="RegisterDetailId" ColumnName="RegisterDetailId" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WEB_IMIC_SP_RegisterDetail_Update" FunctionName="WebIMICModelOnline.Store.WEB_IMIC_SP_RegisterDetail_Update" />
+    <FunctionImportMapping FunctionImportName="WEB_IMIC_SP_RegisterDetail_UpdateIsSeen" FunctionName="WebIMICModelOnline.Store.WEB_IMIC_SP_RegisterDetail_UpdateIsSeen" />
+    <FunctionImportMapping FunctionImportName="SP_IMIC_RegisterDetail_Update_IsSeen" FunctionName="WebIMICModelOnline.Store.SP_IMIC_RegisterDetail_Update_IsSeen" />
+  </EntityContainerMapping>
+</Mapping>

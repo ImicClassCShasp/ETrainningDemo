@@ -1,0 +1,57 @@
+D:\Projects\ETRAINING 2017\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.dll.config
+D:\Projects\ETRAINING 2017\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.dll
+D:\Projects\ETRAINING 2017\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.pdb
+D:\Projects\ETRAINING 2017\IMIC.OfflineDB\bin\Debug\EntityFramework.dll
+D:\Projects\ETRAINING 2017\IMIC.OfflineDB\bin\Debug\EntityFramework.xml
+D:\Projects\ETRAINING 2017\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.csprojResolveAssemblyReference.cache
+D:\Projects\ETRAINING 2017\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.dll
+D:\Projects\ETRAINING 2017\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.pdb
+C:\Users\admin\Desktop\eTraining2018\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.dll.config
+C:\Users\admin\Desktop\eTraining2018\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.pdb
+C:\Users\admin\Desktop\eTraining2018\IMIC.OfflineDB\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.OfflineDB\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\eTraining2018\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\eTraining2018\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.csproj.CopyComplete
+C:\Users\admin\Desktop\eTraining2018\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.pdb
+C:\Users\admin\Desktop\eTraining2018\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.dll.config
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.pdb
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.OfflineDB\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.OfflineDB\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.csproj.CopyComplete
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.pdb
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.dll.config
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.OfflineDB\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.OfflineDB\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.csproj.CopyComplete
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.dll.config
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.pdb
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.csproj.CopyComplete
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.dll.config
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\bin\Debug\EntityFramework.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\bin\Debug\EntityFramework.xml
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.csproj.CoreCompileInputs.cache
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.csproj.CopyComplete
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.pdb

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TrainingCenterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <Function Name="SP_CHECK_LOGIN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="username" Type="nvarchar" Mode="In" />
+    <Parameter Name="password" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SP_DELETE_COMMENT_SUPPORT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idComment" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_DELETE_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_GETALL_COURSE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_GETALL_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_GetComment_Support_ByStudentId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idStudent" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_GETELEMENTBYID_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_GETELEMENTS_BYDATE_STUDENTS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="begin" Type="varchar" Mode="In" />
+    <Parameter Name="end" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_GETELEMENTSBYIDSTUDENT_COMMONTSUPPORT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idStudent" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_GETHOCPHI_BYSTUDENTID_STUDENT_CLASS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idStd" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_INSERT_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="FirstName" Type="nvarchar" Mode="In" />
+    <Parameter Name="LastName" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsSuperUser" Type="bit" Mode="In" />
+    <Parameter Name="Phone" Type="nvarchar" Mode="In" />
+    <Parameter Name="Email" Type="nvarchar" Mode="In" />
+    <Parameter Name="DisplayName" Type="nvarchar" Mode="In" />
+    <Parameter Name="PASSWORD" Type="nvarchar" Mode="In" />
+    <Parameter Name="UpdatePassword" Type="bit" Mode="In" />
+    <Parameter Name="LastIPAddress" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsDeleted" Type="bit" Mode="In" />
+    <Parameter Name="CreatedByUserId" Type="int" Mode="In" />
+    <Parameter Name="CreateOnDate" Type="datetime" Mode="In" />
+    <Parameter Name="LastModifiedByUserId" Type="int" Mode="In" />
+    <Parameter Name="LastModifiedOnDate" Type="datetime" Mode="In" />
+    <Parameter Name="ViewOrder" Type="int" Mode="In" />
+    <Parameter Name="ADDRESS" Type="nvarchar" Mode="In" />
+    <Parameter Name="OuId" Type="int" Mode="In" />
+    <Parameter Name="Sex" Type="int" Mode="In" />
+    <Parameter Name="EmployeeId" Type="int" Mode="In" />
+    <Parameter Name="isExpertId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_INSERTUPDATE_COMMENTSUPPORT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="flag" Type="int" Mode="In" />
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="CommentName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Desription" Type="ntext" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="StudentId" Type="int" Mode="In" />
+    <Parameter Name="DateCreate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="SP_UPDATE_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="FirstName" Type="nvarchar" Mode="In" />
+    <Parameter Name="LastName" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsSuperUser" Type="bit" Mode="In" />
+    <Parameter Name="Phone" Type="nvarchar" Mode="In" />
+    <Parameter Name="Email" Type="nvarchar" Mode="In" />
+    <Parameter Name="DisplayName" Type="nvarchar" Mode="In" />
+    <Parameter Name="PASSWORD" Type="nvarchar" Mode="In" />
+    <Parameter Name="UpdatePassword" Type="bit" Mode="In" />
+    <Parameter Name="LastIPAddress" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsDeleted" Type="bit" Mode="In" />
+    <Parameter Name="CreatedByUserId" Type="int" Mode="In" />
+    <Parameter Name="CreateOnDate" Type="datetime" Mode="In" />
+    <Parameter Name="LastModifiedByUserId" Type="int" Mode="In" />
+    <Parameter Name="LastModifiedOnDate" Type="datetime" Mode="In" />
+    <Parameter Name="ViewOrder" Type="int" Mode="In" />
+    <Parameter Name="ADDRESS" Type="nvarchar" Mode="In" />
+    <Parameter Name="OuId" Type="int" Mode="In" />
+    <Parameter Name="Sex" Type="int" Mode="In" />
+    <Parameter Name="EmployeeId" Type="int" Mode="In" />
+    <Parameter Name="isExpertId" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="TrainingCenterModelStoreContainer" />
+</Schema>

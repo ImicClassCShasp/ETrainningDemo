@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebIMICModelOnline" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="WebIMICEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="WEB_IMIC_SP_RegisterDetail_ByTime" ReturnType="Collection(WebIMICModelOnline.WEB_IMIC_SP_RegisterDetail_ByTime_Result)">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="IsSeen" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="WEB_IMIC_SP_RegisterDetail_GetAll_NotSeen" ReturnType="Collection(WebIMICModelOnline.WEB_IMIC_SP_RegisterDetail_GetAll_NotSeen_Result)" />
+    <FunctionImport Name="WEB_IMIC_SP_RegisterDetail_GetAll_Seen" ReturnType="Collection(WebIMICModelOnline.WEB_IMIC_SP_RegisterDetail_GetAll_Seen_Result)" />
+    <FunctionImport Name="WEB_IMIC_SP_RegisterDetail_GetById" ReturnType="Collection(WebIMICModelOnline.WEB_IMIC_SP_RegisterDetail_GetById_Result)">
+      <Parameter Name="id" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="WEB_IMIC_SP_RegisterDetail_GetbyId_New" ReturnType="Collection(WebIMICModelOnline.WEB_IMIC_SP_RegisterDetail_GetbyId_New_Result)">
+      <Parameter Name="RegisterDetailId" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="WEB_IMIC_SP_RegisterDetail_GetForEtraining" ReturnType="Collection(WebIMICModelOnline.WEB_IMIC_SP_RegisterDetail_GetForEtraining_Result)" />
+    <FunctionImport Name="WEB_IMIC_SP_RegisterDetail_Update">
+      <Parameter Name="RegisterDetailId" Mode="In" Type="Guid" />
+      <Parameter Name="ClassId" Mode="In" Type="Guid" />
+      <Parameter Name="RegisterPersonId" Mode="In" Type="Guid" />
+      <Parameter Name="Message" Mode="In" Type="String" />
+      <Parameter Name="Comment" Mode="In" Type="String" />
+      <Parameter Name="Status" Mode="In" Type="Byte" />
+      <Parameter Name="IsSeen" Mode="In" Type="Boolean" />
+      <Parameter Name="CreatedTime" Mode="In" Type="DateTime" />
+      <Parameter Name="CourseId" Mode="In" Type="Guid" />
+      <Parameter Name="Flag" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="WEB_IMIC_SP_RegisterDetail_UpdateIsSeen">
+      <Parameter Name="RegisterPersonId" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SP_IMIC_RegisterDetail_Update_IsSeen" />
+  </EntityContainer>
+  <ComplexType Name="WEB_IMIC_SP_RegisterDetail_ByTime_Result">
+    <Property Type="Guid" Name="RegisterDetailId" Nullable="false" />
+    <Property Type="Guid" Name="ClassId" Nullable="true" />
+    <Property Type="Guid" Name="RegisterPersonId" Nullable="true" />
+    <Property Type="String" Name="Message" Nullable="true" />
+    <Property Type="String" Name="Comment" Nullable="true" />
+    <Property Type="Byte" Name="Status" Nullable="true" />
+    <Property Type="Boolean" Name="IsSeen" Nullable="true" />
+    <Property Type="DateTime" Name="CreatedTime" Nullable="true" Precision="23" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="Guid" Name="CourseId" Nullable="true" />
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Phone" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Address" Nullable="true" MaxLength="200" />
+    <Property Type="Guid" Name="JobObjectId" Nullable="true" />
+    <Property Type="Int32" Name="CourseCodeNumber" Nullable="true" />
+    <Property Type="String" Name="CourseName" Nullable="true" />
+    <Property Type="String" Name="CourseImage" Nullable="true" />
+    <Property Type="String" Name="CourseSummary" Nullable="true" />
+    <Property Type="String" Name="ClassName" Nullable="true" MaxLength="250" />
+    <Property Type="DateTime" Name="BeginDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="EndDate" Nullable="true" Precision="23" />
+    <Property Type="Byte" Name="StudentNo" Nullable="true" />
+    <Property Type="Boolean" Name="IsStatus" Nullable="true" />
+    <Property Type="Byte" Name="Teached" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="WEB_IMIC_SP_RegisterDetail_GetAll_NotSeen_Result">
+    <Property Type="Guid" Name="RegisterDetailId" Nullable="false" />
+    <Property Type="Guid" Name="ClassId" Nullable="true" />
+    <Property Type="Guid" Name="RegisterPersonId" Nullable="true" />
+    <Property Type="String" Name="Message" Nullable="true" />
+    <Property Type="String" Name="Comment" Nullable="true" />
+    <Property Type="Byte" Name="Status" Nullable="true" />
+    <Property Type="Boolean" Name="IsSeen" Nullable="true" />
+    <Property Type="DateTime" Name="CreatedTime" Nullable="true" Precision="23" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="Guid" Name="CourseId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="WEB_IMIC_SP_RegisterDetail_GetAll_Seen_Result">
+    <Property Type="Guid" Name="RegisterDetailId" Nullable="false" />
+    <Property Type="Guid" Name="ClassId" Nullable="true" />
+    <Property Type="Guid" Name="RegisterPersonId" Nullable="true" />
+    <Property Type="String" Name="Message" Nullable="true" />
+    <Property Type="String" Name="Comment" Nullable="true" />
+    <Property Type="Byte" Name="Status" Nullable="true" />
+    <Property Type="Boolean" Name="IsSeen" Nullable="true" />
+    <Property Type="DateTime" Name="CreatedTime" Nullable="true" Precision="23" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="Guid" Name="CourseId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="WEB_IMIC_SP_RegisterDetail_GetById_Result">
+    <Property Type="Guid" Name="RegisterDetailId" Nullable="false" />
+    <Property Type="Guid" Name="ClassId" Nullable="true" />
+    <Property Type="Guid" Name="RegisterPersonId" Nullable="true" />
+    <Property Type="String" Name="Message" Nullable="true" />
+    <Property Type="String" Name="Comment" Nullable="true" />
+    <Property Type="Byte" Name="Status" Nullable="true" />
+    <Property Type="Boolean" Name="IsSeen" Nullable="true" />
+    <Property Type="DateTime" Name="CreatedTime" Nullable="true" Precision="23" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="Guid" Name="CourseId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="WEB_IMIC_SP_RegisterDetail_GetbyId_New_Result">
+    <Property Type="Guid" Name="RegisterDetailId" Nullable="false" />
+    <Property Type="Guid" Name="ClassId" Nullable="true" />
+    <Property Type="Guid" Name="RegisterPersonId" Nullable="true" />
+    <Property Type="String" Name="Message" Nullable="true" />
+    <Property Type="String" Name="Comment" Nullable="true" />
+    <Property Type="Byte" Name="Status" Nullable="true" />
+    <Property Type="Boolean" Name="IsSeen" Nullable="true" />
+    <Property Type="DateTime" Name="CreatedTime" Nullable="true" Precision="23" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="Guid" Name="CourseId" Nullable="true" />
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Phone" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Address" Nullable="true" MaxLength="200" />
+    <Property Type="Guid" Name="JobObjectId" Nullable="true" />
+    <Property Type="String" Name="JobObjectName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CourseName" Nullable="true" />
+    <Property Type="String" Name="ClassName" Nullable="true" MaxLength="250" />
+  </ComplexType>
+  <ComplexType Name="WEB_IMIC_SP_RegisterDetail_GetForEtraining_Result">
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Phone" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Address" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Message" Nullable="true" />
+    <Property Type="Guid" Name="RegisterDetailId" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedTime" Nullable="true" Precision="23" />
+  </ComplexType>
+</Schema>

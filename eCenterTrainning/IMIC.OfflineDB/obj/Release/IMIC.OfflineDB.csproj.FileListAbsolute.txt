@@ -1,0 +1,7 @@
+D:\Projects\ETRAINING 2017\IMIC.OfflineDB\bin\Release\IMIC.OfflineDB.dll.config
+D:\Projects\ETRAINING 2017\IMIC.OfflineDB\bin\Release\IMIC.OfflineDB.dll
+D:\Projects\ETRAINING 2017\IMIC.OfflineDB\bin\Release\IMIC.OfflineDB.pdb
+D:\Projects\ETRAINING 2017\IMIC.OfflineDB\bin\Release\EntityFramework.dll
+D:\Projects\ETRAINING 2017\IMIC.OfflineDB\bin\Release\EntityFramework.xml
+D:\Projects\ETRAINING 2017\IMIC.OfflineDB\obj\Release\IMIC.OfflineDB.dll
+D:\Projects\ETRAINING 2017\IMIC.OfflineDB\obj\Release\IMIC.OfflineDB.pdb

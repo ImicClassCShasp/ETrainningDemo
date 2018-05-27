@@ -1,0 +1,585 @@
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\eCenterTrainning.exe.config
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\eCenterTrainning.exe
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\eCenterTrainning.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.Properties.Resources.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.exe
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.Base.ActionMenu.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.Base.ActionUpdate.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.Base.frmIMICBase.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.eCenterSystem.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmAddCommetSupport.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmAddHocVien.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmAddKhoaHoc.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmAddLopHoc.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmAddMonHoc.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmAdminConfigSystem.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmCandidate.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmCenterInfo.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmChangePassword.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmEmployee.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmEncrypt.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmFlashScreen.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmGiangVien.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmGiangVienAdd.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmGiangVienHeThong.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmHocPhi.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmHocVienHeThong.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmHocVienSearch.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmImportExcel.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmInformationDetail.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmKhachHang.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmLichKhaiGiangAdd.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmListCandidate.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmLogin.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmManageCandidates.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmPhongBan.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmPolicyStudent.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmPromotionInfo.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmRecruitmentInfo.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmSchedulesAdd.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmSchedulesExpertAdd.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmSocialNetworkAccount.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmSocialNetworkCategory.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmStanUsers.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmSupportDetails.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmThemMoiKH.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmThongTinChucVu.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ActionUpdateHocVien.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ControlLopHoc.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uCandidate.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.UCDangKYOnline.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ucDangKyTrucTuyen.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ucDetailFaceBooks.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uCenter.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ucEventFaceBooks.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ucFaceBooks.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uClass.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ucLichKhaiGiang.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uComment.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uCourse.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ucQuanLyQuestionAnswers.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ucReportInfomation.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uCustomers.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uDepartment.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uEmployee.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uExpertInfo.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uJobTitle.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uListUsers.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uPolicyStudent.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uPromotion.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uRecruitmentInfo.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uReports.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uScheduleInfo.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uSocialNetworkAccount.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uStudent.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uSubject.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uViewSchedulesInfo.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.exe.config
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.BonusSkins.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Charts.v17.2.Core.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.CodeParser.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Data.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Data.v17.2.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.DataAccess.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.DataAccess.v17.2.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.DataAccess.v17.2.UI.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.DataAccess.v17.2.UI.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Diagram.v17.2.Core.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Diagram.v17.2.Core.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.ExpressApp.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.ExpressApp.v17.2.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.ExpressApp.Win.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.ExpressApp.Win.v17.2.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Images.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Office.v17.2.Core.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Office.v17.2.Core.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Pdf.v17.2.Core.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Persistent.Base.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.PivotGrid.v17.2.Core.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.PivotGrid.v17.2.Core.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Printing.v17.2.Core.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.RichEdit.v17.2.Core.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.RichEdit.v17.2.Export.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Sparkline.v17.2.Core.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Sparkline.v17.2.Core.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.SpellChecker.v17.2.Core.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Utils.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Utils.v17.2.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Utils.v17.2.UI.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Utils.v17.2.UI.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Xpo.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Xpo.v17.2.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraBars.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraBars.v17.2.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraCharts.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraCharts.v17.2.Extensions.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraCharts.v17.2.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraCharts.v17.2.Wizard.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraCharts.v17.2.Wizard.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraDiagram.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraEditors.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraEditors.v17.2.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraGauges.v17.2.Core.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraGauges.v17.2.Core.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraGrid.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraGrid.v17.2.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraLayout.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraLayout.v17.2.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraNavBar.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraNavBar.v17.2.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraPivotGrid.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraPivotGrid.v17.2.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraPrinting.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraPrinting.v17.2.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraReports.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraReports.v17.2.Extensions.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraReports.v17.2.Extensions.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraReports.v17.2.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraRichEdit.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraRichEdit.v17.2.Extensions.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraRichEdit.v17.2.Extensions.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraRichEdit.v17.2.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.Core.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.Core.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.Extensions.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.Extensions.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.Reporting.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.Reporting.Extensions.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.Reporting.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraSpellChecker.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraSpellChecker.v17.2.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraTreeList.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraTreeList.v17.2.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraVerticalGrid.v17.2.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraVerticalGrid.v17.2.resources.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.BUSINESSLOGICLAYERS.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.SyncModule.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.VALUEOBJECTS.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.DATAACCESSLAYERS.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.OfflineDB.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.OnlineDB.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.WEBIMIC.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.BUSINESSLOGICLAYERS.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.SyncModule.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.SyncModule.dll.config
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.VALUEOBJECTS.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.VALUEOBJECTS.dll.config
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.DATAACCESSLAYERS.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.DATAACCESSLAYERS.dll.config
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.OfflineDB.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.OfflineDB.dll.config
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.OnlineDB.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.OnlineDB.dll.config
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.WEBIMIC.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.WEBIMIC.dll.config
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.csproj.CopyComplete
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.exe.licenses
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmStudentRegisterOnline.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmAddStudentIntoClassess.resources
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmConfirms.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.exe.config
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.Base.ActionMenu.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.Base.ActionUpdate.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.Base.frmIMICBase.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.eCenterSystem.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmAddCommetSupport.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmAddHocVien.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmAddKhoaHoc.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmAddLopHoc.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmAddMonHoc.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmAddStudentIntoClassess.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmAdminConfigSystem.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmCandidate.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmCenterInfo.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmChangePassword.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmConfirms.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmEmployee.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmEncrypt.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmFlashScreen.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmGiangVien.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmGiangVienAdd.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmGiangVienHeThong.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmHocPhi.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmHocVienHeThong.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmHocVienSearch.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmImportExcel.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmInformationDetail.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmKhachHang.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmLichKhaiGiangAdd.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmListCandidate.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmLogin.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmManageCandidates.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmPhongBan.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmPolicyStudent.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmPromotionInfo.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmRecruitmentInfo.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmSchedulesAdd.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmSchedulesExpertAdd.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmSocialNetworkAccount.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmSocialNetworkCategory.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmStanUsers.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmStudentRegisterOnline.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmSupportDetails.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmThemMoiKH.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmThongTinChucVu.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.Properties.Resources.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ActionUpdateHocVien.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ControlLopHoc.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uCandidate.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.UCDangKYOnline.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ucDangKyTrucTuyen.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ucDetailFaceBooks.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uCenter.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ucEventFaceBooks.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ucFaceBooks.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uClass.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ucLichKhaiGiang.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uComment.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uCourse.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ucQuanLyQuestionAnswers.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ucReportInfomation.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uCustomers.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uDepartment.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uEmployee.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uExpertInfo.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uJobTitle.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uListUsers.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uPolicyStudent.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uPromotion.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uRecruitmentInfo.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uReports.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uScheduleInfo.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uSocialNetworkAccount.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uStudent.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uSubject.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uViewSchedulesInfo.resources
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.exe.licenses
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.exe
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.pdb
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\eCenterTrainning.exe.config
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\eCenterTrainning.exe
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\eCenterTrainning.pdb
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.BonusSkins.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Charts.v17.2.Core.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.CodeParser.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Data.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Data.v17.2.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.DataAccess.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.DataAccess.v17.2.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.DataAccess.v17.2.UI.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.DataAccess.v17.2.UI.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Diagram.v17.2.Core.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Diagram.v17.2.Core.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.ExpressApp.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.ExpressApp.v17.2.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.ExpressApp.Win.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.ExpressApp.Win.v17.2.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Images.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Office.v17.2.Core.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Office.v17.2.Core.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Pdf.v17.2.Core.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Pdf.v17.2.Core.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Persistent.Base.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.PivotGrid.v17.2.Core.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.PivotGrid.v17.2.Core.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Printing.v17.2.Core.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Printing.v17.2.Core.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.RichEdit.v17.2.Core.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.RichEdit.v17.2.Core.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.RichEdit.v17.2.Export.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Sparkline.v17.2.Core.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Sparkline.v17.2.Core.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.SpellChecker.v17.2.Core.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Utils.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Utils.v17.2.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Utils.v17.2.UI.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Utils.v17.2.UI.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Xpo.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Xpo.v17.2.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraBars.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraBars.v17.2.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraCharts.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraCharts.v17.2.Extensions.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraCharts.v17.2.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraCharts.v17.2.Wizard.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraCharts.v17.2.Wizard.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraDiagram.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraEditors.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraEditors.v17.2.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraGauges.v17.2.Core.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraGauges.v17.2.Core.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraGrid.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraGrid.v17.2.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraLayout.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraLayout.v17.2.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraNavBar.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraNavBar.v17.2.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraPivotGrid.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraPivotGrid.v17.2.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraPrinting.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraPrinting.v17.2.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraReports.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraReports.v17.2.Extensions.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraReports.v17.2.Extensions.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraReports.v17.2.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraRichEdit.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraRichEdit.v17.2.Extensions.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraRichEdit.v17.2.Extensions.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraRichEdit.v17.2.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.Core.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.Core.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.Extensions.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.Extensions.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.Reporting.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.Reporting.Extensions.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.Reporting.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraSpellChecker.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraSpellChecker.v17.2.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraTreeList.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraTreeList.v17.2.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraVerticalGrid.v17.2.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraVerticalGrid.v17.2.resources.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.BUSINESSLOGICLAYERS.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.SyncModule.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.VALUEOBJECTS.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.DATAACCESSLAYERS.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.OfflineDB.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.OnlineDB.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.WEBIMIC.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.BUSINESSLOGICLAYERS.pdb
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.SyncModule.pdb
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.SyncModule.dll.config
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.VALUEOBJECTS.pdb
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.VALUEOBJECTS.dll.config
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.DATAACCESSLAYERS.pdb
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.DATAACCESSLAYERS.dll.config
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.OfflineDB.pdb
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.OfflineDB.dll.config
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.OnlineDB.pdb
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.OnlineDB.dll.config
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.WEBIMIC.pdb
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.WEBIMIC.dll.config
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.csproj.CopyComplete
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.csprojResolveAssemblyReference.cache
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.exe.config
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.Base.ActionMenu.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.Base.ActionUpdate.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.Base.frmIMICBase.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.eCenterSystem.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmAddCommetSupport.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmAddHocVien.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmAddKhoaHoc.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmAddLopHoc.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmAddMonHoc.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmAddStudentIntoClassess.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmAdminConfigSystem.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmCandidate.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmCenterInfo.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmChangePassword.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmConfirms.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmEmployee.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmEncrypt.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmFlashScreen.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmGiangVien.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmGiangVienAdd.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmGiangVienHeThong.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmHocPhi.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmHocVienHeThong.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmHocVienSearch.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmImportExcel.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmInformationDetail.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmKhachHang.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmLichKhaiGiangAdd.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmListCandidate.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmLogin.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmManageCandidates.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmPhongBan.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmPolicyStudent.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmPromotionInfo.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmRecruitmentInfo.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmSchedulesAdd.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmSchedulesExpertAdd.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmSocialNetworkAccount.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmSocialNetworkCategory.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmStanUsers.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmStudentRegisterOnline.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmSupportDetails.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmThemMoiKH.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.frmThongTinChucVu.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.Properties.Resources.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ActionUpdateHocVien.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ControlLopHoc.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uCandidate.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.UCDangKYOnline.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ucDangKyTrucTuyen.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ucDetailFaceBooks.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uCenter.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ucEventFaceBooks.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ucFaceBooks.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uClass.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ucLichKhaiGiang.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uComment.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uCourse.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ucQuanLyQuestionAnswers.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.ucReportInfomation.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uCustomers.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uDepartment.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uEmployee.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uExpertInfo.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uJobTitle.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uListUsers.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uPolicyStudent.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uPromotion.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uRecruitmentInfo.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uReports.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uScheduleInfo.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uSocialNetworkAccount.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uStudent.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uSubject.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.UseControls.uViewSchedulesInfo.resources
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.csproj.GenerateResource.cache
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.exe.licenses
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.exe
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\eCenterTrainning.exe.config
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\eCenterTrainning.exe
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\eCenterTrainning.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.BonusSkins.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Charts.v17.2.Core.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.CodeParser.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Data.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Data.v17.2.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.DataAccess.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.DataAccess.v17.2.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.DataAccess.v17.2.UI.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.DataAccess.v17.2.UI.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Diagram.v17.2.Core.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Diagram.v17.2.Core.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.ExpressApp.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.ExpressApp.v17.2.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.ExpressApp.Win.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.ExpressApp.Win.v17.2.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Images.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Office.v17.2.Core.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Office.v17.2.Core.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Pdf.v17.2.Core.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Pdf.v17.2.Core.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Persistent.Base.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.PivotGrid.v17.2.Core.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.PivotGrid.v17.2.Core.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Printing.v17.2.Core.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Printing.v17.2.Core.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.RichEdit.v17.2.Core.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.RichEdit.v17.2.Core.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.RichEdit.v17.2.Export.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Sparkline.v17.2.Core.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Sparkline.v17.2.Core.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.SpellChecker.v17.2.Core.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Utils.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Utils.v17.2.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Utils.v17.2.UI.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Utils.v17.2.UI.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Xpo.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.Xpo.v17.2.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraBars.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraBars.v17.2.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraCharts.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraCharts.v17.2.Extensions.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraCharts.v17.2.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraCharts.v17.2.Wizard.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraCharts.v17.2.Wizard.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraDiagram.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraEditors.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraEditors.v17.2.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraGauges.v17.2.Core.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraGauges.v17.2.Core.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraGrid.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraGrid.v17.2.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraLayout.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraLayout.v17.2.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraNavBar.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraNavBar.v17.2.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraPivotGrid.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraPivotGrid.v17.2.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraPrinting.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraPrinting.v17.2.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraReports.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraReports.v17.2.Extensions.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraReports.v17.2.Extensions.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraReports.v17.2.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraRichEdit.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraRichEdit.v17.2.Extensions.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraRichEdit.v17.2.Extensions.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraRichEdit.v17.2.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.Core.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.Core.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.Extensions.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.Extensions.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.Reporting.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.Reporting.Extensions.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.Reporting.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraScheduler.v17.2.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraSpellChecker.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraSpellChecker.v17.2.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraTreeList.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraTreeList.v17.2.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraVerticalGrid.v17.2.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\DevExpress.XtraVerticalGrid.v17.2.resources.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\EntityFramework.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\EntityFramework.SqlServer.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\EntityFramework.SqlServerCompact.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.BUSINESSLOGICLAYERS.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.SyncModule.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.VALUEOBJECTS.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\System.Data.SqlServerCe.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.DATAACCESSLAYERS.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.OfflineDB.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.OnlineDB.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.WEBIMIC.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.BUSINESSLOGICLAYERS.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.SyncModule.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.SyncModule.dll.config
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.VALUEOBJECTS.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.VALUEOBJECTS.dll.config
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\EntityFramework.xml
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\EntityFramework.SqlServer.xml
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\EntityFramework.SqlServerCompact.xml
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.DATAACCESSLAYERS.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.DATAACCESSLAYERS.dll.config
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.OfflineDB.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.OfflineDB.dll.config
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.OnlineDB.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.OnlineDB.dll.config
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.WEBIMIC.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\bin\Debug\IMIC.WEBIMIC.dll.config
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.csproj.CoreCompileInputs.cache
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\eCenterTrainning\obj\Debug\eCenterTrainning.csproj.CopyComplete

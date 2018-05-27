@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WEBIMICDBModelStoreContainer" CdmEntityContainer="WEBIMICDBEntities">
+    <FunctionImportMapping FunctionImportName="WEB_IMIC_SP_RegisterDetail_GetForEtraining" FunctionName="WEBIMICDBModel.Store.WEB_IMIC_SP_RegisterDetail_GetForEtraining">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WEBIMICDBModel.WEB_IMIC_SP_RegisterDetail_GetForEtraining_Result">
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="RegisterDetailId" ColumnName="RegisterDetailId" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="WEB_IMIC_SP_RegisterDetail_UpdateIsSeen" FunctionName="WEBIMICDBModel.Store.WEB_IMIC_SP_RegisterDetail_UpdateIsSeen" />
+  </EntityContainerMapping>
+</Mapping>

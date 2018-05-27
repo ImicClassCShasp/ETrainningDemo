@@ -1,0 +1,109 @@
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.dll.config
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.dll
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.pdb
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\bin\Debug\EntityFramework.dll
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.dll
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.dll
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.dll
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.pdb
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.pdb
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.pdb
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\bin\Debug\EntityFramework.xml
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csprojResolveAssemblyReference.cache
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.dll
+D:\Projects\ETRAINING 2017\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.pdb
+C:\Users\admin\Desktop\eTraining2018\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.dll.config
+C:\Users\admin\Desktop\eTraining2018\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.pdb
+C:\Users\admin\Desktop\eTraining2018\IMIC.SyncModule\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.pdb
+C:\Users\admin\Desktop\eTraining2018\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.dll.config
+C:\Users\admin\Desktop\eTraining2018\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.pdb
+C:\Users\admin\Desktop\eTraining2018\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.dll.config
+C:\Users\admin\Desktop\eTraining2018\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.pdb
+C:\Users\admin\Desktop\eTraining2018\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.dll.config
+C:\Users\admin\Desktop\eTraining2018\IMIC.SyncModule\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\eTraining2018\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\eTraining2018\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\eTraining2018\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csproj.CopyComplete
+C:\Users\admin\Desktop\eTraining2018\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.pdb
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.dll.config
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.pdb
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.SyncModule\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.pdb
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.dll.config
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.pdb
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.dll.config
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.pdb
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.dll.config
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.SyncModule\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csproj.CopyComplete
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.dll.config
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.SyncModule\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.dll.config
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.dll.config
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.dll.config
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.SyncModule\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csproj.CopyComplete
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.pdb
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.dll.config
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.pdb
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.pdb
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.dll.config
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.pdb
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.dll.config
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.pdb
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.dll.config
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csproj.CopyComplete
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.dll.config
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\EntityFramework.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.dll.config
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.dll.config
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.dll.config
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\EntityFramework.xml
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csprojResolveAssemblyReference.cache
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csproj.CoreCompileInputs.cache
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csproj.CopyComplete
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.pdb

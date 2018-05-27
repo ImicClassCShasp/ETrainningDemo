@@ -1,0 +1,8 @@
+D:\Projects\ETRAINING 2017\IMIC.OnlineDB\bin\Release\IMIC.OnlineDB.dll.config
+D:\Projects\ETRAINING 2017\IMIC.OnlineDB\bin\Release\IMIC.OnlineDB.dll
+D:\Projects\ETRAINING 2017\IMIC.OnlineDB\bin\Release\IMIC.OnlineDB.pdb
+D:\Projects\ETRAINING 2017\IMIC.OnlineDB\bin\Release\EntityFramework.dll
+D:\Projects\ETRAINING 2017\IMIC.OnlineDB\bin\Release\EntityFramework.xml
+D:\Projects\ETRAINING 2017\IMIC.OnlineDB\obj\Release\IMIC.OnlineDB.csprojResolveAssemblyReference.cache
+D:\Projects\ETRAINING 2017\IMIC.OnlineDB\obj\Release\IMIC.OnlineDB.dll
+D:\Projects\ETRAINING 2017\IMIC.OnlineDB\obj\Release\IMIC.OnlineDB.pdb

@@ -1,0 +1,55 @@
+D:\Projects\ETRAINING 2017\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.dll.config
+D:\Projects\ETRAINING 2017\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.dll
+D:\Projects\ETRAINING 2017\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.pdb
+D:\Projects\ETRAINING 2017\IMIC.WEBIMIC\bin\Debug\EntityFramework.dll
+D:\Projects\ETRAINING 2017\IMIC.WEBIMIC\bin\Debug\EntityFramework.xml
+D:\Projects\ETRAINING 2017\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csprojResolveAssemblyReference.cache
+D:\Projects\ETRAINING 2017\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.dll
+D:\Projects\ETRAINING 2017\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.pdb
+C:\Users\admin\Desktop\eTraining2018\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.dll.config
+C:\Users\admin\Desktop\eTraining2018\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.pdb
+C:\Users\admin\Desktop\eTraining2018\IMIC.WEBIMIC\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.WEBIMIC\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\eTraining2018\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\eTraining2018\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\eTraining2018\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csproj.CopyComplete
+C:\Users\admin\Desktop\eTraining2018\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.pdb
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.dll.config
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.pdb
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.WEBIMIC\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.WEBIMIC\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csproj.CopyComplete
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.dll.config
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csproj.CopyComplete
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.dll.config
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.pdb
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csproj.CopyComplete
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.dll.config
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\EntityFramework.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\EntityFramework.xml
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csproj.CoreCompileInputs.cache
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csproj.CopyComplete
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.pdb

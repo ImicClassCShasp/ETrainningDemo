@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="eTrainingOnlineModelStoreContainer" CdmEntityContainer="eTrainingOnlineEntities">
+    <FunctionImportMapping FunctionImportName="SP_Student_GetStudentFromLast3days" FunctionName="eTrainingOnlineModel.Store.SP_Student_GetStudentFromLast3days">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="eTrainingOnlineModel.SP_Student_GetStudentFromLast3days_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="HVTiemNang" ColumnName="HVTiemNang" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="DateBirthday" ColumnName="DateBirthday" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="DateRegister" ColumnName="DateRegister" />
+          <ScalarProperty Name="DateLastUpdate" ColumnName="DateLastUpdate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsTested" ColumnName="IsTested" />
+          <ScalarProperty Name="MarkTest" ColumnName="MarkTest" />
+          <ScalarProperty Name="IsRegistered" ColumnName="IsRegistered" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="IdentityNumber" ColumnName="IdentityNumber" />
+          <ScalarProperty Name="DateIssue" ColumnName="DateIssue" />
+          <ScalarProperty Name="PlaceIssue" ColumnName="PlaceIssue" />
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+          <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="Bonus" ColumnName="Bonus" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IdPolicyStudent" ColumnName="IdPolicyStudent" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Student_InsertIntoOfflineServerSync" FunctionName="eTrainingOnlineModel.Store.SP_Student_InsertIntoOfflineServerSync" />
+    <FunctionImportMapping FunctionImportName="SP_Student_InsertIntoOfflineServerSyncWithoutId" FunctionName="eTrainingOnlineModel.Store.SP_Student_InsertIntoOfflineServerSyncWithoutId" />
+    <FunctionImportMapping FunctionImportName="SP_StudentSyc_GetStudentFromLast3days" FunctionName="eTrainingOnlineModel.Store.SP_StudentSyc_GetStudentFromLast3days">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="eTrainingOnlineModel.SP_StudentSyc_GetStudentFromLast3days_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="HVTiemNang" ColumnName="HVTiemNang" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="DateBirthday" ColumnName="DateBirthday" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="DateRegister" ColumnName="DateRegister" />
+          <ScalarProperty Name="DateLastUpdate" ColumnName="DateLastUpdate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsTested" ColumnName="IsTested" />
+          <ScalarProperty Name="MarkTest" ColumnName="MarkTest" />
+          <ScalarProperty Name="IsRegistered" ColumnName="IsRegistered" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="IdentityNumber" ColumnName="IdentityNumber" />
+          <ScalarProperty Name="DateIssue" ColumnName="DateIssue" />
+          <ScalarProperty Name="PlaceIssue" ColumnName="PlaceIssue" />
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+          <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="Bonus" ColumnName="Bonus" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IdPolicyStudent" ColumnName="IdPolicyStudent" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_StudentSyc_StudentFromLast3days" FunctionName="eTrainingOnlineModel.Store.SP_StudentSyc_StudentFromLast3days">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="eTrainingOnlineModel.SP_StudentSyc_StudentFromLast3days_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="HVTiemNang" ColumnName="HVTiemNang" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="DateBirthday" ColumnName="DateBirthday" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="DateRegister" ColumnName="DateRegister" />
+          <ScalarProperty Name="DateLastUpdate" ColumnName="DateLastUpdate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsTested" ColumnName="IsTested" />
+          <ScalarProperty Name="MarkTest" ColumnName="MarkTest" />
+          <ScalarProperty Name="IsRegistered" ColumnName="IsRegistered" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="IdentityNumber" ColumnName="IdentityNumber" />
+          <ScalarProperty Name="DateIssue" ColumnName="DateIssue" />
+          <ScalarProperty Name="PlaceIssue" ColumnName="PlaceIssue" />
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+          <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="Bonus" ColumnName="Bonus" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IdPolicyStudent" ColumnName="IdPolicyStudent" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_StudentSync_DeleteAfterSync" FunctionName="eTrainingOnlineModel.Store.SP_StudentSync_DeleteAfterSync" />
+    <FunctionImportMapping FunctionImportName="SP_StudentSync_InsertFromOnline" FunctionName="eTrainingOnlineModel.Store.SP_StudentSync_InsertFromOnline" />
+    <FunctionImportMapping FunctionImportName="SP_Student_GetOnlineStudentFromLast3days" FunctionName="eTrainingOnlineModel.Store.SP_Student_GetOnlineStudentFromLast3days">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="eTrainingOnlineModel.SP_Student_GetOnlineStudentFromLast3days_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="HVTiemNang" ColumnName="HVTiemNang" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="DateBirthday" ColumnName="DateBirthday" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="DateRegister" ColumnName="DateRegister" />
+          <ScalarProperty Name="DateLastUpdate" ColumnName="DateLastUpdate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsTested" ColumnName="IsTested" />
+          <ScalarProperty Name="MarkTest" ColumnName="MarkTest" />
+          <ScalarProperty Name="IsRegistered" ColumnName="IsRegistered" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="IdentityNumber" ColumnName="IdentityNumber" />
+          <ScalarProperty Name="DateIssue" ColumnName="DateIssue" />
+          <ScalarProperty Name="PlaceIssue" ColumnName="PlaceIssue" />
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+          <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="Bonus" ColumnName="Bonus" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IdPolicyStudent" ColumnName="IdPolicyStudent" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

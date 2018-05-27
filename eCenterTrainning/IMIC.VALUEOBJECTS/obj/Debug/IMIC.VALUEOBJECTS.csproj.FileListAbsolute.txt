@@ -1,0 +1,57 @@
+C:\Users\admin\Desktop\eTraining2018\IMIC.VALUEOBJECTS\bin\Debug\IMIC.VALUEOBJECTS.dll.config
+C:\Users\admin\Desktop\eTraining2018\IMIC.VALUEOBJECTS\bin\Debug\IMIC.VALUEOBJECTS.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.VALUEOBJECTS\bin\Debug\IMIC.VALUEOBJECTS.pdb
+C:\Users\admin\Desktop\eTraining2018\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\eTraining2018\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\Desktop\eTraining2018\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\eTraining2018\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\eTraining2018\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.csproj.CopyComplete
+C:\Users\admin\Desktop\eTraining2018\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.dll
+C:\Users\admin\Desktop\eTraining2018\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.pdb
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.VALUEOBJECTS\bin\Debug\IMIC.VALUEOBJECTS.dll.config
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.VALUEOBJECTS\bin\Debug\IMIC.VALUEOBJECTS.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.VALUEOBJECTS\bin\Debug\IMIC.VALUEOBJECTS.pdb
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.csproj.CopyComplete
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.dll
+C:\Users\admin\Desktop\iTraining2018\IMICTrainingCenter\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\IMIC.VALUEOBJECTS.dll.config
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\IMIC.VALUEOBJECTS.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\IMIC.VALUEOBJECTS.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.csproj.CopyComplete
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.dll
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.pdb
+C:\Users\admin\Desktop\iSoftWare\eCenterTrainning\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\IMIC.VALUEOBJECTS.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\IMIC.VALUEOBJECTS.pdb
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.csproj.CopyComplete
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.dll
+C:\Users\admin\Desktop\eTrainingDemo\eCenterTrainning\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\IMIC.VALUEOBJECTS.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\IMIC.VALUEOBJECTS.pdb
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.SqlServer.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.xml
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.SqlServer.xml
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.csproj.CoreCompileInputs.cache
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.csproj.CopyComplete
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.dll
+G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.pdb
