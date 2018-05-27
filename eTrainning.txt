@@ -1,0 +1,87 @@
+D? ÁN PH?N M?M QU?N L? ÐÀO TAO - eTrainingv8
+--------------------------------------------
+1. Phân h? Qu?n l? ngý?i dùng:
+  a. Ðãng nh?p/Ðãng xu?t?
+  - Th?c th?: 
+    --> IMC_Users
+  b. Phân quy?n cho ngý?i dùng?
+  - Th?c th?:
+    --> IMC_Users
+    --> IMC_UserRoles
+    --> IMC_TabPermission
+    --> IMC_Roles
+    --> IMC_RoleGroups
+  c. Hi?n th? danh sách các tài kho?n, thêm, s?a, xóa tài kho?n?
+  - Th?c th?:
+    --> MC_Users
+  d. Ð?i m?t kh?u cho tài kho?n?
+  - Th?c th?:
+    --> MC_Users 
+
+2. Phân h? qu?n l? H?c viên:
+  a. Nghi?p v? hi?n th? danh sách H?c viên theo th?i gian (Tháng/Nãm)?
+  - Th?c th?:
+    --> IMC_Students
+    --> IMC_Status
+    --> IMC_Courses
+    --> IMC_Users
+  b. Nghi?p v? xem chi ti?t nh?t k? tý v?n cho 1 h?c viên nào ðó?
+  - Th?c th?:
+    --> IMC_Users
+    --> IMC_Students
+    --> IMC_Courses
+  c. Nghi?p v? thêm - s?a  - xóa nh?t k? tý v?n cho h?c viên?
+    --> IMC_Students
+    --> IMC_Status
+    --> IMC_Courses
+    --> IMC_Users
+    --> IMC_CommentSupport
+  d. Nghi?p v? theo d?i t?nh h?nh ðóng h?c phí c?a 1 h?c viên nào ðó?
+    --> IMC_Students
+    --> IMC_Student_Class
+    --> IMC_Users
+  e. Nghi?p v? Hi?n th? danh sách các l?p h?c ðang tri?n khai?
+  - Th?c th?:
+    --> IMC_Students
+    --> IMC_Student_Class
+    --> IMC_Status
+    --> IMC_Courses
+    --> IMC_Users
+  f. Nghi?p v? ðýa H?c viên & Gi?ng viên tham gia vào khóa h?c?
+  - Th?c th?:
+    --> IMC_Students
+    --> IMC_Student_Class
+    --> IMC_Status
+    --> IMC_Courses
+    --> IMC_Users
+
+3. Phân h? qu?n l? gi?ng viên?
+  a. Nghi?p v? Hi?n th? danh sách gi?ng viên hi?n có?
+  --> IMC_ExpertInfoes
+  b. Nghi?p v? Thêm-S?a-Xóa gi?ng viên?
+  --> IMC_ExpertInfoes
+
+4. Phân h? Qu?n l? nhân viên?
+  a. Nghi?p v? Hi?n th? danh sách nhân viên hi?n có?
+  - Th?c th?:
+    --> IMC_Employees
+    --> IMC_Ou
+    --> IMC_JobTitle    
+    --> IMC_CenterInfoes
+  b. Nghi?p v? Thêm-S?a-Xóa nhân viên trong Công ty?
+    - Th?c th?:
+      --> IMC_Employees
+      --> IMC_Ou
+      --> IMC_JobTitle      
+      --> IMC_CenterInfoes
+5. Phân h? Qu?n l? Tuy?n d?ng?
+  a. Nghi?p v? hi?n th? danh sách các ?ng viên theo ð?t tuy?n?
+  b. Nghi?p v? qu?n l? h? sõ ?ng viên (CV)?
+  c. Nghi?p v? thêm, s?a, xóa ?ng viên?
+  d. Nghi?p v? thêm, s?a, xóa các ð?t tuy?n ?ng viên?
+  ==> Các th? th? c?n cho 04 nghi?p v? nêu trên:
+    --> IMC_JobTitle
+    --> IMC_Candidates (?ng viên)
+    --> IMC_Ou
+    --> IMC_RecruitmentInfo
+    --> IMC_Provinces
