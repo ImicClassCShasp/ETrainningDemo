@@ -11,6 +11,7 @@ namespace IMIC.BUSINESSLOGICLAYERS
 {
     //Comment check Github 01:28 28-05-2018 TungVP
     //Comment check Github 01:37 28-05-2018 TungVP
+    //Anh Tùng Check
     public class AccountBill : BaseBll<Account>
     {        
         AccountDAL mAccountDAL;       
