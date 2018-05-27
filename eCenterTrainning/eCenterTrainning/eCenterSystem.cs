@@ -15,7 +15,7 @@ using IMIC.SyncModule;
 using IMIC.VALUEOBJECTS;
 using IMIC.BUSINESSLOGICLAYERS;
 
-
+//Chị Thu Comment
 namespace eCenterTrainning
 {
     public partial class eCenterSystem : DevExpress.XtraBars.Ribbon.RibbonForm
