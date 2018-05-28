@@ -53,3 +53,11 @@ G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBI
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csproj.CopyComplete
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.dll
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.dll.config
+E:\Repo-Git\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.dll
+E:\Repo-Git\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\EntityFramework.dll
+E:\Repo-Git\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\EntityFramework.xml
+E:\Repo-Git\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csprojResolveAssemblyReference.cache
+E:\Repo-Git\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.dll
+E:\Repo-Git\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.pdb
