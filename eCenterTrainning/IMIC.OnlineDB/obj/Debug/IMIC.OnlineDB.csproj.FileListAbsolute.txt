@@ -61,3 +61,13 @@ E:\Repo-Git\eCenterTrainning\IMIC.OnlineDB\bin\Debug\EntityFramework.xml
 E:\Repo-Git\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.csprojResolveAssemblyReference.cache
 E:\Repo-Git\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.dll
 E:\Repo-Git\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.pdb
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.dll.config
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.dll
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.pdb
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.OnlineDB\bin\Debug\EntityFramework.dll
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.OnlineDB\bin\Debug\EntityFramework.xml
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.csprojResolveAssemblyReference.cache
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.csproj.CoreCompileInputs.cache
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.csproj.CopyComplete
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.dll
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.pdb

@@ -64,3 +64,14 @@ E:\Repo-Git\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.SqlServ
 E:\Repo-Git\eCenterTrainning\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.csprojResolveAssemblyReference.cache
 E:\Repo-Git\eCenterTrainning\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.dll
 E:\Repo-Git\eCenterTrainning\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.pdb
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\IMIC.VALUEOBJECTS.dll
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\IMIC.VALUEOBJECTS.pdb
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.dll
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.xml
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.VALUEOBJECTS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.csprojResolveAssemblyReference.cache
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.csproj.CoreCompileInputs.cache
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.csproj.CopyComplete
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.dll
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.VALUEOBJECTS\obj\Debug\IMIC.VALUEOBJECTS.pdb

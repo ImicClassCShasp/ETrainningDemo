@@ -61,3 +61,13 @@ E:\Repo-Git\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\EntityFramework.xml
 E:\Repo-Git\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csprojResolveAssemblyReference.cache
 E:\Repo-Git\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.dll
 E:\Repo-Git\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.pdb
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.dll.config
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.dll
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.pdb
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\EntityFramework.dll
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\EntityFramework.xml
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csprojResolveAssemblyReference.cache
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csproj.CoreCompileInputs.cache
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csproj.CopyComplete
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.dll
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.pdb

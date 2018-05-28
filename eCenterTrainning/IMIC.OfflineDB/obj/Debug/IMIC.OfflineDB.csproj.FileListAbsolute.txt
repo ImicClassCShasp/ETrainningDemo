@@ -63,3 +63,13 @@ E:\Repo-Git\eCenterTrainning\IMIC.OfflineDB\bin\Debug\EntityFramework.xml
 E:\Repo-Git\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.csprojResolveAssemblyReference.cache
 E:\Repo-Git\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.dll
 E:\Repo-Git\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.pdb
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.dll.config
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.dll
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.pdb
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.OfflineDB\bin\Debug\EntityFramework.dll
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.OfflineDB\bin\Debug\EntityFramework.xml
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.csprojResolveAssemblyReference.cache
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.csproj.CoreCompileInputs.cache
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.csproj.CopyComplete
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.dll
+C:\Users\dangh\Source\Repos\eTrainningDemo\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.pdb
