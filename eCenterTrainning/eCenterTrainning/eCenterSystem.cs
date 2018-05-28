@@ -18,6 +18,7 @@ using IMIC.BUSINESSLOGICLAYERS;
 //Chị Thu Comment
 //Hoàng Comment
 //TungVP comment 01:53
+//TungVP 06:29
 namespace eCenterTrainning
 {
     public partial class eCenterSystem : DevExpress.XtraBars.Ribbon.RibbonForm
