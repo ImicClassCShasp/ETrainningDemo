@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.DATAACCESSLAYERS\CMSModels.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\CMSModels.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

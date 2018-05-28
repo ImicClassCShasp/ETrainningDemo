@@ -1328,6 +1328,7 @@
             new DevExpress.XtraNavBar.NavBarItemLink(this.nbiQuangCaoOnline),
             new DevExpress.XtraNavBar.NavBarItemLink(this.nbiHocVienCu)});
             this.navBarGroup3.Name = "navBarGroup3";
+            this.navBarGroup3.TopVisibleLinkIndex = 2;
             // 
             // navBarItemHocVien
             // 
@@ -1347,6 +1348,7 @@
             this.navBarItemLopHoc.Caption = "Lớp Học";
             this.navBarItemLopHoc.ImageOptions.LargeImage = global::eCenterTrainning.Properties.Resources.kuser32x32;
             this.navBarItemLopHoc.Name = "navBarItemLopHoc";
+            this.navBarItemLopHoc.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItemLopHoc_LinkClicked);
             // 
             // navBarItemPromotion
             // 

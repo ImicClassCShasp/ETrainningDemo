@@ -46,7 +46,8 @@ namespace eCenterTrainning.UseControls
             dtClassesEndTime.EditValue = DateTime.Now;
             dtClassesEndTime.Enabled = true;
             LoadLookUpEditClass();
-            LoadDataClasses();           
+            LoadDataClasses();
+            this.Dock = DockStyle.Fill;
         }
         void LoadDataClasses()
         {
@@ -215,30 +216,44 @@ namespace eCenterTrainning.UseControls
         }        
         private void gridControlClass_MouseClick(object sender, MouseEventArgs e)
         {
-           try
+            //try
+            // {
+            //     this.Cursor = Cursors.WaitCursor;
+            //     int iClassId = 0;
+            //     int.TryParse("" + gridViewClass.GetFocusedRowCellValue("Id"), out iClassId);
+            //     if (iClassId > 0)
+            //     {
+            //         string sClassName = "" + gridViewClass.GetFocusedRowCellValue("ClassName");
+            //         //LoadData_Student_Of_Classes(iClassId);                    
+            //         lookUpEditClass.EditValue = iClassId;
+            //         mClasses.Id = string.IsNullOrEmpty("" + lookUpEditClass.EditValue)
+            //                     ? 0 : int.Parse("" + lookUpEditClass.EditValue);
+            //         mClasses.ClassName = sClassName;
+            //         mLisListStudents = new ListStudentsBll(mAccount).CheckElementById(mClasses.Id);
+            //         grCDanhSachHocVien.DataSource = mLisListStudents;
+            //     }
+            // }
+            // catch (Exception ex)
+            // {
+            //     MessageBox.Show(" lỗi");
+            // }
+            // finally
+            // {
+            //     this.Cursor = Cursors.Default;
+            // }
+            this.Cursor = Cursors.WaitCursor;
+            int iClassId = 0;
+            int.TryParse("" + gridViewClass.GetFocusedRowCellValue("Id"), out iClassId);
+            if (iClassId > 0)
             {
-                this.Cursor = Cursors.WaitCursor;
-                int iClassId = 0;
-                int.TryParse("" + gridViewClass.GetFocusedRowCellValue("Id"), out iClassId);
-                if (iClassId > 0)
-                {
-                    string sClassName = "" + gridViewClass.GetFocusedRowCellValue("ClassName");
-                    //LoadData_Student_Of_Classes(iClassId);                    
-                    lookUpEditClass.EditValue = iClassId;
-                    mClasses.Id = string.IsNullOrEmpty("" + lookUpEditClass.EditValue)
-                                ? 0 : int.Parse("" + lookUpEditClass.EditValue);
-                    mClasses.ClassName = sClassName;
-                    mLisListStudents = new ListStudentsBll(mAccount).CheckElementById(mClasses.Id);
-                    grCDanhSachHocVien.DataSource = mLisListStudents;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                this.Cursor = Cursors.Default;
+                string sClassName = "" + gridViewClass.GetFocusedRowCellValue("ClassName");
+                //LoadData_Student_Of_Classes(iClassId);                    
+                lookUpEditClass.EditValue = iClassId;
+                mClasses.Id = string.IsNullOrEmpty("" + lookUpEditClass.EditValue)
+                            ? 0 : int.Parse("" + lookUpEditClass.EditValue);
+                mClasses.ClassName = sClassName;
+                mLisListStudents = new ListStudentsBll(mAccount).CheckElementById(mClasses.Id);
+                grCDanhSachHocVien.DataSource = mLisListStudents;
             }
         }
         void LoadData_Student_Of_Classes(int iClassId)

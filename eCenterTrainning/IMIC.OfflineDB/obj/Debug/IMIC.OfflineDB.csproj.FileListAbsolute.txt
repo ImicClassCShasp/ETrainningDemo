@@ -55,3 +55,12 @@ G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.Of
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.csproj.CopyComplete
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.dll
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.pdb
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.dll.config
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.dll
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.OfflineDB\bin\Debug\IMIC.OfflineDB.pdb
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.OfflineDB\bin\Debug\EntityFramework.dll
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.OfflineDB\bin\Debug\EntityFramework.xml
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.csproj.CoreCompileInputs.cache
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.csproj.CopyComplete
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.dll
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.OfflineDB\obj\Debug\IMIC.OfflineDB.pdb

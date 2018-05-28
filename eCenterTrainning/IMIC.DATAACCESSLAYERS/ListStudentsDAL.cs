@@ -19,7 +19,7 @@ namespace IMIC.DATAACCESSLAYERS
         public override List<ListStudents> CheckElementById(object Id)
         {
             TrainingCenterEntities oEntities = ConnectionEntities.getTrainingCenter(mAcount);
-            var oData = oEntities.SP_IMIC_Get_List_Student_Of_Classes(int.Parse(""+Id)).ToList();
+            var oData = oEntities.SP_GETLITSTUDENT_BYID_CLASS(int.Parse(""+Id)).ToList();
             List<ListStudents> lisTemp = new List<ListStudents>();
             if (oData != null)
             {                
@@ -30,8 +30,8 @@ namespace IMIC.DATAACCESSLAYERS
                     {
                         Id = o.Id,
                         Email = o.Email,
-                        Mobile = o.Mobile,
-                        ClassName = o.ClassName,
+                        Mobile = o.Phone,
+                        //ClassName = o.ClassName,
                         FullName = o.FullName,
                         //ExpertName = 
                     };

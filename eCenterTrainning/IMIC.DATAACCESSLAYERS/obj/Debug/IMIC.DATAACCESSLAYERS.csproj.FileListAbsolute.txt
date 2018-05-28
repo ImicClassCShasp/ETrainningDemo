@@ -119,3 +119,32 @@ G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.DATAACCESSLAYERS\obj\Debug\
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.DATAACCESSLAYERS\obj\Debug\IMIC.DATAACCESSLAYERS.csproj.CopyComplete
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.DATAACCESSLAYERS\obj\Debug\IMIC.DATAACCESSLAYERS.dll
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.DATAACCESSLAYERS\obj\Debug\IMIC.DATAACCESSLAYERS.pdb
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.dll.config
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.dll
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.pdb
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\EntityFramework.dll
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.SyncModule.dll
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.VALUEOBJECTS.dll
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\SECURITYs.exe
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.OfflineDB.dll
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.OnlineDB.dll
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.WEBIMIC.dll
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.SyncModule.pdb
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.SyncModule.dll.config
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.VALUEOBJECTS.pdb
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.VALUEOBJECTS.dll.config
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\SECURITYs.pdb
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\EntityFramework.xml
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.OfflineDB.pdb
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.OfflineDB.dll.config
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.OnlineDB.pdb
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.OnlineDB.dll.config
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.WEBIMIC.pdb
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.WEBIMIC.dll.config
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\obj\Debug\IMIC.DATAACCESSLAYERS.csprojResolveAssemblyReference.cache
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\obj\Debug\IMIC.DATAACCESSLAYERS.csproj.CoreCompileInputs.cache
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\obj\Debug\IMIC.DATAACCESSLAYERS.csproj.CopyComplete
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\obj\Debug\IMIC.DATAACCESSLAYERS.dll
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.DATAACCESSLAYERS\obj\Debug\IMIC.DATAACCESSLAYERS.pdb

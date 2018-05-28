@@ -467,6 +467,10 @@
     <FunctionImport Name="SP_GETHOCPHI_BYSTUDENTID_STUDENT_CLASS" ReturnType="Collection(TrainingCenterModel.SP_GETHOCPHI_BYSTUDENTID_STUDENT_CLASS_Result)">
       <Parameter Name="idStd" Mode="In" Type="Int32" />
     </FunctionImport>
+    <FunctionImport Name="SP_GETALL_CLASS" ReturnType="Collection(TrainingCenterModel.SP_GETALL_CLASS_Result)" />
+    <FunctionImport Name="SP_GETLITSTUDENT_BYID_CLASS" ReturnType="Collection(TrainingCenterModel.SP_GETLITSTUDENT_BYID_CLASS_Result)">
+      <Parameter Name="classid" Mode="In" Type="Int32" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="GetListEmployees_Result">
     <Property Type="Int32" Name="Id" Nullable="false" />
@@ -1289,5 +1293,45 @@
     <Property Type="Double" Name="BeforePrice" Nullable="true" />
     <Property Type="Byte" Name="Status" Nullable="true" />
     <Property Type="Int64" Name="UserIdConfirm" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GETALL_CLASS_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="ClassName" Nullable="true" MaxLength="250" />
+    <Property Type="DateTime" Name="FromDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ToDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="DateStart" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="NumberStudents" Nullable="true" />
+    <Property Type="String" Name="PlaceTraining" Nullable="true" MaxLength="500" />
+    <Property Type="Int32" Name="ExpertId" Nullable="true" />
+    <Property Type="Int32" Name="CenterId" Nullable="true" />
+    <Property Type="Int32" Name="CourseId" Nullable="true" />
+    <Property Type="String" Name="Description" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="100" />
+    <Property Type="Double" Name="TotalPrice" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GETLITSTUDENT_BYID_CLASS_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Int32" Name="ClassId" Nullable="true" />
+    <Property Type="Int32" Name="StudentId" Nullable="true" />
+    <Property Type="DateTime" Name="DateStart" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="DateEnd" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Comment" Nullable="true" MaxLength="500" />
+    <Property Type="Boolean" Name="IsMutiPrice" Nullable="true" />
+    <Property Type="Int32" Name="NumberPrice" Nullable="true" />
+    <Property Type="DateTime" Name="DatePrice" Nullable="true" />
+    <Property Type="String" Name="Description" Nullable="true" MaxLength="500" />
+    <Property Type="Double" Name="TotalPrice" Nullable="true" />
+    <Property Type="Double" Name="Price1" Nullable="true" />
+    <Property Type="Double" Name="Price2" Nullable="true" />
+    <Property Type="Double" Name="Price3" Nullable="true" />
+    <Property Type="Double" Name="MustPay" Nullable="true" />
+    <Property Type="Int32" Name="IdPolicyStudent" Nullable="true" />
+    <Property Type="Double" Name="BeforePrice" Nullable="true" />
+    <Property Type="Byte" Name="Status" Nullable="true" />
+    <Property Type="Int64" Name="UserIdConfirm" Nullable="true" />
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="Sex" Nullable="true" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="Phone" Nullable="true" MaxLength="200" />
   </ComplexType>
 </Schema>

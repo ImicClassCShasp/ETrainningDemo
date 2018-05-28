@@ -182,5 +182,53 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GETALL_CLASS" FunctionName="TrainingCenterModel.Store.SP_GETALL_CLASS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GETALL_CLASS_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+          <ScalarProperty Name="NumberStudents" ColumnName="NumberStudents" />
+          <ScalarProperty Name="PlaceTraining" ColumnName="PlaceTraining" />
+          <ScalarProperty Name="ExpertId" ColumnName="ExpertId" />
+          <ScalarProperty Name="CenterId" ColumnName="CenterId" />
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GETLITSTUDENT_BYID_CLASS" FunctionName="TrainingCenterModel.Store.SP_GETLITSTUDENT_BYID_CLASS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GETLITSTUDENT_BYID_CLASS_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="IsMutiPrice" ColumnName="IsMutiPrice" />
+          <ScalarProperty Name="NumberPrice" ColumnName="NumberPrice" />
+          <ScalarProperty Name="DatePrice" ColumnName="DatePrice" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Price1" ColumnName="Price1" />
+          <ScalarProperty Name="Price2" ColumnName="Price2" />
+          <ScalarProperty Name="Price3" ColumnName="Price3" />
+          <ScalarProperty Name="MustPay" ColumnName="MustPay" />
+          <ScalarProperty Name="IdPolicyStudent" ColumnName="IdPolicyStudent" />
+          <ScalarProperty Name="BeforePrice" ColumnName="BeforePrice" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UserIdConfirm" ColumnName="UserIdConfirm" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

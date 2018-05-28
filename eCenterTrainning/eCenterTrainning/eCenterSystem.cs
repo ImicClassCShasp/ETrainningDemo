@@ -126,5 +126,12 @@ namespace eCenterTrainning
             UseControls.uStudent ouStudent = new UseControls.uStudent(mAccount);
             plMain.Controls.Add(ouStudent);
         }
+
+        private void navBarItemLopHoc_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            plMain.Controls.Clear();
+            UseControls.uClass ucClass = new UseControls.uClass(mAccount);
+            plMain.Controls.Add(ucClass);
+        }
     }
 }

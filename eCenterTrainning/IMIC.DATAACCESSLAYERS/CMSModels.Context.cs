@@ -17,8 +17,8 @@ namespace IMIC.DATAACCESSLAYERS
     
     public partial class TrainingCenterEntities : DbContext
     {
-        public TrainingCenterEntities(string sValue)
-            : base(sValue)
+        public TrainingCenterEntities( string svale)
+            : base(svale)
         {
         }
     
@@ -1706,6 +1706,20 @@ namespace IMIC.DATAACCESSLAYERS
                 new ObjectParameter("idStd", typeof(int));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETHOCPHI_BYSTUDENTID_STUDENT_CLASS_Result>("SP_GETHOCPHI_BYSTUDENTID_STUDENT_CLASS", idStdParameter);
+        }
+    
+        public virtual ObjectResult<SP_GETALL_CLASS_Result> SP_GETALL_CLASS()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETALL_CLASS_Result>("SP_GETALL_CLASS");
+        }
+    
+        public virtual ObjectResult<SP_GETLITSTUDENT_BYID_CLASS_Result> SP_GETLITSTUDENT_BYID_CLASS(Nullable<int> classid)
+        {
+            var classidParameter = classid.HasValue ?
+                new ObjectParameter("classid", classid) :
+                new ObjectParameter("classid", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETLITSTUDENT_BYID_CLASS_Result>("SP_GETLITSTUDENT_BYID_CLASS", classidParameter);
         }
     }
 }

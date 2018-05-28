@@ -15,7 +15,7 @@ namespace IMIC.DATAACCESSLAYERS
         public override List<Classes> getElements()
         {
             TrainingCenterEntities oEntities = ConnectionEntities.getTrainingCenter(mAcount);
-            var oData = oEntities.SP_IMIC_Get_Class_By_Year().ToList();
+            var oData = oEntities.SP_GETALL_CLASS().ToList();
             List<Classes> lisClasses = new List<Classes>();
             foreach (var o in oData)
             {

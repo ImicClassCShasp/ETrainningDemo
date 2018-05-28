@@ -53,3 +53,13 @@ G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBI
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csproj.CopyComplete
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.dll
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.pdb
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.dll.config
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.dll
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.pdb
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\EntityFramework.dll
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\EntityFramework.xml
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csprojResolveAssemblyReference.cache
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csproj.CoreCompileInputs.cache
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csproj.CopyComplete
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.dll
+C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.pdb
