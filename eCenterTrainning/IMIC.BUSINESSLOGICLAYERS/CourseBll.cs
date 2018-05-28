@@ -17,6 +17,7 @@ namespace IMIC.BUSINESSLOGICLAYERS
         public override List<Cours> getElements()
         {
             return mCourseDAL.getElements();
+            //123
         }
     }
 }
