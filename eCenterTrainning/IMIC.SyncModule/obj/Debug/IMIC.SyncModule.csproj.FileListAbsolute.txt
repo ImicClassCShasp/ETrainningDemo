@@ -107,6 +107,7 @@ G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.S
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csproj.CopyComplete
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.dll
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.pdb
+<<<<<<< HEAD
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.dll.config
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.dll
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.pdb
@@ -126,3 +127,41 @@ C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.SyncModule\obj
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csproj.CopyComplete
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.dll
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.pdb
+=======
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.dll.config
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.dll
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\EntityFramework.dll
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.dll
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.dll
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.dll
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.dll.config
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.dll.config
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.dll.config
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\EntityFramework.xml
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csprojResolveAssemblyReference.cache
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.dll
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.pdb
+C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.dll.config
+C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.dll
+C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.pdb
+C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\EntityFramework.dll
+C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.dll
+C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.dll
+C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.dll
+C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.pdb
+C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.dll.config
+C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.pdb
+C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.dll.config
+C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.pdb
+C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.dll.config
+C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.SyncModule\bin\Debug\EntityFramework.xml
+C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csprojResolveAssemblyReference.cache
+C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csproj.CoreCompileInputs.cache
+C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csproj.CopyComplete
+C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.dll
+C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.pdb
+>>>>>>> 35e462a75fa5c5729d84cde2ea0c8405e1a0b849

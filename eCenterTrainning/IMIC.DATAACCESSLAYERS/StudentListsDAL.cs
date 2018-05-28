@@ -24,7 +24,7 @@ namespace IMIC.DATAACCESSLAYERS
                 oStudentLists.FullName = o.FullName;
                 oStudentLists.SexString = o.SexString;
                 oStudentLists.Sex = o.sex;
-                oStudentLists.Mobile = string.IsNullOrEmpty(o.Mobile) ? "" :o.Mobile /*oCommons.DecryptInfo(o.Mobile)*/;
+                oStudentLists.Mobile = string.IsNullOrEmpty(o.Mobile) ? "" : o.Mobile /*oCommons.DecryptInfo(o.Mobile)*/;
                 oStudentLists.DateBirthday = o.DateBirthday;
                 oStudentLists.Email = string.IsNullOrEmpty(o.Email)?"": o.Email/*oCommons.DecryptInfo(o.Email)*/;
                 oStudentLists.Address = o.Address;
@@ -57,9 +57,10 @@ namespace IMIC.DATAACCESSLAYERS
                 else
                     oStudentLists.SexString = "Nữ";
                 oStudentLists.Sex = o.Sex;
-                oStudentLists.Mobile = string.IsNullOrEmpty(o.Mobile) ? "" : o.Mobile /*oCommons.DecryptInfo(o.Mobile)*/;
+                //11:51 28/05/2018 - Uncomment DecryptInfo for Email & Mobile 
+                oStudentLists.Mobile = string.IsNullOrEmpty(o.Mobile) ? "" : oCommons.DecryptInfo(o.Mobile);
                 oStudentLists.DateBirthday = o.DateBirthday;
-                oStudentLists.Email = string.IsNullOrEmpty(o.Email) ? "" : o.Email/*oCommons.DecryptInfo(o.Email)*/;
+                oStudentLists.Email = string.IsNullOrEmpty(o.Email) ? "" : oCommons.DecryptInfo(o.Email);
                 oStudentLists.Address = o.Address;
                 oStudentLists.DateBirthday = o.DateBirthday;
                 oStudentLists.UserId = o.UserId;

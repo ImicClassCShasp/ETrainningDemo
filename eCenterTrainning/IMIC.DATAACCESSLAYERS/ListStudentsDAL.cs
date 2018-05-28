@@ -30,8 +30,14 @@ namespace IMIC.DATAACCESSLAYERS
                     {
                         Id = o.Id,
                         Email = o.Email,
+<<<<<<< HEAD
                         Mobile = o.Phone,
                         //ClassName = o.ClassName,
+=======
+                        //Email = oComs.DecryptInfo(o.Email),
+                        Mobile = o.Mobile,
+                        ClassName = o.ClassName,
+>>>>>>> 35e462a75fa5c5729d84cde2ea0c8405e1a0b849
                         FullName = o.FullName,
                         //ExpertName = 
                     };

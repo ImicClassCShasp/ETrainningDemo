@@ -53,6 +53,7 @@ G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.Onl
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.csproj.CopyComplete
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.dll
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.pdb
+<<<<<<< HEAD
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.dll.config
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.dll
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.pdb
@@ -63,3 +64,13 @@ C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.OnlineDB\obj\D
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.csproj.CopyComplete
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.dll
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.pdb
+=======
+E:\Repo-Git\eCenterTrainning\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.dll.config
+E:\Repo-Git\eCenterTrainning\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.dll
+E:\Repo-Git\eCenterTrainning\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.OnlineDB\bin\Debug\EntityFramework.dll
+E:\Repo-Git\eCenterTrainning\IMIC.OnlineDB\bin\Debug\EntityFramework.xml
+E:\Repo-Git\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.csprojResolveAssemblyReference.cache
+E:\Repo-Git\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.dll
+E:\Repo-Git\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.pdb
+>>>>>>> 35e462a75fa5c5729d84cde2ea0c8405e1a0b849

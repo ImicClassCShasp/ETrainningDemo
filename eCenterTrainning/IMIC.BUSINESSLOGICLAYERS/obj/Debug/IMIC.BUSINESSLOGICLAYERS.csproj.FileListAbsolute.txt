@@ -73,6 +73,21 @@ G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Deb
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.csproj.CopyComplete
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.dll
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.pdb
+<<<<<<< HEAD
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.BUSINESSLOGICLAYERS.dll
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.BUSINESSLOGICLAYERS.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.dll
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.VALUEOBJECTS.dll
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\EntityFramework.dll
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.dll.config
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.VALUEOBJECTS.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.VALUEOBJECTS.dll.config
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\EntityFramework.xml
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.csprojResolveAssemblyReference.cache
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.dll
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.pdb
+=======
 C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.BUSINESSLOGICLAYERS.dll
 C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.BUSINESSLOGICLAYERS.pdb
 C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.dll
@@ -88,6 +103,7 @@ C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.BUSINESSLOGICLA
 C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.csproj.CopyComplete
 C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.dll
 C:\Users\dangh\source\repos\eTrainningDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.pdb
+<<<<<<< HEAD
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.BUSINESSLOGICLAYERS.dll
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.BUSINESSLOGICLAYERS.pdb
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.dll
@@ -103,3 +119,6 @@ C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.BUSINESSLOGICL
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.csproj.CopyComplete
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.dll
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.pdb
+=======
+>>>>>>> 21a121d6638266d98ad3f532a1553523c597ec51
+>>>>>>> 35e462a75fa5c5729d84cde2ea0c8405e1a0b849

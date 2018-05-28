@@ -53,6 +53,7 @@ G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBI
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csproj.CopyComplete
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.dll
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.pdb
+<<<<<<< HEAD
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.dll.config
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.dll
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.pdb
@@ -63,3 +64,13 @@ C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.WEBIMIC\obj\De
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csproj.CopyComplete
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.dll
 C:\Users\chung\Source\Repos\eTrainningDemo2\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.pdb
+=======
+E:\Repo-Git\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.dll.config
+E:\Repo-Git\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.dll
+E:\Repo-Git\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\IMIC.WEBIMIC.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\EntityFramework.dll
+E:\Repo-Git\eCenterTrainning\IMIC.WEBIMIC\bin\Debug\EntityFramework.xml
+E:\Repo-Git\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.csprojResolveAssemblyReference.cache
+E:\Repo-Git\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.dll
+E:\Repo-Git\eCenterTrainning\IMIC.WEBIMIC\obj\Debug\IMIC.WEBIMIC.pdb
+>>>>>>> 35e462a75fa5c5729d84cde2ea0c8405e1a0b849
