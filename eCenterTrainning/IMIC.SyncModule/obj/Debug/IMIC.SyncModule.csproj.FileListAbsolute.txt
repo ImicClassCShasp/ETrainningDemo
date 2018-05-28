@@ -107,3 +107,20 @@ G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.S
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csproj.CopyComplete
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.dll
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.dll.config
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.dll
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.SyncModule.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\EntityFramework.dll
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.dll
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.dll
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.dll
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OfflineDB.dll.config
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.OnlineDB.dll.config
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\IMIC.WEBIMIC.dll.config
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\bin\Debug\EntityFramework.xml
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.csprojResolveAssemblyReference.cache
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.dll
+E:\Repo-Git\eCenterTrainning\IMIC.SyncModule\obj\Debug\IMIC.SyncModule.pdb

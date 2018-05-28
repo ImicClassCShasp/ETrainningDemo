@@ -119,3 +119,30 @@ G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.DATAACCESSLAYERS\obj\Debug\
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.DATAACCESSLAYERS\obj\Debug\IMIC.DATAACCESSLAYERS.csproj.CopyComplete
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.DATAACCESSLAYERS\obj\Debug\IMIC.DATAACCESSLAYERS.dll
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.DATAACCESSLAYERS\obj\Debug\IMIC.DATAACCESSLAYERS.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.dll.config
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.dll
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\EntityFramework.dll
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\EntityFramework.SqlServer.dll
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.SyncModule.dll
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.VALUEOBJECTS.dll
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\SECURITYs.exe
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.OfflineDB.dll
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.OnlineDB.dll
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.WEBIMIC.dll
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.SyncModule.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.SyncModule.dll.config
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.VALUEOBJECTS.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.VALUEOBJECTS.dll.config
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\SECURITYs.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\EntityFramework.xml
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\EntityFramework.SqlServer.xml
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.OfflineDB.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.OfflineDB.dll.config
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.OnlineDB.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.OnlineDB.dll.config
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.WEBIMIC.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\bin\Debug\IMIC.WEBIMIC.dll.config
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\obj\Debug\IMIC.DATAACCESSLAYERS.csprojResolveAssemblyReference.cache
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\obj\Debug\IMIC.DATAACCESSLAYERS.dll
+E:\Repo-Git\eCenterTrainning\IMIC.DATAACCESSLAYERS\obj\Debug\IMIC.DATAACCESSLAYERS.pdb

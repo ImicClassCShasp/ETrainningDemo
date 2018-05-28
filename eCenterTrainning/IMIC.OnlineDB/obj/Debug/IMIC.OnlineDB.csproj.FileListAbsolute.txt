@@ -53,3 +53,11 @@ G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.Onl
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.csproj.CopyComplete
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.dll
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.dll.config
+E:\Repo-Git\eCenterTrainning\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.dll
+E:\Repo-Git\eCenterTrainning\IMIC.OnlineDB\bin\Debug\IMIC.OnlineDB.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.OnlineDB\bin\Debug\EntityFramework.dll
+E:\Repo-Git\eCenterTrainning\IMIC.OnlineDB\bin\Debug\EntityFramework.xml
+E:\Repo-Git\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.csprojResolveAssemblyReference.cache
+E:\Repo-Git\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.dll
+E:\Repo-Git\eCenterTrainning\IMIC.OnlineDB\obj\Debug\IMIC.OnlineDB.pdb

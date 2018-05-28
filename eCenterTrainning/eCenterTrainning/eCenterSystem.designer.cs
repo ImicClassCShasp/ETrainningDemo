@@ -1328,6 +1328,7 @@
             new DevExpress.XtraNavBar.NavBarItemLink(this.nbiQuangCaoOnline),
             new DevExpress.XtraNavBar.NavBarItemLink(this.nbiHocVienCu)});
             this.navBarGroup3.Name = "navBarGroup3";
+            this.navBarGroup3.TopVisibleLinkIndex = 2;
             // 
             // navBarItemHocVien
             // 

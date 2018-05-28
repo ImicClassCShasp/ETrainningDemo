@@ -73,3 +73,16 @@ G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Deb
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.csproj.CopyComplete
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.dll
 G:\Tai lieu\iMic\eTrainingDemo\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.BUSINESSLOGICLAYERS.dll
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.BUSINESSLOGICLAYERS.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.dll
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.VALUEOBJECTS.dll
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\EntityFramework.dll
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.DATAACCESSLAYERS.dll.config
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.VALUEOBJECTS.pdb
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\IMIC.VALUEOBJECTS.dll.config
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\bin\Debug\EntityFramework.xml
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.csprojResolveAssemblyReference.cache
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.dll
+E:\Repo-Git\eCenterTrainning\IMIC.BUSINESSLOGICLAYERS\obj\Debug\IMIC.BUSINESSLOGICLAYERS.pdb
