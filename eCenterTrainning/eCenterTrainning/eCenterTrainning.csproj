@@ -388,24 +388,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Base\ActionMenu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Base\ActionMenu.Designer.cs">
-      <DependentUpon>ActionMenu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Base\ActionUpdate.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Base\ActionUpdate.Designer.cs">
-      <DependentUpon>ActionUpdate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Base\frmIMICBase.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Base\frmIMICBase.designer.cs">
-      <DependentUpon>frmIMICBase.cs</DependentUpon>
-    </Compile>
     <Compile Include="eCenterSystem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -842,15 +824,6 @@
     <Compile Include="UseControls\uViewSchedulesInfo.Designer.cs">
       <DependentUpon>uViewSchedulesInfo.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Base\ActionMenu.resx">
-      <DependentUpon>ActionMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Base\ActionUpdate.resx">
-      <DependentUpon>ActionUpdate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Base\frmIMICBase.resx">
-      <DependentUpon>frmIMICBase.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="eCenterSystem.resx">
       <DependentUpon>eCenterSystem.cs</DependentUpon>
     </EmbeddedResource>
