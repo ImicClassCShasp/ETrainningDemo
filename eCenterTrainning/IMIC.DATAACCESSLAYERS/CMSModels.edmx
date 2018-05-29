@@ -1,0 +1,1598 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="TrainingCenterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="SP_CHECK_LOGIN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="username" Type="nvarchar" Mode="In" />
+          <Parameter Name="password" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SP_DELETE_COMMENT_SUPPORT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idComment" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_DELETE_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_GETALL_COURSE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_GETALL_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_GetComment_Support_ByStudentId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idStudent" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_GETELEMENTBYID_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_GETELEMENTS_BYDATE_STUDENTS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="begin" Type="varchar" Mode="In" />
+          <Parameter Name="end" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_GETELEMENTSBYIDSTUDENT_COMMONTSUPPORT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idStudent" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_GETHOCPHI_BYSTUDENTID_STUDENT_CLASS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idStd" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_INSERT_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+          <Parameter Name="FirstName" Type="nvarchar" Mode="In" />
+          <Parameter Name="LastName" Type="nvarchar" Mode="In" />
+          <Parameter Name="IsSuperUser" Type="bit" Mode="In" />
+          <Parameter Name="Phone" Type="nvarchar" Mode="In" />
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+          <Parameter Name="DisplayName" Type="nvarchar" Mode="In" />
+          <Parameter Name="PASSWORD" Type="nvarchar" Mode="In" />
+          <Parameter Name="UpdatePassword" Type="bit" Mode="In" />
+          <Parameter Name="LastIPAddress" Type="nvarchar" Mode="In" />
+          <Parameter Name="IsDeleted" Type="bit" Mode="In" />
+          <Parameter Name="CreatedByUserId" Type="int" Mode="In" />
+          <Parameter Name="CreateOnDate" Type="datetime" Mode="In" />
+          <Parameter Name="LastModifiedByUserId" Type="int" Mode="In" />
+          <Parameter Name="LastModifiedOnDate" Type="datetime" Mode="In" />
+          <Parameter Name="ViewOrder" Type="int" Mode="In" />
+          <Parameter Name="ADDRESS" Type="nvarchar" Mode="In" />
+          <Parameter Name="OuId" Type="int" Mode="In" />
+          <Parameter Name="Sex" Type="int" Mode="In" />
+          <Parameter Name="EmployeeId" Type="int" Mode="In" />
+          <Parameter Name="isExpertId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_INSERTUPDATE_COMMENTSUPPORT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="flag" Type="int" Mode="In" />
+          <Parameter Name="id" Type="int" Mode="In" />
+          <Parameter Name="CommentName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Desription" Type="ntext" Mode="In" />
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+          <Parameter Name="StudentId" Type="int" Mode="In" />
+          <Parameter Name="DateCreate" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="SP_UPDATE_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+          <Parameter Name="FirstName" Type="nvarchar" Mode="In" />
+          <Parameter Name="LastName" Type="nvarchar" Mode="In" />
+          <Parameter Name="IsSuperUser" Type="bit" Mode="In" />
+          <Parameter Name="Phone" Type="nvarchar" Mode="In" />
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+          <Parameter Name="DisplayName" Type="nvarchar" Mode="In" />
+          <Parameter Name="PASSWORD" Type="nvarchar" Mode="In" />
+          <Parameter Name="UpdatePassword" Type="bit" Mode="In" />
+          <Parameter Name="LastIPAddress" Type="nvarchar" Mode="In" />
+          <Parameter Name="IsDeleted" Type="bit" Mode="In" />
+          <Parameter Name="CreatedByUserId" Type="int" Mode="In" />
+          <Parameter Name="CreateOnDate" Type="datetime" Mode="In" />
+          <Parameter Name="LastModifiedByUserId" Type="int" Mode="In" />
+          <Parameter Name="LastModifiedOnDate" Type="datetime" Mode="In" />
+          <Parameter Name="ViewOrder" Type="int" Mode="In" />
+          <Parameter Name="ADDRESS" Type="nvarchar" Mode="In" />
+          <Parameter Name="OuId" Type="int" Mode="In" />
+          <Parameter Name="Sex" Type="int" Mode="In" />
+          <Parameter Name="EmployeeId" Type="int" Mode="In" />
+          <Parameter Name="isExpertId" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="TrainingCenterModelStoreContainer" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TrainingCenterModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="TrainingCenterEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="GetListEmployees" ReturnType="Collection(TrainingCenterModel.GetListEmployees_Result)" />
+          <FunctionImport Name="GetListStudents" ReturnType="Collection(TrainingCenterModel.GetListStudents_Result)" />
+          <FunctionImport Name="GetLoaiHocVienDatatable" ReturnType="Collection(TrainingCenterModel.GetLoaiHocVienDatatable_Result)" />
+          <FunctionImport Name="GetTaskSendMail" ReturnType="Collection(TrainingCenterModel.GetTaskSendMail_Result)" />
+          <FunctionImport Name="GetTinhTrangChamSocDatatable" ReturnType="Collection(TrainingCenterModel.GetTinhTrangChamSocDatatable_Result)" />
+          <FunctionImport Name="SP_CHECK_LOGIN" ReturnType="Collection(TrainingCenterModel.SP_CHECK_LOGIN_Result)">
+            <Parameter Name="username" Mode="In" Type="String" />
+            <Parameter Name="password" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_DELETE_ANSWERS_BYID">
+            <Parameter Name="AID" Mode="In" Type="Int64" />
+            <Parameter Name="QID" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="SP_DELETE_QUESTION_BYID">
+          <Parameter Name="QID" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="SP_DeleteQCYOUTUBE">
+          <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_DeleteQuangCao">
+          <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_DET_DIENDAN_TOP_500_ROWS" ReturnType="Collection(TrainingCenterModel.SP_DET_DIENDAN_TOP_500_ROWS_Result)" />
+          <FunctionImport Name="SP_Get_All_Student_Detail" ReturnType="Collection(TrainingCenterModel.SP_Get_All_Student_Detail_Result)">
+            <Parameter Name="DateFrom" Mode="In" Type="String" />
+            <Parameter Name="DateTo" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Get_All_Student_Detail_Money" ReturnType="Collection(TrainingCenterModel.SP_Get_All_Student_Detail_Money_Result)">
+            <Parameter Name="DateFrom" Mode="In" Type="String" />
+            <Parameter Name="DateTo" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GET_ANSWERS" ReturnType="Collection(TrainingCenterModel.SP_GET_ANSWERS_Result)" />
+          <FunctionImport Name="SP_GET_ANSWERS_BY_ALL" ReturnType="Collection(TrainingCenterModel.SP_GET_ANSWERS_BY_ALL_Result)" />
+          <FunctionImport Name="SP_GET_ANSWERS_BY_ID" ReturnType="Collection(TrainingCenterModel.SP_GET_ANSWERS_BY_ID_Result)">
+          <Parameter Name="QID" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GET_CLASSES_BY_EXPERTID" ReturnType="Collection(TrainingCenterModel.SP_GET_CLASSES_BY_EXPERTID_Result)">
+          <Parameter Name="ExpertId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Get_LoaiHocVien" ReturnType="Collection(TrainingCenterModel.SP_Get_LoaiHocVien_Result)" />
+          <FunctionImport Name="SP_GET_QUESTIONS" ReturnType="Collection(TrainingCenterModel.SP_GET_QUESTIONS_Result)" />
+          <FunctionImport Name="SP_GET_QUESTIONS_ALL" ReturnType="Collection(TrainingCenterModel.SP_GET_QUESTIONS_ALL_Result)" />
+          <FunctionImport Name="SP_Get_Student_All" ReturnType="Collection(TrainingCenterModel.SP_Get_Student_All_Result)">
+            <Parameter Name="DateFrom" Mode="In" Type="String" />
+            <Parameter Name="DateTo" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Get_Student_All_Money" ReturnType="Collection(TrainingCenterModel.SP_Get_Student_All_Money_Result)">
+            <Parameter Name="DateFrom" Mode="In" Type="String" />
+            <Parameter Name="DateTo" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GetEmailPassword" ReturnType="Collection(TrainingCenterModel.SP_GetEmailPassword_Result)">
+          <Parameter Name="UserId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GETIMICQUANGCAO" ReturnType="Collection(TrainingCenterModel.SP_GETIMICQUANGCAO_Result)">
+          <Parameter Name="UserID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GETIMICQUANGCAODATETIME" ReturnType="Collection(TrainingCenterModel.SP_GETIMICQUANGCAODATETIME_Result)">
+            <Parameter Name="UserID" Mode="In" Type="Int32" />
+            <Parameter Name="fromDate" Mode="In" Type="DateTime" />
+            <Parameter Name="toDate" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GETIMICYOUTUBE" ReturnType="Collection(TrainingCenterModel.SP_GETIMICYOUTUBE_Result)">
+          <Parameter Name="UserID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GETIMICYOUTUBEDATETIME" ReturnType="Collection(TrainingCenterModel.SP_GETIMICYOUTUBEDATETIME_Result)">
+            <Parameter Name="UserID" Mode="In" Type="Int32" />
+            <Parameter Name="fromDate" Mode="In" Type="DateTime" />
+            <Parameter Name="toDate" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GETUSERINFO" ReturnType="Collection(TrainingCenterModel.SP_GETUSERINFO_Result)" />
+          <FunctionImport Name="SP_HienThi_DanhSach_HocVien_By03Month" ReturnType="Collection(TrainingCenterModel.SP_HienThi_DanhSach_HocVien_By03Month_Result)" />
+          <FunctionImport Name="SP_HienThi_DanhSach_HocVien_ByTimes" ReturnType="Collection(TrainingCenterModel.SP_HienThi_DanhSach_HocVien_ByTimes_Result)">
+            <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+            <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="SP_HOCVIEN_TIEMNANG" ReturnType="Collection(TrainingCenterModel.SP_HOCVIEN_TIEMNANG_Result)" />
+          <FunctionImport Name="SP_INSERT_ANSWERS_BY_ID">
+            <Parameter Name="QID" Mode="In" Type="Int64" />
+            <Parameter Name="Answers" Mode="In" Type="String" />
+            <Parameter Name="Accept" Mode="In" Type="Int64" />
+            <Parameter Name="Status" Mode="In" Type="Byte" />
+            <Parameter Name="CreateBy" Mode="In" Type="Int32" />
+            <Parameter Name="Steps" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_INSERT_QUESTIONS">
+            <Parameter Name="Questions" Mode="In" Type="String" />
+            <Parameter Name="Status" Mode="In" Type="Byte" />
+          </FunctionImport>
+          <FunctionImport Name="SP_INSERT_SCHEDULE">
+            <Parameter Name="ClassId" Mode="In" Type="Int32" />
+            <Parameter Name="TeacherId" Mode="In" Type="Int32" />
+            <Parameter Name="Contents" Mode="In" Type="String" />
+            <Parameter Name="CreateDate" Mode="In" Type="DateTime" />
+            <Parameter Name="Status" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SP_INSERT_STUDENT_BY_ID">
+            <Parameter Name="firtname" Mode="In" Type="String" />
+            <Parameter Name="lastname" Mode="In" Type="String" />
+            <Parameter Name="fullname" Mode="In" Type="String" />
+            <Parameter Name="email" Mode="In" Type="String" />
+            <Parameter Name="mobile" Mode="In" Type="String" />
+            <Parameter Name="status" Mode="In" Type="Byte" />
+            <Parameter Name="courseid" Mode="In" Type="Byte" />
+          </FunctionImport>
+          <FunctionImport Name="SP_INSERTUPDATE_QC">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+            <Parameter Name="tieude" Mode="In" Type="String" />
+            <Parameter Name="link" Mode="In" Type="String" />
+            <Parameter Name="keyword" Mode="In" Type="String" />
+            <Parameter Name="User" Mode="In" Type="String" />
+            <Parameter Name="pass" Mode="In" Type="String" />
+            <Parameter Name="NgayNhap" Mode="In" Type="DateTime" />
+            <Parameter Name="authodid" Mode="In" Type="Int32" />
+            <Parameter Name="FLAG" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_INSERTUPDATEYOUTUBE_QC">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+            <Parameter Name="tieude" Mode="In" Type="String" />
+            <Parameter Name="link" Mode="In" Type="String" />
+            <Parameter Name="User" Mode="In" Type="String" />
+            <Parameter Name="pass" Mode="In" Type="String" />
+            <Parameter Name="NgayNhap" Mode="In" Type="DateTime" />
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="FLAG" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_KIEMTRA_HOCVIEN_TIEMNANG">
+          <Parameter Name="STUDENTID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_LoadKhoaHocInfo" ReturnType="Collection(TrainingCenterModel.SP_LoadKhoaHocInfo_Result)" />
+          <FunctionImport Name="SP_SCHEDULE_BY_TEACHERID" ReturnType="Collection(TrainingCenterModel.SP_SCHEDULE_BY_TEACHERID_Result)">
+          <Parameter Name="TeacherId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Student_getall" ReturnType="Collection(TrainingCenterModel.SP_Student_getall_Result)" />
+          <FunctionImport Name="SP_Student_GetOfflineStudentFromLast3days" ReturnType="Collection(TrainingCenterModel.SP_Student_GetOfflineStudentFromLast3days_Result)" />
+          <FunctionImport Name="SP_Student_GetOnlineStudentFromLast3days" ReturnType="Collection(TrainingCenterModel.SP_Student_GetOnlineStudentFromLast3days_Result)" />
+          <FunctionImport Name="SP_Student_GetStudentFromLast3days" ReturnType="Collection(TrainingCenterModel.SP_Student_GetStudentFromLast3days_Result)" />
+          <FunctionImport Name="SP_Student_InsertIntoOfflineServerfromWebWithoutId">
+            <Parameter Name="FirstName" Mode="In" Type="String" />
+            <Parameter Name="LastName" Mode="In" Type="String" />
+            <Parameter Name="FullName" Mode="In" Type="String" />
+            <Parameter Name="Sex" Mode="In" Type="Int32" />
+            <Parameter Name="DateBirthday" Mode="In" Type="DateTime" />
+            <Parameter Name="Mobile" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="Address" Mode="In" Type="String" />
+            <Parameter Name="DateCreate" Mode="In" Type="DateTime" />
+            <Parameter Name="DateLastUpdate" Mode="In" Type="DateTime" />
+            <Parameter Name="Description" Mode="In" Type="String" />
+            <Parameter Name="CourseId" Mode="In" Type="Int32" />
+            <Parameter Name="StatusId" Mode="In" Type="Int32" />
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Student_InsertIntoOfflineServerSync">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="FirstName" Mode="In" Type="String" />
+            <Parameter Name="LastName" Mode="In" Type="String" />
+            <Parameter Name="FullName" Mode="In" Type="String" />
+            <Parameter Name="Sex" Mode="In" Type="Int32" />
+            <Parameter Name="DateBirthday" Mode="In" Type="DateTime" />
+            <Parameter Name="Mobile" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="Address" Mode="In" Type="String" />
+            <Parameter Name="DateCreate" Mode="In" Type="DateTime" />
+            <Parameter Name="DateLastUpdate" Mode="In" Type="DateTime" />
+            <Parameter Name="Description" Mode="In" Type="String" />
+            <Parameter Name="CourseId" Mode="In" Type="Int32" />
+            <Parameter Name="StatusId" Mode="In" Type="Int32" />
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Student_InsertIntoOfflineServerSyncWithoutId">
+            <Parameter Name="FirstName" Mode="In" Type="String" />
+            <Parameter Name="LastName" Mode="In" Type="String" />
+            <Parameter Name="FullName" Mode="In" Type="String" />
+            <Parameter Name="Sex" Mode="In" Type="Int32" />
+            <Parameter Name="DateBirthday" Mode="In" Type="DateTime" />
+            <Parameter Name="Mobile" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="Address" Mode="In" Type="String" />
+            <Parameter Name="DateCreate" Mode="In" Type="DateTime" />
+            <Parameter Name="DateLastUpdate" Mode="In" Type="DateTime" />
+            <Parameter Name="Description" Mode="In" Type="String" />
+            <Parameter Name="CourseId" Mode="In" Type="Int32" />
+            <Parameter Name="StatusId" Mode="In" Type="Int32" />
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Student_InsertIntoOnlineServerfromWebWithoutId">
+            <Parameter Name="FirstName" Mode="In" Type="String" />
+            <Parameter Name="LastName" Mode="In" Type="String" />
+            <Parameter Name="FullName" Mode="In" Type="String" />
+            <Parameter Name="Sex" Mode="In" Type="Int32" />
+            <Parameter Name="DateBirthday" Mode="In" Type="DateTime" />
+            <Parameter Name="Mobile" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="Address" Mode="In" Type="String" />
+            <Parameter Name="DateCreate" Mode="In" Type="DateTime" />
+            <Parameter Name="DateLastUpdate" Mode="In" Type="DateTime" />
+            <Parameter Name="Description" Mode="In" Type="String" />
+            <Parameter Name="CourseId" Mode="In" Type="Int32" />
+            <Parameter Name="StatusId" Mode="In" Type="Int32" />
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Student_Update_EmailPassword_by_id">
+            <Parameter Name="Id" Mode="In" Type="Int64" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="Mobile" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_StudentSyc_GetStudentFromLast3days" ReturnType="Collection(TrainingCenterModel.SP_StudentSyc_GetStudentFromLast3days_Result)" />
+          <FunctionImport Name="SP_StudentSyc_StudentFromLast3days" ReturnType="Collection(TrainingCenterModel.SP_StudentSyc_StudentFromLast3days_Result)" />
+          <FunctionImport Name="SP_StudentSync_DeleteAfterSync">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_StudentSync_InsertFromOnline">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="FirstName" Mode="In" Type="String" />
+            <Parameter Name="LastName" Mode="In" Type="String" />
+            <Parameter Name="FullName" Mode="In" Type="String" />
+            <Parameter Name="Sex" Mode="In" Type="Int32" />
+            <Parameter Name="DateBirthday" Mode="In" Type="DateTime" />
+            <Parameter Name="Mobile" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="Address" Mode="In" Type="String" />
+            <Parameter Name="DateCreate" Mode="In" Type="DateTime" />
+            <Parameter Name="DateLastUpdate" Mode="In" Type="DateTime" />
+            <Parameter Name="Description" Mode="In" Type="String" />
+            <Parameter Name="CourseId" Mode="In" Type="Int32" />
+            <Parameter Name="StatusId" Mode="In" Type="Int32" />
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_THEMHV_TIEMNANG">
+            <Parameter Name="StudentId" Mode="In" Type="Int32" />
+            <Parameter Name="Contents" Mode="In" Type="String" />
+            <Parameter Name="Status" Mode="In" Type="Byte" />
+          </FunctionImport>
+          <FunctionImport Name="SP_TIMKIEM_ANSWERS_BY_ALL" ReturnType="Collection(TrainingCenterModel.SP_TIMKIEM_ANSWERS_BY_ALL_Result)">
+            <Parameter Name="NoiDung" Mode="In" Type="String" />
+            <Parameter Name="QID" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="SP_TIMKIEM_ANSWERS_BY_NoiDung" ReturnType="Collection(TrainingCenterModel.SP_TIMKIEM_ANSWERS_BY_NoiDung_Result)">
+          <Parameter Name="NoiDung" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_TIMKIEM_ANSWERS_BY_QID" ReturnType="Collection(TrainingCenterModel.SP_TIMKIEM_ANSWERS_BY_QID_Result)">
+          <Parameter Name="QID" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="SP_TimKiemThongTin" ReturnType="Collection(TrainingCenterModel.SP_TimKiemThongTin_Result)">
+            <Parameter Name="userId" Mode="In" Type="Int32" />
+            <Parameter Name="link" Mode="In" Type="String" />
+            <Parameter Name="title" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_UPDATE_ANSWERS_BY_ID">
+            <Parameter Name="AID" Mode="In" Type="Int64" />
+            <Parameter Name="QID" Mode="In" Type="Int64" />
+            <Parameter Name="Answers" Mode="In" Type="String" />
+            <Parameter Name="Accept" Mode="In" Type="Int64" />
+            <Parameter Name="Status" Mode="In" Type="Byte" />
+            <Parameter Name="Steps" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_UPDATE_HOCVIEN_TIEMNANG">
+            <Parameter Name="StudentId" Mode="In" Type="Int32" />
+            <Parameter Name="Contents" Mode="In" Type="String" />
+            <Parameter Name="Status" Mode="In" Type="Byte" />
+          </FunctionImport>
+          <FunctionImport Name="SP_UPDATE_QUESTIONS">
+            <Parameter Name="QID" Mode="In" Type="Int64" />
+            <Parameter Name="Questions" Mode="In" Type="String" />
+            <Parameter Name="Status" Mode="In" Type="Byte" />
+          </FunctionImport>
+          <FunctionImport Name="SP_UPDATE_SCHEDULES">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="ClassId" Mode="In" Type="Int32" />
+            <Parameter Name="TeacherId" Mode="In" Type="Int32" />
+            <Parameter Name="Contents" Mode="In" Type="String" />
+            <Parameter Name="Status" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SP_UPDATEMIC" ReturnType="Collection(TrainingCenterModel.SP_UPDATEMIC_Result)" />
+          <FunctionImport Name="SP_UPDATEMIC2">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+            <Parameter Name="keyword" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="TimKiem_HocVien_TiemNang" ReturnType="Collection(TrainingCenterModel.TimKiem_HocVien_TiemNang_Result)">
+            <Parameter Name="TuNgay" Mode="In" Type="String" />
+            <Parameter Name="DenNgay" Mode="In" Type="String" />
+            <Parameter Name="CourseId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_IMIC_CheckLogin" ReturnType="Collection(TrainingCenterModel.SP_IMIC_CheckLogin_Result)">
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="PassWord" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_IMIC_Get_Course" ReturnType="Collection(TrainingCenterModel.SP_IMIC_Get_Course_Result)" />
+          <FunctionImport Name="SP_IMIC_Get_Status" ReturnType="Collection(TrainingCenterModel.SP_IMIC_Get_Status_Result)" />
+          <FunctionImport Name="SP_HienThi_DanhSach_HocVien_ById" ReturnType="Collection(TrainingCenterModel.SP_HienThi_DanhSach_HocVien_ById_Result)">
+          <Parameter Name="Id" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Insert_Update_Student">
+            <Parameter Name="Flag" Mode="In" Type="Byte" />
+            <Parameter Name="Id" Mode="In" Type="Int64" />
+            <Parameter Name="FirtName" Mode="In" Type="String" />
+            <Parameter Name="LastName" Mode="In" Type="String" />
+            <Parameter Name="FullName" Mode="In" Type="String" />
+            <Parameter Name="Sex" Mode="In" Type="Int32" />
+            <Parameter Name="Mobile" Mode="In" Type="String" />
+            <Parameter Name="DateBirthday" Mode="In" Type="DateTime" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="Address" Mode="In" Type="String" />
+            <Parameter Name="DateCreate" Mode="In" Type="DateTime" />
+            <Parameter Name="UserId" Mode="In" Type="Int64" />
+            <Parameter Name="courseid" Mode="In" Type="Int64" />
+            <Parameter Name="StatusId" Mode="In" Type="Int32" />
+            <Parameter Name="Description" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_IMIC_Check_RegisterByTime" ReturnType="Collection(TrainingCenterModel.SP_IMIC_Check_RegisterByTime_Result)" />
+          <FunctionImport Name="SP_IMIC_Delete_Student">
+          <Parameter Name="Id" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="SP_IMIC_Comment_Support_ByStudentId" ReturnType="Collection(TrainingCenterModel.SP_IMIC_Comment_Support_ByStudentId_Result)">
+          <Parameter Name="StudentId" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="SP_IMIC_InsertUpdateComment_Support" ReturnType="Collection(TrainingCenterModel.SP_IMIC_InsertUpdateComment_Support_Result)">
+            <Parameter Name="Flag" Mode="In" Type="Byte" />
+            <Parameter Name="Id" Mode="In" Type="Int64" />
+            <Parameter Name="CommentName" Mode="In" Type="String" />
+            <Parameter Name="Description" Mode="In" Type="String" />
+            <Parameter Name="UserId" Mode="In" Type="Int64" />
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="StudentId" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="SP_IMIC_Delete_Comment_Support">
+          <Parameter Name="Id" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="SP_IMIC_Student_Register_Offline_ByTimes" ReturnType="Collection(TrainingCenterModel.SP_IMIC_Student_Register_Offline_ByTimes_Result)">
+            <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+            <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="SP_IMIC_Insert_StudentRegisterOnline">
+            <Parameter Name="RegisterDetailId" Mode="In" Type="String" />
+            <Parameter Name="FullName" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="Phone" Mode="In" Type="String" />
+            <Parameter Name="Address" Mode="In" Type="String" />
+            <Parameter Name="Message" Mode="In" Type="String" />
+            <Parameter Name="CreatedTime" Mode="In" Type="DateTime" />
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="UpdateDateTime" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="SP_IMIC_Get_Class_By_Year" ReturnType="Collection(TrainingCenterModel.SP_IMIC_Get_Class_By_Year_Result)" />
+          <FunctionImport Name="SP_Insert_And_Update_Class">
+            <Parameter Name="Id" Mode="In" Type="Int64" />
+            <Parameter Name="ClassName" Mode="In" Type="String" />
+            <Parameter Name="FromDate" Mode="In" Type="DateTime" />
+            <Parameter Name="ToDate" Mode="In" Type="DateTime" />
+            <Parameter Name="PlaceTraining" Mode="In" Type="String" />
+            <Parameter Name="NumberOfStudent" Mode="In" Type="Int32" />
+            <Parameter Name="Description" Mode="In" Type="String" />
+            <Parameter Name="Status" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_IMIC_Get_Classes_Detailt_Of_Student" ReturnType="Collection(TrainingCenterModel.SP_IMIC_Get_Classes_Detailt_Of_Student_Result)">
+          <Parameter Name="ClassId" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="SP_IMIC_Insert_Student_Of_Classes">
+            <Parameter Name="ClassId" Mode="In" Type="Int64" />
+            <Parameter Name="StudentId" Mode="In" Type="Int64" />
+            <Parameter Name="Description" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Delete_Student_Class_By_Id">
+          <Parameter Name="Id" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="SP_IMIC_Get_ExpertInfo_All" ReturnType="Collection(TrainingCenterModel.SP_IMIC_Get_ExpertInfo_All_Result)" />
+          <FunctionImport Name="SP_IMIC_Update_Expert_Info_Encrypt">
+            <Parameter Name="Id" Mode="In" Type="Int64" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="Mobile" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_IMIC_Add_Expert_Into_Classes">
+            <Parameter Name="Id" Mode="In" Type="Int64" />
+            <Parameter Name="ExpertId" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="SP_IMIC_Get_List_Student_Of_Classes" ReturnType="Collection(TrainingCenterModel.SP_IMIC_Get_List_Student_Of_Classes_Result)">
+            <Parameter Name="ClassId" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GETALL_USER" ReturnType="Collection(TrainingCenterModel.SP_GETALL_USER_Result)" />
+          <FunctionImport Name="SP_INSERT_USER">
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="FirstName" Mode="In" Type="String" />
+            <Parameter Name="LastName" Mode="In" Type="String" />
+            <Parameter Name="IsSuperUser" Mode="In" Type="Boolean" />
+            <Parameter Name="Phone" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="DisplayName" Mode="In" Type="String" />
+            <Parameter Name="PASSWORD" Mode="In" Type="String" />
+            <Parameter Name="UpdatePassword" Mode="In" Type="Boolean" />
+            <Parameter Name="LastIPAddress" Mode="In" Type="String" />
+            <Parameter Name="IsDeleted" Mode="In" Type="Boolean" />
+            <Parameter Name="CreatedByUserId" Mode="In" Type="Int32" />
+            <Parameter Name="CreateOnDate" Mode="In" Type="DateTime" />
+            <Parameter Name="LastModifiedByUserId" Mode="In" Type="Int32" />
+            <Parameter Name="LastModifiedOnDate" Mode="In" Type="DateTime" />
+            <Parameter Name="ViewOrder" Mode="In" Type="Int32" />
+            <Parameter Name="ADDRESS" Mode="In" Type="String" />
+            <Parameter Name="OuId" Mode="In" Type="Int32" />
+            <Parameter Name="Sex" Mode="In" Type="Int32" />
+            <Parameter Name="EmployeeId" Mode="In" Type="Int32" />
+            <Parameter Name="isExpertId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_DELETE_USER">
+          <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_UPDATE_USER">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="FirstName" Mode="In" Type="String" />
+            <Parameter Name="LastName" Mode="In" Type="String" />
+            <Parameter Name="IsSuperUser" Mode="In" Type="Boolean" />
+            <Parameter Name="Phone" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="DisplayName" Mode="In" Type="String" />
+            <Parameter Name="PASSWORD" Mode="In" Type="String" />
+            <Parameter Name="UpdatePassword" Mode="In" Type="Boolean" />
+            <Parameter Name="LastIPAddress" Mode="In" Type="String" />
+            <Parameter Name="IsDeleted" Mode="In" Type="Boolean" />
+            <Parameter Name="CreatedByUserId" Mode="In" Type="Int32" />
+            <Parameter Name="CreateOnDate" Mode="In" Type="DateTime" />
+            <Parameter Name="LastModifiedByUserId" Mode="In" Type="Int32" />
+            <Parameter Name="LastModifiedOnDate" Mode="In" Type="DateTime" />
+            <Parameter Name="ViewOrder" Mode="In" Type="Int32" />
+            <Parameter Name="ADDRESS" Mode="In" Type="String" />
+            <Parameter Name="OuId" Mode="In" Type="Int32" />
+            <Parameter Name="Sex" Mode="In" Type="Int32" />
+            <Parameter Name="EmployeeId" Mode="In" Type="Int32" />
+            <Parameter Name="isExpertId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GetElement_USER" ReturnType="Collection(TrainingCenterModel.SP_GetElement_USER_Result)">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GETELEMENTBYID_USER" ReturnType="Collection(TrainingCenterModel.SP_GETELEMENTBYID_USER_Result)">
+          <Parameter Name="UserId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_UPDATEPASSWORD_USER">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="NewPass" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GETELEMENTS_BYDATE_STUDENTS" ReturnType="Collection(TrainingCenterModel.SP_GETELEMENTS_BYDATE_STUDENTS_Result)">
+            <Parameter Name="begin" Mode="In" Type="String" />
+            <Parameter Name="end" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GetComment_Support_ByStudentId" ReturnType="Collection(TrainingCenterModel.SP_GetComment_Support_ByStudentId_Result)">
+          <Parameter Name="idStudent" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GETALL_COURSE" ReturnType="Collection(TrainingCenterModel.SP_GETALL_COURSE_Result)" />
+          <FunctionImport Name="SP_INSERTUPDATE_COMMENTSUPPORT">
+            <Parameter Name="flag" Mode="In" Type="Int32" />
+            <Parameter Name="id" Mode="In" Type="Int32" />
+            <Parameter Name="CommentName" Mode="In" Type="String" />
+            <Parameter Name="Desription" Mode="In" Type="String" />
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="StudentId" Mode="In" Type="Int32" />
+            <Parameter Name="DateCreate" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GETELEMENTSBYIDSTUDENT_COMMONTSUPPORT" ReturnType="Collection(TrainingCenterModel.SP_GETELEMENTSBYIDSTUDENT_COMMONTSUPPORT_Result)">
+          <Parameter Name="idStudent" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_DELETE_COMMENT_SUPPORT">
+          <Parameter Name="idComment" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GETHOCPHI_BYSTUDENTID_STUDENT_CLASS" ReturnType="Collection(TrainingCenterModel.SP_GETHOCPHI_BYSTUDENTID_STUDENT_CLASS_Result)" >
+            <Parameter Name="idStd" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="GetListEmployees_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="EmployeeName" Nullable="true" MaxLength="150" />
+          <Property Type="Int32" Name="Sex" Nullable="true" />
+          <Property Type="DateTime" Name="DateBirhday" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="UniversityName" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="IdentityNumber" Nullable="true" MaxLength="20" />
+          <Property Type="DateTime" Name="DateOfIssue" Nullable="true" Precision="23" />
+          <Property Type="String" Name="PlaceOfIssue" Nullable="true" MaxLength="150" />
+          <Property Type="String" Name="PlaceBirthday" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="PersonalTaxCode" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="1000" />
+          <Property Type="Int32" Name="OrderNumber" Nullable="true" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateRegister" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="JobTitleId" Nullable="true" />
+          <Property Type="Int32" Name="CenterId" Nullable="true" />
+          <Property Type="Int32" Name="OuId" Nullable="true" />
+          <Property Type="String" Name="EmployeeCV" Nullable="true" MaxLength="Max" />
+          <Property Type="String" Name="SexName" Nullable="false" MaxLength="3" />
+        </ComplexType>
+        <ComplexType Name="GetListStudents_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+          <Property Type="Boolean" Name="HVTiemNang" Nullable="true" />
+          <Property Type="Int32" Name="Sex" Nullable="true" />
+          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateRegister" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
+          <Property Type="Boolean" Name="IsTested" Nullable="true" />
+          <Property Type="String" Name="MarkTest" Nullable="true" MaxLength="5" />
+          <Property Type="Boolean" Name="IsRegistered" Nullable="true" />
+          <Property Type="Boolean" Name="IsApproved" Nullable="true" />
+          <Property Type="String" Name="IdentityNumber" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="DateIssue" Nullable="true" Precision="23" />
+          <Property Type="String" Name="PlaceIssue" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="CourseId" Nullable="true" />
+          <Property Type="Int32" Name="ClassId" Nullable="true" />
+          <Property Type="Int32" Name="StatusId" Nullable="true" />
+          <Property Type="Double" Name="Bonus" Nullable="true" />
+          <Property Type="Int32" Name="UserId" Nullable="true" />
+          <Property Type="Int32" Name="IdPolicyStudent" Nullable="true" />
+          <Property Type="Double" Name="Price" Nullable="true" />
+          <Property Type="String" Name="SexName" Nullable="false" MaxLength="3" />
+        </ComplexType>
+        <ComplexType Name="GetLoaiHocVienDatatable_Result">
+          <Property Type="Int32" Name="LoaiHocVienId" Nullable="false" />
+          <Property Type="String" Name="LoaiHocVien" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="MoTa" Nullable="true" MaxLength="200" />
+        </ComplexType>
+        <ComplexType Name="GetTaskSendMail_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="TaskName" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="TaskDescription" Nullable="true" MaxLength="2000" />
+          <Property Type="String" Name="CreateBy" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="CreateByUserId" Nullable="true" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateUpdate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateFrom" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateTo" Nullable="true" Precision="23" />
+          <Property Type="Boolean" Name="IsSendMail" Nullable="true" />
+          <Property Type="Int32" Name="State" Nullable="true" />
+          <Property Type="Int32" Name="Importance" Nullable="true" />
+          <Property Type="String" Name="LinkSource" Nullable="true" MaxLength="250" />
+          <Property Type="Int32" Name="CategoryId" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="GetTinhTrangChamSocDatatable_Result">
+          <Property Type="String" Name="TenHocvien" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="LoaiHocVien" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="CourseName" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="TinhTrang" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="DanhGiaHocVien" Nullable="true" MaxLength="150" />
+          <Property Type="String" Name="HuongChamSoc" Nullable="true" MaxLength="150" />
+          <Property Type="String" Name="NhanUuDai" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="DeXuat" Nullable="true" MaxLength="150" />
+        </ComplexType>
+        <ComplexType Name="SP_CHECK_LOGIN_Result">
+          <Property Type="Int32" Name="UserId" Nullable="false" />
+          <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+          <Property Type="Boolean" Name="IsSuperUser" Nullable="true" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="DisplayName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Password" Nullable="true" MaxLength="150" />
+          <Property Type="Boolean" Name="UpdatePassword" Nullable="true" />
+          <Property Type="String" Name="LastIPAddress" Nullable="true" MaxLength="50" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="true" />
+          <Property Type="Int32" Name="CreatedByUserId" Nullable="true" />
+          <Property Type="DateTime" Name="CreateOnDate" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="LastModifiedByUserId" Nullable="true" />
+          <Property Type="DateTime" Name="LastModifiedOnDate" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="ViewOrder" Nullable="true" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="OuId" Nullable="true" />
+          <Property Type="Int32" Name="Sex" Nullable="true" />
+          <Property Type="Int32" Name="EmployeeId" Nullable="true" />
+          <Property Type="Int32" Name="isExpertId" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_DET_DIENDAN_TOP_500_ROWS_Result">
+          <Property Type="Int64" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Title" Nullable="true" MaxLength="1000" />
+          <Property Type="String" Name="Links" Nullable="true" MaxLength="1000" />
+          <Property Type="DateTime" Name="DateCreated" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Domain" Nullable="true" MaxLength="500" />
+          <Property Type="Boolean" Name="Status" Nullable="true" />
+          <Property Type="Int32" Name="NguoiTao" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_Get_All_Student_Detail_Result">
+          <Property Type="String" Name="CourseName" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="ClassName" Nullable="false" MaxLength="250" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Mobile" Nullable="false" MaxLength="200" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="200" />
+          <Property Type="String" Name="TrangThai" Nullable="true" MaxLength="13" />
+        </ComplexType>
+        <ComplexType Name="SP_Get_All_Student_Detail_Money_Result">
+          <Property Type="String" Name="CourseName" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="ClassName" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="200" />
+          <Property Type="Double" Name="MustPay" Nullable="true" />
+          <Property Type="Double" Name="No" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_GET_ANSWERS_Result">
+          <Property Type="Int64" Name="AID" Nullable="false" />
+          <Property Type="Int64" Name="QID" Nullable="false" />
+          <Property Type="String" Name="Questions" Nullable="true" MaxLength="Max" />
+          <Property Type="String" Name="Answers" Nullable="true" MaxLength="Max" />
+          <Property Type="Byte" Name="Accept" Nullable="true" />
+          <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+          <Property Type="Byte" Name="Status" Nullable="true" />
+          <Property Type="String" Name="StatusAW" Nullable="true" MaxLength="16" />
+          <Property Type="String" Name="Steps" Nullable="true" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="SP_GET_ANSWERS_BY_ALL_Result">
+          <Property Type="Int64" Name="AID" Nullable="false" />
+          <Property Type="Int64" Name="QID" Nullable="false" />
+          <Property Type="String" Name="Questions" Nullable="true" MaxLength="Max" />
+          <Property Type="String" Name="Answers" Nullable="true" MaxLength="Max" />
+          <Property Type="Byte" Name="Status" Nullable="true" />
+          <Property Type="String" Name="Steps" Nullable="true" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="SP_GET_ANSWERS_BY_ID_Result">
+          <Property Type="Int64" Name="AID" Nullable="false" />
+          <Property Type="Int64" Name="QID" Nullable="false" />
+          <Property Type="String" Name="Questions" Nullable="true" MaxLength="Max" />
+          <Property Type="String" Name="Answers" Nullable="true" MaxLength="Max" />
+          <Property Type="Byte" Name="Status" Nullable="true" />
+          <Property Type="String" Name="Steps" Nullable="true" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="SP_GET_CLASSES_BY_EXPERTID_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="ClassName" Nullable="true" MaxLength="250" />
+        </ComplexType>
+        <ComplexType Name="SP_Get_LoaiHocVien_Result">
+          <Property Type="Int32" Name="LoaiHocVienId" Nullable="false" />
+          <Property Type="String" Name="LoaiHocVien" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="MoTa" Nullable="true" MaxLength="200" />
+        </ComplexType>
+        <ComplexType Name="SP_GET_QUESTIONS_Result">
+          <Property Type="Int64" Name="QID" Nullable="false" />
+          <Property Type="String" Name="Questions" Nullable="true" MaxLength="Max" />
+          <Property Type="Byte" Name="CourseID" Nullable="true" />
+          <Property Type="Byte" Name="Status" Nullable="true" />
+          <Property Type="String" Name="Descriptions" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="StatusQ" Nullable="true" MaxLength="9" />
+        </ComplexType>
+        <ComplexType Name="SP_GET_QUESTIONS_ALL_Result">
+          <Property Type="Int64" Name="QID" Nullable="false" />
+          <Property Type="String" Name="Questions" Nullable="true" MaxLength="Max" />
+        </ComplexType>
+        <ComplexType Name="SP_Get_Student_All_Result">
+          <Property Type="Int32" Name="DangKy" Nullable="true" />
+          <Property Type="Int32" Name="ChuaDangKy" Nullable="true" />
+          <Property Type="String" Name="CourseName" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="TongSo" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_Get_Student_All_Money_Result">
+          <Property Type="Int32" Name="DangKy" Nullable="true" />
+          <Property Type="String" Name="CourseName" Nullable="true" MaxLength="500" />
+          <Property Type="Double" Name="TongTien" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_GetEmailPassword_Result">
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Password" Nullable="true" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="SP_GETIMICQUANGCAO_Result">
+          <Property Type="Int64" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Title" Nullable="true" MaxLength="2000" />
+          <Property Type="String" Name="LinkArticle" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="AuthorName" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="AuthorId" Nullable="true" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
+          <Property Type="String" Name="KeyWord" Nullable="true" MaxLength="2000" />
+          <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Password" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="DaDuyet" Nullable="true" MaxLength="10" />
+        </ComplexType>
+        <ComplexType Name="SP_GETIMICQUANGCAODATETIME_Result">
+          <Property Type="Int64" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Title" Nullable="true" MaxLength="2000" />
+          <Property Type="String" Name="LinkArticle" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="AuthorName" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="AuthorId" Nullable="true" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
+          <Property Type="String" Name="KeyWord" Nullable="true" MaxLength="2000" />
+          <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Password" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="DaDuyet" Nullable="true" MaxLength="10" />
+        </ComplexType>
+        <ComplexType Name="SP_GETIMICYOUTUBE_Result">
+          <Property Type="Int64" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Title" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="URL" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Password" Nullable="true" MaxLength="100" />
+          <Property Type="DateTime" Name="DateCreated" Nullable="true" Precision="23" />
+          <Property Type="Int64" Name="UserID" Nullable="true" />
+          <Property Type="String" Name="DisplayName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="11" />
+        </ComplexType>
+        <ComplexType Name="SP_GETIMICYOUTUBEDATETIME_Result">
+          <Property Type="Int64" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Title" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="URL" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Password" Nullable="true" MaxLength="100" />
+          <Property Type="DateTime" Name="DateCreated" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="11" />
+        </ComplexType>
+        <ComplexType Name="SP_GETUSERINFO_Result">
+          <Property Type="Int32" Name="UserId" Nullable="false" />
+          <Property Type="String" Name="DisplayName" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="SP_HOCVIEN_TIEMNANG_Result">
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="Int64" Name="StudentID" Nullable="true" />
+          <Property Type="String" Name="Contents" Nullable="true" MaxLength="4000" />
+          <Property Type="Byte" Name="Status" Nullable="true" />
+          <Property Type="Int32" Name="CourseId" Nullable="true" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="StatusDes" Nullable="true" MaxLength="34" />
+        </ComplexType>
+        <ComplexType Name="SP_LoadKhoaHocInfo_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="CourseName" Nullable="true" MaxLength="500" />
+        </ComplexType>
+        <ComplexType Name="SP_SCHEDULE_BY_TEACHERID_Result">
+          <Property Type="Int64" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="ClassId" Nullable="false" />
+          <Property Type="String" Name="ClassName" Nullable="true" MaxLength="250" />
+          <Property Type="Int32" Name="TeacherId" Nullable="false" />
+          <Property Type="String" Name="ExpertName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Contents" Nullable="true" MaxLength="Max" />
+          <Property Type="Boolean" Name="Status" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_Student_getall_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+          <Property Type="Boolean" Name="HVTiemNang" Nullable="true" />
+          <Property Type="Int32" Name="Sex" Nullable="true" />
+          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateRegister" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
+          <Property Type="Boolean" Name="IsTested" Nullable="true" />
+          <Property Type="String" Name="MarkTest" Nullable="true" MaxLength="5" />
+          <Property Type="Boolean" Name="IsRegistered" Nullable="true" />
+          <Property Type="Boolean" Name="IsApproved" Nullable="true" />
+          <Property Type="String" Name="IdentityNumber" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="DateIssue" Nullable="true" Precision="23" />
+          <Property Type="String" Name="PlaceIssue" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="CourseId" Nullable="true" />
+          <Property Type="Int32" Name="ClassId" Nullable="true" />
+          <Property Type="Int32" Name="StatusId" Nullable="true" />
+          <Property Type="Double" Name="Bonus" Nullable="true" />
+          <Property Type="Int32" Name="UserId" Nullable="true" />
+          <Property Type="Int32" Name="IdPolicyStudent" Nullable="true" />
+          <Property Type="Double" Name="Price" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_Student_GetOfflineStudentFromLast3days_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+          <Property Type="Boolean" Name="HVTiemNang" Nullable="true" />
+          <Property Type="Int32" Name="Sex" Nullable="true" />
+          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateRegister" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
+          <Property Type="Boolean" Name="IsTested" Nullable="true" />
+          <Property Type="String" Name="MarkTest" Nullable="true" MaxLength="5" />
+          <Property Type="Boolean" Name="IsRegistered" Nullable="true" />
+          <Property Type="Boolean" Name="IsApproved" Nullable="true" />
+          <Property Type="String" Name="IdentityNumber" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="DateIssue" Nullable="true" Precision="23" />
+          <Property Type="String" Name="PlaceIssue" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="CourseId" Nullable="true" />
+          <Property Type="Int32" Name="ClassId" Nullable="true" />
+          <Property Type="Int32" Name="StatusId" Nullable="true" />
+          <Property Type="Double" Name="Bonus" Nullable="true" />
+          <Property Type="Int32" Name="UserId" Nullable="true" />
+          <Property Type="Int32" Name="IdPolicyStudent" Nullable="true" />
+          <Property Type="Double" Name="Price" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_Student_GetOnlineStudentFromLast3days_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+          <Property Type="Boolean" Name="HVTiemNang" Nullable="true" />
+          <Property Type="Int32" Name="Sex" Nullable="true" />
+          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateRegister" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
+          <Property Type="Boolean" Name="IsTested" Nullable="true" />
+          <Property Type="String" Name="MarkTest" Nullable="true" MaxLength="5" />
+          <Property Type="Boolean" Name="IsRegistered" Nullable="true" />
+          <Property Type="Boolean" Name="IsApproved" Nullable="true" />
+          <Property Type="String" Name="IdentityNumber" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="DateIssue" Nullable="true" Precision="23" />
+          <Property Type="String" Name="PlaceIssue" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="CourseId" Nullable="true" />
+          <Property Type="Int32" Name="ClassId" Nullable="true" />
+          <Property Type="Int32" Name="StatusId" Nullable="true" />
+          <Property Type="Double" Name="Bonus" Nullable="true" />
+          <Property Type="Int32" Name="UserId" Nullable="true" />
+          <Property Type="Int32" Name="IdPolicyStudent" Nullable="true" />
+          <Property Type="Double" Name="Price" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_Student_GetStudentFromLast3days_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+          <Property Type="Boolean" Name="HVTiemNang" Nullable="true" />
+          <Property Type="Int32" Name="Sex" Nullable="true" />
+          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateRegister" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
+          <Property Type="Boolean" Name="IsTested" Nullable="true" />
+          <Property Type="String" Name="MarkTest" Nullable="true" MaxLength="5" />
+          <Property Type="Boolean" Name="IsRegistered" Nullable="true" />
+          <Property Type="Boolean" Name="IsApproved" Nullable="true" />
+          <Property Type="String" Name="IdentityNumber" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="DateIssue" Nullable="true" Precision="23" />
+          <Property Type="String" Name="PlaceIssue" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="CourseId" Nullable="true" />
+          <Property Type="Int32" Name="ClassId" Nullable="true" />
+          <Property Type="Int32" Name="StatusId" Nullable="true" />
+          <Property Type="Double" Name="Bonus" Nullable="true" />
+          <Property Type="Int32" Name="UserId" Nullable="true" />
+          <Property Type="Int32" Name="IdPolicyStudent" Nullable="true" />
+          <Property Type="Double" Name="Price" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_StudentSyc_GetStudentFromLast3days_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+          <Property Type="Boolean" Name="HVTiemNang" Nullable="true" />
+          <Property Type="Int32" Name="Sex" Nullable="true" />
+          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateRegister" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
+          <Property Type="Boolean" Name="IsTested" Nullable="true" />
+          <Property Type="String" Name="MarkTest" Nullable="true" MaxLength="5" />
+          <Property Type="Boolean" Name="IsRegistered" Nullable="true" />
+          <Property Type="Boolean" Name="IsApproved" Nullable="true" />
+          <Property Type="String" Name="IdentityNumber" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="DateIssue" Nullable="true" Precision="23" />
+          <Property Type="String" Name="PlaceIssue" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="CourseId" Nullable="true" />
+          <Property Type="Int32" Name="ClassId" Nullable="true" />
+          <Property Type="Int32" Name="StatusId" Nullable="true" />
+          <Property Type="Double" Name="Bonus" Nullable="true" />
+          <Property Type="Int32" Name="UserId" Nullable="true" />
+          <Property Type="Int32" Name="IdPolicyStudent" Nullable="true" />
+          <Property Type="Double" Name="Price" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_StudentSyc_StudentFromLast3days_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+          <Property Type="Boolean" Name="HVTiemNang" Nullable="true" />
+          <Property Type="Int32" Name="Sex" Nullable="true" />
+          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateRegister" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
+          <Property Type="Boolean" Name="IsTested" Nullable="true" />
+          <Property Type="String" Name="MarkTest" Nullable="true" MaxLength="5" />
+          <Property Type="Boolean" Name="IsRegistered" Nullable="true" />
+          <Property Type="Boolean" Name="IsApproved" Nullable="true" />
+          <Property Type="String" Name="IdentityNumber" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="DateIssue" Nullable="true" Precision="23" />
+          <Property Type="String" Name="PlaceIssue" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="CourseId" Nullable="true" />
+          <Property Type="Int32" Name="ClassId" Nullable="true" />
+          <Property Type="Int32" Name="StatusId" Nullable="true" />
+          <Property Type="Double" Name="Bonus" Nullable="true" />
+          <Property Type="Int32" Name="UserId" Nullable="true" />
+          <Property Type="Int32" Name="IdPolicyStudent" Nullable="true" />
+          <Property Type="Double" Name="Price" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_TIMKIEM_ANSWERS_BY_ALL_Result">
+          <Property Type="String" Name="Questions" Nullable="true" MaxLength="Max" />
+          <Property Type="String" Name="Answers" Nullable="true" MaxLength="Max" />
+          <Property Type="String" Name="Steps" Nullable="true" MaxLength="100" />
+          <Property Type="DateTime" Name="ModifyDate" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="SP_TIMKIEM_ANSWERS_BY_NoiDung_Result">
+          <Property Type="Int64" Name="AID" Nullable="false" />
+          <Property Type="Int64" Name="QID" Nullable="true" />
+          <Property Type="String" Name="Questions" Nullable="true" MaxLength="Max" />
+          <Property Type="String" Name="Answers" Nullable="true" MaxLength="Max" />
+          <Property Type="String" Name="Steps" Nullable="true" MaxLength="100" />
+          <Property Type="DateTime" Name="ModifyDate" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="SP_TIMKIEM_ANSWERS_BY_QID_Result">
+          <Property Type="Int64" Name="QID" Nullable="true" />
+          <Property Type="String" Name="Questions" Nullable="true" MaxLength="Max" />
+          <Property Type="String" Name="Answers" Nullable="true" MaxLength="Max" />
+          <Property Type="String" Name="Steps" Nullable="true" MaxLength="100" />
+          <Property Type="DateTime" Name="ModifyDate" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="SP_TimKiemThongTin_Result">
+          <Property Type="Int64" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Title" Nullable="true" MaxLength="2000" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
+          <Property Type="String" Name="LinkSource" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="LinkArticle" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="AuthorName" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="AuthorId" Nullable="true" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateApproved" Nullable="true" Precision="23" />
+          <Property Type="String" Name="KeyWord" Nullable="true" MaxLength="2000" />
+          <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Password" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Note" Nullable="true" MaxLength="2000" />
+          <Property Type="Int32" Name="ModuleId" Nullable="true" />
+          <Property Type="Int32" Name="PortalId" Nullable="true" />
+          <Property Type="Int32" Name="CategoryId" Nullable="true" />
+          <Property Type="Int32" Name="DaDuyet" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_UPDATEMIC_Result">
+          <Property Type="Int64" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Title" Nullable="true" MaxLength="2000" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
+          <Property Type="String" Name="LinkSource" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="LinkArticle" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="AuthorName" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="AuthorId" Nullable="true" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateApproved" Nullable="true" Precision="23" />
+          <Property Type="String" Name="KeyWord" Nullable="true" MaxLength="2000" />
+          <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Password" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Note" Nullable="true" MaxLength="2000" />
+          <Property Type="Int32" Name="ModuleId" Nullable="true" />
+          <Property Type="Int32" Name="PortalId" Nullable="true" />
+          <Property Type="Int32" Name="CategoryId" Nullable="true" />
+          <Property Type="Int32" Name="DaDuyet" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="TimKiem_HocVien_TiemNang_Result">
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="Int64" Name="StudentID" Nullable="true" />
+          <Property Type="String" Name="Contents" Nullable="true" MaxLength="4000" />
+          <Property Type="Byte" Name="Status" Nullable="true" />
+          <Property Type="Int32" Name="CourseId" Nullable="true" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="StatusDes" Nullable="true" MaxLength="34" />
+        </ComplexType>
+        <ComplexType Name="SP_IMIC_CheckLogin_Result">
+          <Property Type="Int32" Name="UserId" Nullable="false" />
+          <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="DisplayName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Password" Nullable="true" MaxLength="150" />
+          <Property Type="Int32" Name="Sex" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_HienThi_DanhSach_HocVien_By03Month_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="SexString" Nullable="false" MaxLength="3" />
+          <Property Type="Int32" Name="sex" Nullable="true" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="200" />
+          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="UserId" Nullable="true" />
+          <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="courseid" Nullable="true" />
+          <Property Type="String" Name="CourseName" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="StatusId" Nullable="true" />
+          <Property Type="String" Name="StatusName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
+        </ComplexType>
+        <ComplexType Name="SP_HienThi_DanhSach_HocVien_ByTimes_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="SexString" Nullable="false" MaxLength="3" />
+          <Property Type="Int32" Name="sex" Nullable="true" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="200" />
+          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="UserId" Nullable="true" />
+          <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="courseid" Nullable="true" />
+          <Property Type="String" Name="CourseName" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="StatusId" Nullable="true" />
+          <Property Type="String" Name="StatusName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
+        </ComplexType>
+        <ComplexType Name="SP_IMIC_Get_Course_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="CourseName" Nullable="true" MaxLength="500" />
+        </ComplexType>
+        <ComplexType Name="SP_IMIC_Get_Status_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="StatusName" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="SP_HienThi_DanhSach_HocVien_ById_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="SexString" Nullable="false" MaxLength="3" />
+          <Property Type="Int32" Name="sex" Nullable="true" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="200" />
+          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="UserId" Nullable="true" />
+          <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="courseid" Nullable="true" />
+          <Property Type="String" Name="CourseName" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="StatusId" Nullable="true" />
+          <Property Type="String" Name="StatusName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
+        </ComplexType>
+        <ComplexType Name="SP_IMIC_Check_RegisterByTime_Result">
+          <Property Type="DateTime" Name="CreatedTime" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="UpdateDateTime" Nullable="true" Precision="23" />
+          <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="SP_IMIC_Comment_Support_ByStudentId_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="CommentName" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Desription" Nullable="true" MaxLength="Max" />
+          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="UserId" Nullable="true" />
+          <Property Type="String" Name="UserName" Nullable="true" MaxLength="100" />
+          <Property Type="Int32" Name="StudentId" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_IMIC_InsertUpdateComment_Support_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="CommentName" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Desription" Nullable="true" MaxLength="Max" />
+          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="UserId" Nullable="true" />
+          <Property Type="String" Name="UserName" Nullable="true" MaxLength="100" />
+          <Property Type="Int32" Name="StudentId" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_IMIC_Student_Register_Offline_ByTimes_Result">
+          <Property Type="Guid" Name="RegisterDetailId" Nullable="false" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="Message" Nullable="true" MaxLength="1000" />
+          <Property Type="DateTime" Name="CreatedTime" Nullable="true" Precision="23" />
+          <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="UpdateDateTime" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="SP_IMIC_Get_Class_By_Year_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="ClassName" Nullable="true" MaxLength="250" />
+          <Property Type="DateTime" Name="FromDate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="ToDate" Nullable="true" Precision="23" />
+          <Property Type="String" Name="PlaceTraining" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="NumberStudents" Nullable="true" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="1000" />
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="SP_IMIC_Get_Classes_Detailt_Of_Student_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="ClassId" Nullable="true" />
+          <Property Type="String" Name="ClassName" Nullable="true" MaxLength="250" />
+          <Property Type="Int32" Name="StudentId" Nullable="true" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="sSex" Nullable="false" MaxLength="3" />
+          <Property Type="Int32" Name="Sex" Nullable="true" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="200" />
+          <Property Type="DateTime" Name="DateStart" Nullable="true" Precision="23" />
+          <Property Type="Double" Name="TotalPrice" Nullable="true" />
+          <Property Type="Double" Name="Price1" Nullable="true" />
+          <Property Type="Double" Name="Price2" Nullable="true" />
+          <Property Type="Double" Name="Price3" Nullable="true" />
+          <Property Type="Int32" Name="MustPay" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_IMIC_Get_ExpertInfo_All_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="ExpertName" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+        </ComplexType>
+        <ComplexType Name="SP_IMIC_Get_List_Student_Of_Classes_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="ClassName" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="200" />
+        </ComplexType>
+        <ComplexType Name="SP_GETALL_USER_Result">
+          <Property Type="Int32" Name="UserId" Nullable="false" />
+          <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+          <Property Type="Boolean" Name="IsSuperUser" Nullable="true" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="DisplayName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Password" Nullable="true" MaxLength="150" />
+          <Property Type="Boolean" Name="UpdatePassword" Nullable="true" />
+          <Property Type="String" Name="LastIPAddress" Nullable="true" MaxLength="50" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="true" />
+          <Property Type="Int32" Name="CreatedByUserId" Nullable="true" />
+          <Property Type="DateTime" Name="CreateOnDate" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="LastModifiedByUserId" Nullable="true" />
+          <Property Type="DateTime" Name="LastModifiedOnDate" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="ViewOrder" Nullable="true" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="OuId" Nullable="true" />
+          <Property Type="Int32" Name="Sex" Nullable="true" />
+          <Property Type="Int32" Name="EmployeeId" Nullable="true" />
+          <Property Type="Int32" Name="isExpertId" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_GetElement_USER_Result">
+          <Property Type="Int32" Name="UserId" Nullable="false" />
+          <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+          <Property Type="Boolean" Name="IsSuperUser" Nullable="true" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="DisplayName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Password" Nullable="true" MaxLength="150" />
+          <Property Type="Boolean" Name="UpdatePassword" Nullable="true" />
+          <Property Type="String" Name="LastIPAddress" Nullable="true" MaxLength="50" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="true" />
+          <Property Type="Int32" Name="CreatedByUserId" Nullable="true" />
+          <Property Type="DateTime" Name="CreateOnDate" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="LastModifiedByUserId" Nullable="true" />
+          <Property Type="DateTime" Name="LastModifiedOnDate" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="ViewOrder" Nullable="true" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="OuId" Nullable="true" />
+          <Property Type="Int32" Name="Sex" Nullable="true" />
+          <Property Type="Int32" Name="EmployeeId" Nullable="true" />
+          <Property Type="Int32" Name="isExpertId" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_GETELEMENTBYID_USER_Result">
+          <Property Type="Int32" Name="UserId" Nullable="false" />
+          <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+          <Property Type="Boolean" Name="IsSuperUser" Nullable="true" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="DisplayName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Password" Nullable="true" MaxLength="150" />
+          <Property Type="Boolean" Name="UpdatePassword" Nullable="true" />
+          <Property Type="String" Name="LastIPAddress" Nullable="true" MaxLength="50" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="true" />
+          <Property Type="Int32" Name="CreatedByUserId" Nullable="true" />
+          <Property Type="DateTime" Name="CreateOnDate" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="LastModifiedByUserId" Nullable="true" />
+          <Property Type="DateTime" Name="LastModifiedOnDate" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="ViewOrder" Nullable="true" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="OuId" Nullable="true" />
+          <Property Type="Int32" Name="Sex" Nullable="true" />
+          <Property Type="Int32" Name="EmployeeId" Nullable="true" />
+          <Property Type="Int32" Name="isExpertId" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_GETELEMENTS_BYDATE_STUDENTS_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="100" />
+          <Property Type="Boolean" Name="HVTiemNang" Nullable="true" />
+          <Property Type="Int32" Name="Sex" Nullable="true" />
+          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateRegister" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
+          <Property Type="Int32" Name="CourseId" Nullable="true" />
+          <Property Type="Int32" Name="StatusId" Nullable="true" />
+          <Property Type="Int32" Name="UserId" Nullable="true" />
+          <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="CourseName" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="StatusName" Nullable="true" MaxLength="50" />
+          </ComplexType>
+        <ComplexType Name="SP_GetComment_Support_ByStudentId_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="CourseName" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
+          <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="UserId" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_GETALL_COURSE_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="CourseName" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="CourseDescription" Nullable="true" MaxLength="1000" />
+          <Property Type="Int32" Name="NumberOrder" Nullable="true" />
+          <Property Type="Int32" Name="SubjectId" Nullable="true" />
+          <Property Type="Double" Name="TotalPrice" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_GETELEMENTSBYIDSTUDENT_COMMONTSUPPORT_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="CommentName" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="UserId" Nullable="true" />
+          <Property Type="String" Name="UserName" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Desription" Nullable="true" MaxLength="Max" />
+          <Property Type="Int32" Name="StudentId" Nullable="true" />
+          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="SP_GETHOCPHI_BYSTUDENTID_STUDENT_CLASS_Result">
+          <Property Type="String" Name="ClassName" Nullable="true" MaxLength="250" />
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="ClassId" Nullable="true" />
+          <Property Type="Int32" Name="StudentId" Nullable="true" />
+          <Property Type="DateTime" Name="DateStart" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateEnd" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Comment" Nullable="true" MaxLength="500" />
+          <Property Type="Boolean" Name="IsMutiPrice" Nullable="true" />
+          <Property Type="Int32" Name="NumberPrice" Nullable="true" />
+          <Property Type="DateTime" Name="DatePrice" Nullable="true" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="500" />
+          <Property Type="Double" Name="TotalPrice" Nullable="true" />
+          <Property Type="Double" Name="Price1" Nullable="true" />
+          <Property Type="Double" Name="Price2" Nullable="true" />
+          <Property Type="Double" Name="Price3" Nullable="true" />
+          <Property Type="Double" Name="MustPay" Nullable="true" />
+          <Property Type="Int32" Name="IdPolicyStudent" Nullable="true" />
+          <Property Type="Double" Name="BeforePrice" Nullable="true" />
+          <Property Type="Byte" Name="Status" Nullable="true" />
+          <Property Type="Int64" Name="UserIdConfirm" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TrainingCenterModelStoreContainer" CdmEntityContainer="TrainingCenterEntities" >
+          <FunctionImportMapping FunctionImportName="SP_CHECK_LOGIN" FunctionName="TrainingCenterModel.Store.SP_CHECK_LOGIN">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_CHECK_LOGIN_Result">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="IsSuperUser" ColumnName="IsSuperUser" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="UpdatePassword" ColumnName="UpdatePassword" />
+                <ScalarProperty Name="LastIPAddress" ColumnName="LastIPAddress" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedByUserId" ColumnName="CreatedByUserId" />
+                <ScalarProperty Name="CreateOnDate" ColumnName="CreateOnDate" />
+                <ScalarProperty Name="LastModifiedByUserId" ColumnName="LastModifiedByUserId" />
+                <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+                <ScalarProperty Name="ViewOrder" ColumnName="ViewOrder" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="OuId" ColumnName="OuId" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="isExpertId" ColumnName="isExpertId" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_GETALL_USER" FunctionName="TrainingCenterModel.Store.SP_GETALL_USER">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GETALL_USER_Result">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="IsSuperUser" ColumnName="IsSuperUser" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="UpdatePassword" ColumnName="UpdatePassword" />
+                <ScalarProperty Name="LastIPAddress" ColumnName="LastIPAddress" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedByUserId" ColumnName="CreatedByUserId" />
+                <ScalarProperty Name="CreateOnDate" ColumnName="CreateOnDate" />
+                <ScalarProperty Name="LastModifiedByUserId" ColumnName="LastModifiedByUserId" />
+                <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+                <ScalarProperty Name="ViewOrder" ColumnName="ViewOrder" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="OuId" ColumnName="OuId" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="isExpertId" ColumnName="isExpertId" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_INSERT_USER" FunctionName="TrainingCenterModel.Store.SP_INSERT_USER" />
+          <FunctionImportMapping FunctionImportName="SP_DELETE_USER" FunctionName="TrainingCenterModel.Store.SP_DELETE_USER" />
+          <FunctionImportMapping FunctionImportName="SP_UPDATE_USER" FunctionName="TrainingCenterModel.Store.SP_UPDATE_USER" />
+          <FunctionImportMapping FunctionImportName="SP_GETELEMENTBYID_USER" FunctionName="TrainingCenterModel.Store.SP_GETELEMENTBYID_USER">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GETELEMENTBYID_USER_Result">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="IsSuperUser" ColumnName="IsSuperUser" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="UpdatePassword" ColumnName="UpdatePassword" />
+                <ScalarProperty Name="LastIPAddress" ColumnName="LastIPAddress" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedByUserId" ColumnName="CreatedByUserId" />
+                <ScalarProperty Name="CreateOnDate" ColumnName="CreateOnDate" />
+                <ScalarProperty Name="LastModifiedByUserId" ColumnName="LastModifiedByUserId" />
+                <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+                <ScalarProperty Name="ViewOrder" ColumnName="ViewOrder" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="OuId" ColumnName="OuId" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="isExpertId" ColumnName="isExpertId" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_GETELEMENTS_BYDATE_STUDENTS" FunctionName="TrainingCenterModel.Store.SP_GETELEMENTS_BYDATE_STUDENTS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GETELEMENTS_BYDATE_STUDENTS_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="HVTiemNang" ColumnName="HVTiemNang" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="DateBirthday" ColumnName="DateBirthday" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+                <ScalarProperty Name="DateRegister" ColumnName="DateRegister" />
+                <ScalarProperty Name="DateLastUpdate" ColumnName="DateLastUpdate" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+                <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+                <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+                </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_GetComment_Support_ByStudentId" FunctionName="TrainingCenterModel.Store.SP_GetComment_Support_ByStudentId">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GetComment_Support_ByStudentId_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="DateLastUpdate" ColumnName="DateLastUpdate" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_GETALL_COURSE" FunctionName="TrainingCenterModel.Store.SP_GETALL_COURSE">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GETALL_COURSE_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+                <ScalarProperty Name="CourseDescription" ColumnName="CourseDescription" />
+                <ScalarProperty Name="NumberOrder" ColumnName="NumberOrder" />
+                <ScalarProperty Name="SubjectId" ColumnName="SubjectId" />
+                <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_INSERTUPDATE_COMMENTSUPPORT" FunctionName="TrainingCenterModel.Store.SP_INSERTUPDATE_COMMENTSUPPORT" />
+          <FunctionImportMapping FunctionImportName="SP_GETELEMENTSBYIDSTUDENT_COMMONTSUPPORT" FunctionName="TrainingCenterModel.Store.SP_GETELEMENTSBYIDSTUDENT_COMMONTSUPPORT">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GETELEMENTSBYIDSTUDENT_COMMONTSUPPORT_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CommentName" ColumnName="CommentName" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Desription" ColumnName="Desription" />
+                <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+                <ScalarProperty Name="DateLastUpdate" ColumnName="DateLastUpdate" />
+                <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_DELETE_COMMENT_SUPPORT" FunctionName="TrainingCenterModel.Store.SP_DELETE_COMMENT_SUPPORT" />
+          <FunctionImportMapping FunctionImportName="SP_GETHOCPHI_BYSTUDENTID_STUDENT_CLASS" FunctionName="TrainingCenterModel.Store.SP_GETHOCPHI_BYSTUDENTID_STUDENT_CLASS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GETHOCPHI_BYSTUDENTID_STUDENT_CLASS_Result">
+                <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+                <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+                <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+                <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="IsMutiPrice" ColumnName="IsMutiPrice" />
+                <ScalarProperty Name="NumberPrice" ColumnName="NumberPrice" />
+                <ScalarProperty Name="DatePrice" ColumnName="DatePrice" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+                <ScalarProperty Name="Price1" ColumnName="Price1" />
+                <ScalarProperty Name="Price2" ColumnName="Price2" />
+                <ScalarProperty Name="Price3" ColumnName="Price3" />
+                <ScalarProperty Name="MustPay" ColumnName="MustPay" />
+                <ScalarProperty Name="IdPolicyStudent" ColumnName="IdPolicyStudent" />
+                <ScalarProperty Name="BeforePrice" ColumnName="BeforePrice" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="UserIdConfirm" ColumnName="UserIdConfirm" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

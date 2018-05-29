@@ -1,0 +1,1453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{29DB2482-7B39-4370-922A-FFEC7A6BE8C0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>eCenterTrainning</RootNamespace>
+    <AssemblyName>eCenterTrainning</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.BonusSkins.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.Charts.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.CodeParser.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.Data.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.2.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.Data.v17.2.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.DataAccess.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v17.2.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.DataAccess.v17.2.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v17.2.UI, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.DataAccess.v17.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v17.2.UI.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.DataAccess.v17.2.UI.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Diagram.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.Diagram.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Diagram.v17.2.Core.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.Diagram.v17.2.Core.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.ExpressApp.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v17.2.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.ExpressApp.v17.2.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Win.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.ExpressApp.Win.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Win.v17.2.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.ExpressApp.Win.v17.2.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Images.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.Images.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.Office.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.2.Core.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.Office.v17.2.Core.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.Pdf.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.2.Core.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.Pdf.v17.2.Core.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.Persistent.Base.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.PivotGrid.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.PivotGrid.v17.2.Core.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.Printing.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.2.Core.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.Printing.v17.2.Core.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.RichEdit.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.2.Core.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.RichEdit.v17.2.Core.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.2.Export, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.RichEdit.v17.2.Export.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.Sparkline.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v17.2.Core.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.Sparkline.v17.2.Core.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.SpellChecker.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.SpellChecker.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.Utils.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.Utils.v17.2.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2.UI, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.Utils.v17.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2.UI.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.Utils.v17.2.UI.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.Xpo.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v17.2.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.Xpo.v17.2.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraBars.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.2.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraBars.v17.2.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraCharts.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.2.Extensions, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraCharts.v17.2.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.2.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraCharts.v17.2.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.2.Wizard, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraCharts.v17.2.Wizard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.2.Wizard.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraCharts.v17.2.Wizard.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraDiagram.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraDiagram.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraEditors.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.2.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraEditors.v17.2.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraGauges.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraGauges.v17.2.Core.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraGrid.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.2.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraGrid.v17.2.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraLayout.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.2.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraLayout.v17.2.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraNavBar.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v17.2.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraNavBar.v17.2.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraPivotGrid.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v17.2.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraPivotGrid.v17.2.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraPrinting.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.2.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraPrinting.v17.2.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraReports.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.2.Extensions, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraReports.v17.2.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.2.Extensions.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraReports.v17.2.Extensions.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.2.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraReports.v17.2.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraRichEdit.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v17.2.Extensions, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraRichEdit.v17.2.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v17.2.Extensions.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraRichEdit.v17.2.Extensions.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v17.2.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraRichEdit.v17.2.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraScheduler.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraScheduler.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.2.Core.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraScheduler.v17.2.Core.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.2.Extensions, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraScheduler.v17.2.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.2.Extensions.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraScheduler.v17.2.Extensions.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.2.Reporting, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraScheduler.v17.2.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.2.Reporting.Extensions, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraScheduler.v17.2.Reporting.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.2.Reporting.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraScheduler.v17.2.Reporting.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.2.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraScheduler.v17.2.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpellChecker.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraSpellChecker.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpellChecker.v17.2.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraSpellChecker.v17.2.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraTreeList.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v17.2.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraTreeList.v17.2.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraVerticalGrid.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.2.resources, Version=17.2.0.0, Culture=de, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DevExpress.XtraVerticalGrid.v17.2.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServerCompact, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.SqlServerCompact.6.2.0\lib\net45\EntityFramework.SqlServerCompact.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Compact.4.0.8876.1\lib\net40\System.Data.SqlServerCe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\ActionMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ActionMenu.Designer.cs">
+      <DependentUpon>ActionMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ActionUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ActionUpdate.Designer.cs">
+      <DependentUpon>ActionUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\frmIMICBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\frmIMICBase.designer.cs">
+      <DependentUpon>frmIMICBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eCenterSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eCenterSystem.designer.cs">
+      <DependentUpon>eCenterSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddCommetSupport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddCommetSupport.designer.cs">
+      <DependentUpon>frmAddCommetSupport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddHocVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddHocVien.designer.cs">
+      <DependentUpon>frmAddHocVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddKhoaHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddKhoaHoc.designer.cs">
+      <DependentUpon>frmAddKhoaHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddLopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddLopHoc.designer.cs">
+      <DependentUpon>frmAddLopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddMonHoc.designer.cs">
+      <DependentUpon>frmAddMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddStudentIntoClassess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddStudentIntoClassess.Designer.cs">
+      <DependentUpon>frmAddStudentIntoClassess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminConfigSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminConfigSystem.designer.cs">
+      <DependentUpon>frmAdminConfigSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCandidate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCandidate.designer.cs">
+      <DependentUpon>frmCandidate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCenterInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCenterInfo.designer.cs">
+      <DependentUpon>frmCenterInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassword.designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfirms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfirms.Designer.cs">
+      <DependentUpon>frmConfirms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployee.designer.cs">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEncrypt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEncrypt.designer.cs">
+      <DependentUpon>frmEncrypt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFlashScreen.designer.cs">
+      <DependentUpon>frmFlashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiangVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiangVien.designer.cs">
+      <DependentUpon>frmGiangVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiangVienAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiangVienAdd.designer.cs">
+      <DependentUpon>frmGiangVienAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiangVienHeThong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiangVienHeThong.designer.cs">
+      <DependentUpon>frmGiangVienHeThong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHocPhi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHocPhi.designer.cs">
+      <DependentUpon>frmHocPhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHocVienHeThong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHocVienHeThong.designer.cs">
+      <DependentUpon>frmHocVienHeThong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHocVienSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHocVienSearch.designer.cs">
+      <DependentUpon>frmHocVienSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportExcel.designer.cs">
+      <DependentUpon>frmImportExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInformationDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInformationDetail.designer.cs">
+      <DependentUpon>frmInformationDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhachHang.designer.cs">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLichKhaiGiangAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLichKhaiGiangAdd.designer.cs">
+      <DependentUpon>frmLichKhaiGiangAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListCandidate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListCandidate.designer.cs">
+      <DependentUpon>frmListCandidate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageCandidates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageCandidates.designer.cs">
+      <DependentUpon>frmManageCandidates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhongBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhongBan.designer.cs">
+      <DependentUpon>frmPhongBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPolicyStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPolicyStudent.designer.cs">
+      <DependentUpon>frmPolicyStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPromotionInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPromotionInfo.designer.cs">
+      <DependentUpon>frmPromotionInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecruitmentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecruitmentInfo.designer.cs">
+      <DependentUpon>frmRecruitmentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSchedulesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSchedulesAdd.designer.cs">
+      <DependentUpon>frmSchedulesAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSchedulesExpertAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSchedulesExpertAdd.designer.cs">
+      <DependentUpon>frmSchedulesExpertAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSocialNetworkAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSocialNetworkAccount.designer.cs">
+      <DependentUpon>frmSocialNetworkAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSocialNetworkCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSocialNetworkCategory.designer.cs">
+      <DependentUpon>frmSocialNetworkCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStanUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStanUsers.designer.cs">
+      <DependentUpon>frmStanUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentRegisterOnline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentRegisterOnline.Designer.cs">
+      <DependentUpon>frmStudentRegisterOnline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSupportDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSupportDetails.designer.cs">
+      <DependentUpon>frmSupportDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemMoiKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemMoiKH.designer.cs">
+      <DependentUpon>frmThemMoiKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongTinChucVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongTinChucVu.designer.cs">
+      <DependentUpon>frmThongTinChucVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\StudentForClassExcelObject.cs" />
+    <Compile Include="Objects\StudentForClassObject.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UseControls\ActionUpdateHocVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\ActionUpdateHocVien.Designer.cs">
+      <DependentUpon>ActionUpdateHocVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\ControlLopHoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\ControlLopHoc.Designer.cs">
+      <DependentUpon>ControlLopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\uCandidate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\uCandidate.Designer.cs">
+      <DependentUpon>uCandidate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\UCDangKYOnline.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\UCDangKYOnline.Designer.cs">
+      <DependentUpon>UCDangKYOnline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\ucDangKyTrucTuyen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\ucDangKyTrucTuyen.Designer.cs">
+      <DependentUpon>ucDangKyTrucTuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\ucDetailFaceBooks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\ucDetailFaceBooks.Designer.cs">
+      <DependentUpon>ucDetailFaceBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\uCenter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\uCenter.Designer.cs">
+      <DependentUpon>uCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\ucEventFaceBooks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\ucEventFaceBooks.Designer.cs">
+      <DependentUpon>ucEventFaceBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\ucFaceBooks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\ucFaceBooks.Designer.cs">
+      <DependentUpon>ucFaceBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\uClass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\uClass.Designer.cs">
+      <DependentUpon>uClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\ucLichKhaiGiang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\ucLichKhaiGiang.Designer.cs">
+      <DependentUpon>ucLichKhaiGiang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\uComment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\uComment.Designer.cs">
+      <DependentUpon>uComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\uCourse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\uCourse.Designer.cs">
+      <DependentUpon>uCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\ucQuanLyQuestionAnswers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\ucQuanLyQuestionAnswers.Designer.cs">
+      <DependentUpon>ucQuanLyQuestionAnswers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\ucReportInfomation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\ucReportInfomation.Designer.cs">
+      <DependentUpon>ucReportInfomation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\ucRightForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\ucRightForm.Designer.cs">
+      <DependentUpon>ucRightForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\uCustomers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\uCustomers.Designer.cs">
+      <DependentUpon>uCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\uDepartment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\uDepartment.Designer.cs">
+      <DependentUpon>uDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\uEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\uEmployee.Designer.cs">
+      <DependentUpon>uEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\uExpertInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\uExpertInfo.Designer.cs">
+      <DependentUpon>uExpertInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\uJobTitle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\uJobTitle.Designer.cs">
+      <DependentUpon>uJobTitle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\uListUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\uListUsers.Designer.cs">
+      <DependentUpon>uListUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\uPolicyStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\uPolicyStudent.Designer.cs">
+      <DependentUpon>uPolicyStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\uPromotion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\uPromotion.Designer.cs">
+      <DependentUpon>uPromotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\uRecruitmentInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\uRecruitmentInfo.designer.cs">
+      <DependentUpon>uRecruitmentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\uReports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\uReports.Designer.cs">
+      <DependentUpon>uReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\uScheduleInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\uScheduleInfo.Designer.cs">
+      <DependentUpon>uScheduleInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\uSocialNetworkAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\uSocialNetworkAccount.Designer.cs">
+      <DependentUpon>uSocialNetworkAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\uStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\uStudent.Designer.cs">
+      <DependentUpon>uStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\uSubject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\uSubject.Designer.cs">
+      <DependentUpon>uSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseControls\uViewSchedulesInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\uViewSchedulesInfo.Designer.cs">
+      <DependentUpon>uViewSchedulesInfo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Base\ActionMenu.resx">
+      <DependentUpon>ActionMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ActionUpdate.resx">
+      <DependentUpon>ActionUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\frmIMICBase.resx">
+      <DependentUpon>frmIMICBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eCenterSystem.resx">
+      <DependentUpon>eCenterSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddCommetSupport.resx">
+      <DependentUpon>frmAddCommetSupport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddHocVien.resx">
+      <DependentUpon>frmAddHocVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddKhoaHoc.resx">
+      <DependentUpon>frmAddKhoaHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddLopHoc.resx">
+      <DependentUpon>frmAddLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddMonHoc.resx">
+      <DependentUpon>frmAddMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddStudentIntoClassess.resx">
+      <DependentUpon>frmAddStudentIntoClassess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminConfigSystem.resx">
+      <DependentUpon>frmAdminConfigSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCandidate.resx">
+      <DependentUpon>frmCandidate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCenterInfo.resx">
+      <DependentUpon>frmCenterInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfirms.resx">
+      <DependentUpon>frmConfirms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployee.resx">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEncrypt.resx">
+      <DependentUpon>frmEncrypt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFlashScreen.resx">
+      <DependentUpon>frmFlashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiangVien.resx">
+      <DependentUpon>frmGiangVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiangVienAdd.resx">
+      <DependentUpon>frmGiangVienAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiangVienHeThong.resx">
+      <DependentUpon>frmGiangVienHeThong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHocPhi.resx">
+      <DependentUpon>frmHocPhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHocVienHeThong.resx">
+      <DependentUpon>frmHocVienHeThong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHocVienSearch.resx">
+      <DependentUpon>frmHocVienSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportExcel.resx">
+      <DependentUpon>frmImportExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInformationDetail.resx">
+      <DependentUpon>frmInformationDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhachHang.resx">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLichKhaiGiangAdd.resx">
+      <DependentUpon>frmLichKhaiGiangAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListCandidate.resx">
+      <DependentUpon>frmListCandidate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageCandidates.resx">
+      <DependentUpon>frmManageCandidates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhongBan.resx">
+      <DependentUpon>frmPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPolicyStudent.resx">
+      <DependentUpon>frmPolicyStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPromotionInfo.resx">
+      <DependentUpon>frmPromotionInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecruitmentInfo.resx">
+      <DependentUpon>frmRecruitmentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSchedulesAdd.resx">
+      <DependentUpon>frmSchedulesAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSchedulesExpertAdd.resx">
+      <DependentUpon>frmSchedulesExpertAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSocialNetworkAccount.resx">
+      <DependentUpon>frmSocialNetworkAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSocialNetworkCategory.resx">
+      <DependentUpon>frmSocialNetworkCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStanUsers.resx">
+      <DependentUpon>frmStanUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentRegisterOnline.resx">
+      <DependentUpon>frmStudentRegisterOnline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSupportDetails.resx">
+      <DependentUpon>frmSupportDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemMoiKH.resx">
+      <DependentUpon>frmThemMoiKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongTinChucVu.resx">
+      <DependentUpon>frmThongTinChucVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UseControls\ActionUpdateHocVien.resx">
+      <DependentUpon>ActionUpdateHocVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\ControlLopHoc.resx">
+      <DependentUpon>ControlLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\uCandidate.resx">
+      <DependentUpon>uCandidate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\UCDangKYOnline.resx">
+      <DependentUpon>UCDangKYOnline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\ucDangKyTrucTuyen.resx">
+      <DependentUpon>ucDangKyTrucTuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\ucDetailFaceBooks.resx">
+      <DependentUpon>ucDetailFaceBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\uCenter.resx">
+      <DependentUpon>uCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\ucEventFaceBooks.resx">
+      <DependentUpon>ucEventFaceBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\ucFaceBooks.resx">
+      <DependentUpon>ucFaceBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\uClass.resx">
+      <DependentUpon>uClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\ucLichKhaiGiang.resx">
+      <DependentUpon>ucLichKhaiGiang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\uComment.resx">
+      <DependentUpon>uComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\uCourse.resx">
+      <DependentUpon>uCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\ucQuanLyQuestionAnswers.resx">
+      <DependentUpon>ucQuanLyQuestionAnswers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\ucReportInfomation.resx">
+      <DependentUpon>ucReportInfomation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\uCustomers.resx">
+      <DependentUpon>uCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\uDepartment.resx">
+      <DependentUpon>uDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\uEmployee.resx">
+      <DependentUpon>uEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\uExpertInfo.resx">
+      <DependentUpon>uExpertInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\uJobTitle.resx">
+      <DependentUpon>uJobTitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\uListUsers.resx">
+      <DependentUpon>uListUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\uPolicyStudent.resx">
+      <DependentUpon>uPolicyStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\uPromotion.resx">
+      <DependentUpon>uPromotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\uRecruitmentInfo.resx">
+      <DependentUpon>uRecruitmentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\uReports.resx">
+      <DependentUpon>uReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\uScheduleInfo.resx">
+      <DependentUpon>uScheduleInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\uSocialNetworkAccount.resx">
+      <DependentUpon>uSocialNetworkAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\uStudent.resx">
+      <DependentUpon>uStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\uSubject.resx">
+      <DependentUpon>uSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\uViewSchedulesInfo.resx">
+      <DependentUpon>uViewSchedulesInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Library\DevExpress.BonusSkins.v17.2.dll" />
+    <Content Include="Library\DevExpress.Charts.v17.2.Core.dll" />
+    <Content Include="Library\DevExpress.CodeParser.v17.2.dll" />
+    <Content Include="Library\DevExpress.Data.v17.2.dll" />
+    <Content Include="Library\DevExpress.Data.v17.2.resources.dll" />
+    <Content Include="Library\DevExpress.DataAccess.v17.2.dll" />
+    <Content Include="Library\DevExpress.DataAccess.v17.2.resources.dll" />
+    <Content Include="Library\DevExpress.DataAccess.v17.2.UI.dll" />
+    <Content Include="Library\DevExpress.DataAccess.v17.2.UI.resources.dll" />
+    <Content Include="Library\DevExpress.Diagram.v17.2.Core.dll" />
+    <Content Include="Library\DevExpress.Diagram.v17.2.Core.resources.dll" />
+    <Content Include="Library\DevExpress.ExpressApp.v17.2.dll" />
+    <Content Include="Library\DevExpress.ExpressApp.v17.2.resources.dll" />
+    <Content Include="Library\DevExpress.ExpressApp.Win.v17.2.dll" />
+    <Content Include="Library\DevExpress.ExpressApp.Win.v17.2.resources.dll" />
+    <Content Include="Library\DevExpress.Images.v17.2.dll" />
+    <Content Include="Library\DevExpress.Office.v17.2.Core.dll" />
+    <Content Include="Library\DevExpress.Office.v17.2.Core.resources.dll" />
+    <Content Include="Library\DevExpress.Pdf.v17.2.Core.dll" />
+    <Content Include="Library\DevExpress.Pdf.v17.2.Core.resources.dll" />
+    <Content Include="Library\DevExpress.Persistent.Base.v17.2.dll" />
+    <Content Include="Library\DevExpress.PivotGrid.v17.2.Core.dll" />
+    <Content Include="Library\DevExpress.PivotGrid.v17.2.Core.resources.dll" />
+    <Content Include="Library\DevExpress.Printing.v17.2.Core.dll" />
+    <Content Include="Library\DevExpress.Printing.v17.2.Core.resources.dll" />
+    <Content Include="Library\DevExpress.RichEdit.v17.2.Core.dll" />
+    <Content Include="Library\DevExpress.RichEdit.v17.2.Core.resources.dll" />
+    <Content Include="Library\DevExpress.RichEdit.v17.2.Export.dll" />
+    <Content Include="Library\DevExpress.Sparkline.v17.2.Core.dll" />
+    <Content Include="Library\DevExpress.Sparkline.v17.2.Core.resources.dll" />
+    <Content Include="Library\DevExpress.SpellChecker.v17.2.Core.dll" />
+    <Content Include="Library\DevExpress.Utils.v17.2.dll" />
+    <Content Include="Library\DevExpress.Utils.v17.2.resources.dll" />
+    <Content Include="Library\DevExpress.Utils.v17.2.UI.dll" />
+    <Content Include="Library\DevExpress.Utils.v17.2.UI.resources.dll" />
+    <Content Include="Library\DevExpress.Xpo.v17.2.dll" />
+    <Content Include="Library\DevExpress.Xpo.v17.2.resources.dll" />
+    <Content Include="Library\DevExpress.XtraBars.v17.2.dll" />
+    <Content Include="Library\DevExpress.XtraBars.v17.2.resources.dll" />
+    <Content Include="Library\DevExpress.XtraCharts.v17.2.dll" />
+    <Content Include="Library\DevExpress.XtraCharts.v17.2.Extensions.dll" />
+    <Content Include="Library\DevExpress.XtraCharts.v17.2.resources.dll" />
+    <Content Include="Library\DevExpress.XtraCharts.v17.2.Wizard.dll" />
+    <Content Include="Library\DevExpress.XtraCharts.v17.2.Wizard.resources.dll" />
+    <Content Include="Library\DevExpress.XtraDiagram.v17.2.dll" />
+    <Content Include="Library\DevExpress.XtraEditors.v17.2.dll" />
+    <Content Include="Library\DevExpress.XtraEditors.v17.2.resources.dll" />
+    <Content Include="Library\DevExpress.XtraGauges.v17.2.Core.dll" />
+    <Content Include="Library\DevExpress.XtraGauges.v17.2.Core.resources.dll" />
+    <Content Include="Library\DevExpress.XtraGrid.v17.2.dll" />
+    <Content Include="Library\DevExpress.XtraGrid.v17.2.resources.dll" />
+    <Content Include="Library\DevExpress.XtraLayout.v17.2.dll" />
+    <Content Include="Library\DevExpress.XtraLayout.v17.2.resources.dll" />
+    <Content Include="Library\DevExpress.XtraNavBar.v17.2.dll" />
+    <Content Include="Library\DevExpress.XtraNavBar.v17.2.resources.dll" />
+    <Content Include="Library\DevExpress.XtraPivotGrid.v17.2.dll" />
+    <Content Include="Library\DevExpress.XtraPivotGrid.v17.2.resources.dll" />
+    <Content Include="Library\DevExpress.XtraPrinting.v17.2.dll" />
+    <Content Include="Library\DevExpress.XtraPrinting.v17.2.resources.dll" />
+    <Content Include="Library\DevExpress.XtraReports.v17.2.dll" />
+    <Content Include="Library\DevExpress.XtraReports.v17.2.Extensions.dll" />
+    <Content Include="Library\DevExpress.XtraReports.v17.2.Extensions.resources.dll" />
+    <Content Include="Library\DevExpress.XtraReports.v17.2.resources.dll" />
+    <Content Include="Library\DevExpress.XtraRichEdit.v17.2.dll" />
+    <Content Include="Library\DevExpress.XtraRichEdit.v17.2.Extensions.dll" />
+    <Content Include="Library\DevExpress.XtraRichEdit.v17.2.Extensions.resources.dll" />
+    <Content Include="Library\DevExpress.XtraRichEdit.v17.2.resources.dll" />
+    <Content Include="Library\DevExpress.XtraScheduler.v17.2.Core.dll" />
+    <Content Include="Library\DevExpress.XtraScheduler.v17.2.Core.resources.dll" />
+    <Content Include="Library\DevExpress.XtraScheduler.v17.2.dll" />
+    <Content Include="Library\DevExpress.XtraScheduler.v17.2.Extensions.dll" />
+    <Content Include="Library\DevExpress.XtraScheduler.v17.2.Extensions.resources.dll" />
+    <Content Include="Library\DevExpress.XtraScheduler.v17.2.Reporting.dll" />
+    <Content Include="Library\DevExpress.XtraScheduler.v17.2.Reporting.Extensions.dll" />
+    <Content Include="Library\DevExpress.XtraScheduler.v17.2.Reporting.resources.dll" />
+    <Content Include="Library\DevExpress.XtraScheduler.v17.2.resources.dll" />
+    <Content Include="Library\DevExpress.XtraSpellChecker.v17.2.dll" />
+    <Content Include="Library\DevExpress.XtraSpellChecker.v17.2.resources.dll" />
+    <Content Include="Library\DevExpress.XtraTreeList.v17.2.dll" />
+    <Content Include="Library\DevExpress.XtraTreeList.v17.2.resources.dll" />
+    <Content Include="Library\DevExpress.XtraVerticalGrid.v17.2.dll" />
+    <Content Include="Library\DevExpress.XtraVerticalGrid.v17.2.resources.dll" />
+    <None Include="Resources\write email.png" />
+    <None Include="Resources\working.gif" />
+    <None Include="Resources\work_to_do.png" />
+    <None Include="Resources\WindowsHS.png" />
+    <None Include="Resources\Window Edit 2.png" />
+    <None Include="Resources\weather.png" />
+    <None Include="Resources\top_work_tree.png" />
+    <None Include="Resources\top_work_in.png" />
+    <None Include="Resources\expired_warning.gif" />
+    <None Include="Resources\work_to_send.png" />
+    <None Include="Resources\word.gif" />
+    <None Include="Resources\top_work_search.png" />
+    <None Include="Resources\top_work_out2.png" />
+    <None Include="Resources\top_work_out.png" />
+    <None Include="Resources\top_work_new_.png" />
+    <None Include="Resources\top_work_new.png" />
+    <None Include="Resources\top_work_calendar.png" />
+    <None Include="Resources\ZoomHS.png" />
+    <None Include="Resources\XUAT_W.ico" />
+    <None Include="Resources\xls.gif" />
+    <None Include="Resources\virtuallnk-network-icons-collection-v1-0-retail-ssg-gfx-48x48-mail-inbox-out-32x32.jpg" />
+    <None Include="Resources\view.gif" />
+    <None Include="Resources\users_into.ico" />
+    <None Include="Resources\users_family.ico" />
+    <None Include="Resources\userOnline.gif" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\user.gif" />
+    <None Include="Resources\User 7 Error.png" />
+    <None Include="Resources\User 7 Check.png" />
+    <None Include="Resources\Urban MSN2.ico" />
+    <None Include="Resources\Update.png" />
+    <None Include="Resources\up_16.png" />
+    <None Include="Resources\unchecked.gif" />
+    <None Include="Resources\TroGiup.ico" />
+    <None Include="Resources\total_item.png" />
+    <None Include="Resources\top_tasks.gif" />
+    <None Include="Resources\top_notes.gif" />
+    <None Include="Resources\top_mail.gif" />
+    <None Include="Resources\top_folder.gif" />
+    <None Include="Resources\top_contacts.gif" />
+    <None Include="Resources\top_calendar.gif" />
+    <None Include="Resources\Thoat.ico" />
+    <None Include="Resources\Tech Search.png" />
+    <None Include="Resources\Tech Edit 2.png" />
+    <None Include="Resources\tasks.gif" />
+    <None Include="Resources\task_create.png" />
+    <None Include="Resources\task_completed.png" />
+    <None Include="Resources\table_view.ico" />
+    <None Include="Resources\table_solid.png" />
+    <None Include="Resources\table_add.png" />
+    <None Include="Resources\table.png" />
+    <None Include="Resources\Symbol Refresh 3.png" />
+    <None Include="Resources\SychronizeListHS.png" />
+    <None Include="Resources\support1.gif" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\stop.gif" />
+    <None Include="Resources\spinner2.gif" />
+    <None Include="Resources\spinner.gif" />
+    <None Include="Resources\SpeechMicHS.png" />
+    <None Include="Resources\spacer.gif" />
+    <None Include="Resources\SortHS.png" />
+    <None Include="Resources\settings_16.png" />
+    <None Include="Resources\sentItems.gif" />
+    <None Include="Resources\sendmail.png" />
+    <None Include="Resources\select_all_16x16.gif" />
+    <None Include="Resources\searchFolder.gif" />
+    <None Include="Resources\search_icon.gif" />
+    <None Include="Resources\search_files.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\search.gif" />
+    <None Include="Resources\scrollup_hover.gif" />
+    <None Include="Resources\scrollup_active.gif" />
+    <None Include="Resources\scrollup.gif" />
+    <None Include="Resources\scrolldown_hover.gif" />
+    <None Include="Resources\scrolldown_active.gif" />
+    <None Include="Resources\scrolldown.gif" />
+    <None Include="Resources\save-icon.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\root.gif" />
+    <None Include="Resources\right_16.png" />
+    <None Include="Resources\ReSend.png" />
+    <None Include="Resources\renew.png" />
+    <None Include="Resources\register.gif" />
+    <None Include="Resources\QuanLyVanBan32x32.png" />
+    <None Include="Resources\Quanlyvanban.ico" />
+    <None Include="Resources\QuanLyThietBi32x32.png" />
+    <None Include="Resources\QuanLySuCo32x32.png" />
+    <None Include="Resources\QuanLyDau48x48.png" />
+    <None Include="Resources\QuanLyDau32x32.png" />
+    <None Include="Resources\QuanLy.ico" />
+    <None Include="Resources\Qlnguoidung.ico" />
+    <None Include="Resources\QLChatPhanTan32x32.png" />
+    <None Include="Resources\QlCauHinh.ico" />
+    <None Include="Resources\ql_trangtb.ico" />
+    <None Include="Resources\ql_csdl_dau.ico" />
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\Printer Search.png" />
+    <None Include="Resources\Printer Schedule.png" />
+    <None Include="Resources\Printer New.png" />
+    <None Include="Resources\powerpoint.gif" />
+    <None Include="Resources\plus_16.png" />
+    <None Include="Resources\Pictures Search.png" />
+    <None Include="Resources\pdf.gif" />
+    <None Include="Resources\paste-icon.png" />
+    <None Include="Resources\PageUpHS.png" />
+    <None Include="Resources\outbox.gif" />
+    <None Include="Resources\open-icon.png" />
+    <None Include="Resources\OpenFile.png" />
+    <None Include="Resources\notes.gif" />
+    <None Include="Resources\Notepad.ico" />
+    <None Include="Resources\new-icon.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\My Documents32x32.png" />
+    <None Include="Resources\msg_unread.gif" />
+    <None Include="Resources\msg_replied.gif" />
+    <None Include="Resources\msg_read.gif" />
+    <None Include="Resources\msg_forwarded.gif" />
+    <None Include="Resources\move.gif" />
+    <None Include="Resources\MonthlyViewHS.png" />
+    <None Include="Resources\menu.gif" />
+    <None Include="Resources\mailbox.gif" />
+    <None Include="Resources\mail_inbox_out_32x32.png" />
+    <None Include="Resources\mail_inbox_in_32x32.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\login_icon.png" />
+    <None Include="Resources\Login Manager32x32.png" />
+    <None Include="Resources\List_NumberedHS.png" />
+    <None Include="Resources\List_BulletsHS.png" />
+    <None Include="Resources\library-icon.png" />
+    <None Include="Resources\law_16x16.gif" />
+    <None Include="Resources\kword.ico" />
+    <None Include="Resources\kuser32x32.png" />
+    <None Include="Resources\key2.png" />
+    <None Include="Resources\KDE  Resources Configuration32x32.png" />
+    <None Include="Resources\kate32x32.png" />
+    <None Include="Resources\kate.ico" />
+    <None Include="Resources\junk.gif" />
+    <None Include="Resources\journal.gif" />
+    <None Include="Resources\insurance.png" />
+    <None Include="Resources\InsertPictureHS.png" />
+    <None Include="Resources\inbox.gif" />
+    <None Include="Resources\icon-login-16x161.gif" />
+    <None Include="Resources\icon-login-16x16.gif" />
+    <None Include="Resources\iconbar_undesigntab.gif" />
+    <None Include="Resources\icon_users_32px.gif" />
+    <None Include="Resources\icon_moduledefinitions_16px.gif" />
+    <None Include="Resources\icon_excel.gif" />
+    <None Include="Resources\iCal-icon.png" />
+    <None Include="Resources\hourglass.png" />
+    <None Include="Resources\HoTroTT.ico" />
+    <None Include="Resources\Home 2.png" />
+    <None Include="Resources\help-icon.png" />
+    <None Include="Resources\Help-16x16.png" />
+    <None Include="Resources\Help.png" />
+    <None Include="Resources\heavy-sleet.gif" />
+    <None Include="Resources\header_logo.png" />
+    <None Include="Resources\Group Idea.png" />
+    <None Include="Resources\Group Help.png" />
+    <None Include="Resources\Group 3.png" />
+    <None Include="Resources\Group 2 Search.png" />
+    <None Include="Resources\graphics-tablet.ico" />
+    <None Include="Resources\graphhs.png" />
+    <None Include="Resources\Go.png" />
+    <None Include="Resources\GetLatestVersion.png" />
+    <None Include="Resources\gear_16.png" />
+    <None Include="Resources\frmLogout.png" />
+    <None Include="Resources\frmlogin.png" />
+    <None Include="Resources\folders.gif" />
+    <None Include="Resources\folder-open-icon.png" />
+    <None Include="Resources\folder-open.ico" />
+    <None Include="Resources\folder-old-1-icon.png" />
+    <None Include="Resources\Folder-3-X7-3-icon.png" />
+    <None Include="Resources\folder_page.png" />
+    <None Include="Resources\folder_go.png" />
+    <None Include="Resources\folder_add.png" />
+    <None Include="Resources\folder.gif" />
+    <None Include="Resources\find.png" />
+    <None Include="Resources\Favorite Delete.png" />
+    <None Include="Resources\Favorite Check.png" />
+    <None Include="Resources\expired_triangle.gif" />
+    <None Include="Resources\expired_circle.gif" />
+    <None Include="Resources\expired.gif" />
+    <None Include="Resources\exp.gif" />
+    <None Include="Resources\Excellence Folder - Applications32x32.png" />
+    <None Include="Resources\excel.gif" />
+    <None Include="Resources\eTrainning1.png" />
+    <None Include="Resources\eTrainning.png" />
+    <None Include="Resources\Email New.png" />
+    <None Include="Resources\edoc_register.gif" />
+    <None Include="Resources\EditTableHS.png" />
+    <None Include="Resources\EditInformationHS.BMP" />
+    <None Include="Resources\edit.gif" />
+    <None Include="Resources\DropCap.png" />
+    <None Include="Resources\drafts.gif" />
+    <None Include="Resources\download.gif" />
+    <None Include="Resources\docs.gif" />
+    <None Include="Resources\doc.gif" />
+    <None Include="Resources\dnrt.gif" />
+    <None Include="Resources\deletedFolder.gif" />
+    <None Include="Resources\deleted.gif" />
+    <None Include="Resources\delete2.gif" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\delete.gif" />
+    <None Include="Resources\Cute-Ball-Go-icon.png" />
+    <None Include="Resources\Csdlchat_phantan.ico" />
+    <None Include="Resources\cs_su_co.ico" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\CONTROL PANEL32x32.png" />
+    <None Include="Resources\contacts.gif" />
+    <None Include="Resources\Contact New.png" />
+    <None Include="Resources\congbe.png" />
+    <None Include="Resources\Comment.png" />
+    <None Include="Resources\col.gif" />
+    <None Include="Resources\cog.png" />
+    <None Include="Resources\cnMoPhong.ico" />
+    <None Include="Resources\Cloud-Sun-icon.png" />
+    <None Include="Resources\close-icon.png" />
+    <None Include="Resources\Clipboard Edit.png" />
+    <None Include="Resources\Clipboard Edit 2.png" />
+    <None Include="Resources\CheckSpellingHS.png" />
+    <None Include="Resources\check-icon.png" />
+    <None Include="Resources\checked.gif" />
+    <None Include="Resources\chart.ico" />
+    <None Include="Resources\cancel.gif" />
+    <None Include="Resources\calendar16.gif" />
+    <None Include="Resources\calendar.gif" />
+    <None Include="Resources\cal_prevMonth.gif" />
+    <None Include="Resources\cal_nextMonth.gif" />
+    <None Include="Resources\book_edit.png" />
+    <None Include="Resources\blockdevice32x32.png" />
+    <None Include="Resources\bin.png" />
+    <None Include="Resources\Bar Chart.png" />
+    <None Include="Resources\Bar Chart 5.png" />
+    <None Include="Resources\Bar Chart 4.png" />
+    <None Include="Resources\Bar Chart 3.png" />
+    <None Include="Resources\bando.ico" />
+    <None Include="Resources\attachment.gif" />
+    <None Include="Resources\attach.png" />
+    <None Include="Resources\appwindow_info_annotation_16.bmp" />
+    <None Include="Resources\administrator2.gif" />
+    <None Include="Resources\AddTableHS.png" />
+    <None Include="Resources\add-icon.png" />
+    <None Include="Resources\action_settings.gif" />
+    <None Include="Resources\action_export.gif" />
+    <None Include="Resources\action_down.gif" />
+    <None Include="Resources\action_delete.gif" />
+    <None Include="Resources\accept.png" />
+    <None Include="Resources\164.png" />
+    <None Include="Resources\103.png" />
+    <None Include="Resources\092.png" />
+    <None Include="Resources\48px-Crystal_Clear_app_xclock.png" />
+    <None Include="Resources\48px-Crystal_Clear_app_noatun.png" />
+    <None Include="Resources\007.png" />
+    <None Include="Resources\002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IMIC.BUSINESSLOGICLAYERS\IMIC.BUSINESSLOGICLAYERS.csproj">
+      <Project>{c4bfef7f-7082-4702-af3a-504c5bc4b09b}</Project>
+      <Name>IMIC.BUSINESSLOGICLAYERS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IMIC.SyncModule\IMIC.SyncModule.csproj">
+      <Project>{e2f51189-7cad-452d-a95e-5731bc5f4cc4}</Project>
+      <Name>IMIC.SyncModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IMIC.VALUEOBJECTS\IMIC.VALUEOBJECTS.csproj">
+      <Project>{08b54b07-1ef6-4086-b2d3-e505a2cf5fcf}</Project>
+      <Name>IMIC.VALUEOBJECTS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    if not exist "$(TargetDir)x86" md "$(TargetDir)x86"
+    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\x86\*.*" "$(TargetDir)x86"
+    if not exist "$(TargetDir)amd64" md "$(TargetDir)amd64"
+    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\amd64\*.*" "$(TargetDir)amd64"</PostBuildEvent>
+  </PropertyGroup>
+</Project>
