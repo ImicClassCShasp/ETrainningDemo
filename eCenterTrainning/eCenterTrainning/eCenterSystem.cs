@@ -18,7 +18,6 @@ using IMIC.BUSINESSLOGICLAYERS;
 
 namespace eCenterTrainning
 {
-
     public partial class eCenterSystem : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         Account mAccount;
@@ -33,7 +32,7 @@ namespace eCenterTrainning
             //frmFlashScreen flash = new frmFlashScreen();
             //flash.ShowDialog();
             
-        
+
             
             frmLogin oFrmLogin = new frmLogin(mAccount);
             oFrmLogin.ShowDialog(); 
