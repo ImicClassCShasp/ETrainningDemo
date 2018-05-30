@@ -1707,5 +1707,28 @@ namespace IMIC.DATAACCESSLAYERS
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETHOCPHI_BYSTUDENTID_STUDENT_CLASS_Result>("SP_GETHOCPHI_BYSTUDENTID_STUDENT_CLASS", idStdParameter);
         }
+    
+        public virtual ObjectResult<SP_GETALL_AYEAR_CLASS_Result> SP_GETALL_AYEAR_CLASS()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETALL_AYEAR_CLASS_Result>("SP_GETALL_AYEAR_CLASS");
+        }
+    
+        public virtual ObjectResult<SP_GETLISTSTUDENT_BYCLASSID_STUDENTS_Result> SP_GETLISTSTUDENT_BYCLASSID_STUDENTS(Nullable<int> classid)
+        {
+            var classidParameter = classid.HasValue ?
+                new ObjectParameter("classid", classid) :
+                new ObjectParameter("classid", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETLISTSTUDENT_BYCLASSID_STUDENTS_Result>("SP_GETLISTSTUDENT_BYCLASSID_STUDENTS", classidParameter);
+        }
+    
+        public virtual ObjectResult<SP_GETLITSTUDENT_BYID_CLASS_Result> SP_GETLITSTUDENT_BYID_CLASS(Nullable<int> classid)
+        {
+            var classidParameter = classid.HasValue ?
+                new ObjectParameter("classid", classid) :
+                new ObjectParameter("classid", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETLITSTUDENT_BYID_CLASS_Result>("SP_GETLITSTUDENT_BYID_CLASS", classidParameter);
+        }
     }
 }

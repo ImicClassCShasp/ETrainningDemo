@@ -101,6 +101,9 @@
     <Compile Include="SP_DET_DIENDAN_TOP_500_ROWS_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
+    <Compile Include="SP_GETALL_AYEAR_CLASS_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
     <Compile Include="SP_GETALL_COURSE_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
@@ -138,6 +141,12 @@
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_GETIMICYOUTUBE_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GETLISTSTUDENT_BYCLASSID_STUDENTS_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GETLITSTUDENT_BYID_CLASS_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_GETUSERINFO_Result.cs">
