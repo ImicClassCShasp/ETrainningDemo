@@ -1,4 +1,0 @@
-- SERVER: 115.79.202.104
-- USERNAME: hocvien
-- PASSWORD: nothing!
-- DATABASE NAME: eTrainingDemo
