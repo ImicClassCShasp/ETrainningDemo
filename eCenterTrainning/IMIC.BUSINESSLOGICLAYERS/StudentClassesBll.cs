@@ -23,5 +23,9 @@ namespace IMIC.BUSINESSLOGICLAYERS
         {
             return mStudentClassesDAL.DeleteElement(oT);
         }
+        public override List<StudentClasses> CheckElementByObject(StudentClasses oT)
+        {
+            return mStudentClassesDAL.CheckElementByObject(oT);
+        }
     }
 }
