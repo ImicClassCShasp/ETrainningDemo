@@ -296,6 +296,7 @@
             this.bBIIMICLocation,
             this.bbIAdministrator});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
+            this.ribbon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbon.MaxItemId = 169;
             this.ribbon.MiniToolbars.Add(this.ribbonMiniToolbar1);
             this.ribbon.Name = "ribbon";
@@ -309,7 +310,7 @@
             this.rbpChuDe});
             this.ribbon.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemLookUpEdit1});
-            this.ribbon.Size = new System.Drawing.Size(1238, 146);
+            this.ribbon.Size = new System.Drawing.Size(1444, 179);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // ribbonGalleryBarItem1
@@ -1144,10 +1145,11 @@
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 708);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 870);
+            this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1238, 31);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1444, 40);
             // 
             // imageList1
             // 
@@ -1171,12 +1173,13 @@
             // 
             this.schedulerSplitContainerControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.schedulerSplitContainerControl.FixedPanel = DevExpress.XtraEditors.SplitFixedPanel.Panel2;
-            this.schedulerSplitContainerControl.Location = new System.Drawing.Point(200, 146);
+            this.schedulerSplitContainerControl.Location = new System.Drawing.Point(200, 179);
+            this.schedulerSplitContainerControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.schedulerSplitContainerControl.Name = "schedulerSplitContainerControl";
             this.schedulerSplitContainerControl.Panel1.Controls.Add(this.plMain);
             this.schedulerSplitContainerControl.Panel1.Text = "Panel1";
             this.schedulerSplitContainerControl.Panel2.Text = "Panel2";
-            this.schedulerSplitContainerControl.Size = new System.Drawing.Size(1038, 562);
+            this.schedulerSplitContainerControl.Size = new System.Drawing.Size(1244, 691);
             this.schedulerSplitContainerControl.SplitterPosition = 0;
             this.schedulerSplitContainerControl.TabIndex = 13;
             this.schedulerSplitContainerControl.Text = "splitContainerControl1";
@@ -1188,29 +1191,31 @@
             this.plMain.ContentImage = global::eCenterTrainning.Properties.Resources.eTrainning1;
             this.plMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plMain.Location = new System.Drawing.Point(0, 0);
+            this.plMain.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.plMain.Name = "plMain";
-            this.plMain.Size = new System.Drawing.Size(1033, 562);
+            this.plMain.Size = new System.Drawing.Size(1238, 691);
             this.plMain.TabIndex = 1;
             // 
             // contextMenuStripMail
             // 
+            this.contextMenuStripMail.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripMail.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItemShow,
             this.toolStripMenuItemExit});
             this.contextMenuStripMail.Name = "contextMenuStripMail";
-            this.contextMenuStripMail.Size = new System.Drawing.Size(117, 48);
+            this.contextMenuStripMail.Size = new System.Drawing.Size(131, 52);
             // 
             // toolStripMenuItemShow
             // 
             this.toolStripMenuItemShow.Name = "toolStripMenuItemShow";
-            this.toolStripMenuItemShow.Size = new System.Drawing.Size(116, 22);
+            this.toolStripMenuItemShow.Size = new System.Drawing.Size(130, 24);
             this.toolStripMenuItemShow.Text = "Hiển thị";
             this.toolStripMenuItemShow.ToolTipText = "Hiển thị chương trình eCenterTrainning";
             // 
             // toolStripMenuItemExit
             // 
             this.toolStripMenuItemExit.Name = "toolStripMenuItemExit";
-            this.toolStripMenuItemExit.Size = new System.Drawing.Size(116, 22);
+            this.toolStripMenuItemExit.Size = new System.Drawing.Size(130, 24);
             this.toolStripMenuItemExit.Text = "Thoát";
             this.toolStripMenuItemExit.ToolTipText = "Thoát khỏi chương trình eCenterTrainning";
             // 
@@ -1244,18 +1249,20 @@
             this.dockPanel1.Controls.Add(this.dockPanel1_Container);
             this.dockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Left;
             this.dockPanel1.ID = new System.Guid("9bd74e1d-1d80-4a27-b510-18373a1f54d3");
-            this.dockPanel1.Location = new System.Drawing.Point(0, 146);
+            this.dockPanel1.Location = new System.Drawing.Point(0, 179);
+            this.dockPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dockPanel1.Name = "dockPanel1";
             this.dockPanel1.OriginalSize = new System.Drawing.Size(200, 200);
-            this.dockPanel1.Size = new System.Drawing.Size(200, 562);
+            this.dockPanel1.Size = new System.Drawing.Size(200, 691);
             this.dockPanel1.Text = "Quản lý";
             // 
             // dockPanel1_Container
             // 
             this.dockPanel1_Container.Controls.Add(this.naveTrainning);
-            this.dockPanel1_Container.Location = new System.Drawing.Point(4, 23);
+            this.dockPanel1_Container.Location = new System.Drawing.Point(5, 27);
+            this.dockPanel1_Container.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(191, 535);
+            this.dockPanel1_Container.Size = new System.Drawing.Size(188, 659);
             this.dockPanel1_Container.TabIndex = 0;
             // 
             // naveTrainning
@@ -1306,9 +1313,10 @@
             this.nbiSendMail});
             this.naveTrainning.Location = new System.Drawing.Point(0, 0);
             this.naveTrainning.LookAndFeel.SkinName = "Office 2010 Blue";
+            this.naveTrainning.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.naveTrainning.Name = "naveTrainning";
-            this.naveTrainning.OptionsNavPane.ExpandedWidth = 191;
-            this.naveTrainning.Size = new System.Drawing.Size(191, 535);
+            this.naveTrainning.OptionsNavPane.ExpandedWidth = 188;
+            this.naveTrainning.Size = new System.Drawing.Size(188, 659);
             this.naveTrainning.TabIndex = 18;
             this.naveTrainning.Text = "navBarControl1";
             this.naveTrainning.View = new DevExpress.XtraNavBar.ViewInfo.SkinNavigationPaneViewInfoRegistrator();
@@ -1347,6 +1355,7 @@
             this.navBarItemLopHoc.Caption = "Lớp Học";
             this.navBarItemLopHoc.ImageOptions.LargeImage = global::eCenterTrainning.Properties.Resources.kuser32x32;
             this.navBarItemLopHoc.Name = "navBarItemLopHoc";
+            this.navBarItemLopHoc.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItemLopHoc_LinkClicked);
             // 
             // navBarItemPromotion
             // 
@@ -1624,9 +1633,9 @@
             // 
             // eCenterSystem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1238, 739);
+            this.ClientSize = new System.Drawing.Size(1444, 910);
             this.Controls.Add(this.schedulerSplitContainerControl);
             this.Controls.Add(this.dockPanel1);
             this.Controls.Add(this.ribbonStatusBar);
@@ -1634,6 +1643,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "eCenterSystem";
             this.Ribbon = this.ribbon;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
