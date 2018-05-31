@@ -15,6 +15,10 @@ namespace IMIC.BUSINESSLOGICLAYERS
         {
             mStudentListsDAL = new StudentListsDAL(mAccount);
         }
+        public StudentListsBll(Account oAccount, Classes oClasses) : base(oAccount)
+        {
+            mStudentListsDAL = new StudentListsDAL(mAccount, oClasses);
+        }
         public override List<StudentLists> getElements()
         {
             return mStudentListsDAL.getElements();
