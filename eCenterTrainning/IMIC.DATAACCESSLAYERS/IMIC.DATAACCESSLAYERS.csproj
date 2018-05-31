@@ -122,6 +122,9 @@
     <Compile Include="SP_GETELEMENTS_BYDATE_STUDENTS_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
+    <Compile Include="SP_GETELEMENT_BYID_CLASSES_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
     <Compile Include="SP_GetElement_USER_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
@@ -146,7 +149,13 @@
     <Compile Include="SP_GETLISTSTUDENT_BYCLASSID_STUDENTS_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
+    <Compile Include="SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
     <Compile Include="SP_GETLITSTUDENT_BYID_CLASS_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GETSTUDENT_BYID_STUDENTS_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_GETUSERINFO_Result.cs">

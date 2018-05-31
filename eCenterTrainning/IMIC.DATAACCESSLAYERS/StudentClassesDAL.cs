@@ -56,9 +56,9 @@ namespace IMIC.DATAACCESSLAYERS
                 //oStudentClasses.ClassName = o.ClassName;
                 oStudentClasses.DateStart = (DateTime)o.DateStart;
                 oStudentClasses.FullName = o.FullName;
-                oStudentClasses.Email = /*string.IsNullOrEmpty(o.Email) ? "" : oCommons.DecryptInfo(*/o.Email/*)*/;
+                oStudentClasses.Email = string.IsNullOrEmpty(o.Email) ? "" : oCommons.DecryptInfo(o.Email);
                 //oStudentClasses.FullName = o.FullName;
-                oStudentClasses.Mobile = /*string.IsNullOrEmpty(o.Mobile) ? "": oCommons.DecryptInfo(*/o.Mobile/*)*/;
+                oStudentClasses.Mobile = string.IsNullOrEmpty(o.Mobile) ? "" : oCommons.DecryptInfo(o.Mobile);
                 oStudentClasses.Sex = (int)o.Sex;
                 if (oStudentClasses.Sex == 0)
                     oStudentClasses.sSex = "Nam";
@@ -80,6 +80,12 @@ namespace IMIC.DATAACCESSLAYERS
             TrainingCenterEntities oEntities = ConnectionEntities.getTrainingCenter(mAcount);
             oEntities.SP_Delete_Student_Class_By_Id(oT.Id);
             return true;
+        }
+        public override bool InsertElement(StudentClasses o)
+        {
+            TrainingCenterEntities oEntities = ConnectionEntities.getTrainingCenter(mAcount);
+            return oEntities.SP_INSERT_STUDENT_CLASS(o.ClassId, o.StudentId, o.DateStart.ToString(), null, null, null,
+                null, null, null, o.TotalPrice, o.Price1, o.Price2, o.Price3, o.MustPay, null, null, null, null) > 0;
         }
     }
 }

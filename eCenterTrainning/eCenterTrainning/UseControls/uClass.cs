@@ -212,7 +212,8 @@ namespace eCenterTrainning.UseControls
             {
                 frmAddStudentIntoClassess ofrm = new frmAddStudentIntoClassess(mAccount, oClasses);
                 ofrm.ShowDialog();
-                //LoadData_Student_Of_Classes(oClasses.Id);
+                StudentClasses obj = new StudentClasses() { ClassId = oClasses.Id };
+                LoadData_Student_Of_Classes(obj);
             }
         }        
         private void gridControlClass_MouseClick(object sender, MouseEventArgs e)
