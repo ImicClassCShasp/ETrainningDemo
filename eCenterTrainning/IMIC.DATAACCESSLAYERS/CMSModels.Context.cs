@@ -17,8 +17,8 @@ namespace IMIC.DATAACCESSLAYERS
     
     public partial class TrainingCenterEntities : DbContext
     {
-        public TrainingCenterEntities(string sValue)
-            : base(sValue)
+public TrainingCenterEntities(string s)
+            : base(s)
         {
         }
     
@@ -1729,6 +1729,91 @@ namespace IMIC.DATAACCESSLAYERS
                 new ObjectParameter("classid", typeof(int));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETLITSTUDENT_BYID_CLASS_Result>("SP_GETLITSTUDENT_BYID_CLASS", classidParameter);
+        }
+    
+        public virtual ObjectResult<SP_GETALL_EXPERT_INFO_Result> SP_GETALL_EXPERT_INFO()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETALL_EXPERT_INFO_Result>("SP_GETALL_EXPERT_INFO");
+        }
+    
+        public virtual ObjectResult<SP_GETELEMENT_BYID_EXPERT_INFO_Result> SP_GETELEMENT_BYID_EXPERT_INFO(Nullable<int> idExpert)
+        {
+            var idExpertParameter = idExpert.HasValue ?
+                new ObjectParameter("IdExpert", idExpert) :
+                new ObjectParameter("IdExpert", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETELEMENT_BYID_EXPERT_INFO_Result>("SP_GETELEMENT_BYID_EXPERT_INFO", idExpertParameter);
+        }
+    
+        public virtual int SP_INSERTUPDATE_EXPERT_INFO(Nullable<int> flag, Nullable<int> idExpert, string expName, Nullable<System.DateTime> birthday, Nullable<int> sex, string address, string des, Nullable<int> yearExp, string uniDegree, Nullable<int> centerID, string email, string mobile, string expertCV)
+        {
+            var flagParameter = flag.HasValue ?
+                new ObjectParameter("flag", flag) :
+                new ObjectParameter("flag", typeof(int));
+    
+            var idExpertParameter = idExpert.HasValue ?
+                new ObjectParameter("idExpert", idExpert) :
+                new ObjectParameter("idExpert", typeof(int));
+    
+            var expNameParameter = expName != null ?
+                new ObjectParameter("ExpName", expName) :
+                new ObjectParameter("ExpName", typeof(string));
+    
+            var birthdayParameter = birthday.HasValue ?
+                new ObjectParameter("Birthday", birthday) :
+                new ObjectParameter("Birthday", typeof(System.DateTime));
+    
+            var sexParameter = sex.HasValue ?
+                new ObjectParameter("Sex", sex) :
+                new ObjectParameter("Sex", typeof(int));
+    
+            var addressParameter = address != null ?
+                new ObjectParameter("address", address) :
+                new ObjectParameter("address", typeof(string));
+    
+            var desParameter = des != null ?
+                new ObjectParameter("des", des) :
+                new ObjectParameter("des", typeof(string));
+    
+            var yearExpParameter = yearExp.HasValue ?
+                new ObjectParameter("yearExp", yearExp) :
+                new ObjectParameter("yearExp", typeof(int));
+    
+            var uniDegreeParameter = uniDegree != null ?
+                new ObjectParameter("UniDegree", uniDegree) :
+                new ObjectParameter("UniDegree", typeof(string));
+    
+            var centerIDParameter = centerID.HasValue ?
+                new ObjectParameter("CenterID", centerID) :
+                new ObjectParameter("CenterID", typeof(int));
+    
+            var emailParameter = email != null ?
+                new ObjectParameter("Email", email) :
+                new ObjectParameter("Email", typeof(string));
+    
+            var mobileParameter = mobile != null ?
+                new ObjectParameter("Mobile", mobile) :
+                new ObjectParameter("Mobile", typeof(string));
+    
+            var expertCVParameter = expertCV != null ?
+                new ObjectParameter("ExpertCV", expertCV) :
+                new ObjectParameter("ExpertCV", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_INSERTUPDATE_EXPERT_INFO", flagParameter, idExpertParameter, expNameParameter, birthdayParameter, sexParameter, addressParameter, desParameter, yearExpParameter, uniDegreeParameter, centerIDParameter, emailParameter, mobileParameter, expertCVParameter);
+        }
+    
+        public virtual ObjectResult<SP_GetAll_TrungTam_Result> SP_GetAll_TrungTam()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GetAll_TrungTam_Result>("SP_GetAll_TrungTam");
+        }
+    
+        public virtual int SP_DELETE_EXPERTINFO_XOA(Nullable<int> expertId)
+        {
+            var expertIdParameter = expertId.HasValue ?
+                new ObjectParameter("ExpertId", expertId) :
+                new ObjectParameter("ExpertId", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_DELETE_EXPERTINFO_XOA", expertIdParameter);
         }
     }
 }

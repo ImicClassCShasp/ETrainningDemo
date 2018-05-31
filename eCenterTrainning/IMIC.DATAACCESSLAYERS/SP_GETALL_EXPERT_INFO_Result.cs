@@ -6,12 +6,12 @@
 //     Manual changes to this file will be overwritten if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
 
-namespace IMIC.VALUEOBJECTS
+namespace IMIC.DATAACCESSLAYERS
 {
-    public class ExpertInfo
+    using System;
+    
+    public partial class SP_GETALL_EXPERT_INFO_Result
     {
         public int Id { get; set; }
         public string ExpertName { get; set; }
@@ -25,12 +25,6 @@ namespace IMIC.VALUEOBJECTS
         public string Email { get; set; }
         public string Mobile { get; set; }
         public string ExpertCV { get; set; }
-        /// <summary>
-        /// Author          Date        Comment
-        /// TungVP          31-05-2018  Add 2 field iFlag, CenterName & sSex
-        /// </summary>
         public string CenterName { get; set; }
-        public string sSex { get; set; }
-        public int iFlag { get; set; }
     }
 }
