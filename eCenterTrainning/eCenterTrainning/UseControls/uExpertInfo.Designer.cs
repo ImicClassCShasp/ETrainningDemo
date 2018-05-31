@@ -164,7 +164,7 @@
             // colSex
             // 
             this.colSex.Caption = "Giới Tính";
-            this.colSex.FieldName = "sSex";
+            this.colSex.FieldName = "Sex";
             this.colSex.Name = "colSex";
             this.colSex.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains;
             this.colSex.Visible = true;
@@ -349,7 +349,7 @@
             this.lookUpEditExpert.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEditExpert.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "Id", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "Id", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ExpertName", "Tên giảng viên")});
             this.lookUpEditExpert.Properties.NullText = "---Chọn giảng viên ---";
             this.lookUpEditExpert.Size = new System.Drawing.Size(176, 20);

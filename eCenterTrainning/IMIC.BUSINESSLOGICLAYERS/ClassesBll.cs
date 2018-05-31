@@ -27,9 +27,5 @@ namespace IMIC.BUSINESSLOGICLAYERS
         {
             return mClassesDAL.UpdateElement(oT);
         }
-        public override Classes getElementById(object id)
-        {
-            return mClassesDAL.getElementById(id);
-        }
     }
 }

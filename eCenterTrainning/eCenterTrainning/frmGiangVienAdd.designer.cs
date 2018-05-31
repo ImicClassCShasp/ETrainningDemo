@@ -57,7 +57,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.msgMessage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlGiangVien)).BeginInit();
             this.groupControlGiangVien.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgaySinh.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgaySinh.Properties.VistaTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditNgaySinh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookupEditTrungTam.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTruongTotNghiep.Properties)).BeginInit();
@@ -112,12 +112,13 @@
             // 
             // btnContent
             // 
-            this.btnContent.ImageOptions.Image = global::eCenterTrainning.Properties.Resources._002;
+            this.btnContent.Image = global::eCenterTrainning.Properties.Resources._002;
             this.btnContent.Location = new System.Drawing.Point(413, 232);
             this.btnContent.Name = "btnContent";
             this.btnContent.Size = new System.Drawing.Size(65, 20);
             this.btnContent.TabIndex = 12;
             this.btnContent.Text = "Chi tiết";
+            //this.btnContent.Click += new System.EventHandler(this.btnContent_Click);
             // 
             // txtNoiDung
             // 
@@ -143,21 +144,22 @@
             this.dateEditNgaySinh.Name = "dateEditNgaySinh";
             this.dateEditNgaySinh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEditNgaySinh.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
             this.dateEditNgaySinh.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.dateEditNgaySinh.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.dateEditNgaySinh.Properties.Mask.EditMask = "dd/MM/yyyy";
+            this.dateEditNgaySinh.Properties.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
             this.dateEditNgaySinh.Size = new System.Drawing.Size(121, 20);
             this.dateEditNgaySinh.TabIndex = 17;
             // 
             // btnAddMoreCenter
             // 
-            this.btnAddMoreCenter.ImageOptions.Image = global::eCenterTrainning.Properties.Resources._103;
+            this.btnAddMoreCenter.Image = global::eCenterTrainning.Properties.Resources._103;
             this.btnAddMoreCenter.Location = new System.Drawing.Point(453, 198);
             this.btnAddMoreCenter.Name = "btnAddMoreCenter";
             this.btnAddMoreCenter.Size = new System.Drawing.Size(25, 20);
             this.btnAddMoreCenter.TabIndex = 10;
+            //this.btnAddMoreCenter.Click += new System.EventHandler(this.btnAddMoreCenter_Click);
             // 
             // txtMota
             // 
@@ -175,7 +177,7 @@
             this.lookupEditTrungTam.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookupEditTrungTam.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "ID", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "ID", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CenterName", "Tên Trung Tâm")});
             this.lookupEditTrungTam.Properties.NullText = "--- Chọn Trung Tâm ---";
             this.lookupEditTrungTam.Size = new System.Drawing.Size(332, 20);
@@ -331,14 +333,13 @@
             this.Controls.Add(this.actionUpdate);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmGiangVienAdd";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmGiangVienAdd";
             this.Load += new System.EventHandler(this.frmGiangVienAdd_Load);
             ((System.ComponentModel.ISupportInitialize)(this.msgMessage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlGiangVien)).EndInit();
             this.groupControlGiangVien.ResumeLayout(false);
             this.groupControlGiangVien.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgaySinh.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgaySinh.Properties.VistaTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditNgaySinh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookupEditTrungTam.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTruongTotNghiep.Properties)).EndInit();

@@ -15,7 +15,7 @@ namespace IMIC.DATAACCESSLAYERS
         public override List<Classes> getElements()
         {
             TrainingCenterEntities oEntities = ConnectionEntities.getTrainingCenter(mAcount);
-            var oData = oEntities.SP_GETALL_AYEAR_CLASS().ToList();
+            var oData = oEntities.SP_IMIC_Get_Class_By_Year().ToList();
             List<Classes> lisClasses = new List<Classes>();
             foreach (var o in oData)
             {
@@ -45,28 +45,6 @@ namespace IMIC.DATAACCESSLAYERS
             TrainingCenterEntities oEntities = ConnectionEntities.getTrainingCenter(mAcount);
             oEntities.SP_IMIC_Add_Expert_Into_Classes(oT.Id, oT.ExpertId);
             return true;
-        }
-        public override Classes getElementById(object id)
-        {
-            TrainingCenterEntities oEntities = ConnectionEntities.getTrainingCenter(mAcount);
-            var oData = oEntities.SP_GETELEMENT_BYID_CLASSES((int)id).ToList();
-            List<Classes> lisClasses = new List<Classes>();
-            foreach (var o in oData)
-            {
-                Classes oClasses = new Classes
-                {
-                    Id = o.Id,
-                    ClassName = o.ClassName,
-                    FromDate = o.FromDate,
-                    ToDate = o.ToDate,
-                    PlaceTraining = o.PlaceTraining,
-                    NumberStudents = o.NumberStudents,
-                    Description = o.Description,
-                    Status = o.Status
-                };
-                return oClasses;
-            }
-            return null;
         }
     }
 }

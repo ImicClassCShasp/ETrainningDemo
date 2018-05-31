@@ -23,6 +23,5 @@ namespace IMIC.DATAACCESSLAYERS
         public virtual List<T> CheckElementById(object Id) { return null; }
         public virtual List<T> CheckElementByObject(T oT) { return null; }
         public virtual bool InsertAndUpdate(T oT) { return true; }
-        public virtual bool DeleteElement(object id) { return true; }
     }
 }

@@ -132,10 +132,9 @@
             // 
             this.xtraTabControlClass.Dock = System.Windows.Forms.DockStyle.Fill;
             this.xtraTabControlClass.Location = new System.Drawing.Point(0, 0);
-            this.xtraTabControlClass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraTabControlClass.Name = "xtraTabControlClass";
             this.xtraTabControlClass.SelectedTabPage = this.xtraTabPageClass;
-            this.xtraTabControlClass.Size = new System.Drawing.Size(888, 470);
+            this.xtraTabControlClass.Size = new System.Drawing.Size(761, 382);
             this.xtraTabControlClass.TabIndex = 0;
             this.xtraTabControlClass.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPageClass,
@@ -150,34 +149,29 @@
             this.xtraTabPageClass.Controls.Add(this.actionMenu1);
             this.xtraTabPageClass.ImageOptions.Image = global::eCenterTrainning.Properties.Resources._002;
             this.xtraTabPageClass.ImageOptions.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            this.xtraTabPageClass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraTabPageClass.Name = "xtraTabPageClass";
-            this.xtraTabPageClass.Size = new System.Drawing.Size(881, 435);
+            this.xtraTabPageClass.Size = new System.Drawing.Size(755, 351);
             this.xtraTabPageClass.Text = "Thông tin lớp học";
             // 
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.gridControlClass);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl1.Location = new System.Drawing.Point(0, 98);
-            this.groupControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupControl1.Location = new System.Drawing.Point(0, 79);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(881, 337);
+            this.groupControl1.Size = new System.Drawing.Size(755, 272);
             this.groupControl1.TabIndex = 5;
             // 
             // gridControlClass
             // 
             this.gridControlClass.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlClass.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gridControlClass.Location = new System.Drawing.Point(2, 25);
+            this.gridControlClass.Location = new System.Drawing.Point(2, 20);
             this.gridControlClass.MainView = this.gridViewClass;
-            this.gridControlClass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControlClass.Name = "gridControlClass";
-            this.gridControlClass.Size = new System.Drawing.Size(877, 310);
+            this.gridControlClass.Size = new System.Drawing.Size(751, 250);
             this.gridControlClass.TabIndex = 0;
             this.gridControlClass.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewClass});
-            this.gridControlClass.Click += new System.EventHandler(this.gridControlClass_Click);
             this.gridControlClass.MouseClick += new System.Windows.Forms.MouseEventHandler(this.gridControlClass_MouseClick);
             // 
             // gridViewClass
@@ -273,17 +267,15 @@
             this.panelControl2.Controls.Add(this.labelControl3);
             this.panelControl2.Controls.Add(this.labelControl9);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl2.Location = new System.Drawing.Point(0, 52);
-            this.panelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelControl2.Location = new System.Drawing.Point(0, 42);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(881, 46);
+            this.panelControl2.Size = new System.Drawing.Size(755, 37);
             this.panelControl2.TabIndex = 1;
             // 
             // dtClassesStartTime
             // 
             this.dtClassesStartTime.EditValue = null;
-            this.dtClassesStartTime.Location = new System.Drawing.Point(71, 9);
-            this.dtClassesStartTime.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtClassesStartTime.Location = new System.Drawing.Point(61, 7);
             this.dtClassesStartTime.Name = "dtClassesStartTime";
             this.dtClassesStartTime.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.dtClassesStartTime.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -296,15 +288,14 @@
             this.dtClassesStartTime.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.dtClassesStartTime.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.dtClassesStartTime.Properties.Mask.EditMask = "dd/MM/yyyy";
-            this.dtClassesStartTime.Size = new System.Drawing.Size(188, 26);
+            this.dtClassesStartTime.Size = new System.Drawing.Size(161, 22);
             this.dtClassesStartTime.TabIndex = 22;
             // 
             // dtClassesEndTime
             // 
             this.dtClassesEndTime.EditValue = null;
             this.dtClassesEndTime.Enabled = false;
-            this.dtClassesEndTime.Location = new System.Drawing.Point(308, 9);
-            this.dtClassesEndTime.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtClassesEndTime.Location = new System.Drawing.Point(264, 7);
             this.dtClassesEndTime.Name = "dtClassesEndTime";
             this.dtClassesEndTime.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.dtClassesEndTime.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -317,17 +308,16 @@
             this.dtClassesEndTime.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.dtClassesEndTime.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.dtClassesEndTime.Properties.Mask.EditMask = "dd/MM/yyyy";
-            this.dtClassesEndTime.Size = new System.Drawing.Size(225, 26);
+            this.dtClassesEndTime.Size = new System.Drawing.Size(193, 22);
             this.dtClassesEndTime.TabIndex = 23;
             // 
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(269, 14);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl3.Location = new System.Drawing.Point(231, 11);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(41, 21);
+            this.labelControl3.Size = new System.Drawing.Size(32, 16);
             this.labelControl3.TabIndex = 20;
             this.labelControl3.Text = "Đến :";
             // 
@@ -335,10 +325,9 @@
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(9, 14);
-            this.labelControl9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl9.Location = new System.Drawing.Point(8, 11);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(71, 21);
+            this.labelControl9.Size = new System.Drawing.Size(56, 16);
             this.labelControl9.TabIndex = 21;
             this.labelControl9.Text = "Từ ngày :";
             // 
@@ -346,9 +335,8 @@
             // 
             this.actionMenu1.Dock = System.Windows.Forms.DockStyle.Top;
             this.actionMenu1.Location = new System.Drawing.Point(0, 0);
-            this.actionMenu1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.actionMenu1.Name = "actionMenu1";
-            this.actionMenu1.Size = new System.Drawing.Size(881, 52);
+            this.actionMenu1.Size = new System.Drawing.Size(755, 42);
             this.actionMenu1.TabIndex = 3;
             // 
             // xtraTabPageStudent
@@ -357,18 +345,15 @@
             this.xtraTabPageStudent.Controls.Add(this.panelControl1);
             this.xtraTabPageStudent.ImageOptions.Image = global::eCenterTrainning.Properties.Resources._007;
             this.xtraTabPageStudent.ImageOptions.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            this.xtraTabPageStudent.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraTabPageStudent.Name = "xtraTabPageStudent";
-            this.xtraTabPageStudent.Size = new System.Drawing.Size(881, 435);
+            this.xtraTabPageStudent.Size = new System.Drawing.Size(755, 351);
             this.xtraTabPageStudent.Text = "Thông tin sinh viên";
             // 
             // gridControlStudent
             // 
             this.gridControlStudent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlStudent.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gridControlStudent.Location = new System.Drawing.Point(0, 54);
+            this.gridControlStudent.Location = new System.Drawing.Point(0, 44);
             this.gridControlStudent.MainView = this.gridViewStudent;
-            this.gridControlStudent.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControlStudent.Name = "gridControlStudent";
             this.gridControlStudent.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEdit1,
@@ -378,7 +363,7 @@
             this.repositoryItemImageEdit1,
             this.repositoryItemImageComboBox1,
             this.repositoryItemImageComboBox2});
-            this.gridControlStudent.Size = new System.Drawing.Size(881, 381);
+            this.gridControlStudent.Size = new System.Drawing.Size(755, 307);
             this.gridControlStudent.TabIndex = 3;
             this.gridControlStudent.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewStudent});
@@ -640,9 +625,8 @@
             this.panelControl1.Controls.Add(this.labelControl1);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
-            this.panelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(881, 54);
+            this.panelControl1.Size = new System.Drawing.Size(755, 44);
             this.panelControl1.TabIndex = 2;
             // 
             // btnXoaHocVien
@@ -650,10 +634,9 @@
             this.btnXoaHocVien.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.btnXoaHocVien.Enabled = false;
             this.btnXoaHocVien.ImageOptions.Image = global::eCenterTrainning.Properties.Resources.cross;
-            this.btnXoaHocVien.Location = new System.Drawing.Point(528, 14);
-            this.btnXoaHocVien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnXoaHocVien.Location = new System.Drawing.Point(453, 11);
             this.btnXoaHocVien.Name = "btnXoaHocVien";
-            this.btnXoaHocVien.Size = new System.Drawing.Size(150, 28);
+            this.btnXoaHocVien.Size = new System.Drawing.Size(129, 23);
             this.btnXoaHocVien.TabIndex = 5;
             this.btnXoaHocVien.Text = "Xóa tên khỏi lớp học";
             this.btnXoaHocVien.Click += new System.EventHandler(this.btnXoaHocVien_Click);
@@ -662,10 +645,9 @@
             // 
             this.btnGiangVien.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.btnGiangVien.ImageOptions.Image = global::eCenterTrainning.Properties.Resources.add_icon;
-            this.btnGiangVien.Location = new System.Drawing.Point(434, 14);
-            this.btnGiangVien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnGiangVien.Location = new System.Drawing.Point(372, 11);
             this.btnGiangVien.Name = "btnGiangVien";
-            this.btnGiangVien.Size = new System.Drawing.Size(87, 28);
+            this.btnGiangVien.Size = new System.Drawing.Size(75, 23);
             this.btnGiangVien.TabIndex = 4;
             this.btnGiangVien.Text = "Chọn GV";
             this.btnGiangVien.ToolTip = "Chọn giảng viên dạy lớp được chọn";
@@ -675,10 +657,9 @@
             // 
             this.btnThemHocVien.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.btnThemHocVien.ImageOptions.Image = global::eCenterTrainning.Properties.Resources.add_icon;
-            this.btnThemHocVien.Location = new System.Drawing.Point(336, 14);
-            this.btnThemHocVien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnThemHocVien.Location = new System.Drawing.Point(288, 11);
             this.btnThemHocVien.Name = "btnThemHocVien";
-            this.btnThemHocVien.Size = new System.Drawing.Size(91, 28);
+            this.btnThemHocVien.Size = new System.Drawing.Size(78, 23);
             this.btnThemHocVien.TabIndex = 2;
             this.btnThemHocVien.Text = "Thêm mới";
             this.btnThemHocVien.ToolTip = "Thêm mới học viên vào lớp";
@@ -686,8 +667,7 @@
             // 
             // lookUpEditClass
             // 
-            this.lookUpEditClass.Location = new System.Drawing.Point(90, 15);
-            this.lookUpEditClass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lookUpEditClass.Location = new System.Drawing.Point(77, 12);
             this.lookUpEditClass.Name = "lookUpEditClass";
             this.lookUpEditClass.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -695,16 +675,15 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "Id", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ClassName", "Lớp học")});
             this.lookUpEditClass.Properties.NullText = "---Chọn lớp học---";
-            this.lookUpEditClass.Size = new System.Drawing.Size(226, 22);
+            this.lookUpEditClass.Size = new System.Drawing.Size(194, 20);
             this.lookUpEditClass.TabIndex = 1;
             this.lookUpEditClass.EditValueChanged += new System.EventHandler(this.lookUpEditClass_EditValueChanged);
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(19, 20);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl1.Location = new System.Drawing.Point(16, 16);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(59, 17);
+            this.labelControl1.Size = new System.Drawing.Size(44, 13);
             this.labelControl1.TabIndex = 1;
             this.labelControl1.Text = "Lớp học :";
             // 
@@ -714,20 +693,17 @@
             this.xtraTabPage1.Controls.Add(this.panel1);
             this.xtraTabPage1.ImageOptions.Image = global::eCenterTrainning.Properties.Resources.Group_3;
             this.xtraTabPage1.ImageOptions.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            this.xtraTabPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(881, 435);
+            this.xtraTabPage1.Size = new System.Drawing.Size(755, 351);
             this.xtraTabPage1.Text = "Chi tiết danh sách Học Viên theo Lớp Học";
             // 
             // grCDanhSachHocVien
             // 
             this.grCDanhSachHocVien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grCDanhSachHocVien.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grCDanhSachHocVien.Location = new System.Drawing.Point(0, 63);
+            this.grCDanhSachHocVien.Location = new System.Drawing.Point(0, 51);
             this.grCDanhSachHocVien.MainView = this.grVDanhSachHocVien;
-            this.grCDanhSachHocVien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grCDanhSachHocVien.Name = "grCDanhSachHocVien";
-            this.grCDanhSachHocVien.Size = new System.Drawing.Size(881, 372);
+            this.grCDanhSachHocVien.Size = new System.Drawing.Size(755, 300);
             this.grCDanhSachHocVien.TabIndex = 1;
             this.grCDanhSachHocVien.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grVDanhSachHocVien});
@@ -807,9 +783,8 @@
             this.panel1.Controls.Add(this.labelControl2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(881, 63);
+            this.panel1.Size = new System.Drawing.Size(755, 51);
             this.panel1.TabIndex = 0;
             // 
             // btnChonChuyenGia
@@ -817,10 +792,9 @@
             this.btnChonChuyenGia.Appearance.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChonChuyenGia.Appearance.Options.UseFont = true;
             this.btnChonChuyenGia.ImageOptions.Image = global::eCenterTrainning.Properties.Resources._007;
-            this.btnChonChuyenGia.Location = new System.Drawing.Point(656, 18);
-            this.btnChonChuyenGia.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnChonChuyenGia.Location = new System.Drawing.Point(562, 15);
             this.btnChonChuyenGia.Name = "btnChonChuyenGia";
-            this.btnChonChuyenGia.Size = new System.Drawing.Size(174, 28);
+            this.btnChonChuyenGia.Size = new System.Drawing.Size(149, 23);
             this.btnChonChuyenGia.TabIndex = 5;
             this.btnChonChuyenGia.Text = "Chọn Chuyên Gia";
             this.btnChonChuyenGia.Click += new System.EventHandler(this.btnChonChuyenGia_Click);
@@ -830,10 +804,9 @@
             this.btnXuatDL.Appearance.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXuatDL.Appearance.Options.UseFont = true;
             this.btnXuatDL.ImageOptions.Image = global::eCenterTrainning.Properties.Resources.icon_excel;
-            this.btnXuatDL.Location = new System.Drawing.Point(406, 18);
-            this.btnXuatDL.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnXuatDL.Location = new System.Drawing.Point(348, 15);
             this.btnXuatDL.Name = "btnXuatDL";
-            this.btnXuatDL.Size = new System.Drawing.Size(241, 28);
+            this.btnXuatDL.Size = new System.Drawing.Size(207, 23);
             this.btnXuatDL.TabIndex = 4;
             this.btnXuatDL.Text = "Xuất Dữ Liệu thành files";
             this.btnXuatDL.ToolTip = "Chọn học viên đã có trong hệ thống";
@@ -842,33 +815,30 @@
             // txtTenLopHoc
             // 
             this.txtTenLopHoc.Enabled = false;
-            this.txtTenLopHoc.Location = new System.Drawing.Point(210, 16);
-            this.txtTenLopHoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTenLopHoc.Location = new System.Drawing.Point(180, 13);
             this.txtTenLopHoc.Name = "txtTenLopHoc";
             this.txtTenLopHoc.Properties.Appearance.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenLopHoc.Properties.Appearance.Options.UseFont = true;
-            this.txtTenLopHoc.Size = new System.Drawing.Size(189, 30);
+            this.txtTenLopHoc.Size = new System.Drawing.Size(162, 26);
             this.txtTenLopHoc.TabIndex = 1;
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(16, 20);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl2.Location = new System.Drawing.Point(14, 16);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(205, 23);
+            this.labelControl2.Size = new System.Drawing.Size(169, 19);
             this.labelControl2.TabIndex = 0;
             this.labelControl2.Text = "Danh sách học viên lớp: ";
             // 
             // uClass
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.xtraTabControlClass);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "uClass";
-            this.Size = new System.Drawing.Size(888, 470);
+            this.Size = new System.Drawing.Size(761, 382);
             this.Load += new System.EventHandler(this.uClass_Load);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControlClass)).EndInit();
             this.xtraTabControlClass.ResumeLayout(false);

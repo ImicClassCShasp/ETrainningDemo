@@ -46,8 +46,7 @@ namespace eCenterTrainning.UseControls
             dtClassesEndTime.EditValue = DateTime.Now;
             dtClassesEndTime.Enabled = true;
             LoadLookUpEditClass();
-            LoadDataClasses();
-            this.Dock = DockStyle.Fill;
+            LoadDataClasses();           
         }
         void LoadDataClasses()
         {
@@ -189,8 +188,7 @@ namespace eCenterTrainning.UseControls
                 int.TryParse("" + lookUpEditClass.EditValue, out iClassId);
                 if (iClassId > 0)
                 {
-                    StudentClasses obj = new StudentClasses() { ClassId = iClassId };
-                    LoadData_Student_Of_Classes(obj);
+                    LoadData_Student_Of_Classes(iClassId);
                 }
             }
             catch (Exception ex)
@@ -212,8 +210,7 @@ namespace eCenterTrainning.UseControls
             {
                 frmAddStudentIntoClassess ofrm = new frmAddStudentIntoClassess(mAccount, oClasses);
                 ofrm.ShowDialog();
-                StudentClasses obj = new StudentClasses() { ClassId = oClasses.Id };
-                LoadData_Student_Of_Classes(obj);
+                LoadData_Student_Of_Classes(oClasses.Id);
             }
         }        
         private void gridControlClass_MouseClick(object sender, MouseEventArgs e)
@@ -231,11 +228,9 @@ namespace eCenterTrainning.UseControls
                     mClasses.Id = string.IsNullOrEmpty("" + lookUpEditClass.EditValue)
                                 ? 0 : int.Parse("" + lookUpEditClass.EditValue);
                     mClasses.ClassName = sClassName;
-                    StudentClasses obj = new StudentClasses() { ClassId = mClasses.Id };
-                    LoadData_Student_Of_Classes(obj);
-
+                    mLisListStudents = new ListStudentsBll(mAccount).CheckElementById(mClasses.Id);
+                    grCDanhSachHocVien.DataSource = mLisListStudents;
                 }
-                xtraTabControlClass.SelectedTabPage = xtraTabPageStudent;
             }
             catch (Exception ex)
             {
@@ -246,9 +241,9 @@ namespace eCenterTrainning.UseControls
                 this.Cursor = Cursors.Default;
             }
         }
-        void LoadData_Student_Of_Classes(StudentClasses oStudentClasses)
+        void LoadData_Student_Of_Classes(int iClassId)
         {
-            mLisStudentClasses = new StudentClassesBll(mAccount).CheckElementByObject(oStudentClasses);
+            mLisStudentClasses = new StudentClassesBll(mAccount).CheckElementById(iClassId);
             if (mLisStudentClasses != null)
             {
                 gridControlStudent.DataSource = mLisStudentClasses;
@@ -373,11 +368,6 @@ namespace eCenterTrainning.UseControls
             //objGiangVien.IdGV = ClassId;
             //objGiangVien.ShowDialog();
             //HienThiChiTietDanhSachHocVienTheoLop();
-        }
-
-        private void gridControlClass_Click(object sender, EventArgs e)
-        {
-
-        }
+        }                      
     }
 }

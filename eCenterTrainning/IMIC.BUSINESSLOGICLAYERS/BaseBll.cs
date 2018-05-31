@@ -20,7 +20,6 @@ namespace IMIC.BUSINESSLOGICLAYERS
         public virtual bool InsertElement(T oT) { return true; }
         public virtual bool UpdateElement(T oT) { return true; }
         public virtual bool DeleteElement(T oT) { return true; }
-        public virtual bool DeleteElement(object id) { return true; }
         public virtual List<T> CheckElementById(object Id) { return null; }
         public virtual List<T> CheckElementByObject(T oT) { return null; }
         public virtual bool InsertAndUpdateElement(T oT) { return true; }

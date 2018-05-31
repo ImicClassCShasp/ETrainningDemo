@@ -8,29 +8,23 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using System.Linq;
 using IMIC.SyncModule;
-using IMIC.VALUEOBJECTS;
-using IMIC.BUSINESSLOGICLAYERS;
 
 namespace eCenterTrainning.UseControls
 {
-    public partial class uExpertInfo : ucRightForm
+    public partial class uExpertInfo : DevExpress.XtraEditors.XtraUserControl
     {
         cConfigParams mConfigParams;
-        ExpertInfoBll mExpertInfoBll;
-        //public uExpertInfo()
-        //{
-        //    InitializeComponent();
-        //}
+
+        public uExpertInfo()
+        {
+            InitializeComponent();
+        }
         public uExpertInfo(cConfigParams oConfigs)
         {
             InitializeComponent();
             mConfigParams = oConfigs;
         }
-        public uExpertInfo(Account oAccount) : base(oAccount)
-        {
-            InitializeComponent();
-            mExpertInfoBll = new ExpertInfoBll(mAccount);
-        }
+
         private int idGV=0;
         private void uExpertInfo_Load(object sender, EventArgs e)
         {
@@ -46,7 +40,6 @@ namespace eCenterTrainning.UseControls
             //    this.Hide();
             //    return;
             //}
-            this.Dock = DockStyle.Fill;
             displayExpert();
         }
 
@@ -74,12 +67,7 @@ namespace eCenterTrainning.UseControls
             int.TryParse(value, out idGV);
             if (idGV > 0)
             {
-                DialogResult dr = MessageBox.Show("Thao tác xóa không thể khôi phục, bạn có chắc muốn xóa Giảng viên này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                if (dr == DialogResult.Yes)
-                {
-                    mExpertInfoBll.DeleteElement(idGV);
-                    displayExpert();
-                }
+                MessageBox.Show("");
             }
             else
             {
@@ -97,9 +85,7 @@ namespace eCenterTrainning.UseControls
             int.TryParse(value, out idGV);
             if (idGV > 0)
             {
-                frmGiangVienAdd oGVEdit = new frmGiangVienAdd(mAccount,1,idGV);
-                oGVEdit.ShowDialog();
-                displayExpert();
+                MessageBox.Show("");
             }
             else
             {
@@ -113,9 +99,7 @@ namespace eCenterTrainning.UseControls
         /// </summary>
         void actionMenuExpert_PressNew(object sender, EventArgs e)
         {
-            frmGiangVienAdd oGVAdd = new frmGiangVienAdd(mAccount, 0, idGV);
-            oGVAdd.ShowDialog();
-            displayExpert();
+            MessageBox.Show("");
         }
         /// <summary>
         /// Author          Date        Comment
@@ -123,13 +107,10 @@ namespace eCenterTrainning.UseControls
         /// </summary>
         public  void displayExpert()
         {
-            //MessageBox.Show("");
-
-            //lookUpEditExpert.Properties.DisplayMember = "ExpertName";
-            //lookUpEditExpert.Properties.ValueMember = "Id";
-            gridControlGiangVien.DataSource = mExpertInfoBll.getElements();
-            gridControlGiangVien.Update();
-            gridControlGiangVien.Refresh();
+            MessageBox.Show("");
+            lookUpEditExpert.Properties.DisplayMember = "ExpertName";
+            lookUpEditExpert.Properties.ValueMember = "Id";
+            
         }
         /// <summary>
         /// Author          Date        Comment
@@ -141,7 +122,7 @@ namespace eCenterTrainning.UseControls
             int.TryParse(value, out idGV);
             if (idGV > 0)
             {
-                actionMenuExpert_PressEdit(sender,e);
+                MessageBox.Show("");
             }
             else
             {

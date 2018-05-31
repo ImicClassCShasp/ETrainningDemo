@@ -15,7 +15,10 @@ namespace IMIC.VALUEOBJECTS
     {
         public int Id { get; set; }
         public string EmployeeName { get; set; }
+
         public Nullable<int> Sex { get; set; }
+        public string SexString { get; set; }
+
         public Nullable<System.DateTime> DateBirhday { get; set; }
         public string Mobile { get; set; }
         public string Phone { get; set; }
@@ -36,5 +39,8 @@ namespace IMIC.VALUEOBJECTS
         public Nullable<int> CenterId { get; set; }
         public Nullable<int> OuId { get; set; }
         public string EmployeeCV { get; set; }
+
+        public string CenterName { get; set; }
+        public string OuName { get; set; }
     }
 }

@@ -19,17 +19,9 @@ namespace IMIC.BUSINESSLOGICLAYERS
         {
             return mExpertInfoDAL.getElements();
         }
-        public override ExpertInfo getElementById(object id)
+        public override bool UpdateElement(ExpertInfo oT)
         {
-            return mExpertInfoDAL.getElementById(id);
-        }
-        public override bool InsertAndUpdateElement(ExpertInfo oT)
-        {
-            return mExpertInfoDAL.InsertAndUpdate(oT);
-        }
-        public override bool DeleteElement(object id)
-        {
-            return mExpertInfoDAL.DeleteElement(id);
+            return mExpertInfoDAL.UpdateElement(oT);
         }
     }
 }

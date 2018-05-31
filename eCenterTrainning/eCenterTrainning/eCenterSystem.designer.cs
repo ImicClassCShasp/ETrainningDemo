@@ -161,6 +161,11 @@
             this.dockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
             this.naveTrainning = new DevExpress.XtraNavBar.NavBarControl();
+            this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarItemChucVu = new DevExpress.XtraNavBar.NavBarItem();
+            this.navDepartment = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItemNhanVien = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItemSocialNetwordAccout = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarGroup3 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarItemHocVien = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItemCourse = new DevExpress.XtraNavBar.NavBarItem();
@@ -172,11 +177,6 @@
             this.navBarGroup2 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarGiangVien = new DevExpress.XtraNavBar.NavBarItem();
             this.navThemMoiGiangVien = new DevExpress.XtraNavBar.NavBarItem();
-            this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
-            this.navBarItemChucVu = new DevExpress.XtraNavBar.NavBarItem();
-            this.navDepartment = new DevExpress.XtraNavBar.NavBarItem();
-            this.navBarItemNhanVien = new DevExpress.XtraNavBar.NavBarItem();
-            this.navBarItemSocialNetwordAccout = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarGroup5 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarItemAddRecuitment = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItemViTriTuyenDung = new DevExpress.XtraNavBar.NavBarItem();
@@ -309,7 +309,7 @@
             this.rbpChuDe});
             this.ribbon.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemLookUpEdit1});
-            this.ribbon.Size = new System.Drawing.Size(1179, 146);
+            this.ribbon.Size = new System.Drawing.Size(1238, 146);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // ribbonGalleryBarItem1
@@ -1144,10 +1144,10 @@
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 608);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 708);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1179, 31);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1238, 31);
             // 
             // imageList1
             // 
@@ -1176,7 +1176,7 @@
             this.schedulerSplitContainerControl.Panel1.Controls.Add(this.plMain);
             this.schedulerSplitContainerControl.Panel1.Text = "Panel1";
             this.schedulerSplitContainerControl.Panel2.Text = "Panel2";
-            this.schedulerSplitContainerControl.Size = new System.Drawing.Size(979, 462);
+            this.schedulerSplitContainerControl.Size = new System.Drawing.Size(1038, 562);
             this.schedulerSplitContainerControl.SplitterPosition = 0;
             this.schedulerSplitContainerControl.TabIndex = 13;
             this.schedulerSplitContainerControl.Text = "splitContainerControl1";
@@ -1189,12 +1189,11 @@
             this.plMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plMain.Location = new System.Drawing.Point(0, 0);
             this.plMain.Name = "plMain";
-            this.plMain.Size = new System.Drawing.Size(974, 462);
+            this.plMain.Size = new System.Drawing.Size(1033, 562);
             this.plMain.TabIndex = 1;
             // 
             // contextMenuStripMail
             // 
-            this.contextMenuStripMail.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripMail.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItemShow,
             this.toolStripMenuItemExit});
@@ -1248,7 +1247,7 @@
             this.dockPanel1.Location = new System.Drawing.Point(0, 146);
             this.dockPanel1.Name = "dockPanel1";
             this.dockPanel1.OriginalSize = new System.Drawing.Size(200, 200);
-            this.dockPanel1.Size = new System.Drawing.Size(200, 462);
+            this.dockPanel1.Size = new System.Drawing.Size(200, 562);
             this.dockPanel1.Text = "Quản lý";
             // 
             // dockPanel1_Container
@@ -1256,12 +1255,12 @@
             this.dockPanel1_Container.Controls.Add(this.naveTrainning);
             this.dockPanel1_Container.Location = new System.Drawing.Point(4, 23);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(191, 435);
+            this.dockPanel1_Container.Size = new System.Drawing.Size(191, 535);
             this.dockPanel1_Container.TabIndex = 0;
             // 
             // naveTrainning
             // 
-            this.naveTrainning.ActiveGroup = this.navBarGroup2;
+            this.naveTrainning.ActiveGroup = this.navBarGroup5;
             this.naveTrainning.Dock = System.Windows.Forms.DockStyle.Fill;
             this.naveTrainning.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.navBarGroup3,
@@ -1309,10 +1308,48 @@
             this.naveTrainning.LookAndFeel.SkinName = "Office 2010 Blue";
             this.naveTrainning.Name = "naveTrainning";
             this.naveTrainning.OptionsNavPane.ExpandedWidth = 191;
-            this.naveTrainning.Size = new System.Drawing.Size(191, 435);
+            this.naveTrainning.Size = new System.Drawing.Size(191, 535);
             this.naveTrainning.TabIndex = 18;
             this.naveTrainning.Text = "navBarControl1";
             this.naveTrainning.View = new DevExpress.XtraNavBar.ViewInfo.SkinNavigationPaneViewInfoRegistrator();
+            // 
+            // navBarGroup1
+            // 
+            this.navBarGroup1.Caption = "Nhân viên";
+            this.navBarGroup1.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.LargeIconsText;
+            this.navBarGroup1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("navBarGroup1.ImageOptions.LargeImage")));
+            this.navBarGroup1.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItemChucVu),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navDepartment),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItemNhanVien),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItemSocialNetwordAccout)});
+            this.navBarGroup1.Name = "navBarGroup1";
+            this.navBarGroup1.TopVisibleLinkIndex = 2;
+            // 
+            // navBarItemChucVu
+            // 
+            this.navBarItemChucVu.Caption = "Chức Vụ";
+            this.navBarItemChucVu.ImageOptions.LargeImage = global::eCenterTrainning.Properties.Resources.mail_inbox_in_32x32;
+            this.navBarItemChucVu.Name = "navBarItemChucVu";
+            // 
+            // navDepartment
+            // 
+            this.navDepartment.Caption = "Phòng Ban";
+            this.navDepartment.ImageOptions.LargeImage = global::eCenterTrainning.Properties.Resources.My_Documents32x32;
+            this.navDepartment.Name = "navDepartment";
+            // 
+            // navBarItemNhanVien
+            // 
+            this.navBarItemNhanVien.Caption = "Danh Sách Nhân Viên";
+            this.navBarItemNhanVien.ImageOptions.LargeImage = global::eCenterTrainning.Properties.Resources.Login_Manager32x32;
+            this.navBarItemNhanVien.Name = "navBarItemNhanVien";
+            this.navBarItemNhanVien.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItemNhanVien_LinkClicked);
+            // 
+            // navBarItemSocialNetwordAccout
+            // 
+            this.navBarItemSocialNetwordAccout.Caption = "Tài Khoản Quảng Bá";
+            this.navBarItemSocialNetwordAccout.ImageOptions.LargeImage = global::eCenterTrainning.Properties.Resources.kuser32x32;
+            this.navBarItemSocialNetwordAccout.Name = "navBarItemSocialNetwordAccout";
             // 
             // navBarGroup3
             // 
@@ -1328,7 +1365,6 @@
             new DevExpress.XtraNavBar.NavBarItemLink(this.nbiQuangCaoOnline),
             new DevExpress.XtraNavBar.NavBarItemLink(this.nbiHocVienCu)});
             this.navBarGroup3.Name = "navBarGroup3";
-            this.navBarGroup3.TopVisibleLinkIndex = 3;
             // 
             // navBarItemHocVien
             // 
@@ -1348,7 +1384,6 @@
             this.navBarItemLopHoc.Caption = "Lớp Học";
             this.navBarItemLopHoc.ImageOptions.LargeImage = global::eCenterTrainning.Properties.Resources.kuser32x32;
             this.navBarItemLopHoc.Name = "navBarItemLopHoc";
-            this.navBarItemLopHoc.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItemLopHoc_LinkClicked);
             // 
             // navBarItemPromotion
             // 
@@ -1377,7 +1412,6 @@
             // navBarGroup2
             // 
             this.navBarGroup2.Caption = "Giảng viên";
-            this.navBarGroup2.Expanded = true;
             this.navBarGroup2.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.LargeIconsText;
             this.navBarGroup2.ImageOptions.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarGroup2.ImageOptions.SmallImage")));
             this.navBarGroup2.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
@@ -1390,7 +1424,6 @@
             this.navBarGiangVien.Caption = "Danh Sách Giảng Viên";
             this.navBarGiangVien.ImageOptions.LargeImage = global::eCenterTrainning.Properties.Resources.Login_Manager32x32;
             this.navBarGiangVien.Name = "navBarGiangVien";
-            this.navBarGiangVien.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarGiangVien_LinkClicked);
             // 
             // navThemMoiGiangVien
             // 
@@ -1398,45 +1431,10 @@
             this.navThemMoiGiangVien.ImageOptions.LargeImage = global::eCenterTrainning.Properties.Resources.kuser32x32;
             this.navThemMoiGiangVien.Name = "navThemMoiGiangVien";
             // 
-            // navBarGroup1
-            // 
-            this.navBarGroup1.Caption = "Nhân viên";
-            this.navBarGroup1.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.LargeIconsText;
-            this.navBarGroup1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("navBarGroup1.ImageOptions.LargeImage")));
-            this.navBarGroup1.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItemChucVu),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navDepartment),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItemNhanVien),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItemSocialNetwordAccout)});
-            this.navBarGroup1.Name = "navBarGroup1";
-            // 
-            // navBarItemChucVu
-            // 
-            this.navBarItemChucVu.Caption = "Chức Vụ";
-            this.navBarItemChucVu.ImageOptions.LargeImage = global::eCenterTrainning.Properties.Resources.mail_inbox_in_32x32;
-            this.navBarItemChucVu.Name = "navBarItemChucVu";
-            // 
-            // navDepartment
-            // 
-            this.navDepartment.Caption = "Phòng Ban";
-            this.navDepartment.ImageOptions.LargeImage = global::eCenterTrainning.Properties.Resources.My_Documents32x32;
-            this.navDepartment.Name = "navDepartment";
-            // 
-            // navBarItemNhanVien
-            // 
-            this.navBarItemNhanVien.Caption = "Danh Sách Nhân Viên";
-            this.navBarItemNhanVien.ImageOptions.LargeImage = global::eCenterTrainning.Properties.Resources.Login_Manager32x32;
-            this.navBarItemNhanVien.Name = "navBarItemNhanVien";
-            // 
-            // navBarItemSocialNetwordAccout
-            // 
-            this.navBarItemSocialNetwordAccout.Caption = "Tài Khoản Quảng Bá";
-            this.navBarItemSocialNetwordAccout.ImageOptions.LargeImage = global::eCenterTrainning.Properties.Resources.kuser32x32;
-            this.navBarItemSocialNetwordAccout.Name = "navBarItemSocialNetwordAccout";
-            // 
             // navBarGroup5
             // 
             this.navBarGroup5.Caption = "Tuyển dụng";
+            this.navBarGroup5.Expanded = true;
             this.navBarGroup5.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.LargeIconsText;
             this.navBarGroup5.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("navBarGroup5.ImageOptions.LargeImage")));
             this.navBarGroup5.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
@@ -1630,7 +1628,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1179, 639);
+            this.ClientSize = new System.Drawing.Size(1238, 739);
             this.Controls.Add(this.schedulerSplitContainerControl);
             this.Controls.Add(this.dockPanel1);
             this.Controls.Add(this.ribbonStatusBar);

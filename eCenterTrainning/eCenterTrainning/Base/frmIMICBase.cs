@@ -22,6 +22,11 @@ namespace eCenterTrainning.Base
         {
             InitializeComponent();           
         }
+        public frmIMICBase(Account oAccount,int Id)
+        {
+            InitializeComponent();
+            mAccount = oAccount;
+        }
 
         /// <summary>
         /// Sử dụng để override sự kiện nhấn nút thêm mới

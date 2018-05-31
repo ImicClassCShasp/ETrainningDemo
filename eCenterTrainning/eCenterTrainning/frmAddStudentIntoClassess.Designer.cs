@@ -187,7 +187,6 @@
             // 
             // statusStrip1
             // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblSelectedInfo});
             this.statusStrip1.Location = new System.Drawing.Point(0, 468);
@@ -199,8 +198,8 @@
             // lblSelectedInfo
             // 
             this.lblSelectedInfo.Name = "lblSelectedInfo";
-            this.lblSelectedInfo.Size = new System.Drawing.Size(38, 17);
-            this.lblSelectedInfo.Text = "ver1.0";
+            this.lblSelectedInfo.Size = new System.Drawing.Size(211, 17);
+            this.lblSelectedInfo.Text = "Hiện có 05 Học viên đã được lựa chọn!";
             // 
             // panel3
             // 
@@ -254,7 +253,7 @@
             // cStudentId
             // 
             this.cStudentId.Caption = "Mã Học viên";
-            this.cStudentId.FieldName = "Id";
+            this.cStudentId.FieldName = "StudentId";
             this.cStudentId.Name = "cStudentId";
             // 
             // cClassId
@@ -542,7 +541,6 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmAddStudentIntoClassess";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAddStudentIntoClassess";

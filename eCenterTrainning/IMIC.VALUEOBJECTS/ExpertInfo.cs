@@ -25,12 +25,5 @@ namespace IMIC.VALUEOBJECTS
         public string Email { get; set; }
         public string Mobile { get; set; }
         public string ExpertCV { get; set; }
-        /// <summary>
-        /// Author          Date        Comment
-        /// TungVP          31-05-2018  Add 2 field iFlag, CenterName & sSex
-        /// </summary>
-        public string CenterName { get; set; }
-        public string sSex { get; set; }
-        public int iFlag { get; set; }
     }
 }

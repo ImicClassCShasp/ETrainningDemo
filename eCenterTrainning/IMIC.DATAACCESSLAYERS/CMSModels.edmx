@@ -9,30 +9,50 @@
           <Parameter Name="username" Type="nvarchar" Mode="In" />
           <Parameter Name="password" Type="nvarchar" Mode="In" />
         </Function>
+        <Function Name="SP_Creat_Employees" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="EmployeeName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Sex" Type="int" Mode="In" />
+          <Parameter Name="DateBirhday" Type="datetime" Mode="In" />
+          <Parameter Name="Mobile" Type="nvarchar" Mode="In" />
+          <Parameter Name="Phone" Type="nvarchar" Mode="In" />
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+          <Parameter Name="UniversityName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Address" Type="nvarchar" Mode="In" />
+          <Parameter Name="IdentityNumber" Type="nvarchar" Mode="In" />
+          <Parameter Name="DateOfIssue" Type="datetime" Mode="In" />
+          <Parameter Name="PlaceOfIssue" Type="nvarchar" Mode="In" />
+          <Parameter Name="PlaceBirthday" Type="nvarchar" Mode="In" />
+          <Parameter Name="PersonalTaxCode" Type="nvarchar" Mode="In" />
+          <Parameter Name="Description" Type="nvarchar" Mode="In" />
+          <Parameter Name="OrderNumber" Type="int" Mode="In" />
+          <Parameter Name="DateCreate" Type="datetime" Mode="In" />
+          <Parameter Name="DateLastUpdate" Type="datetime" Mode="In" />
+          <Parameter Name="DateRegister" Type="datetime" Mode="In" />
+          <Parameter Name="JobTitleId" Type="int" Mode="In" />
+          <Parameter Name="CenterId" Type="int" Mode="In" />
+          <Parameter Name="OuId" Type="int" Mode="In" />
+          <Parameter Name="EmployeeCV" Type="ntext" Mode="In" />
+        </Function>
         <Function Name="SP_DELETE_COMMENT_SUPPORT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="idComment" Type="int" Mode="In" />
         </Function>
-        <Function Name="SP_DELETE_EXPERTINFO_XOA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="ExpertId" Type="int" Mode="In" />
+        <Function Name="SP_Delete_Employee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IdEmployee" Type="int" Mode="In" />
         </Function>
         <Function Name="SP_DELETE_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="id" Type="int" Mode="In" />
         </Function>
-        <Function Name="SP_GETALL_AYEAR_CLASS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_GetAll_ChucVu" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_GETALL_COURSE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
-        <Function Name="SP_GETALL_EXPERT_INFO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_GetAll_Employees" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_GetAll_PhongBan" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_GetAll_TrungTam" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_GETALL_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_GetByID_Employee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
         <Function Name="SP_GetComment_Support_ByStudentId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="idStudent" Type="int" Mode="In" />
-        </Function>
-<<<<<<< HEAD
-        <Function Name="SP_GETELEMENT_BYID_CLASSES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="id" Type="int" Mode="In" />
-=======
-        <Function Name="SP_GETELEMENT_BYID_EXPERT_INFO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="IdExpert" Type="int" Mode="In" />
->>>>>>> 0eeb5969fec8e86b0485f71514fd31adb76ffc3d
         </Function>
         <Function Name="SP_GETELEMENTBYID_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="UserId" Type="int" Mode="In" />
@@ -46,40 +66,6 @@
         </Function>
         <Function Name="SP_GETHOCPHI_BYSTUDENTID_STUDENT_CLASS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="idStd" Type="int" Mode="In" />
-        </Function>
-        <Function Name="SP_GETLISTSTUDENT_BYCLASSID_STUDENTS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="classid" Type="int" Mode="In" />
-        </Function>
-        <Function Name="SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="fromdate" Type="varchar" Mode="In" />
-          <Parameter Name="classid" Type="int" Mode="In" />
-          <Parameter Name="todate" Type="varchar" Mode="In" />
-        </Function>
-        <Function Name="SP_GETLITSTUDENT_BYID_CLASS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="classid" Type="int" Mode="In" />
-        </Function>
-        <Function Name="SP_GETSTUDENT_BYID_STUDENTS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="Id" Type="int" Mode="In" />
-        </Function>
-        <Function Name="SP_INSERT_STUDENT_CLASS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="ClassId" Type="int" Mode="In" />
-          <Parameter Name="StudentId" Type="int" Mode="In" />
-          <Parameter Name="DateStart" Type="varchar" Mode="In" />
-          <Parameter Name="DateEnd" Type="datetime" Mode="In" />
-          <Parameter Name="Comment" Type="nvarchar" Mode="In" />
-          <Parameter Name="IsMutiPrice" Type="bit" Mode="In" />
-          <Parameter Name="NumberPrice" Type="int" Mode="In" />
-          <Parameter Name="DatePrice" Type="date" Mode="In" />
-          <Parameter Name="DESCRIPTION" Type="nvarchar" Mode="In" />
-          <Parameter Name="TotalPrice" Type="float" Mode="In" />
-          <Parameter Name="Price1" Type="float" Mode="In" />
-          <Parameter Name="Price2" Type="float" Mode="In" />
-          <Parameter Name="Price3" Type="float" Mode="In" />
-          <Parameter Name="MustPay" Type="float" Mode="In" />
-          <Parameter Name="IdPolicyStudent" Type="int" Mode="In" />
-          <Parameter Name="BeforePrice" Type="float" Mode="In" />
-          <Parameter Name="STATUS" Type="tinyint" Mode="In" />
-          <Parameter Name="UserIdConfirm" Type="bigint" Mode="In" />
         </Function>
         <Function Name="SP_INSERT_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="UserName" Type="nvarchar" Mode="In" />
@@ -114,26 +100,29 @@
           <Parameter Name="StudentId" Type="int" Mode="In" />
           <Parameter Name="DateCreate" Type="datetime" Mode="In" />
         </Function>
-<<<<<<< HEAD
-        <Function Name="SP_UPDATE_EXPERT_CLASSES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="idCl" Type="int" Mode="In" />
-          <Parameter Name="idExp" Type="int" Mode="In" />
-=======
-        <Function Name="SP_INSERTUPDATE_EXPERT_INFO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="flag" Type="int" Mode="In" />
-          <Parameter Name="idExpert" Type="int" Mode="In" />
-          <Parameter Name="ExpName" Type="nvarchar" Mode="In" />
-          <Parameter Name="Birthday" Type="datetime" Mode="In" />
+        <Function Name="SP_Update_Employee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IdEmployee" Type="int" Mode="In" />
+          <Parameter Name="EmployeeName" Type="nvarchar" Mode="In" />
           <Parameter Name="Sex" Type="int" Mode="In" />
-          <Parameter Name="address" Type="nvarchar" Mode="In" />
-          <Parameter Name="des" Type="nvarchar" Mode="In" />
-          <Parameter Name="yearExp" Type="int" Mode="In" />
-          <Parameter Name="UniDegree" Type="nvarchar" Mode="In" />
-          <Parameter Name="CenterID" Type="int" Mode="In" />
-          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+          <Parameter Name="DateBirhday" Type="datetime" Mode="In" />
           <Parameter Name="Mobile" Type="nvarchar" Mode="In" />
-          <Parameter Name="ExpertCV" Type="ntext" Mode="In" />
->>>>>>> 0eeb5969fec8e86b0485f71514fd31adb76ffc3d
+          <Parameter Name="Phone" Type="nvarchar" Mode="In" />
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+          <Parameter Name="UniversityName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Address" Type="nvarchar" Mode="In" />
+          <Parameter Name="IdentityNumber" Type="nvarchar" Mode="In" />
+          <Parameter Name="DateOfIssue" Type="datetime" Mode="In" />
+          <Parameter Name="PlaceOfIssue" Type="nvarchar" Mode="In" />
+          <Parameter Name="PlaceBirthday" Type="nvarchar" Mode="In" />
+          <Parameter Name="PersonalTaxCode" Type="nvarchar" Mode="In" />
+          <Parameter Name="Description" Type="nvarchar" Mode="In" />
+          <Parameter Name="OrderNumber" Type="int" Mode="In" />
+          <Parameter Name="DateCreate" Type="datetime" Mode="In" />
+          <Parameter Name="DateRegister" Type="datetime" Mode="In" />
+          <Parameter Name="JobTitleId" Type="int" Mode="In" />
+          <Parameter Name="CenterId" Type="int" Mode="In" />
+          <Parameter Name="OuId" Type="int" Mode="In" />
+          <Parameter Name="EmployeeCV" Type="ntext" Mode="In" />
         </Function>
         <Function Name="SP_UPDATE_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="UserId" Type="int" Mode="In" />
@@ -631,72 +620,63 @@
           <FunctionImport Name="SP_GETHOCPHI_BYSTUDENTID_STUDENT_CLASS" ReturnType="Collection(TrainingCenterModel.SP_GETHOCPHI_BYSTUDENTID_STUDENT_CLASS_Result)" >
           <Parameter Name="idStd" Mode="In" Type="Int32" />
           </FunctionImport>
-          <FunctionImport Name="SP_GETALL_AYEAR_CLASS" ReturnType="Collection(TrainingCenterModel.SP_GETALL_AYEAR_CLASS_Result)" />
-          <FunctionImport Name="SP_GETLISTSTUDENT_BYCLASSID_STUDENTS" ReturnType="Collection(TrainingCenterModel.SP_GETLISTSTUDENT_BYCLASSID_STUDENTS_Result)">
-          <Parameter Name="classid" Mode="In" Type="Int32" />
-          </FunctionImport>
-          <FunctionImport Name="SP_GETLITSTUDENT_BYID_CLASS" ReturnType="Collection(TrainingCenterModel.SP_GETLITSTUDENT_BYID_CLASS_Result)">
-          <Parameter Name="classid" Mode="In" Type="Int32" />
-          </FunctionImport>
-<<<<<<< HEAD
-          <FunctionImport Name="SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS" ReturnType="Collection(TrainingCenterModel.SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS_Result)">
-            <Parameter Name="fromdate" Mode="In" Type="String" />
-            <Parameter Name="classid" Mode="In" Type="Int32" />
-            <Parameter Name="todate" Mode="In" Type="String" />
-          </FunctionImport>
-          <FunctionImport Name="SP_GETSTUDENT_BYID_STUDENTS" ReturnType="Collection(TrainingCenterModel.SP_GETSTUDENT_BYID_STUDENTS_Result)">
-          <Parameter Name="Id" Mode="In" Type="Int32" />
-          </FunctionImport>
-          <FunctionImport Name="SP_GETELEMENT_BYID_CLASSES" ReturnType="Collection(TrainingCenterModel.SP_GETELEMENT_BYID_CLASSES_Result)">
-          <Parameter Name="id" Mode="In" Type="Int32" />
-          </FunctionImport>
-          <FunctionImport Name="SP_INSERT_STUDENT_CLASS">
-            <Parameter Name="ClassId" Mode="In" Type="Int32" />
-            <Parameter Name="StudentId" Mode="In" Type="Int32" />
-            <Parameter Name="DateStart" Mode="In" Type="String" />
-            <Parameter Name="DateEnd" Mode="In" Type="DateTime" />
-            <Parameter Name="Comment" Mode="In" Type="String" />
-            <Parameter Name="IsMutiPrice" Mode="In" Type="Boolean" />
-            <Parameter Name="NumberPrice" Mode="In" Type="Int32" />
-            <Parameter Name="DatePrice" Mode="In" Type="DateTime" />
-            <Parameter Name="DESCRIPTION" Mode="In" Type="String" />
-            <Parameter Name="TotalPrice" Mode="In" Type="Double" />
-            <Parameter Name="Price1" Mode="In" Type="Double" />
-            <Parameter Name="Price2" Mode="In" Type="Double" />
-            <Parameter Name="Price3" Mode="In" Type="Double" />
-            <Parameter Name="MustPay" Mode="In" Type="Double" />
-            <Parameter Name="IdPolicyStudent" Mode="In" Type="Int32" />
-            <Parameter Name="BeforePrice" Mode="In" Type="Double" />
-            <Parameter Name="STATUS" Mode="In" Type="Byte" />
-            <Parameter Name="UserIdConfirm" Mode="In" Type="Int64" />
-          </FunctionImport>
-          <FunctionImport Name="SP_UPDATE_EXPERT_CLASSES">
-            <Parameter Name="idCl" Mode="In" Type="Int32" />
-            <Parameter Name="idExp" Mode="In" Type="Int32" />
-=======
-          <FunctionImport Name="SP_GETALL_EXPERT_INFO" ReturnType="Collection(TrainingCenterModel.SP_GETALL_EXPERT_INFO_Result)" />
-          <FunctionImport Name="SP_GETELEMENT_BYID_EXPERT_INFO" ReturnType="Collection(TrainingCenterModel.SP_GETELEMENT_BYID_EXPERT_INFO_Result)">
-          <Parameter Name="IdExpert" Mode="In" Type="Int32" />
-          </FunctionImport>
-          <FunctionImport Name="SP_INSERTUPDATE_EXPERT_INFO">
-            <Parameter Name="flag" Mode="In" Type="Int32" />
-            <Parameter Name="idExpert" Mode="In" Type="Int32" />
-            <Parameter Name="ExpName" Mode="In" Type="String" />
-            <Parameter Name="Birthday" Mode="In" Type="DateTime" />
-            <Parameter Name="Sex" Mode="In" Type="Int32" />
-            <Parameter Name="address" Mode="In" Type="String" />
-            <Parameter Name="des" Mode="In" Type="String" />
-            <Parameter Name="yearExp" Mode="In" Type="Int32" />
-            <Parameter Name="UniDegree" Mode="In" Type="String" />
-            <Parameter Name="CenterID" Mode="In" Type="Int32" />
-            <Parameter Name="Email" Mode="In" Type="String" />
-            <Parameter Name="Mobile" Mode="In" Type="String" />
-            <Parameter Name="ExpertCV" Mode="In" Type="String" />
-          </FunctionImport>
+          <FunctionImport Name="SP_GetAll_Employees" ReturnType="Collection(TrainingCenterModel.SP_GetAll_Employees_Result)" />
+          <FunctionImport Name="SP_GetAll_ChucVu" ReturnType="Collection(TrainingCenterModel.SP_GetAll_ChucVu_Result)" />
+          <FunctionImport Name="SP_GetAll_PhongBan" ReturnType="Collection(TrainingCenterModel.SP_GetAll_PhongBan_Result)" />
           <FunctionImport Name="SP_GetAll_TrungTam" ReturnType="Collection(TrainingCenterModel.SP_GetAll_TrungTam_Result)" />
-          <FunctionImport Name="SP_DELETE_EXPERTINFO_XOA">
-            <Parameter Name="ExpertId" Mode="In" Type="Int32" />
->>>>>>> 0eeb5969fec8e86b0485f71514fd31adb76ffc3d
+          <FunctionImport Name="SP_Creat_Employees">
+            <Parameter Name="EmployeeName" Mode="In" Type="String" />
+            <Parameter Name="Sex" Mode="In" Type="Int32" />
+            <Parameter Name="DateBirhday" Mode="In" Type="DateTime" />
+            <Parameter Name="Mobile" Mode="In" Type="String" />
+            <Parameter Name="Phone" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="UniversityName" Mode="In" Type="String" />
+            <Parameter Name="Address" Mode="In" Type="String" />
+            <Parameter Name="IdentityNumber" Mode="In" Type="String" />
+            <Parameter Name="DateOfIssue" Mode="In" Type="DateTime" />
+            <Parameter Name="PlaceOfIssue" Mode="In" Type="String" />
+            <Parameter Name="PlaceBirthday" Mode="In" Type="String" />
+            <Parameter Name="PersonalTaxCode" Mode="In" Type="String" />
+            <Parameter Name="Description" Mode="In" Type="String" />
+            <Parameter Name="OrderNumber" Mode="In" Type="Int32" />
+            <Parameter Name="DateCreate" Mode="In" Type="DateTime" />
+            <Parameter Name="DateLastUpdate" Mode="In" Type="DateTime" />
+            <Parameter Name="DateRegister" Mode="In" Type="DateTime" />
+            <Parameter Name="JobTitleId" Mode="In" Type="Int32" />
+            <Parameter Name="CenterId" Mode="In" Type="Int32" />
+            <Parameter Name="OuId" Mode="In" Type="Int32" />
+            <Parameter Name="EmployeeCV" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Delete_Employee">
+          <Parameter Name="IdEmployee" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Update_Employee">
+            <Parameter Name="IdEmployee" Mode="In" Type="Int32" />
+            <Parameter Name="EmployeeName" Mode="In" Type="String" />
+            <Parameter Name="Sex" Mode="In" Type="Int32" />
+            <Parameter Name="DateBirhday" Mode="In" Type="DateTime" />
+            <Parameter Name="Mobile" Mode="In" Type="String" />
+            <Parameter Name="Phone" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="UniversityName" Mode="In" Type="String" />
+            <Parameter Name="Address" Mode="In" Type="String" />
+            <Parameter Name="IdentityNumber" Mode="In" Type="String" />
+            <Parameter Name="DateOfIssue" Mode="In" Type="DateTime" />
+            <Parameter Name="PlaceOfIssue" Mode="In" Type="String" />
+            <Parameter Name="PlaceBirthday" Mode="In" Type="String" />
+            <Parameter Name="PersonalTaxCode" Mode="In" Type="String" />
+            <Parameter Name="Description" Mode="In" Type="String" />
+            <Parameter Name="OrderNumber" Mode="In" Type="Int32" />
+            <Parameter Name="DateCreate" Mode="In" Type="DateTime" />
+            <Parameter Name="DateRegister" Mode="In" Type="DateTime" />
+            <Parameter Name="JobTitleId" Mode="In" Type="Int32" />
+            <Parameter Name="CenterId" Mode="In" Type="Int32" />
+            <Parameter Name="OuId" Mode="In" Type="Int32" />
+            <Parameter Name="EmployeeCV" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GetByID_Employee" ReturnType="Collection(TrainingCenterModel.SP_GetByID_Employee_Result)">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
           </FunctionImport>
         </EntityContainer>
         <ComplexType Name="GetListEmployees_Result">
@@ -1521,190 +1501,54 @@
           <Property Type="Byte" Name="Status" Nullable="true" />
           <Property Type="Int64" Name="UserIdConfirm" Nullable="true" />
         </ComplexType>
-        <ComplexType Name="SP_GETALL_AYEAR_CLASS_Result">
+        <ComplexType Name="SP_GetAll_Employees_Result">
           <Property Type="Int32" Name="Id" Nullable="false" />
-          <Property Type="String" Name="ClassName" Nullable="true" MaxLength="250" />
-          <Property Type="DateTime" Name="FromDate" Nullable="true" Precision="23" />
-          <Property Type="DateTime" Name="ToDate" Nullable="true" Precision="23" />
-          <Property Type="DateTime" Name="DateStart" Nullable="true" Precision="23" />
-          <Property Type="Int32" Name="NumberStudents" Nullable="true" />
-          <Property Type="String" Name="PlaceTraining" Nullable="true" MaxLength="500" />
-          <Property Type="Int32" Name="ExpertId" Nullable="true" />
-          <Property Type="Int32" Name="CenterId" Nullable="true" />
-          <Property Type="Int32" Name="CourseId" Nullable="true" />
-          <Property Type="String" Name="Description" Nullable="true" MaxLength="1000" />
-          <Property Type="String" Name="Status" Nullable="true" MaxLength="100" />
-          <Property Type="Double" Name="TotalPrice" Nullable="true" />
-        </ComplexType>
-        <ComplexType Name="SP_GETLISTSTUDENT_BYCLASSID_STUDENTS_Result">
-          <Property Type="Int32" Name="Id" Nullable="false" />
-          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="30" />
-          <Property Type="String" Name="LastName" Nullable="true" MaxLength="20" />
-          <Property Type="String" Name="FullName" Nullable="true" MaxLength="100" />
-          <Property Type="Boolean" Name="HVTiemNang" Nullable="true" />
+          <Property Type="String" Name="EmployeeName" Nullable="true" MaxLength="150" />
           <Property Type="Int32" Name="Sex" Nullable="true" />
-          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
-          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="200" />
-          <Property Type="String" Name="Phone" Nullable="true" MaxLength="200" />
-          <Property Type="String" Name="Email" Nullable="true" MaxLength="500" />
+          <Property Type="DateTime" Name="DateBirhday" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="UniversityName" Nullable="true" MaxLength="250" />
           <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="IdentityNumber" Nullable="true" MaxLength="20" />
+          <Property Type="DateTime" Name="DateOfIssue" Nullable="true" Precision="23" />
+          <Property Type="String" Name="PlaceOfIssue" Nullable="true" MaxLength="150" />
+          <Property Type="String" Name="PlaceBirthday" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="PersonalTaxCode" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="1000" />
+          <Property Type="Int32" Name="OrderNumber" Nullable="true" />
           <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
-          <Property Type="DateTime" Name="DateRegister" Nullable="true" Precision="23" />
           <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
-          <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
-          <Property Type="Boolean" Name="IsTested" Nullable="true" />
-          <Property Type="String" Name="MarkTest" Nullable="true" MaxLength="5" />
-          <Property Type="Boolean" Name="IsRegistered" Nullable="true" />
-          <Property Type="Boolean" Name="IsApproved" Nullable="true" />
-          <Property Type="String" Name="IdentityNumber" Nullable="true" MaxLength="50" />
-          <Property Type="DateTime" Name="DateIssue" Nullable="true" Precision="23" />
-          <Property Type="String" Name="PlaceIssue" Nullable="true" MaxLength="500" />
-          <Property Type="Int32" Name="CourseId" Nullable="true" />
-          <Property Type="Int32" Name="ClassId" Nullable="true" />
-          <Property Type="Int32" Name="StatusId" Nullable="true" />
-          <Property Type="Double" Name="Bonus" Nullable="true" />
-          <Property Type="Int32" Name="UserId" Nullable="true" />
-          <Property Type="Int32" Name="IdPolicyStudent" Nullable="true" />
-          <Property Type="Double" Name="Price" Nullable="true" />
+          <Property Type="DateTime" Name="DateRegister" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="JobTitleId" Nullable="true" />
+          <Property Type="Int32" Name="CenterId" Nullable="true" />
+          <Property Type="Int32" Name="OuId" Nullable="true" />
+          <Property Type="String" Name="EmployeeCV" Nullable="true" MaxLength="Max" />
+          <Property Type="String" Name="CenterName" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="OuName" Nullable="true" MaxLength="250" />
         </ComplexType>
-        <ComplexType Name="SP_GETLITSTUDENT_BYID_CLASS_Result">
+        <ComplexType Name="SP_GetAll_ChucVu_Result">
           <Property Type="Int32" Name="Id" Nullable="false" />
-          <Property Type="Int32" Name="ClassId" Nullable="true" />
-          <Property Type="Int32" Name="StudentId" Nullable="true" />
-          <Property Type="DateTime" Name="DateStart" Nullable="true" Precision="23" />
-          <Property Type="DateTime" Name="DateEnd" Nullable="true" Precision="23" />
-          <Property Type="String" Name="Comment" Nullable="true" MaxLength="500" />
-          <Property Type="Boolean" Name="IsMutiPrice" Nullable="true" />
-          <Property Type="Int32" Name="NumberPrice" Nullable="true" />
-          <Property Type="DateTime" Name="DatePrice" Nullable="true" />
+          <Property Type="String" Name="JobTitle" Nullable="true" MaxLength="250" />
           <Property Type="String" Name="Description" Nullable="true" MaxLength="500" />
-          <Property Type="Double" Name="TotalPrice" Nullable="true" />
-          <Property Type="Double" Name="Price1" Nullable="true" />
-          <Property Type="Double" Name="Price2" Nullable="true" />
-          <Property Type="Double" Name="Price3" Nullable="true" />
-          <Property Type="Double" Name="MustPay" Nullable="true" />
-          <Property Type="Int32" Name="IdPolicyStudent" Nullable="true" />
-          <Property Type="Double" Name="BeforePrice" Nullable="true" />
-          <Property Type="Byte" Name="Status" Nullable="true" />
-          <Property Type="Int64" Name="UserIdConfirm" Nullable="true" />
-          <Property Type="String" Name="FullName" Nullable="true" MaxLength="100" />
-          <Property Type="Int32" Name="Sex" Nullable="true" />
-          <Property Type="String" Name="Email" Nullable="true" MaxLength="500" />
-          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="ImageName" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="ImagePath" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="OrderNumber" Nullable="true" />
         </ComplexType>
-<<<<<<< HEAD
-        <ComplexType Name="SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS_Result">
+        <ComplexType Name="SP_GetAll_PhongBan_Result">
           <Property Type="Int32" Name="Id" Nullable="false" />
-          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="30" />
-          <Property Type="String" Name="LastName" Nullable="true" MaxLength="20" />
-          <Property Type="String" Name="FullName" Nullable="true" MaxLength="100" />
-          <Property Type="Boolean" Name="HVTiemNang" Nullable="true" />
-          <Property Type="Int32" Name="Sex" Nullable="true" />
-          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
-          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="200" />
-          <Property Type="String" Name="Phone" Nullable="true" MaxLength="200" />
-          <Property Type="String" Name="Email" Nullable="true" MaxLength="500" />
-          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
-          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
-          <Property Type="DateTime" Name="DateRegister" Nullable="true" Precision="23" />
-          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
-          <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
-          <Property Type="Boolean" Name="IsTested" Nullable="true" />
-          <Property Type="String" Name="MarkTest" Nullable="true" MaxLength="5" />
-          <Property Type="Boolean" Name="IsRegistered" Nullable="true" />
-          <Property Type="Boolean" Name="IsApproved" Nullable="true" />
-          <Property Type="String" Name="IdentityNumber" Nullable="true" MaxLength="50" />
-          <Property Type="DateTime" Name="DateIssue" Nullable="true" Precision="23" />
-          <Property Type="String" Name="PlaceIssue" Nullable="true" MaxLength="500" />
-          <Property Type="Int32" Name="CourseId" Nullable="true" />
-          <Property Type="Int32" Name="ClassId" Nullable="true" />
-          <Property Type="Int32" Name="StatusId" Nullable="true" />
-          <Property Type="Double" Name="Bonus" Nullable="true" />
-          <Property Type="Int32" Name="UserId" Nullable="true" />
-          <Property Type="Int32" Name="IdPolicyStudent" Nullable="true" />
-          <Property Type="Double" Name="Price" Nullable="true" />
-          <Property Type="String" Name="StatusName" Nullable="true" MaxLength="50" />
-          <Property Type="String" Name="CourseName" Nullable="true" MaxLength="500" />
-          <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
-          </ComplexType>
-        <ComplexType Name="SP_GETSTUDENT_BYID_STUDENTS_Result">
-          <Property Type="Int32" Name="Id" Nullable="false" />
-          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="30" />
-          <Property Type="String" Name="LastName" Nullable="true" MaxLength="20" />
-          <Property Type="String" Name="FullName" Nullable="true" MaxLength="100" />
-          <Property Type="Boolean" Name="HVTiemNang" Nullable="true" />
-          <Property Type="Int32" Name="Sex" Nullable="true" />
-          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
-          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="200" />
-          <Property Type="String" Name="Phone" Nullable="true" MaxLength="200" />
-          <Property Type="String" Name="Email" Nullable="true" MaxLength="500" />
-          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
-          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
-          <Property Type="DateTime" Name="DateRegister" Nullable="true" Precision="23" />
-          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
-          <Property Type="String" Name="Description" Nullable="true" MaxLength="2000" />
-          <Property Type="Boolean" Name="IsTested" Nullable="true" />
-          <Property Type="String" Name="MarkTest" Nullable="true" MaxLength="5" />
-          <Property Type="Boolean" Name="IsRegistered" Nullable="true" />
-          <Property Type="Boolean" Name="IsApproved" Nullable="true" />
-          <Property Type="String" Name="IdentityNumber" Nullable="true" MaxLength="50" />
-          <Property Type="DateTime" Name="DateIssue" Nullable="true" Precision="23" />
-          <Property Type="String" Name="PlaceIssue" Nullable="true" MaxLength="500" />
-          <Property Type="Int32" Name="CourseId" Nullable="true" />
-          <Property Type="Int32" Name="ClassId" Nullable="true" />
-          <Property Type="Int32" Name="StatusId" Nullable="true" />
-          <Property Type="Double" Name="Bonus" Nullable="true" />
-          <Property Type="Int32" Name="UserId" Nullable="true" />
-          <Property Type="Int32" Name="IdPolicyStudent" Nullable="true" />
-          <Property Type="Double" Name="Price" Nullable="true" />
-          <Property Type="String" Name="CourseName" Nullable="true" MaxLength="500" />
-          <Property Type="String" Name="StatusName" Nullable="true" MaxLength="50" />
-          <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
-        </ComplexType>
-        <ComplexType Name="SP_GETELEMENT_BYID_CLASSES_Result">
-          <Property Type="Int32" Name="Id" Nullable="false" />
-          <Property Type="String" Name="ClassName" Nullable="true" MaxLength="250" />
-          <Property Type="DateTime" Name="FromDate" Nullable="true" Precision="23" />
-          <Property Type="DateTime" Name="ToDate" Nullable="true" Precision="23" />
-          <Property Type="DateTime" Name="DateStart" Nullable="true" Precision="23" />
-          <Property Type="Int32" Name="NumberStudents" Nullable="true" />
-          <Property Type="String" Name="PlaceTraining" Nullable="true" MaxLength="500" />
-          <Property Type="Int32" Name="ExpertId" Nullable="true" />
-          <Property Type="Int32" Name="CenterId" Nullable="true" />
-          <Property Type="Int32" Name="CourseId" Nullable="true" />
+          <Property Type="String" Name="OuName" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="Avatar" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="ImagePath" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="OrderNumber" Nullable="true" />
           <Property Type="String" Name="Description" Nullable="true" MaxLength="1000" />
-          <Property Type="String" Name="Status" Nullable="true" MaxLength="100" />
-          <Property Type="Double" Name="TotalPrice" Nullable="true" />
-=======
-        <ComplexType Name="SP_GETALL_EXPERT_INFO_Result">
-          <Property Type="Int32" Name="Id" Nullable="false" />
-          <Property Type="String" Name="ExpertName" Nullable="true" MaxLength="50" />
-          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
-          <Property Type="Int32" Name="Sex" Nullable="true" />
-          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
-          <Property Type="String" Name="Description" Nullable="true" MaxLength="1000" />
-          <Property Type="Int32" Name="YearsExperience" Nullable="true" />
-          <Property Type="String" Name="UniversityDegree" Nullable="true" MaxLength="250" />
-          <Property Type="Int32" Name="CenterId" Nullable="true" />
-          <Property Type="String" Name="Email" Nullable="true" MaxLength="100" />
-          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="100" />
-          <Property Type="String" Name="ExpertCV" Nullable="true" MaxLength="Max" />
-          <Property Type="String" Name="CenterName" Nullable="true" MaxLength="250" />
-        </ComplexType>
-        <ComplexType Name="SP_GETELEMENT_BYID_EXPERT_INFO_Result">
-          <Property Type="Int32" Name="Id" Nullable="false" />
-          <Property Type="String" Name="ExpertName" Nullable="true" MaxLength="50" />
-          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
-          <Property Type="Int32" Name="Sex" Nullable="true" />
-          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
-          <Property Type="String" Name="Description" Nullable="true" MaxLength="1000" />
-          <Property Type="Int32" Name="YearsExperience" Nullable="true" />
-          <Property Type="String" Name="UniversityDegree" Nullable="true" MaxLength="250" />
-          <Property Type="Int32" Name="CenterId" Nullable="true" />
-          <Property Type="String" Name="Email" Nullable="true" MaxLength="100" />
-          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="100" />
-          <Property Type="String" Name="ExpertCV" Nullable="true" MaxLength="Max" />
-          <Property Type="String" Name="CenterName" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="OuCode" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Fax" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Website" Nullable="true" MaxLength="250" />
+          <Property Type="Int32" Name="ProvinceId" Nullable="true" />
         </ComplexType>
         <ComplexType Name="SP_GetAll_TrungTam_Result">
           <Property Type="Int32" Name="Id" Nullable="false" />
@@ -1716,7 +1560,31 @@
           <Property Type="String" Name="Website" Nullable="true" MaxLength="50" />
           <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
           <Property Type="String" Name="Description" Nullable="true" MaxLength="50" />
->>>>>>> 0eeb5969fec8e86b0485f71514fd31adb76ffc3d
+        </ComplexType>
+        <ComplexType Name="SP_GetByID_Employee_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="EmployeeName" Nullable="true" MaxLength="150" />
+          <Property Type="Int32" Name="Sex" Nullable="true" />
+          <Property Type="DateTime" Name="DateBirhday" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="UniversityName" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="IdentityNumber" Nullable="true" MaxLength="20" />
+          <Property Type="DateTime" Name="DateOfIssue" Nullable="true" Precision="23" />
+          <Property Type="String" Name="PlaceOfIssue" Nullable="true" MaxLength="150" />
+          <Property Type="String" Name="PlaceBirthday" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="PersonalTaxCode" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="1000" />
+          <Property Type="Int32" Name="OrderNumber" Nullable="true" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateRegister" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="JobTitleId" Nullable="true" />
+          <Property Type="Int32" Name="CenterId" Nullable="true" />
+          <Property Type="Int32" Name="OuId" Nullable="true" />
+          <Property Type="String" Name="EmployeeCV" Nullable="true" MaxLength="Max" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -1905,227 +1773,67 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="SP_GETALL_AYEAR_CLASS" FunctionName="TrainingCenterModel.Store.SP_GETALL_AYEAR_CLASS">
+          <FunctionImportMapping FunctionImportName="SP_GetAll_Employees" FunctionName="TrainingCenterModel.Store.SP_GetAll_Employees">
             <ResultMapping>
-              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GETALL_AYEAR_CLASS_Result">
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GetAll_Employees_Result">
                 <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="ClassName" ColumnName="ClassName" />
-                <ScalarProperty Name="FromDate" ColumnName="FromDate" />
-                <ScalarProperty Name="ToDate" ColumnName="ToDate" />
-                <ScalarProperty Name="DateStart" ColumnName="DateStart" />
-                <ScalarProperty Name="NumberStudents" ColumnName="NumberStudents" />
-                <ScalarProperty Name="PlaceTraining" ColumnName="PlaceTraining" />
-                <ScalarProperty Name="ExpertId" ColumnName="ExpertId" />
-                <ScalarProperty Name="CenterId" ColumnName="CenterId" />
-                <ScalarProperty Name="CourseId" ColumnName="CourseId" />
-                <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="Status" ColumnName="Status" />
-                <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="SP_GETLISTSTUDENT_BYCLASSID_STUDENTS" FunctionName="TrainingCenterModel.Store.SP_GETLISTSTUDENT_BYCLASSID_STUDENTS">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GETLISTSTUDENT_BYCLASSID_STUDENTS_Result">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
-                <ScalarProperty Name="LastName" ColumnName="LastName" />
-                <ScalarProperty Name="FullName" ColumnName="FullName" />
-                <ScalarProperty Name="HVTiemNang" ColumnName="HVTiemNang" />
+                <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
                 <ScalarProperty Name="Sex" ColumnName="Sex" />
-                <ScalarProperty Name="DateBirthday" ColumnName="DateBirthday" />
+                <ScalarProperty Name="DateBirhday" ColumnName="DateBirhday" />
                 <ScalarProperty Name="Mobile" ColumnName="Mobile" />
                 <ScalarProperty Name="Phone" ColumnName="Phone" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="UniversityName" ColumnName="UniversityName" />
                 <ScalarProperty Name="Address" ColumnName="Address" />
-                <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
-                <ScalarProperty Name="DateRegister" ColumnName="DateRegister" />
-                <ScalarProperty Name="DateLastUpdate" ColumnName="DateLastUpdate" />
-                <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="IsTested" ColumnName="IsTested" />
-                <ScalarProperty Name="MarkTest" ColumnName="MarkTest" />
-                <ScalarProperty Name="IsRegistered" ColumnName="IsRegistered" />
-                <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
                 <ScalarProperty Name="IdentityNumber" ColumnName="IdentityNumber" />
-                <ScalarProperty Name="DateIssue" ColumnName="DateIssue" />
-                <ScalarProperty Name="PlaceIssue" ColumnName="PlaceIssue" />
-                <ScalarProperty Name="CourseId" ColumnName="CourseId" />
-                <ScalarProperty Name="ClassId" ColumnName="ClassId" />
-                <ScalarProperty Name="StatusId" ColumnName="StatusId" />
-                <ScalarProperty Name="Bonus" ColumnName="Bonus" />
-                <ScalarProperty Name="UserId" ColumnName="UserId" />
-                <ScalarProperty Name="IdPolicyStudent" ColumnName="IdPolicyStudent" />
-                <ScalarProperty Name="Price" ColumnName="Price" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="SP_GETLITSTUDENT_BYID_CLASS" FunctionName="TrainingCenterModel.Store.SP_GETLITSTUDENT_BYID_CLASS">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GETLITSTUDENT_BYID_CLASS_Result">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="ClassId" ColumnName="ClassId" />
-                <ScalarProperty Name="StudentId" ColumnName="StudentId" />
-                <ScalarProperty Name="DateStart" ColumnName="DateStart" />
-                <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
-                <ScalarProperty Name="Comment" ColumnName="Comment" />
-                <ScalarProperty Name="IsMutiPrice" ColumnName="IsMutiPrice" />
-                <ScalarProperty Name="NumberPrice" ColumnName="NumberPrice" />
-                <ScalarProperty Name="DatePrice" ColumnName="DatePrice" />
+                <ScalarProperty Name="DateOfIssue" ColumnName="DateOfIssue" />
+                <ScalarProperty Name="PlaceOfIssue" ColumnName="PlaceOfIssue" />
+                <ScalarProperty Name="PlaceBirthday" ColumnName="PlaceBirthday" />
+                <ScalarProperty Name="PersonalTaxCode" ColumnName="PersonalTaxCode" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
-                <ScalarProperty Name="Price1" ColumnName="Price1" />
-                <ScalarProperty Name="Price2" ColumnName="Price2" />
-                <ScalarProperty Name="Price3" ColumnName="Price3" />
-                <ScalarProperty Name="MustPay" ColumnName="MustPay" />
-                <ScalarProperty Name="IdPolicyStudent" ColumnName="IdPolicyStudent" />
-                <ScalarProperty Name="BeforePrice" ColumnName="BeforePrice" />
-                <ScalarProperty Name="Status" ColumnName="Status" />
-                <ScalarProperty Name="UserIdConfirm" ColumnName="UserIdConfirm" />
-                <ScalarProperty Name="FullName" ColumnName="FullName" />
-                <ScalarProperty Name="Sex" ColumnName="Sex" />
-                <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
-<<<<<<< HEAD
-          <FunctionImportMapping FunctionImportName="SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS" FunctionName="TrainingCenterModel.Store.SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS_Result">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
-                <ScalarProperty Name="LastName" ColumnName="LastName" />
-                <ScalarProperty Name="FullName" ColumnName="FullName" />
-                <ScalarProperty Name="HVTiemNang" ColumnName="HVTiemNang" />
-                <ScalarProperty Name="Sex" ColumnName="Sex" />
-                <ScalarProperty Name="DateBirthday" ColumnName="DateBirthday" />
-                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
-                <ScalarProperty Name="Phone" ColumnName="Phone" />
-                <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
                 <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
-                <ScalarProperty Name="DateRegister" ColumnName="DateRegister" />
                 <ScalarProperty Name="DateLastUpdate" ColumnName="DateLastUpdate" />
-                <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="IsTested" ColumnName="IsTested" />
-                <ScalarProperty Name="MarkTest" ColumnName="MarkTest" />
-                <ScalarProperty Name="IsRegistered" ColumnName="IsRegistered" />
-                <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
-                <ScalarProperty Name="IdentityNumber" ColumnName="IdentityNumber" />
-                <ScalarProperty Name="DateIssue" ColumnName="DateIssue" />
-                <ScalarProperty Name="PlaceIssue" ColumnName="PlaceIssue" />
-                <ScalarProperty Name="CourseId" ColumnName="CourseId" />
-                <ScalarProperty Name="ClassId" ColumnName="ClassId" />
-                <ScalarProperty Name="StatusId" ColumnName="StatusId" />
-                <ScalarProperty Name="Bonus" ColumnName="Bonus" />
-                <ScalarProperty Name="UserId" ColumnName="UserId" />
-                <ScalarProperty Name="IdPolicyStudent" ColumnName="IdPolicyStudent" />
-                <ScalarProperty Name="Price" ColumnName="Price" />
-                <ScalarProperty Name="StatusName" ColumnName="StatusName" />
-                <ScalarProperty Name="CourseName" ColumnName="CourseName" />
-                <ScalarProperty Name="UserName" ColumnName="UserName" />
-                </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="SP_GETSTUDENT_BYID_STUDENTS" FunctionName="TrainingCenterModel.Store.SP_GETSTUDENT_BYID_STUDENTS">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GETSTUDENT_BYID_STUDENTS_Result">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
-                <ScalarProperty Name="LastName" ColumnName="LastName" />
-                <ScalarProperty Name="FullName" ColumnName="FullName" />
-                <ScalarProperty Name="HVTiemNang" ColumnName="HVTiemNang" />
-                <ScalarProperty Name="Sex" ColumnName="Sex" />
-                <ScalarProperty Name="DateBirthday" ColumnName="DateBirthday" />
-                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
-                <ScalarProperty Name="Phone" ColumnName="Phone" />
-                <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="Address" ColumnName="Address" />
-                <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
                 <ScalarProperty Name="DateRegister" ColumnName="DateRegister" />
-                <ScalarProperty Name="DateLastUpdate" ColumnName="DateLastUpdate" />
-                <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="IsTested" ColumnName="IsTested" />
-                <ScalarProperty Name="MarkTest" ColumnName="MarkTest" />
-                <ScalarProperty Name="IsRegistered" ColumnName="IsRegistered" />
-                <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
-                <ScalarProperty Name="IdentityNumber" ColumnName="IdentityNumber" />
-                <ScalarProperty Name="DateIssue" ColumnName="DateIssue" />
-                <ScalarProperty Name="PlaceIssue" ColumnName="PlaceIssue" />
-                <ScalarProperty Name="CourseId" ColumnName="CourseId" />
-                <ScalarProperty Name="ClassId" ColumnName="ClassId" />
-                <ScalarProperty Name="StatusId" ColumnName="StatusId" />
-                <ScalarProperty Name="Bonus" ColumnName="Bonus" />
-                <ScalarProperty Name="UserId" ColumnName="UserId" />
-                <ScalarProperty Name="IdPolicyStudent" ColumnName="IdPolicyStudent" />
-                <ScalarProperty Name="Price" ColumnName="Price" />
-                <ScalarProperty Name="CourseName" ColumnName="CourseName" />
-                <ScalarProperty Name="StatusName" ColumnName="StatusName" />
-                <ScalarProperty Name="UserName" ColumnName="UserName" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="SP_GETELEMENT_BYID_CLASSES" FunctionName="TrainingCenterModel.Store.SP_GETELEMENT_BYID_CLASSES">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GETELEMENT_BYID_CLASSES_Result">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="ClassName" ColumnName="ClassName" />
-                <ScalarProperty Name="FromDate" ColumnName="FromDate" />
-                <ScalarProperty Name="ToDate" ColumnName="ToDate" />
-                <ScalarProperty Name="DateStart" ColumnName="DateStart" />
-                <ScalarProperty Name="NumberStudents" ColumnName="NumberStudents" />
-                <ScalarProperty Name="PlaceTraining" ColumnName="PlaceTraining" />
-                <ScalarProperty Name="ExpertId" ColumnName="ExpertId" />
+                <ScalarProperty Name="JobTitleId" ColumnName="JobTitleId" />
                 <ScalarProperty Name="CenterId" ColumnName="CenterId" />
-                <ScalarProperty Name="CourseId" ColumnName="CourseId" />
-                <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="Status" ColumnName="Status" />
-                <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="SP_INSERT_STUDENT_CLASS" FunctionName="TrainingCenterModel.Store.SP_INSERT_STUDENT_CLASS" />
-          <FunctionImportMapping FunctionImportName="SP_UPDATE_EXPERT_CLASSES" FunctionName="TrainingCenterModel.Store.SP_UPDATE_EXPERT_CLASSES" />
-=======
-          <FunctionImportMapping FunctionImportName="SP_GETALL_EXPERT_INFO" FunctionName="TrainingCenterModel.Store.SP_GETALL_EXPERT_INFO">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GETALL_EXPERT_INFO_Result">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="ExpertName" ColumnName="ExpertName" />
-                <ScalarProperty Name="DateBirthday" ColumnName="DateBirthday" />
-                <ScalarProperty Name="Sex" ColumnName="Sex" />
-                <ScalarProperty Name="Address" ColumnName="Address" />
-                <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="YearsExperience" ColumnName="YearsExperience" />
-                <ScalarProperty Name="UniversityDegree" ColumnName="UniversityDegree" />
-                <ScalarProperty Name="CenterId" ColumnName="CenterId" />
-                <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
-                <ScalarProperty Name="ExpertCV" ColumnName="ExpertCV" />
+                <ScalarProperty Name="OuId" ColumnName="OuId" />
+                <ScalarProperty Name="EmployeeCV" ColumnName="EmployeeCV" />
                 <ScalarProperty Name="CenterName" ColumnName="CenterName" />
+                <ScalarProperty Name="OuName" ColumnName="OuName" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="SP_GETELEMENT_BYID_EXPERT_INFO" FunctionName="TrainingCenterModel.Store.SP_GETELEMENT_BYID_EXPERT_INFO">
+          <FunctionImportMapping FunctionImportName="SP_GetAll_ChucVu" FunctionName="TrainingCenterModel.Store.SP_GetAll_ChucVu">
             <ResultMapping>
-              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GETELEMENT_BYID_EXPERT_INFO_Result">
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GetAll_ChucVu_Result">
                 <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="ExpertName" ColumnName="ExpertName" />
-                <ScalarProperty Name="DateBirthday" ColumnName="DateBirthday" />
-                <ScalarProperty Name="Sex" ColumnName="Sex" />
-                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="YearsExperience" ColumnName="YearsExperience" />
-                <ScalarProperty Name="UniversityDegree" ColumnName="UniversityDegree" />
-                <ScalarProperty Name="CenterId" ColumnName="CenterId" />
-                <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
-                <ScalarProperty Name="ExpertCV" ColumnName="ExpertCV" />
-                <ScalarProperty Name="CenterName" ColumnName="CenterName" />
+                <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="SP_INSERTUPDATE_EXPERT_INFO" FunctionName="TrainingCenterModel.Store.SP_INSERTUPDATE_EXPERT_INFO" />
+          <FunctionImportMapping FunctionImportName="SP_GetAll_PhongBan" FunctionName="TrainingCenterModel.Store.SP_GetAll_PhongBan">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GetAll_PhongBan_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="OuName" ColumnName="OuName" />
+                <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="OuCode" ColumnName="OuCode" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Fax" ColumnName="Fax" />
+                <ScalarProperty Name="Website" ColumnName="Website" />
+                <ScalarProperty Name="ProvinceId" ColumnName="ProvinceId" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="SP_GetAll_TrungTam" FunctionName="TrainingCenterModel.Store.SP_GetAll_TrungTam">
             <ResultMapping>
               <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GetAll_TrungTam_Result">
@@ -2141,8 +1849,38 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="SP_DELETE_EXPERTINFO_XOA" FunctionName="TrainingCenterModel.Store.SP_DELETE_EXPERTINFO_XOA" />
->>>>>>> 0eeb5969fec8e86b0485f71514fd31adb76ffc3d
+          <FunctionImportMapping FunctionImportName="SP_Creat_Employees" FunctionName="TrainingCenterModel.Store.SP_Creat_Employees" />
+          <FunctionImportMapping FunctionImportName="SP_Delete_Employee" FunctionName="TrainingCenterModel.Store.SP_Delete_Employee" />
+          <FunctionImportMapping FunctionImportName="SP_Update_Employee" FunctionName="TrainingCenterModel.Store.SP_Update_Employee" />
+          <FunctionImportMapping FunctionImportName="SP_GetByID_Employee" FunctionName="TrainingCenterModel.Store.SP_GetByID_Employee">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GetByID_Employee_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="DateBirhday" ColumnName="DateBirhday" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="UniversityName" ColumnName="UniversityName" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="IdentityNumber" ColumnName="IdentityNumber" />
+                <ScalarProperty Name="DateOfIssue" ColumnName="DateOfIssue" />
+                <ScalarProperty Name="PlaceOfIssue" ColumnName="PlaceOfIssue" />
+                <ScalarProperty Name="PlaceBirthday" ColumnName="PlaceBirthday" />
+                <ScalarProperty Name="PersonalTaxCode" ColumnName="PersonalTaxCode" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+                <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+                <ScalarProperty Name="DateLastUpdate" ColumnName="DateLastUpdate" />
+                <ScalarProperty Name="DateRegister" ColumnName="DateRegister" />
+                <ScalarProperty Name="JobTitleId" ColumnName="JobTitleId" />
+                <ScalarProperty Name="CenterId" ColumnName="CenterId" />
+                <ScalarProperty Name="OuId" ColumnName="OuId" />
+                <ScalarProperty Name="EmployeeCV" ColumnName="EmployeeCV" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
           </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
