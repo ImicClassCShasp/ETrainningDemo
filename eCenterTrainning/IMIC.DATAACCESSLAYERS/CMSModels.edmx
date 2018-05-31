@@ -26,13 +26,13 @@
         <Function Name="SP_GetComment_Support_ByStudentId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="idStudent" Type="int" Mode="In" />
         </Function>
-<<<<<<< HEAD
+
         <Function Name="SP_GETELEMENT_BYID_CLASSES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="id" Type="int" Mode="In" />
-=======
+        </Function>
         <Function Name="SP_GETELEMENT_BYID_EXPERT_INFO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="IdExpert" Type="int" Mode="In" />
->>>>>>> 0eeb5969fec8e86b0485f71514fd31adb76ffc3d
+
         </Function>
         <Function Name="SP_GETELEMENTBYID_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="UserId" Type="int" Mode="In" />
@@ -114,11 +114,11 @@
           <Parameter Name="StudentId" Type="int" Mode="In" />
           <Parameter Name="DateCreate" Type="datetime" Mode="In" />
         </Function>
-<<<<<<< HEAD
+
         <Function Name="SP_UPDATE_EXPERT_CLASSES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="idCl" Type="int" Mode="In" />
           <Parameter Name="idExp" Type="int" Mode="In" />
-=======
+        </Function>
         <Function Name="SP_INSERTUPDATE_EXPERT_INFO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="flag" Type="int" Mode="In" />
           <Parameter Name="idExpert" Type="int" Mode="In" />
@@ -133,7 +133,7 @@
           <Parameter Name="Email" Type="nvarchar" Mode="In" />
           <Parameter Name="Mobile" Type="nvarchar" Mode="In" />
           <Parameter Name="ExpertCV" Type="ntext" Mode="In" />
->>>>>>> 0eeb5969fec8e86b0485f71514fd31adb76ffc3d
+
         </Function>
         <Function Name="SP_UPDATE_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="UserId" Type="int" Mode="In" />
@@ -638,7 +638,7 @@
           <FunctionImport Name="SP_GETLITSTUDENT_BYID_CLASS" ReturnType="Collection(TrainingCenterModel.SP_GETLITSTUDENT_BYID_CLASS_Result)">
           <Parameter Name="classid" Mode="In" Type="Int32" />
           </FunctionImport>
-<<<<<<< HEAD
+
           <FunctionImport Name="SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS" ReturnType="Collection(TrainingCenterModel.SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS_Result)">
             <Parameter Name="fromdate" Mode="In" Type="String" />
             <Parameter Name="classid" Mode="In" Type="Int32" />
@@ -673,7 +673,7 @@
           <FunctionImport Name="SP_UPDATE_EXPERT_CLASSES">
             <Parameter Name="idCl" Mode="In" Type="Int32" />
             <Parameter Name="idExp" Mode="In" Type="Int32" />
-=======
+          </FunctionImport>
           <FunctionImport Name="SP_GETALL_EXPERT_INFO" ReturnType="Collection(TrainingCenterModel.SP_GETALL_EXPERT_INFO_Result)" />
           <FunctionImport Name="SP_GETELEMENT_BYID_EXPERT_INFO" ReturnType="Collection(TrainingCenterModel.SP_GETELEMENT_BYID_EXPERT_INFO_Result)">
           <Parameter Name="IdExpert" Mode="In" Type="Int32" />
@@ -696,7 +696,7 @@
           <FunctionImport Name="SP_GetAll_TrungTam" ReturnType="Collection(TrainingCenterModel.SP_GetAll_TrungTam_Result)" />
           <FunctionImport Name="SP_DELETE_EXPERTINFO_XOA">
             <Parameter Name="ExpertId" Mode="In" Type="Int32" />
->>>>>>> 0eeb5969fec8e86b0485f71514fd31adb76ffc3d
+
           </FunctionImport>
         </EntityContainer>
         <ComplexType Name="GetListEmployees_Result">
@@ -1592,7 +1592,7 @@
           <Property Type="String" Name="Email" Nullable="true" MaxLength="500" />
           <Property Type="String" Name="Mobile" Nullable="true" MaxLength="200" />
         </ComplexType>
-<<<<<<< HEAD
+
         <ComplexType Name="SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS_Result">
           <Property Type="Int32" Name="Id" Nullable="false" />
           <Property Type="String" Name="FirstName" Nullable="true" MaxLength="30" />
@@ -1675,7 +1675,7 @@
           <Property Type="String" Name="Description" Nullable="true" MaxLength="1000" />
           <Property Type="String" Name="Status" Nullable="true" MaxLength="100" />
           <Property Type="Double" Name="TotalPrice" Nullable="true" />
-=======
+        </ComplexType>
         <ComplexType Name="SP_GETALL_EXPERT_INFO_Result">
           <Property Type="Int32" Name="Id" Nullable="false" />
           <Property Type="String" Name="ExpertName" Nullable="true" MaxLength="50" />
@@ -1716,7 +1716,7 @@
           <Property Type="String" Name="Website" Nullable="true" MaxLength="50" />
           <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
           <Property Type="String" Name="Description" Nullable="true" MaxLength="50" />
->>>>>>> 0eeb5969fec8e86b0485f71514fd31adb76ffc3d
+
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -1988,7 +1988,7 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
-<<<<<<< HEAD
+
           <FunctionImportMapping FunctionImportName="SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS" FunctionName="TrainingCenterModel.Store.SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS">
             <ResultMapping>
               <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS_Result">
@@ -2086,7 +2086,7 @@
           </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="SP_INSERT_STUDENT_CLASS" FunctionName="TrainingCenterModel.Store.SP_INSERT_STUDENT_CLASS" />
           <FunctionImportMapping FunctionImportName="SP_UPDATE_EXPERT_CLASSES" FunctionName="TrainingCenterModel.Store.SP_UPDATE_EXPERT_CLASSES" />
-=======
+
           <FunctionImportMapping FunctionImportName="SP_GETALL_EXPERT_INFO" FunctionName="TrainingCenterModel.Store.SP_GETALL_EXPERT_INFO">
             <ResultMapping>
               <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GETALL_EXPERT_INFO_Result">
@@ -2142,7 +2142,6 @@
             </ResultMapping>
           </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="SP_DELETE_EXPERTINFO_XOA" FunctionName="TrainingCenterModel.Store.SP_DELETE_EXPERTINFO_XOA" />
->>>>>>> 0eeb5969fec8e86b0485f71514fd31adb76ffc3d
           </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

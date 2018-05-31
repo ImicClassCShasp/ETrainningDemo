@@ -1731,7 +1731,6 @@ public TrainingCenterEntities(string s)
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETLITSTUDENT_BYID_CLASS_Result>("SP_GETLITSTUDENT_BYID_CLASS", classidParameter);
         }
     
-<<<<<<< HEAD
         public virtual ObjectResult<SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS_Result> SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS(string fromdate, Nullable<int> classid, string todate)
         {
             var fromdateParameter = fromdate != null ?
@@ -1843,19 +1842,19 @@ public TrainingCenterEntities(string s)
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_INSERT_STUDENT_CLASS", classIdParameter, studentIdParameter, dateStartParameter, dateEndParameter, commentParameter, isMutiPriceParameter, numberPriceParameter, datePriceParameter, dESCRIPTIONParameter, totalPriceParameter, price1Parameter, price2Parameter, price3Parameter, mustPayParameter, idPolicyStudentParameter, beforePriceParameter, sTATUSParameter, userIdConfirmParameter);
         }
-    
+
         public virtual int SP_UPDATE_EXPERT_CLASSES(Nullable<int> idCl, Nullable<int> idExp)
         {
             var idClParameter = idCl.HasValue ?
                 new ObjectParameter("idCl", idCl) :
                 new ObjectParameter("idCl", typeof(int));
-    
+
             var idExpParameter = idExp.HasValue ?
                 new ObjectParameter("idExp", idExp) :
                 new ObjectParameter("idExp", typeof(int));
-    
+
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_UPDATE_EXPERT_CLASSES", idClParameter, idExpParameter);
-=======
+        }
         public virtual ObjectResult<SP_GETALL_EXPERT_INFO_Result> SP_GETALL_EXPERT_INFO()
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETALL_EXPERT_INFO_Result>("SP_GETALL_EXPERT_INFO");
@@ -1939,7 +1938,7 @@ public TrainingCenterEntities(string s)
                 new ObjectParameter("ExpertId", typeof(int));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_DELETE_EXPERTINFO_XOA", expertIdParameter);
->>>>>>> 0eeb5969fec8e86b0485f71514fd31adb76ffc3d
+
         }
     }
 }
