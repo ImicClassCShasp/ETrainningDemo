@@ -53,6 +53,7 @@
     <Compile Include="AccountDAL.cs" />
     <Compile Include="AmountStudentClassDAL.cs" />
     <Compile Include="BaseDAL.cs" />
+    <Compile Include="CenterInfoesDAL.cs" />
     <Compile Include="ClassesDAL.cs" />
     <Compile Include="CMSModels.Context.cs">
       <AutoGen>True</AutoGen>
@@ -107,6 +108,12 @@
     <Compile Include="SP_GETALL_COURSE_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
+    <Compile Include="SP_GETALL_EXPERT_INFO_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetAll_TrungTam_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
     <Compile Include="SP_GETALL_USER_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
@@ -120,6 +127,13 @@
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_GETELEMENTS_BYDATE_STUDENTS_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
+<<<<<<< HEAD
+    <Compile Include="SP_GETELEMENT_BYID_CLASSES_Result.cs">
+=======
+    <Compile Include="SP_GETELEMENT_BYID_EXPERT_INFO_Result.cs">
+>>>>>>> 0eeb5969fec8e86b0485f71514fd31adb76ffc3d
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_GetElement_USER_Result.cs">
@@ -146,7 +160,13 @@
     <Compile Include="SP_GETLISTSTUDENT_BYCLASSID_STUDENTS_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
+    <Compile Include="SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
     <Compile Include="SP_GETLITSTUDENT_BYID_CLASS_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GETSTUDENT_BYID_STUDENTS_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_GETUSERINFO_Result.cs">
