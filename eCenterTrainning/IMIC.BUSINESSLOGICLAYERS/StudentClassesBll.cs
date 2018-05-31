@@ -27,5 +27,9 @@ namespace IMIC.BUSINESSLOGICLAYERS
         {
             return mStudentClassesDAL.CheckElementByObject(oT);
         }
+        public override bool InsertElement(StudentClasses oT)
+        {
+            return mStudentClassesDAL.InsertElement(oT);
+        }
     }
 }
