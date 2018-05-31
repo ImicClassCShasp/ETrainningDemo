@@ -12,14 +12,22 @@
         <Function Name="SP_DELETE_COMMENT_SUPPORT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="idComment" Type="int" Mode="In" />
         </Function>
+        <Function Name="SP_DELETE_EXPERTINFO_XOA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ExpertId" Type="int" Mode="In" />
+        </Function>
         <Function Name="SP_DELETE_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="id" Type="int" Mode="In" />
         </Function>
         <Function Name="SP_GETALL_AYEAR_CLASS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_GETALL_COURSE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_GETALL_EXPERT_INFO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_GetAll_TrungTam" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_GETALL_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_GetComment_Support_ByStudentId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="idStudent" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_GETELEMENT_BYID_EXPERT_INFO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IdExpert" Type="int" Mode="In" />
         </Function>
         <Function Name="SP_GETELEMENTBYID_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="UserId" Type="int" Mode="In" />
@@ -72,6 +80,21 @@
           <Parameter Name="UserName" Type="nvarchar" Mode="In" />
           <Parameter Name="StudentId" Type="int" Mode="In" />
           <Parameter Name="DateCreate" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="SP_INSERTUPDATE_EXPERT_INFO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="flag" Type="int" Mode="In" />
+          <Parameter Name="idExpert" Type="int" Mode="In" />
+          <Parameter Name="ExpName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Birthday" Type="datetime" Mode="In" />
+          <Parameter Name="Sex" Type="int" Mode="In" />
+          <Parameter Name="address" Type="nvarchar" Mode="In" />
+          <Parameter Name="des" Type="nvarchar" Mode="In" />
+          <Parameter Name="yearExp" Type="int" Mode="In" />
+          <Parameter Name="UniDegree" Type="nvarchar" Mode="In" />
+          <Parameter Name="CenterID" Type="int" Mode="In" />
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+          <Parameter Name="Mobile" Type="nvarchar" Mode="In" />
+          <Parameter Name="ExpertCV" Type="ntext" Mode="In" />
         </Function>
         <Function Name="SP_UPDATE_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="UserId" Type="int" Mode="In" />
@@ -574,7 +597,30 @@
           <Parameter Name="classid" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="SP_GETLITSTUDENT_BYID_CLASS" ReturnType="Collection(TrainingCenterModel.SP_GETLITSTUDENT_BYID_CLASS_Result)">
-            <Parameter Name="classid" Mode="In" Type="Int32" />
+          <Parameter Name="classid" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GETALL_EXPERT_INFO" ReturnType="Collection(TrainingCenterModel.SP_GETALL_EXPERT_INFO_Result)" />
+          <FunctionImport Name="SP_GETELEMENT_BYID_EXPERT_INFO" ReturnType="Collection(TrainingCenterModel.SP_GETELEMENT_BYID_EXPERT_INFO_Result)">
+          <Parameter Name="IdExpert" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_INSERTUPDATE_EXPERT_INFO">
+            <Parameter Name="flag" Mode="In" Type="Int32" />
+            <Parameter Name="idExpert" Mode="In" Type="Int32" />
+            <Parameter Name="ExpName" Mode="In" Type="String" />
+            <Parameter Name="Birthday" Mode="In" Type="DateTime" />
+            <Parameter Name="Sex" Mode="In" Type="Int32" />
+            <Parameter Name="address" Mode="In" Type="String" />
+            <Parameter Name="des" Mode="In" Type="String" />
+            <Parameter Name="yearExp" Mode="In" Type="Int32" />
+            <Parameter Name="UniDegree" Mode="In" Type="String" />
+            <Parameter Name="CenterID" Mode="In" Type="Int32" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="Mobile" Mode="In" Type="String" />
+            <Parameter Name="ExpertCV" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GetAll_TrungTam" ReturnType="Collection(TrainingCenterModel.SP_GetAll_TrungTam_Result)" />
+          <FunctionImport Name="SP_DELETE_EXPERTINFO_XOA">
+            <Parameter Name="ExpertId" Mode="In" Type="Int32" />
           </FunctionImport>
         </EntityContainer>
         <ComplexType Name="GetListEmployees_Result">
@@ -1470,6 +1516,47 @@
           <Property Type="String" Name="Email" Nullable="true" MaxLength="500" />
           <Property Type="String" Name="Mobile" Nullable="true" MaxLength="200" />
         </ComplexType>
+        <ComplexType Name="SP_GETALL_EXPERT_INFO_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="ExpertName" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="Sex" Nullable="true" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="1000" />
+          <Property Type="Int32" Name="YearsExperience" Nullable="true" />
+          <Property Type="String" Name="UniversityDegree" Nullable="true" MaxLength="250" />
+          <Property Type="Int32" Name="CenterId" Nullable="true" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="ExpertCV" Nullable="true" MaxLength="Max" />
+          <Property Type="String" Name="CenterName" Nullable="true" MaxLength="250" />
+        </ComplexType>
+        <ComplexType Name="SP_GETELEMENT_BYID_EXPERT_INFO_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="ExpertName" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="Sex" Nullable="true" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="1000" />
+          <Property Type="Int32" Name="YearsExperience" Nullable="true" />
+          <Property Type="String" Name="UniversityDegree" Nullable="true" MaxLength="250" />
+          <Property Type="Int32" Name="CenterId" Nullable="true" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="ExpertCV" Nullable="true" MaxLength="Max" />
+          <Property Type="String" Name="CenterName" Nullable="true" MaxLength="250" />
+        </ComplexType>
+        <ComplexType Name="SP_GetAll_TrungTam_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="CenterName" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="Mobile" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Fax" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Website" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="50" />
+        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1740,6 +1827,61 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_GETALL_EXPERT_INFO" FunctionName="TrainingCenterModel.Store.SP_GETALL_EXPERT_INFO">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GETALL_EXPERT_INFO_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ExpertName" ColumnName="ExpertName" />
+                <ScalarProperty Name="DateBirthday" ColumnName="DateBirthday" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="YearsExperience" ColumnName="YearsExperience" />
+                <ScalarProperty Name="UniversityDegree" ColumnName="UniversityDegree" />
+                <ScalarProperty Name="CenterId" ColumnName="CenterId" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="ExpertCV" ColumnName="ExpertCV" />
+                <ScalarProperty Name="CenterName" ColumnName="CenterName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_GETELEMENT_BYID_EXPERT_INFO" FunctionName="TrainingCenterModel.Store.SP_GETELEMENT_BYID_EXPERT_INFO">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GETELEMENT_BYID_EXPERT_INFO_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ExpertName" ColumnName="ExpertName" />
+                <ScalarProperty Name="DateBirthday" ColumnName="DateBirthday" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="YearsExperience" ColumnName="YearsExperience" />
+                <ScalarProperty Name="UniversityDegree" ColumnName="UniversityDegree" />
+                <ScalarProperty Name="CenterId" ColumnName="CenterId" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="ExpertCV" ColumnName="ExpertCV" />
+                <ScalarProperty Name="CenterName" ColumnName="CenterName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_INSERTUPDATE_EXPERT_INFO" FunctionName="TrainingCenterModel.Store.SP_INSERTUPDATE_EXPERT_INFO" />
+          <FunctionImportMapping FunctionImportName="SP_GetAll_TrungTam" FunctionName="TrainingCenterModel.Store.SP_GetAll_TrungTam">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GetAll_TrungTam_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CenterName" ColumnName="CenterName" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Fax" ColumnName="Fax" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Website" ColumnName="Website" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_DELETE_EXPERTINFO_XOA" FunctionName="TrainingCenterModel.Store.SP_DELETE_EXPERTINFO_XOA" />
           </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
