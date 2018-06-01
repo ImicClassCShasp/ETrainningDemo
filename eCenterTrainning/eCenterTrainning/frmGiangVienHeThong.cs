@@ -14,10 +14,16 @@ using IMIC.BUSINESSLOGICLAYERS;
 namespace eCenterTrainning
 {
     public partial class frmGiangVienHeThong : frmIMICBase
-    {       
-        public frmGiangVienHeThong(Account oAccount, ExpertInfo oExpertInfo, Classes oClasses) : base(oAccount)
+    {
+        List<ExpertInfo> mLisExpertInfo;
+        Classes mClasses;
+        ExpertInfo mExpertInfo;
+        public frmGiangVienHeThong(Account oAccount,ExpertInfo oExpertInfo, Classes oClasses) : base(oAccount)
         {
-            InitializeComponent();            
+            InitializeComponent();
+            mLisExpertInfo = new List<ExpertInfo>();
+            mClasses = oClasses;
+            mExpertInfo = oExpertInfo;
         }
         private void frmGiangVienHeThong_Load(object sender, EventArgs e)
         {
@@ -29,8 +35,8 @@ namespace eCenterTrainning
             try
             {
                 this.Cursor = Cursors.WaitCursor;
-                //mLisExpertInfo = new ExpertInfoBll(mAccount).getElements();
-                //gridControlGiangVien.DataSource = mLisExpertInfo;
+                mLisExpertInfo = new ExpertInfoBll(mAccount).getElements();
+                gridControlGiangVien.DataSource = mLisExpertInfo;
             }
             catch (Exception ex)
             {
@@ -47,16 +53,17 @@ namespace eCenterTrainning
             try
             {
                 this.Cursor = Cursors.WaitCursor;
-                //int id = 0;
-                //int.TryParse("" + gridViewGiangVien.GetFocusedRowCellValue("Id"), out id);
-                //if (id > 0)
-                //{
-                //    string FullName = "" + gridViewGiangVien.GetFocusedRowCellValue("ExpertName");
-                //    btnGiangVien.Visible = true;
-                //    btnGiangVien.Enabled = true;
-                //    btnGiangVien.Text = string.Format("Bấm nút để chọn Chuyên gia: {0} sẽ phụ trách lớp: {1}."
-                //                            ,FullName, mClasses.ClassName);
-                //}
+                int id = 0;
+                int.TryParse("" + gridViewGiangVien.GetFocusedRowCellValue("Id"), out id);
+                if (id > 0)
+                {
+                    string FullName = "" + gridViewGiangVien.GetFocusedRowCellValue("ExpertName");
+                    btnGiangVien.Visible = true;
+                    btnGiangVien.Enabled = true;
+                    btnGiangVien.Text = string.Format("Bấm nút để chọn Chuyên gia: {0} sẽ phụ trách lớp: {1}."
+                                            , FullName, mClasses.ClassName);
+                    mExpertInfo.Id = id;
+                }
             }
             catch (Exception ex)
             {
@@ -66,6 +73,12 @@ namespace eCenterTrainning
             {
                 this.Cursor = Cursors.Default;
             }
+        }
+
+        private void btnGiangVien_Click(object sender, EventArgs e)
+        {
+            
+            this.Close();
         }
     }
 }
