@@ -11,8 +11,9 @@ namespace IMIC.DATAACCESSLAYERS
 {
     using System;
     
-    public partial class SP_GETLITSTUDENT_BYID_CLASS_Result
+    public partial class SP_GETHOCPHI_BYSTUDENTID_CLASS_Result
     {
+        public string ClassName { get; set; }
         public int Id { get; set; }
         public Nullable<int> ClassId { get; set; }
         public Nullable<int> StudentId { get; set; }
@@ -33,8 +34,8 @@ namespace IMIC.DATAACCESSLAYERS
         public Nullable<byte> Status { get; set; }
         public Nullable<long> UserIdConfirm { get; set; }
         public string FullName { get; set; }
-        public Nullable<int> Sex { get; set; }
         public string Email { get; set; }
         public string Mobile { get; set; }
+        public Nullable<int> Sex { get; set; }
     }
 }

@@ -138,5 +138,17 @@ namespace eCenterTrainning
             UseControls.uExpertInfo oUExpert = new UseControls.uExpertInfo(mAccount);
             plMain.Controls.Add(oUExpert);
         }
+
+        private void naveTrainning_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void navBarItemLopHoc_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            plMain.Controls.Clear();
+            UseControls.uClass oUClass = new UseControls.uClass(mAccount);
+            plMain.Controls.Add(oUClass);
+        }
     }
 }

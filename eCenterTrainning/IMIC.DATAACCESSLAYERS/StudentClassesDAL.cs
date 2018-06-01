@@ -46,7 +46,7 @@ namespace IMIC.DATAACCESSLAYERS
         public override List<StudentClasses> CheckElementByObject(StudentClasses oT)
         {
             TrainingCenterEntities oEntities = ConnectionEntities.getTrainingCenter(mAcount);
-            var oData = oEntities.SP_GETLITSTUDENT_BYID_CLASS(oT.ClassId).ToList();
+            var oData = oEntities.SP_GETLITSTUDENT_BYID_CLASS_02(oT.ClassId).ToList();
             List<StudentClasses> olisStudentClasses = new List<StudentClasses>();
             Commons oCommons = new Commons();
             foreach (var o in oData)

@@ -11,11 +11,9 @@ namespace IMIC.DATAACCESSLAYERS
 {
     using System;
     
-    public partial class SP_GETLISTSTUDENT_BYCLASSID_STUDENTS_Result
+    public partial class SP_GETALL_HOCVIEN_3MONTH_Result
     {
         public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
         public string FullName { get; set; }
         public Nullable<bool> HVTiemNang { get; set; }
         public Nullable<int> Sex { get; set; }
@@ -28,19 +26,11 @@ namespace IMIC.DATAACCESSLAYERS
         public Nullable<System.DateTime> DateRegister { get; set; }
         public Nullable<System.DateTime> DateLastUpdate { get; set; }
         public string Description { get; set; }
-        public Nullable<bool> IsTested { get; set; }
-        public string MarkTest { get; set; }
-        public Nullable<bool> IsRegistered { get; set; }
-        public Nullable<bool> IsApproved { get; set; }
-        public string IdentityNumber { get; set; }
-        public Nullable<System.DateTime> DateIssue { get; set; }
-        public string PlaceIssue { get; set; }
-        public Nullable<int> CourseId { get; set; }
-        public Nullable<int> ClassId { get; set; }
-        public Nullable<int> StatusId { get; set; }
-        public Nullable<double> Bonus { get; set; }
         public Nullable<int> UserId { get; set; }
-        public Nullable<int> IdPolicyStudent { get; set; }
-        public Nullable<double> Price { get; set; }
+        public string UserName { get; set; }
+        public Nullable<int> CourseId { get; set; }
+        public string CourseName { get; set; }
+        public Nullable<int> StatusId { get; set; }
+        public string StatusName { get; set; }
     }
 }
