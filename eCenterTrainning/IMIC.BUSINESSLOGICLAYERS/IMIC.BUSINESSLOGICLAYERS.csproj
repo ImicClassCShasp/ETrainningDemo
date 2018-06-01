@@ -43,7 +43,11 @@
     <Compile Include="AccountBill.cs" />
     <Compile Include="AmountStudentClassBll.cs" />
     <Compile Include="BaseBll.cs" />
+
     <Compile Include="CenterInfoBLL.cs" />
+
+    <Compile Include="CenterInfoesBll.cs" />
+
     <Compile Include="ClassesBll.cs" />
     <Compile Include="CommentSupportBll.cs" />
     <Compile Include="CourseBll.cs" />

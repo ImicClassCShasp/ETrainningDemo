@@ -131,5 +131,12 @@ namespace eCenterTrainning
             UseControls.uEmployee ucEmployee = new UseControls.uEmployee(mAccount);
             plMain.Controls.Add(ucEmployee);
         }
+
+        private void navBarGiangVien_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            plMain.Controls.Clear();
+            UseControls.uExpertInfo oUExpert = new UseControls.uExpertInfo(mAccount);
+            plMain.Controls.Add(oUExpert);
+        }
     }
 }

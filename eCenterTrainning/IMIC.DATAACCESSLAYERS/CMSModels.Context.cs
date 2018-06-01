@@ -17,8 +17,8 @@ namespace IMIC.DATAACCESSLAYERS
     
     public partial class TrainingCenterEntities : DbContext
     {
-        public TrainingCenterEntities(string sValue)
-            : base(sValue)
+public TrainingCenterEntities(string s)
+            : base(s)
         {
         }
     
@@ -1930,6 +1930,216 @@ namespace IMIC.DATAACCESSLAYERS
                 new ObjectParameter("Id", typeof(int));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GetByID_Employee_Result>("SP_GetByID_Employee", idParameter);
+        }
+    
+        public virtual ObjectResult<SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS_Result> SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS(string fromdate, Nullable<int> classid, string todate)
+        {
+            var fromdateParameter = fromdate != null ?
+                new ObjectParameter("fromdate", fromdate) :
+                new ObjectParameter("fromdate", typeof(string));
+    
+            var classidParameter = classid.HasValue ?
+                new ObjectParameter("classid", classid) :
+                new ObjectParameter("classid", typeof(int));
+    
+            var todateParameter = todate != null ?
+                new ObjectParameter("todate", todate) :
+                new ObjectParameter("todate", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS_Result>("SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS", fromdateParameter, classidParameter, todateParameter);
+        }
+    
+        public virtual ObjectResult<SP_GETSTUDENT_BYID_STUDENTS_Result> SP_GETSTUDENT_BYID_STUDENTS(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETSTUDENT_BYID_STUDENTS_Result>("SP_GETSTUDENT_BYID_STUDENTS", idParameter);
+        }
+    
+        public virtual ObjectResult<SP_GETELEMENT_BYID_CLASSES_Result> SP_GETELEMENT_BYID_CLASSES(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("id", id) :
+                new ObjectParameter("id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETELEMENT_BYID_CLASSES_Result>("SP_GETELEMENT_BYID_CLASSES", idParameter);
+        }
+    
+        public virtual int SP_INSERT_STUDENT_CLASS(Nullable<int> classId, Nullable<int> studentId, string dateStart, Nullable<System.DateTime> dateEnd, string comment, Nullable<bool> isMutiPrice, Nullable<int> numberPrice, Nullable<System.DateTime> datePrice, string dESCRIPTION, Nullable<double> totalPrice, Nullable<double> price1, Nullable<double> price2, Nullable<double> price3, Nullable<double> mustPay, Nullable<int> idPolicyStudent, Nullable<double> beforePrice, Nullable<byte> sTATUS, Nullable<long> userIdConfirm)
+        {
+            var classIdParameter = classId.HasValue ?
+                new ObjectParameter("ClassId", classId) :
+                new ObjectParameter("ClassId", typeof(int));
+    
+            var studentIdParameter = studentId.HasValue ?
+                new ObjectParameter("StudentId", studentId) :
+                new ObjectParameter("StudentId", typeof(int));
+    
+            var dateStartParameter = dateStart != null ?
+                new ObjectParameter("DateStart", dateStart) :
+                new ObjectParameter("DateStart", typeof(string));
+    
+            var dateEndParameter = dateEnd.HasValue ?
+                new ObjectParameter("DateEnd", dateEnd) :
+                new ObjectParameter("DateEnd", typeof(System.DateTime));
+    
+            var commentParameter = comment != null ?
+                new ObjectParameter("Comment", comment) :
+                new ObjectParameter("Comment", typeof(string));
+    
+            var isMutiPriceParameter = isMutiPrice.HasValue ?
+                new ObjectParameter("IsMutiPrice", isMutiPrice) :
+                new ObjectParameter("IsMutiPrice", typeof(bool));
+    
+            var numberPriceParameter = numberPrice.HasValue ?
+                new ObjectParameter("NumberPrice", numberPrice) :
+                new ObjectParameter("NumberPrice", typeof(int));
+    
+            var datePriceParameter = datePrice.HasValue ?
+                new ObjectParameter("DatePrice", datePrice) :
+                new ObjectParameter("DatePrice", typeof(System.DateTime));
+    
+            var dESCRIPTIONParameter = dESCRIPTION != null ?
+                new ObjectParameter("DESCRIPTION", dESCRIPTION) :
+                new ObjectParameter("DESCRIPTION", typeof(string));
+    
+            var totalPriceParameter = totalPrice.HasValue ?
+                new ObjectParameter("TotalPrice", totalPrice) :
+                new ObjectParameter("TotalPrice", typeof(double));
+    
+            var price1Parameter = price1.HasValue ?
+                new ObjectParameter("Price1", price1) :
+                new ObjectParameter("Price1", typeof(double));
+    
+            var price2Parameter = price2.HasValue ?
+                new ObjectParameter("Price2", price2) :
+                new ObjectParameter("Price2", typeof(double));
+    
+            var price3Parameter = price3.HasValue ?
+                new ObjectParameter("Price3", price3) :
+                new ObjectParameter("Price3", typeof(double));
+    
+            var mustPayParameter = mustPay.HasValue ?
+                new ObjectParameter("MustPay", mustPay) :
+                new ObjectParameter("MustPay", typeof(double));
+    
+            var idPolicyStudentParameter = idPolicyStudent.HasValue ?
+                new ObjectParameter("IdPolicyStudent", idPolicyStudent) :
+                new ObjectParameter("IdPolicyStudent", typeof(int));
+    
+            var beforePriceParameter = beforePrice.HasValue ?
+                new ObjectParameter("BeforePrice", beforePrice) :
+                new ObjectParameter("BeforePrice", typeof(double));
+    
+            var sTATUSParameter = sTATUS.HasValue ?
+                new ObjectParameter("STATUS", sTATUS) :
+                new ObjectParameter("STATUS", typeof(byte));
+    
+            var userIdConfirmParameter = userIdConfirm.HasValue ?
+                new ObjectParameter("UserIdConfirm", userIdConfirm) :
+                new ObjectParameter("UserIdConfirm", typeof(long));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_INSERT_STUDENT_CLASS", classIdParameter, studentIdParameter, dateStartParameter, dateEndParameter, commentParameter, isMutiPriceParameter, numberPriceParameter, datePriceParameter, dESCRIPTIONParameter, totalPriceParameter, price1Parameter, price2Parameter, price3Parameter, mustPayParameter, idPolicyStudentParameter, beforePriceParameter, sTATUSParameter, userIdConfirmParameter);
+        }
+
+        public virtual int SP_UPDATE_EXPERT_CLASSES(Nullable<int> idCl, Nullable<int> idExp)
+        {
+            var idClParameter = idCl.HasValue ?
+                new ObjectParameter("idCl", idCl) :
+                new ObjectParameter("idCl", typeof(int));
+
+            var idExpParameter = idExp.HasValue ?
+                new ObjectParameter("idExp", idExp) :
+                new ObjectParameter("idExp", typeof(int));
+
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_UPDATE_EXPERT_CLASSES", idClParameter, idExpParameter);
+        }
+        public virtual ObjectResult<SP_GETALL_EXPERT_INFO_Result> SP_GETALL_EXPERT_INFO()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETALL_EXPERT_INFO_Result>("SP_GETALL_EXPERT_INFO");
+        }
+    
+        public virtual ObjectResult<SP_GETELEMENT_BYID_EXPERT_INFO_Result> SP_GETELEMENT_BYID_EXPERT_INFO(Nullable<int> idExpert)
+        {
+            var idExpertParameter = idExpert.HasValue ?
+                new ObjectParameter("IdExpert", idExpert) :
+                new ObjectParameter("IdExpert", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETELEMENT_BYID_EXPERT_INFO_Result>("SP_GETELEMENT_BYID_EXPERT_INFO", idExpertParameter);
+        }
+    
+        public virtual int SP_INSERTUPDATE_EXPERT_INFO(Nullable<int> flag, Nullable<int> idExpert, string expName, Nullable<System.DateTime> birthday, Nullable<int> sex, string address, string des, Nullable<int> yearExp, string uniDegree, Nullable<int> centerID, string email, string mobile, string expertCV)
+        {
+            var flagParameter = flag.HasValue ?
+                new ObjectParameter("flag", flag) :
+                new ObjectParameter("flag", typeof(int));
+    
+            var idExpertParameter = idExpert.HasValue ?
+                new ObjectParameter("idExpert", idExpert) :
+                new ObjectParameter("idExpert", typeof(int));
+    
+            var expNameParameter = expName != null ?
+                new ObjectParameter("ExpName", expName) :
+                new ObjectParameter("ExpName", typeof(string));
+    
+            var birthdayParameter = birthday.HasValue ?
+                new ObjectParameter("Birthday", birthday) :
+                new ObjectParameter("Birthday", typeof(System.DateTime));
+    
+            var sexParameter = sex.HasValue ?
+                new ObjectParameter("Sex", sex) :
+                new ObjectParameter("Sex", typeof(int));
+    
+            var addressParameter = address != null ?
+                new ObjectParameter("address", address) :
+                new ObjectParameter("address", typeof(string));
+    
+            var desParameter = des != null ?
+                new ObjectParameter("des", des) :
+                new ObjectParameter("des", typeof(string));
+    
+            var yearExpParameter = yearExp.HasValue ?
+                new ObjectParameter("yearExp", yearExp) :
+                new ObjectParameter("yearExp", typeof(int));
+    
+            var uniDegreeParameter = uniDegree != null ?
+                new ObjectParameter("UniDegree", uniDegree) :
+                new ObjectParameter("UniDegree", typeof(string));
+    
+            var centerIDParameter = centerID.HasValue ?
+                new ObjectParameter("CenterID", centerID) :
+                new ObjectParameter("CenterID", typeof(int));
+    
+            var emailParameter = email != null ?
+                new ObjectParameter("Email", email) :
+                new ObjectParameter("Email", typeof(string));
+    
+            var mobileParameter = mobile != null ?
+                new ObjectParameter("Mobile", mobile) :
+                new ObjectParameter("Mobile", typeof(string));
+    
+            var expertCVParameter = expertCV != null ?
+                new ObjectParameter("ExpertCV", expertCV) :
+                new ObjectParameter("ExpertCV", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_INSERTUPDATE_EXPERT_INFO", flagParameter, idExpertParameter, expNameParameter, birthdayParameter, sexParameter, addressParameter, desParameter, yearExpParameter, uniDegreeParameter, centerIDParameter, emailParameter, mobileParameter, expertCVParameter);
+        }
+    
+        public virtual ObjectResult<SP_GetAll_TrungTam_Result> SP_GetAll_TrungTam()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GetAll_TrungTam_Result>("SP_GetAll_TrungTam");
+        }
+    
+        public virtual int SP_DELETE_EXPERTINFO_XOA(Nullable<int> expertId)
+        {
+            var expertIdParameter = expertId.HasValue ?
+                new ObjectParameter("ExpertId", expertId) :
+                new ObjectParameter("ExpertId", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_DELETE_EXPERTINFO_XOA", expertIdParameter);
+
         }
     }
 }
