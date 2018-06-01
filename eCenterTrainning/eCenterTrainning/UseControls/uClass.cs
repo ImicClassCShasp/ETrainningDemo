@@ -187,6 +187,7 @@ namespace eCenterTrainning.UseControls
                 this.Cursor = Cursors.WaitCursor;
                 int iClassId = 0;
                 int.TryParse("" + lookUpEditClass.EditValue, out iClassId);
+                mClasses.Id = iClassId;
                 if (iClassId > 0)
                 {
                     StudentClasses obj = new StudentClasses() { ClassId = iClassId };

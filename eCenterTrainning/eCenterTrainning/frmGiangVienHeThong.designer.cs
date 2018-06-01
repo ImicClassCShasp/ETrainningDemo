@@ -65,7 +65,7 @@
             this.btnGiangVien.TabIndex = 2;
             this.btnGiangVien.Text = "Chọn Chuyên gia phụ trách lớp";
             this.btnGiangVien.Visible = false;
-            //this.btnGiangVien.Click += new System.EventHandler(this.btnGiangVien_Click);
+            this.btnGiangVien.Click += new System.EventHandler(this.btnGiangVien_Click);
             // 
             // gridControlGiangVien
             // 
