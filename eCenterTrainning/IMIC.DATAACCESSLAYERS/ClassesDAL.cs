@@ -43,7 +43,7 @@ namespace IMIC.DATAACCESSLAYERS
         public override bool UpdateElement(Classes oT)
         {
             TrainingCenterEntities oEntities = ConnectionEntities.getTrainingCenter(mAcount);
-            oEntities.SP_IMIC_Add_Expert_Into_Classes(oT.Id, oT.ExpertId);
+            oEntities.SP_UPDATE_EXPERT_CLASSES(oT.Id, oT.ExpertId);
             return true;
         }
         public override Classes getElementById(object id)
