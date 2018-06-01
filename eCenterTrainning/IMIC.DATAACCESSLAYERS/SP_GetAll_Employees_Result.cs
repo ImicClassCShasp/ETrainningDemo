@@ -6,19 +6,16 @@
 //     Manual changes to this file will be overwritten if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
 
-namespace IMIC.VALUEOBJECTS
+namespace IMIC.DATAACCESSLAYERS
 {
-    public class Employee
+    using System;
+    
+    public partial class SP_GetAll_Employees_Result
     {
         public int Id { get; set; }
         public string EmployeeName { get; set; }
-
         public Nullable<int> Sex { get; set; }
-        public string SexString { get; set; }
-
         public Nullable<System.DateTime> DateBirhday { get; set; }
         public string Mobile { get; set; }
         public string Phone { get; set; }
@@ -39,7 +36,6 @@ namespace IMIC.VALUEOBJECTS
         public Nullable<int> CenterId { get; set; }
         public Nullable<int> OuId { get; set; }
         public string EmployeeCV { get; set; }
-
         public string CenterName { get; set; }
         public string OuName { get; set; }
     }

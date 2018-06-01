@@ -95,7 +95,7 @@
             // 
             // colID
             // 
-            this.colID.Caption = "ID";
+            this.colID.Caption = "Id";
             this.colID.FieldName = "Id";
             this.colID.Name = "colID";
             // 
@@ -112,7 +112,7 @@
             // colSex
             // 
             this.colSex.Caption = "Giới Tính";
-            this.colSex.FieldName = "Sex";
+            this.colSex.FieldName = "SexString";
             this.colSex.Name = "colSex";
             this.colSex.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains;
             this.colSex.Visible = true;
@@ -131,7 +131,7 @@
             // 
             // colEmail
             // 
-            this.colEmail.Caption = "Email";
+            this.colEmail.Caption = "E-mail";
             this.colEmail.FieldName = "Email";
             this.colEmail.Name = "colEmail";
             this.colEmail.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains;
