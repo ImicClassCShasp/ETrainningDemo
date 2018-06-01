@@ -42,6 +42,7 @@ namespace IMIC.DATAACCESSLAYERS
                 }                           
             return olisStudentClasses;
         }
+
         public override List<StudentClasses> CheckElementByObject(StudentClasses oT)
         {
             TrainingCenterEntities oEntities = ConnectionEntities.getTrainingCenter(mAcount);
@@ -75,6 +76,7 @@ namespace IMIC.DATAACCESSLAYERS
             }
             return olisStudentClasses;
         }
+
         public override bool DeleteElement(StudentClasses oT)
         {
             TrainingCenterEntities oEntities = ConnectionEntities.getTrainingCenter(mAcount);

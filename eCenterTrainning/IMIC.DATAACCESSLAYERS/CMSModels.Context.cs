@@ -1708,27 +1708,228 @@ public TrainingCenterEntities(string s)
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETHOCPHI_BYSTUDENTID_STUDENT_CLASS_Result>("SP_GETHOCPHI_BYSTUDENTID_STUDENT_CLASS", idStdParameter);
         }
     
-        public virtual ObjectResult<SP_GETALL_AYEAR_CLASS_Result> SP_GETALL_AYEAR_CLASS()
+        public virtual ObjectResult<SP_GetAll_Employees_Result> SP_GetAll_Employees()
         {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETALL_AYEAR_CLASS_Result>("SP_GETALL_AYEAR_CLASS");
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GetAll_Employees_Result>("SP_GetAll_Employees");
         }
     
-        public virtual ObjectResult<SP_GETLISTSTUDENT_BYCLASSID_STUDENTS_Result> SP_GETLISTSTUDENT_BYCLASSID_STUDENTS(Nullable<int> classid)
+        public virtual ObjectResult<SP_GetAll_ChucVu_Result> SP_GetAll_ChucVu()
         {
-            var classidParameter = classid.HasValue ?
-                new ObjectParameter("classid", classid) :
-                new ObjectParameter("classid", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETLISTSTUDENT_BYCLASSID_STUDENTS_Result>("SP_GETLISTSTUDENT_BYCLASSID_STUDENTS", classidParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GetAll_ChucVu_Result>("SP_GetAll_ChucVu");
         }
     
-        public virtual ObjectResult<SP_GETLITSTUDENT_BYID_CLASS_Result> SP_GETLITSTUDENT_BYID_CLASS(Nullable<int> classid)
+        public virtual ObjectResult<SP_GetAll_PhongBan_Result> SP_GetAll_PhongBan()
         {
-            var classidParameter = classid.HasValue ?
-                new ObjectParameter("classid", classid) :
-                new ObjectParameter("classid", typeof(int));
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GetAll_PhongBan_Result>("SP_GetAll_PhongBan");
+        }
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETLITSTUDENT_BYID_CLASS_Result>("SP_GETLITSTUDENT_BYID_CLASS", classidParameter);
+        public virtual ObjectResult<SP_GetAll_TrungTam_Result> SP_GetAll_TrungTam()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GetAll_TrungTam_Result>("SP_GetAll_TrungTam");
+        }
+    
+        public virtual int SP_Creat_Employees(string employeeName, Nullable<int> sex, Nullable<System.DateTime> dateBirhday, string mobile, string phone, string email, string universityName, string address, string identityNumber, Nullable<System.DateTime> dateOfIssue, string placeOfIssue, string placeBirthday, string personalTaxCode, string description, Nullable<int> orderNumber, Nullable<System.DateTime> dateCreate, Nullable<System.DateTime> dateLastUpdate, Nullable<System.DateTime> dateRegister, Nullable<int> jobTitleId, Nullable<int> centerId, Nullable<int> ouId, string employeeCV)
+        {
+            var employeeNameParameter = employeeName != null ?
+                new ObjectParameter("EmployeeName", employeeName) :
+                new ObjectParameter("EmployeeName", typeof(string));
+    
+            var sexParameter = sex.HasValue ?
+                new ObjectParameter("Sex", sex) :
+                new ObjectParameter("Sex", typeof(int));
+    
+            var dateBirhdayParameter = dateBirhday.HasValue ?
+                new ObjectParameter("DateBirhday", dateBirhday) :
+                new ObjectParameter("DateBirhday", typeof(System.DateTime));
+    
+            var mobileParameter = mobile != null ?
+                new ObjectParameter("Mobile", mobile) :
+                new ObjectParameter("Mobile", typeof(string));
+    
+            var phoneParameter = phone != null ?
+                new ObjectParameter("Phone", phone) :
+                new ObjectParameter("Phone", typeof(string));
+    
+            var emailParameter = email != null ?
+                new ObjectParameter("Email", email) :
+                new ObjectParameter("Email", typeof(string));
+    
+            var universityNameParameter = universityName != null ?
+                new ObjectParameter("UniversityName", universityName) :
+                new ObjectParameter("UniversityName", typeof(string));
+    
+            var addressParameter = address != null ?
+                new ObjectParameter("Address", address) :
+                new ObjectParameter("Address", typeof(string));
+    
+            var identityNumberParameter = identityNumber != null ?
+                new ObjectParameter("IdentityNumber", identityNumber) :
+                new ObjectParameter("IdentityNumber", typeof(string));
+    
+            var dateOfIssueParameter = dateOfIssue.HasValue ?
+                new ObjectParameter("DateOfIssue", dateOfIssue) :
+                new ObjectParameter("DateOfIssue", typeof(System.DateTime));
+    
+            var placeOfIssueParameter = placeOfIssue != null ?
+                new ObjectParameter("PlaceOfIssue", placeOfIssue) :
+                new ObjectParameter("PlaceOfIssue", typeof(string));
+    
+            var placeBirthdayParameter = placeBirthday != null ?
+                new ObjectParameter("PlaceBirthday", placeBirthday) :
+                new ObjectParameter("PlaceBirthday", typeof(string));
+    
+            var personalTaxCodeParameter = personalTaxCode != null ?
+                new ObjectParameter("PersonalTaxCode", personalTaxCode) :
+                new ObjectParameter("PersonalTaxCode", typeof(string));
+    
+            var descriptionParameter = description != null ?
+                new ObjectParameter("Description", description) :
+                new ObjectParameter("Description", typeof(string));
+    
+            var orderNumberParameter = orderNumber.HasValue ?
+                new ObjectParameter("OrderNumber", orderNumber) :
+                new ObjectParameter("OrderNumber", typeof(int));
+    
+            var dateCreateParameter = dateCreate.HasValue ?
+                new ObjectParameter("DateCreate", dateCreate) :
+                new ObjectParameter("DateCreate", typeof(System.DateTime));
+    
+            var dateLastUpdateParameter = dateLastUpdate.HasValue ?
+                new ObjectParameter("DateLastUpdate", dateLastUpdate) :
+                new ObjectParameter("DateLastUpdate", typeof(System.DateTime));
+    
+            var dateRegisterParameter = dateRegister.HasValue ?
+                new ObjectParameter("DateRegister", dateRegister) :
+                new ObjectParameter("DateRegister", typeof(System.DateTime));
+    
+            var jobTitleIdParameter = jobTitleId.HasValue ?
+                new ObjectParameter("JobTitleId", jobTitleId) :
+                new ObjectParameter("JobTitleId", typeof(int));
+    
+            var centerIdParameter = centerId.HasValue ?
+                new ObjectParameter("CenterId", centerId) :
+                new ObjectParameter("CenterId", typeof(int));
+    
+            var ouIdParameter = ouId.HasValue ?
+                new ObjectParameter("OuId", ouId) :
+                new ObjectParameter("OuId", typeof(int));
+    
+            var employeeCVParameter = employeeCV != null ?
+                new ObjectParameter("EmployeeCV", employeeCV) :
+                new ObjectParameter("EmployeeCV", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Creat_Employees", employeeNameParameter, sexParameter, dateBirhdayParameter, mobileParameter, phoneParameter, emailParameter, universityNameParameter, addressParameter, identityNumberParameter, dateOfIssueParameter, placeOfIssueParameter, placeBirthdayParameter, personalTaxCodeParameter, descriptionParameter, orderNumberParameter, dateCreateParameter, dateLastUpdateParameter, dateRegisterParameter, jobTitleIdParameter, centerIdParameter, ouIdParameter, employeeCVParameter);
+        }
+    
+        public virtual int SP_Delete_Employee(Nullable<int> idEmployee)
+        {
+            var idEmployeeParameter = idEmployee.HasValue ?
+                new ObjectParameter("IdEmployee", idEmployee) :
+                new ObjectParameter("IdEmployee", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Delete_Employee", idEmployeeParameter);
+        }
+    
+        public virtual int SP_Update_Employee(Nullable<int> idEmployee, string employeeName, Nullable<int> sex, Nullable<System.DateTime> dateBirhday, string mobile, string phone, string email, string universityName, string address, string identityNumber, Nullable<System.DateTime> dateOfIssue, string placeOfIssue, string placeBirthday, string personalTaxCode, string description, Nullable<int> orderNumber, Nullable<System.DateTime> dateCreate, Nullable<System.DateTime> dateRegister, Nullable<int> jobTitleId, Nullable<int> centerId, Nullable<int> ouId, string employeeCV)
+        {
+            var idEmployeeParameter = idEmployee.HasValue ?
+                new ObjectParameter("IdEmployee", idEmployee) :
+                new ObjectParameter("IdEmployee", typeof(int));
+    
+            var employeeNameParameter = employeeName != null ?
+                new ObjectParameter("EmployeeName", employeeName) :
+                new ObjectParameter("EmployeeName", typeof(string));
+    
+            var sexParameter = sex.HasValue ?
+                new ObjectParameter("Sex", sex) :
+                new ObjectParameter("Sex", typeof(int));
+    
+            var dateBirhdayParameter = dateBirhday.HasValue ?
+                new ObjectParameter("DateBirhday", dateBirhday) :
+                new ObjectParameter("DateBirhday", typeof(System.DateTime));
+    
+            var mobileParameter = mobile != null ?
+                new ObjectParameter("Mobile", mobile) :
+                new ObjectParameter("Mobile", typeof(string));
+    
+            var phoneParameter = phone != null ?
+                new ObjectParameter("Phone", phone) :
+                new ObjectParameter("Phone", typeof(string));
+    
+            var emailParameter = email != null ?
+                new ObjectParameter("Email", email) :
+                new ObjectParameter("Email", typeof(string));
+    
+            var universityNameParameter = universityName != null ?
+                new ObjectParameter("UniversityName", universityName) :
+                new ObjectParameter("UniversityName", typeof(string));
+    
+            var addressParameter = address != null ?
+                new ObjectParameter("Address", address) :
+                new ObjectParameter("Address", typeof(string));
+    
+            var identityNumberParameter = identityNumber != null ?
+                new ObjectParameter("IdentityNumber", identityNumber) :
+                new ObjectParameter("IdentityNumber", typeof(string));
+    
+            var dateOfIssueParameter = dateOfIssue.HasValue ?
+                new ObjectParameter("DateOfIssue", dateOfIssue) :
+                new ObjectParameter("DateOfIssue", typeof(System.DateTime));
+    
+            var placeOfIssueParameter = placeOfIssue != null ?
+                new ObjectParameter("PlaceOfIssue", placeOfIssue) :
+                new ObjectParameter("PlaceOfIssue", typeof(string));
+    
+            var placeBirthdayParameter = placeBirthday != null ?
+                new ObjectParameter("PlaceBirthday", placeBirthday) :
+                new ObjectParameter("PlaceBirthday", typeof(string));
+    
+            var personalTaxCodeParameter = personalTaxCode != null ?
+                new ObjectParameter("PersonalTaxCode", personalTaxCode) :
+                new ObjectParameter("PersonalTaxCode", typeof(string));
+    
+            var descriptionParameter = description != null ?
+                new ObjectParameter("Description", description) :
+                new ObjectParameter("Description", typeof(string));
+    
+            var orderNumberParameter = orderNumber.HasValue ?
+                new ObjectParameter("OrderNumber", orderNumber) :
+                new ObjectParameter("OrderNumber", typeof(int));
+    
+            var dateCreateParameter = dateCreate.HasValue ?
+                new ObjectParameter("DateCreate", dateCreate) :
+                new ObjectParameter("DateCreate", typeof(System.DateTime));
+    
+            var dateRegisterParameter = dateRegister.HasValue ?
+                new ObjectParameter("DateRegister", dateRegister) :
+                new ObjectParameter("DateRegister", typeof(System.DateTime));
+    
+            var jobTitleIdParameter = jobTitleId.HasValue ?
+                new ObjectParameter("JobTitleId", jobTitleId) :
+                new ObjectParameter("JobTitleId", typeof(int));
+    
+            var centerIdParameter = centerId.HasValue ?
+                new ObjectParameter("CenterId", centerId) :
+                new ObjectParameter("CenterId", typeof(int));
+    
+            var ouIdParameter = ouId.HasValue ?
+                new ObjectParameter("OuId", ouId) :
+                new ObjectParameter("OuId", typeof(int));
+    
+            var employeeCVParameter = employeeCV != null ?
+                new ObjectParameter("EmployeeCV", employeeCV) :
+                new ObjectParameter("EmployeeCV", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Update_Employee", idEmployeeParameter, employeeNameParameter, sexParameter, dateBirhdayParameter, mobileParameter, phoneParameter, emailParameter, universityNameParameter, addressParameter, identityNumberParameter, dateOfIssueParameter, placeOfIssueParameter, placeBirthdayParameter, personalTaxCodeParameter, descriptionParameter, orderNumberParameter, dateCreateParameter, dateRegisterParameter, jobTitleIdParameter, centerIdParameter, ouIdParameter, employeeCVParameter);
+        }
+    
+        public virtual ObjectResult<SP_GetByID_Employee_Result> SP_GetByID_Employee(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GetByID_Employee_Result>("SP_GetByID_Employee", idParameter);
         }
     
         public virtual ObjectResult<SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS_Result> SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS(string fromdate, Nullable<int> classid, string todate)
