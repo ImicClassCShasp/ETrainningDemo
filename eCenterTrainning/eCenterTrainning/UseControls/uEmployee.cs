@@ -7,13 +7,18 @@ using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using System.Linq;
+using IMIC.VALUEOBJECTS;
+using IMIC.BUSINESSLOGICLAYERS;
+
 namespace eCenterTrainning.UseControls
 {
     public partial class uEmployee : DevExpress.XtraEditors.XtraUserControl
     {
-        public uEmployee()
+        Account mAcc;
+        public uEmployee(Account oAcc)
         {
             InitializeComponent();
+            mAcc = oAcc;
         }
         private int idEpm = 0;
         private void uEmployee_Load(object sender, EventArgs e)
@@ -56,14 +61,38 @@ namespace eCenterTrainning.UseControls
                 DialogResult dr = MessageBox.Show("Bạn chắc muốn xóa nhân viên này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (dr == DialogResult.Yes)
                 {
-                    MessageBox.Show("");
+                    int IdEmployee = 0;
+                    int.TryParse("" + gridViewEmployee.GetFocusedRowCellValue("Id"), out IdEmployee);
+
+                    if (IdEmployee > 0)
+                    {
+                        Employee oEmp = new Employee
+                        {
+                            Id = IdEmployee
+                        };
+
+                        List<Employee> lstEmp = new EmployeeBLL(mAcc).getElements();
+
+                        bool isResult = new EmployeeBLL(mAcc).DeleteElement(oEmp);
+                        if (isResult)
+                        {
+                            foreach (Employee item in lstEmp)
+                            {
+                                if (oEmp.Id == item.Id)
+                                {
+                                    lstEmp.Remove(item);
+                                    break;
+                                }
+                            }
+                        }
+                    }
                 }
+                else
+                {
+                    MessageBox.Show("Hãy chọn nhân viên cần xóa", "Thông báo");
+                }
+                displayEmployee();
             }
-            else
-            {
-                MessageBox.Show("Hãy chọn nhân viên cần xóa", "Thông báo");
-            }
-           
         }
         /// <summary>
         /// Author          Date        Comment
@@ -75,13 +104,26 @@ namespace eCenterTrainning.UseControls
             int.TryParse(value, out idEpm);
             if (idEpm > 0)
             {
-                MessageBox.Show("");
+                DialogResult dr = MessageBox.Show("Bạn chắc muốn sửa nhân viên này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (dr == DialogResult.Yes)
+                {
+                    Employee oEmp = new Employee()
+                    {
+                        Id = idEpm
+                    };
+
+                    frmEmployee frmEmp = new frmEmployee(mAcc, oEmp.Id);
+                    frmEmp.ShowDialog();
+
+                    displayEmployee();
+                }
             }
-            else {
-                MessageBox.Show("Hãy chọn nhân viên cần cập nhật","Thông báo");
+            else
+            {
+                MessageBox.Show("Hãy chọn nhân viên cần cập nhật", "Thông báo");
             }
-          
         }
+    
 
         /// <summary>
         /// Author          Date        Comment
@@ -89,34 +131,51 @@ namespace eCenterTrainning.UseControls
         /// </summary>
         void actionMenuEmployee_PressNew(object sender, EventArgs e)
         {
-            MessageBox.Show("");
+            frmEmployee frmEmp = new frmEmployee(mAcc);
+            frmEmp.ShowDialog();
+            displayEmployee();
         }
         /// <summary>
         /// Author          Date        Comment
         /// BONGVX                      Hien thi thong tin NV
         /// </summary>
-        private void displayEmployee()
+        void displayEmployee()
         {
-            
+            List<Employee> LstEmp = new EmployeeBLL(mAcc).getElements();
+            gridControlEmployee.DataSource = LstEmp;
+            this.Dock = DockStyle.Fill;
         }
         /// <summary>
         /// Author          Date        Comment
         /// BONGVX                      Hien thi thong tin NV chi tiet
         /// </summary>
-        private void gridControlEmployee_MouseDoubleClick(object sender, MouseEventArgs e)
+        void gridControlEmployee_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             String value = "" + gridViewEmployee.GetFocusedRowCellValue("Id");
             int.TryParse(value, out idEpm);
             if (idEpm > 0)
             {
                 MessageBox.Show("");
+                //DialogResult dr = MessageBox.Show("Bạn chắc muốn sửa nhân viên này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                //if (dr == DialogResult.Yes)
+                //{
+                //    Employee oEmp = new Employee()
+                //    {
+                //        Id = idEpm
+                //    };
+
+                //    frmEmployee frmEmp = new frmEmployee(mAcc, oEmp.Id);
+                //    frmEmp.ShowDialog();
+
+                //    displayEmployee();
+                //}
             }
         }
         /// <summary>
         /// Author          Date        Comment
         /// BONGVX                      Hien thi thong tin CV NV
         /// </summary>
-        private void gridViewEmployee_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
+        void gridViewEmployee_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
         {
             if (e.Column == colChiTiet)
             {

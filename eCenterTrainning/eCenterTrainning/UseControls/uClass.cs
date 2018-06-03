@@ -32,7 +32,7 @@ namespace eCenterTrainning.UseControls
             mLisStudentClasses = new List<StudentClasses>();
             mLisListStudents = new List<ListStudents>();
         }
-        
+
         private void uClass_Load(object sender, EventArgs e)
         {
             xtraTabPageClass.Focus();
@@ -71,7 +71,7 @@ namespace eCenterTrainning.UseControls
         }
 
         private void LoadLookUpEditClass()
-        {            
+        {
             try
             {
                 this.Cursor = Cursors.WaitCursor;
@@ -115,11 +115,11 @@ namespace eCenterTrainning.UseControls
         }
         void actionMenu1_PressRefresh(object sender, EventArgs e)
         {
-            
+
         }
         void actionMenu1_PressEdit(object sender, EventArgs e)
         {
-            int intClassId=0;
+            int intClassId = 0;
             int.TryParse("" + gridViewClass.GetFocusedRowCellValue("Id"), out intClassId);
 
             if (intClassId > 0)
@@ -139,12 +139,12 @@ namespace eCenterTrainning.UseControls
                             mClasses.Status = o.Status;
                             mClasses.Description = o.Description;
                             break;
-                        }                                             
+                        }
                     }
                     frmAddLopHoc objAddClass = new frmAddLopHoc(mAccount, mClasses);
                     objAddClass.ShowDialog();
                     RefeshListClasses(mClasses);
-                }                
+                }
             }
             else
             {
@@ -157,7 +157,7 @@ namespace eCenterTrainning.UseControls
             int j = 0;
             foreach (var o in mLisClasses)
             {
-                if(o.Id == oClasses.Id)
+                if (o.Id == oClasses.Id)
                 {
                     mLisClasses.Remove(o);
                     mLisClasses.Insert(j, oClasses);
@@ -170,14 +170,14 @@ namespace eCenterTrainning.UseControls
         }
 
         void actionMenu1_PressNew(object sender, EventArgs e)
-        {                       
-            frmAddLopHoc objAddClass = new frmAddLopHoc(mAccount,null);
+        {
+            frmAddLopHoc objAddClass = new frmAddLopHoc(mAccount, null);
             objAddClass.ShowDialog();
         }
 
         private void xtraTabControlClass_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void lookUpEditClass_EditValueChanged(object sender, EventArgs e)
@@ -187,6 +187,7 @@ namespace eCenterTrainning.UseControls
                 this.Cursor = Cursors.WaitCursor;
                 int iClassId = 0;
                 int.TryParse("" + lookUpEditClass.EditValue, out iClassId);
+                mClasses.Id = iClassId;
                 if (iClassId > 0)
                 {
                     StudentClasses obj = new StudentClasses() { ClassId = iClassId };
@@ -201,23 +202,24 @@ namespace eCenterTrainning.UseControls
             {
                 this.Cursor = Cursors.Default;
             }
-        }                
+        }
         private void btnThemHocVien_Click(object sender, EventArgs e)
         {
             Classes oClasses = new Classes();
-            oClasses.Id = string.IsNullOrEmpty(""+lookUpEditClass.EditValue) 
+            oClasses.Id = string.IsNullOrEmpty("" + lookUpEditClass.EditValue)
                                 ? 0 : int.Parse("" + lookUpEditClass.EditValue);
             oClasses.ClassName = "" + lookUpEditClass.Text;
             if (oClasses.Id > 0)
             {
                 frmAddStudentIntoClassess ofrm = new frmAddStudentIntoClassess(mAccount, oClasses);
                 ofrm.ShowDialog();
-                //LoadData_Student_Of_Classes(oClasses.Id);
+                StudentClasses obj = new StudentClasses() { ClassId = oClasses.Id };
+                LoadData_Student_Of_Classes(obj);
             }
-        }        
+        }
         private void gridControlClass_MouseClick(object sender, MouseEventArgs e)
         {
-           try
+            try
             {
                 this.Cursor = Cursors.WaitCursor;
                 int iClassId = 0;
@@ -255,7 +257,7 @@ namespace eCenterTrainning.UseControls
         }
         private void btnGiangVien_Click(object sender, EventArgs e)
         {
-            ExpertInfo oExpertInfo = new ExpertInfo();            
+            ExpertInfo oExpertInfo = new ExpertInfo();
             frmGiangVienHeThong ofrm = new frmGiangVienHeThong(mAccount, oExpertInfo, mClasses);
             ofrm.ShowDialog();
             if (oExpertInfo.Id > 0)
@@ -264,17 +266,17 @@ namespace eCenterTrainning.UseControls
                 mClasses.ExpertId = oExpertInfo.Id;
                 bool isResult = new ClassesBll(mAccount).UpdateElement(mClasses);
                 //if(isResult)
-                MessageBox.Show("Bạn đã chọn Chuyên gia thành công", 
+                MessageBox.Show("Bạn đã chọn Chuyên gia thành công",
                         "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }            
-        }       
-        
+            }
+        }
+
         private void gridViewStudent_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
         {
             if (e.Column == ColAction)
             {
                 Remove_Student_Of_Classes();
-            }            
+            }
         }
 
         void Remove_Student_Of_Classes()
@@ -310,8 +312,8 @@ namespace eCenterTrainning.UseControls
         }
 
         private void gridViewStudent_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
-        {           
-                btnXoaHocVien.Enabled = true;            
+        {
+            btnXoaHocVien.Enabled = true;
         }
         private void btnXoaHocVien_Click(object sender, EventArgs e)
         {
@@ -363,7 +365,7 @@ namespace eCenterTrainning.UseControls
             {
                 MessageBox.Show("Bạn không có quyền kết xuất dữ liệu danh sách học viên.",
                                     "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            }                       
+            }
         }
 
         private void btnChonChuyenGia_Click(object sender, EventArgs e)

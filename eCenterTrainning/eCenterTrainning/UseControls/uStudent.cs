@@ -85,6 +85,7 @@ namespace eCenterTrainning.UseControls
             //    btnConfirms.Visible = false;
 
             //LoadClassesForComboBox();
+            this.Dock = DockStyle.Fill;
         }
 
         void LoadClassesForComboBox()

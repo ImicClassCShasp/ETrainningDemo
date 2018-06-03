@@ -53,6 +53,7 @@
     <Compile Include="AccountDAL.cs" />
     <Compile Include="AmountStudentClassDAL.cs" />
     <Compile Include="BaseDAL.cs" />
+    <Compile Include="CenterInfoDAL.cs" />
     <Compile Include="CenterInfoesDAL.cs" />
     <Compile Include="ClassesDAL.cs" />
     <Compile Include="CMSModels.Context.cs">
@@ -75,6 +76,7 @@
     <Compile Include="ConnectionEntities.cs" />
     <Compile Include="ConnectionEntity.cs" />
     <Compile Include="CourseDAL.cs" />
+    <Compile Include="EmployeeDAL.cs" />
     <Compile Include="ExpertInfoDAL.cs" />
     <Compile Include="GetListEmployees_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
@@ -91,9 +93,11 @@
     <Compile Include="GetTinhTrangChamSocDatatable_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
+    <Compile Include="JobTitleDAL.cs" />
     <Compile Include="ListStudentsDAL.cs" />
     <Compile Include="OfflineStudentRegistersDAL.cs" />
     <Compile Include="OnlineStudentRegistersDAL.cs" />
+    <Compile Include="OuDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SecurityDAL.cs" />
     <Compile Include="SP_CHECK_LOGIN_Result.cs">
@@ -105,10 +109,25 @@
     <Compile Include="SP_GETALL_AYEAR_CLASS_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
+    <Compile Include="SP_GetAll_ChucVu_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
     <Compile Include="SP_GETALL_COURSE_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
+    <Compile Include="SP_GetAll_Employees_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GETALL_EXPERTINFO_HIENTHI_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
     <Compile Include="SP_GETALL_EXPERT_INFO_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GETALL_HOCVIEN_3MONTH_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetAll_PhongBan_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_GetAll_TrungTam_Result.cs">
@@ -117,7 +136,13 @@
     <Compile Include="SP_GETALL_USER_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
+    <Compile Include="SP_GetByID_Employee_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
     <Compile Include="SP_GetComment_Support_ByStudentId_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GETELEMENTBYID_EXPERTINFO_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_GETELEMENTBYID_USER_Result.cs">
@@ -129,6 +154,9 @@
     <Compile Include="SP_GETELEMENTS_BYDATE_STUDENTS_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
+    <Compile Include="SP_GETELEMENT_BYID_CLASSES_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
     <Compile Include="SP_GETELEMENT_BYID_EXPERT_INFO_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
@@ -136,6 +164,9 @@
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_GetEmailPassword_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GETHOCPHI_BYSTUDENTID_CLASS_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_GETHOCPHI_BYSTUDENTID_STUDENT_CLASS_Result.cs">
@@ -153,10 +184,13 @@
     <Compile Include="SP_GETIMICYOUTUBE_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
-    <Compile Include="SP_GETLISTSTUDENT_BYCLASSID_STUDENTS_Result.cs">
+    <Compile Include="SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
-    <Compile Include="SP_GETLITSTUDENT_BYID_CLASS_Result.cs">
+    <Compile Include="SP_GETLITSTUDENT_BYID_CLASS_02_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GETSTUDENT_BYID_STUDENTS_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_GETUSERINFO_Result.cs">
@@ -279,6 +313,7 @@
     <Compile Include="SP_UPDATEMIC_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
+    <!--<DependentUpon>CMSModels.tt</DependentUpon>-->
     <Compile Include="StatusDAL.cs" />
     <Compile Include="StudentClassesDAL.cs" />
     <Compile Include="StudentDAL.cs" />

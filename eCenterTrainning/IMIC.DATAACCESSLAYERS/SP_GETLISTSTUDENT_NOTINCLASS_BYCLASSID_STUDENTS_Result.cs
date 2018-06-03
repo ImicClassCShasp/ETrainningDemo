@@ -11,7 +11,7 @@ namespace IMIC.DATAACCESSLAYERS
 {
     using System;
     
-    public partial class SP_GETLISTSTUDENT_BYCLASSID_STUDENTS_Result
+    public partial class SP_GETLISTSTUDENT_NOTINCLASS_BYCLASSID_STUDENTS_Result
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
@@ -42,5 +42,8 @@ namespace IMIC.DATAACCESSLAYERS
         public Nullable<int> UserId { get; set; }
         public Nullable<int> IdPolicyStudent { get; set; }
         public Nullable<double> Price { get; set; }
+        public string StatusName { get; set; }
+        public string CourseName { get; set; }
+        public string UserName { get; set; }
     }
 }
