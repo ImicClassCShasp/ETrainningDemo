@@ -120,7 +120,11 @@
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_GetAll_PhongBan_Result.cs">
+
 </Compile>
+
+    </Compile>
+
     <Compile Include="SP_GETALL_EXPERT_INFO_Result.cs">
 
       <DependentUpon>CMSModels.tt</DependentUpon>
