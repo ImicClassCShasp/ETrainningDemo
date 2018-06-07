@@ -28,5 +28,12 @@ namespace IMIC.DATAACCESSLAYERS
             }
             return lstCenter;
         }
+        public override bool InsertElement(CenterInfo oT)
+        {
+            TrainingCenterEntities oEntity = ConnectionEntities.getTrainingCenter(mAcount);
+
+            return oEntity.SP_Creat_CenterInfo(oT.CenterName, null, oT.Phone, oT.Fax, oT.Address, oT.Website,
+                oT.Email, oT.Description) > 0 ? true : false;
+        }
     }
 }
