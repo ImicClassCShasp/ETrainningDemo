@@ -13,7 +13,7 @@ namespace eCenterTrainning
     public partial class frmInformationDetail : DevExpress.XtraEditors.XtraForm
     {
         RecruitmentInfo mRec;
-
+        Employee mEmp;
         Candidate mCan;
         int Flag;
 
@@ -34,6 +34,13 @@ namespace eCenterTrainning
             mCan = new Candidate();
             mCan = oCan;
             Flag = 2;
+        }
+        public frmInformationDetail(Employee oEmp)
+        {
+            InitializeComponent();
+            mEmp = new Employee();
+            mEmp = oEmp;
+            Flag = 3;
         }
         private void frmInformationDetail_Load(object sender, EventArgs e)
         {
@@ -83,6 +90,18 @@ namespace eCenterTrainning
                 else
                 {
                     mCan.Contents = richEditControlContent.Text;
+                    this.Close();
+                }
+            } else if (Flag==3)
+            {
+                if (richEditControlContent.Text == "")
+                {
+                    MessageBox.Show("Phải nhập nội dung em mới biết lí lịch nhân viên chứ anh êi!");
+                    richEditControlContent.Focus();
+                }
+                else
+                {
+                    mEmp.EmployeeCV = richEditControlContent.Text;
                     this.Close();
                 }
             }

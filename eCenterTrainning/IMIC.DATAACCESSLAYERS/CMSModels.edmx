@@ -68,6 +68,22 @@
           <Parameter Name="OuId" Type="int" Mode="In" />
           <Parameter Name="EmployeeCV" Type="ntext" Mode="In" />
         </Function>
+        <Function Name="SP_Creat_JobTitle" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="JobTitle" Type="nvarchar" Mode="In" />
+          <Parameter Name="DESCRIPTION" Type="nvarchar" Mode="In" />
+          <Parameter Name="ImageName" Type="nvarchar" Mode="In" />
+          <Parameter Name="ImagePath" Type="nvarchar" Mode="In" />
+          <Parameter Name="OrderNumber" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_Creat_PhongBan" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OuName" Type="nvarchar" Mode="In" />
+          <Parameter Name="ImagePath" Type="nvarchar" Mode="In" />
+          <Parameter Name="DESCRIPTION" Type="nvarchar" Mode="In" />
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+          <Parameter Name="Phone" Type="nvarchar" Mode="In" />
+          <Parameter Name="Fax" Type="nvarchar" Mode="In" />
+          <Parameter Name="Website" Type="nvarchar" Mode="In" />
+        </Function>
         <Function Name="SP_Creat_Recruitment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="NAME" Type="nvarchar" Mode="In" />
           <Parameter Name="DESCRIPTION" Type="nvarchar" Mode="In" />
@@ -1165,6 +1181,22 @@
             <Parameter Name="DESCRIPTION" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="SP_GetAll_RecruitmentV2" ReturnType="Collection(TrainingCenterModel.SP_GetAll_RecruitmentV2_Result)" />
+          <FunctionImport Name="SP_Creat_JobTitle">
+            <Parameter Name="JobTitle" Mode="In" Type="String" />
+            <Parameter Name="DESCRIPTION" Mode="In" Type="String" />
+            <Parameter Name="ImageName" Mode="In" Type="String" />
+            <Parameter Name="ImagePath" Mode="In" Type="String" />
+            <Parameter Name="OrderNumber" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Creat_PhongBan">
+            <Parameter Name="OuName" Mode="In" Type="String" />
+            <Parameter Name="ImagePath" Mode="In" Type="String" />
+            <Parameter Name="DESCRIPTION" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="Phone" Mode="In" Type="String" />
+            <Parameter Name="Fax" Mode="In" Type="String" />
+            <Parameter Name="Website" Mode="In" Type="String" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="GetListEmployees_Result">
           <Property Type="Int32" Name="Id" Nullable="false" />
@@ -3282,6 +3314,8 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Creat_JobTitle" FunctionName="TrainingCenterModel.Store.SP_Creat_JobTitle" />
+          <FunctionImportMapping FunctionImportName="SP_Creat_PhongBan" FunctionName="TrainingCenterModel.Store.SP_Creat_PhongBan" />
           </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

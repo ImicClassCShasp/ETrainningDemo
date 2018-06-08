@@ -159,14 +159,8 @@ namespace eCenterTrainning.UseControls
                 //DialogResult dr = MessageBox.Show("Bạn chắc muốn sửa nhân viên này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 //if (dr == DialogResult.Yes)
                 //{
-                //    Employee oEmp = new Employee()
-                //    {
-                //        Id = idEpm
-                //    };
-
-                //    frmEmployee frmEmp = new frmEmployee(mAcc, oEmp.Id);
+                //    frmEmployee frmEmp = new frmEmployee(mAcc, idEpm);
                 //    frmEmp.ShowDialog();
-
                 //    displayEmployee();
                 //}
             }
@@ -184,7 +178,15 @@ namespace eCenterTrainning.UseControls
                 int.TryParse(value, out idEmp);
                 if (idEmp > 0)
                 {
-                    MessageBox.Show("");
+                    Employee employee = new EmployeeBLL(mAcc).getElementById(idEmp);
+                    MessageBox.Show(
+                        "Hồ sơ nhân viên: \n\n"+
+                        "  Họ tên: "+employee.EmployeeName+ "\n"+
+                        "  Tuổi: "+(DateTime.Now.Year-employee.DateBirhday.Value.Year)+ "\n" +
+                        "  Địa chỉ: " +employee.Address+ "\n" +
+                        "  Số điện thoại: " +employee.Mobile+ "\n" +
+                        "----------------------------------------------"+ "\n" +
+                        "  Mô tả: " +employee.Description, "Thông tin chi tiết");
                 }
             }
         }

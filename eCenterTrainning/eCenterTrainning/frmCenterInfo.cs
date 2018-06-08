@@ -32,7 +32,7 @@ namespace eCenterTrainning
             actionUpdateCenter.PressClose += new EventHandler(actionUpdateCenter_PressClose);
             actionUpdateCenter.PressHelp += new EventHandler(actionUpdateCenter_PressHelp);
             actionUpdateCenter.PressNew += new EventHandler(actionUpdateCenter_PressNew);
-            this.Text = "Thêm mới thông tinh trung tâm";
+            this.Text = "Thêm mới thông tin trung tâm";
             this.Dock = DockStyle.Fill;
         }
 
@@ -113,7 +113,7 @@ namespace eCenterTrainning
             actionUpdateCenter.Enabled = false;
             txtMoTa.Enabled = false;
         }
-        private bool CheckEmailFormat(string Email)
+        public bool CheckEmailFormat(string Email)
         {
             string Format = "@gmail.com";
             if (Email.Contains(Format)) return false;

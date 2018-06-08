@@ -17,5 +17,9 @@ namespace IMIC.BUSINESSLOGICLAYERS
         {
             return new JobTitleDAL(mAccount).getElements();
         }
+        public override bool InsertElement(JobTitle oT)
+        {
+            return new JobTitleDAL(mAccount).InsertElement(oT);
+        }
     }
 }

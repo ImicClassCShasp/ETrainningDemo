@@ -2814,5 +2814,63 @@ namespace IMIC.DATAACCESSLAYERS
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GetAll_RecruitmentV2_Result>("SP_GetAll_RecruitmentV2");
         }
+    
+        public virtual int SP_Creat_JobTitle(string jobTitle, string dESCRIPTION, string imageName, string imagePath, Nullable<int> orderNumber)
+        {
+            var jobTitleParameter = jobTitle != null ?
+                new ObjectParameter("JobTitle", jobTitle) :
+                new ObjectParameter("JobTitle", typeof(string));
+    
+            var dESCRIPTIONParameter = dESCRIPTION != null ?
+                new ObjectParameter("DESCRIPTION", dESCRIPTION) :
+                new ObjectParameter("DESCRIPTION", typeof(string));
+    
+            var imageNameParameter = imageName != null ?
+                new ObjectParameter("ImageName", imageName) :
+                new ObjectParameter("ImageName", typeof(string));
+    
+            var imagePathParameter = imagePath != null ?
+                new ObjectParameter("ImagePath", imagePath) :
+                new ObjectParameter("ImagePath", typeof(string));
+    
+            var orderNumberParameter = orderNumber.HasValue ?
+                new ObjectParameter("OrderNumber", orderNumber) :
+                new ObjectParameter("OrderNumber", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Creat_JobTitle", jobTitleParameter, dESCRIPTIONParameter, imageNameParameter, imagePathParameter, orderNumberParameter);
+        }
+    
+        public virtual int SP_Creat_PhongBan(string ouName, string imagePath, string dESCRIPTION, string email, string phone, string fax, string website)
+        {
+            var ouNameParameter = ouName != null ?
+                new ObjectParameter("OuName", ouName) :
+                new ObjectParameter("OuName", typeof(string));
+    
+            var imagePathParameter = imagePath != null ?
+                new ObjectParameter("ImagePath", imagePath) :
+                new ObjectParameter("ImagePath", typeof(string));
+    
+            var dESCRIPTIONParameter = dESCRIPTION != null ?
+                new ObjectParameter("DESCRIPTION", dESCRIPTION) :
+                new ObjectParameter("DESCRIPTION", typeof(string));
+    
+            var emailParameter = email != null ?
+                new ObjectParameter("Email", email) :
+                new ObjectParameter("Email", typeof(string));
+    
+            var phoneParameter = phone != null ?
+                new ObjectParameter("Phone", phone) :
+                new ObjectParameter("Phone", typeof(string));
+    
+            var faxParameter = fax != null ?
+                new ObjectParameter("Fax", fax) :
+                new ObjectParameter("Fax", typeof(string));
+    
+            var websiteParameter = website != null ?
+                new ObjectParameter("Website", website) :
+                new ObjectParameter("Website", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Creat_PhongBan", ouNameParameter, imagePathParameter, dESCRIPTIONParameter, emailParameter, phoneParameter, faxParameter, websiteParameter);
+        }
     }
 }

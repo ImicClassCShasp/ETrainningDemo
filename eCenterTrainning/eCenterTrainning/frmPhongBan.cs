@@ -7,14 +7,26 @@ using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using System.Linq;
+using IMIC.VALUEOBJECTS;
+using IMIC.BUSINESSLOGICLAYERS;
+
 namespace eCenterTrainning
 {
     public partial class frmPhongBan : Base.frmIMICBase
     {
+        Ou mOu;
+
         public frmPhongBan()
         {
             InitializeComponent();
-        }        
+        }
+
+        public frmPhongBan(Account oAccount) : base(oAccount)
+        {
+            InitializeComponent();
+            mOu = new Ou();
+        }
+
         private void frmPhongBan_Load(object sender, EventArgs e)
         {
             actionUpdatePhongBan.PressUpdate += new EventHandler(actionUpdatePhongBan_PressUpdate);
@@ -36,7 +48,7 @@ namespace eCenterTrainning
 
         void actionUpdatePhongBan_PressHelp(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            MessageBox.Show("Chức năng hiện chưa được cập nhật!", "Thông báo");
         }
         /// <summary>
         /// Author          Date        Comment
@@ -52,16 +64,36 @@ namespace eCenterTrainning
                 return;
 
             }
-            if (!string.IsNullOrEmpty("" + txtEmail.Text))
+            
+            if (string.IsNullOrEmpty("" + txtEmail.Text))
             {
-                MessageBox.Show("");
+                msgMessage.SetError(txtEmail, " Bạn cần nhập thông tin email trước khi thực hiện");
+                txtEmail.Focus();
+                return;
+            }
+            else
+            {
+                if (CheckEmailFormat("" + txtEmail.Text))
+                {
+                    msgMessage.SetError(txtEmail, "Email không đúng định dạng!");
+                    txtEmail.Focus();
+                    return;
+                }
             }
             if (string.IsNullOrEmpty("" + txtDienThoai.Text))
             {
                 msgMessage.SetError(txtDienThoai, " Bạn cần nhập số điện thoại phòng ban trước khi thực hiện");
                 txtDienThoai.Focus();
                 return;
-            }            
+            }
+            mOu.OuName = txtTenPhongBan.Text;
+            mOu.Email = txtEmail.Text;
+            mOu.Fax = txtFax.Text;
+            mOu.Phone = txtDienThoai.Text;
+            mOu.Description = txtMoTa.Text;
+            mOu.Website = txtWebsite.Text;
+            if (new OuBLL(mAccount).InsertElement(mOu)) MessageBox.Show("Thêm phòng ban thành công!");
+            else MessageBox.Show("Thêm thất bại!");
         }
         private string RandomString(int size)
         {
@@ -104,6 +136,24 @@ namespace eCenterTrainning
                     c.Text = "";
                 }
             }            
-        } 
+        }
+
+        OpenFileDialog openFile = new OpenFileDialog();
+        private void btnOpenDialog_Click(object sender, EventArgs e)
+        {
+            openFile.Filter = "JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Files (*.gif)|*.gif|All files (*.*)|*.*";
+
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
+                mOu.ImagePath = openFile.FileName;
+                txtLinkAnh.Text = "Đã có link ảnh!";
+            }
+        }
+        bool CheckEmailFormat(string Email)
+        {
+            string Format = "@gmail.com";
+            if (Email.Contains(Format)) return false;
+            return true;
+        }
     }
 }
