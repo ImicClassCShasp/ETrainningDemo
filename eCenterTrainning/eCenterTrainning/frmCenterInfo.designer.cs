@@ -190,7 +190,6 @@
             this.txtTen.Properties.MaxLength = 250;
             this.txtTen.Size = new System.Drawing.Size(403, 20);
             this.txtTen.TabIndex = 1;
-            //this.txtTen.Leave += new System.EventHandler(this.txtTen_Leave);
             // 
             // labelControl1
             // 
@@ -209,6 +208,7 @@
             this.Controls.Add(this.actionUpdateCenter);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmCenterInfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCenterInfo";
             this.Load += new System.EventHandler(this.frmCenterInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.msgMessage)).EndInit();

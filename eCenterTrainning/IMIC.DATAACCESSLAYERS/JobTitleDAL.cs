@@ -32,5 +32,12 @@ namespace IMIC.DATAACCESSLAYERS
             }
             return lstJob;
         }
+        public override bool InsertElement(JobTitle oT)
+        {
+            TrainingCenterEntities oEntity = ConnectionEntities.getTrainingCenter(mAcount);
+
+            return oEntity.SP_Creat_JobTitle(oT.JobTitle1,oT.Description,oT.ImageName,oT.ImagePath,oT.OrderNumber)
+                >0?true:false;
+        }
     }
 }

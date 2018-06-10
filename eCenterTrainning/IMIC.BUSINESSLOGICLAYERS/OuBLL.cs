@@ -17,5 +17,9 @@ namespace IMIC.BUSINESSLOGICLAYERS
         {
             return new OuDAL(mAccount).getElements();
         }
+        public override bool InsertElement(Ou oT)
+        {
+            return new OuDAL(mAccount).InsertElement(oT);
+        }
     }
 }

@@ -53,6 +53,7 @@
     <Compile Include="AccountDAL.cs" />
     <Compile Include="AmountStudentClassDAL.cs" />
     <Compile Include="BaseDAL.cs" />
+    <Compile Include="CandidatesDAL.cs" />
     <Compile Include="CenterInfoDAL.cs" />
     <Compile Include="CenterInfoesDAL.cs" />
     <Compile Include="ClassesDAL.cs" />
@@ -99,6 +100,7 @@
     <Compile Include="OnlineStudentRegistersDAL.cs" />
     <Compile Include="OuDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecruitmantDAL.cs" />
     <Compile Include="SecurityDAL.cs" />
     <Compile Include="SP_CHECK_LOGIN_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
@@ -107,6 +109,9 @@
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_GETALL_AYEAR_CLASS_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetAll_CandidateV2_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_GetAll_ChucVu_Result.cs">
@@ -127,7 +132,16 @@
     <Compile Include="SP_GETALL_HOCVIEN_3MONTH_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
+    <Compile Include="SP_GetAll_JobTitle_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
     <Compile Include="SP_GetAll_PhongBan_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetAll_RecruitmentV2_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetAll_Recruitment_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_GetAll_TrungTam_Result.cs">
@@ -136,7 +150,19 @@
     <Compile Include="SP_GETALL_USER_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
+    <Compile Include="SP_GetByID_CandidateV2_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetByID_Candidate_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
     <Compile Include="SP_GetByID_Employee_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetByID_RecruitmentInfo_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetCandidate_ByIdRecruitmentV2_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_GetComment_Support_ByStudentId_Result.cs">

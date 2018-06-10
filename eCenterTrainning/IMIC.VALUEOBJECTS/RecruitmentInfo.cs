@@ -27,5 +27,8 @@ namespace IMIC.VALUEOBJECTS
         public string Avatar { get; set; }
         public string ImagePath { get; set; }
         public string Status { get; set; }
+
+        public string CenterName { get; set; }
+        public string strTrangThai { get; set; }
     }
 }

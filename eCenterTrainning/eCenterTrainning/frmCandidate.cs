@@ -8,24 +8,63 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using System.Collections;
 using System.Linq;
+using IMIC.VALUEOBJECTS;
+using IMIC.BUSINESSLOGICLAYERS;
+
 namespace eCenterTrainning
 {
     public partial class frmCandidate : Base.frmIMICBase
     {
+        int Flag;
+        int idCan;
+        Candidate oCandidate = null;
+
         public frmCandidate()
         {
             InitializeComponent();
         }
+
+        public frmCandidate(Account oAccount) : base(oAccount)
+        {
+            InitializeComponent();
+            Flag = 0;
+            oCandidate = new Candidate();
+        }
+
+        public frmCandidate(Account oAccount, int Id) : base(oAccount)
+        {
+            InitializeComponent();
+            Flag = 1;
+            oCandidate = new Candidate();
+            idCan = Id;
+        }
+
         OpenFileDialog ofd = new OpenFileDialog();
         private void frmCandidate_Load(object sender, EventArgs e)
         {            
-            
             txtHoTen.Focus();
             actionUpdateCandidates.PressNew += new EventHandler(actionUpdateCandidates_PressNew);
             actionUpdateCandidates.PressUpdate += new EventHandler(actionUpdateCandidates_PressUpdate);
             actionUpdateCandidates.PressClose += new EventHandler(actionUpdateCandidates_PressClose);
             actionUpdateCandidates.PressHelp += new EventHandler(actionUpdateCandidates_PressHelp);
             dateEditDateSent.EditValue = DateTime.Now;
+            DisplayCandidateNow(idCan);
+            loadRecuitmentInfo();
+            loadChucVu();
+        }
+        void loadRecuitmentInfo()
+        {
+            List<RecruitmentInfo> lstRec = new RecruitmantBLL(mAccount).getElements();
+            lookUpEditUngTuyen.Properties.DataSource = lstRec;
+            lookUpEditUngTuyen.Properties.DisplayMember = "Name";
+            lookUpEditUngTuyen.Properties.ValueMember = "Id";
+        }
+        void loadChucVu()
+        {
+            List<JobTitle> lstJob = new JobTitleBLL(mAccount).getElements();
+            lookUpEditChucVu.Properties.DataSource = lstJob;
+            lookUpEditChucVu.Properties.DisplayMember = "JobTitle1";
+            lookUpEditChucVu.Properties.ValueMember = "Id";
         }
 
         void actionUpdateCandidates_PressHelp(object sender, EventArgs e)
@@ -53,10 +92,6 @@ namespace eCenterTrainning
                 txtNamKinhNghiem.Focus();
                 return;
             }
-            else
-            {
-                MessageBox.Show("");
-            }
             if (string.IsNullOrEmpty("" + lookUpEditUngTuyen.EditValue))
             {
                 msgMessage.SetError(lookUpEditUngTuyen, " Bạn cần chọn vị trí ứng tuyển trước khi thực hiện");
@@ -66,9 +101,73 @@ namespace eCenterTrainning
             {
                 msgMessage.SetError(dateEditDateSent, " Bạn cần chọn ngày ứng tuyển trước khi thực hiện");
                 return;
-            }            
-            MessageBox.Show("Thêm mới ứng viên thành công ", "Thông báo");           
+            }
+            if (Flag == 0)
+            {
+                oCandidate.Address=txtDiaChi.Text;
+                oCandidate.Notes=txtGhiChu.Text;
+                oCandidate.FullName=txtHoTen.Text;
+                oCandidate.ImagePath=txtImagePath.Text;
+                oCandidate.DocumentPath=txtLinkTaiLieu.Text;
+                oCandidate.Description=txtMoTa.Text;
+                oCandidate.YearsExperience=int.Parse(""+txtNamKinhNghiem.Text);
+
+                oCandidate.UniversityDegree=txtTruongTotNghiep.Text;
+                if (cboGioiTinh.Text == "Nam") oCandidate.Sex = 1;
+                else oCandidate.Sex = 0;
+                oCandidate.DateBirthday = dateEditNgaySinh.DateTime;
+                oCandidate.DateSent = dateEditDateSent.DateTime;
+
+                oCandidate.JobTitleId = int.Parse("" + lookUpEditChucVu.EditValue);
+                oCandidate.RecruitmentId = int.Parse("" + lookUpEditUngTuyen.EditValue);
+
+                if (new CandidatesBLL(mAccount).InsertElement(oCandidate))
+                    MessageBox.Show("Thêm mới ứng viên thành công!", "Thông báo");
+                else MessageBox.Show("Thêm mới thất bại!");
+            }
+            else if (Flag==1)
+            {
+                oCandidate.Id = idCan;
+                oCandidate.Address = txtDiaChi.Text;
+                oCandidate.Notes = txtGhiChu.Text;
+                oCandidate.FullName = txtHoTen.Text;
+                oCandidate.ImagePath = txtImagePath.Text;
+                oCandidate.DocumentPath = txtLinkTaiLieu.Text;
+                oCandidate.Description = txtMoTa.Text;
+                oCandidate.YearsExperience = int.Parse("" + txtNamKinhNghiem.Text);
+
+                oCandidate.UniversityDegree = txtTruongTotNghiep.Text;
+                if (cboGioiTinh.Text == "Nam") oCandidate.Sex = 1;
+                else oCandidate.Sex = 0;
+                oCandidate.DateBirthday = dateEditNgaySinh.DateTime;
+                oCandidate.DateSent = dateEditDateSent.DateTime;
+
+                oCandidate.JobTitleId = int.Parse("" + lookUpEditChucVu.EditValue);
+                oCandidate.RecruitmentId = int.Parse("" + lookUpEditUngTuyen.EditValue);
+
+                if (new CandidatesBLL(mAccount).InsertAndUpdateElement(oCandidate))
+                    MessageBox.Show("Sửa ứng viên thành công!", "Thông báo");
+                else MessageBox.Show("Sửa thất bại!");
+            }
+                      
             this.Close();
+        }
+        void DisplayCandidateNow(int id)
+        {
+            Candidate oCan = new CandidatesBLL(mAccount).getElementById(id);
+            txtDiaChi.Text=""+oCan.Address;
+            txtGhiChu.Text=""+oCan.Notes;
+            txtHoTen.Text=""+oCan.FullName;
+            txtImagePath.Text=""+oCan.ImagePath;
+            txtLinkTaiLieu.Text=""+oCan.DocumentPath;
+            txtMoTa.Text=""+oCan.Description;
+            txtNamKinhNghiem.Text=""+oCan.YearsExperience;
+
+            dateEditDateSent.Text = ""+oCan.DateSent;
+            dateEditNgaySinh.Text = "" + oCan.DateBirthday;
+
+            lookUpEditChucVu.EditValue = oCan.JobTitleId;
+            lookUpEditUngTuyen.EditValue = oCan.RecruitmentId;
         }
         void actionUpdateCandidates_PressNew(object sender, EventArgs e)
         {
@@ -131,9 +230,12 @@ namespace eCenterTrainning
                 txtImagePath.Text = ofd.FileName;
             }
         }
+
         private void btnCV_Click(object sender, EventArgs e)
         {
-            frmInformationDetail frm = new frmInformationDetail();            
+            frmInformationDetail frm = new frmInformationDetail(oCandidate);
+            frm.ShowDialog();
+            MessageBox.Show("" + oCandidate.Contents);
             txtNoiDung.Text = "Đã có sơ yếu lý lịch ứng viên";
         }
     }

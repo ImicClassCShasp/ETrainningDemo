@@ -7,15 +7,26 @@ using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using System.Linq;
+using IMIC.VALUEOBJECTS;
+using IMIC.BUSINESSLOGICLAYERS;
 
 namespace eCenterTrainning
 {
     public partial class frmThongTinChucVu : Base.frmIMICBase
-    {       
+    {
+        JobTitle mJob;
+
         public frmThongTinChucVu()
         {
             InitializeComponent();
-        }        
+        }
+
+        public frmThongTinChucVu(Account oAccount) : base(oAccount)
+        {
+            InitializeComponent();
+            mJob = new JobTitle();
+        }
+
         private void frmThongTinChucVu_Load(object sender, EventArgs e)
         {
             actionUpdateChucVu.PressUpdate += new EventHandler(actionUpdateChucVu_PressUpdate);
@@ -52,55 +63,47 @@ namespace eCenterTrainning
                 msgMessage.SetError(txtTen, " Bạn cần nhập tên chức vụ trước khi thực hiện");
                 this.txtTen.Focus();
                 return;
-            }                    
+            }
+            mJob.JobTitle1 = txtTen.Text;
+            mJob.Description = txtMoTa.Text;
+            insertChucVu(mJob);
         }
         /// <summary>
         /// Author          Date        Comment
         /// BONGX           1/2/2013    them moi chuc vu
         /// </summary>
-        private int insertChucVu()
+        private void insertChucVu(JobTitle oJob)
         {
-            try
-            {                
-               
-                return 1;
-            }
-            catch (Exception)
-            {
-                throw;
-                return 0;
-            }
-
+            if (new JobTitleBLL(mAccount).InsertElement(oJob)) MessageBox.Show("Thêm chức vụ thành công!");
+            else MessageBox.Show("Thêm thất bại!");
         }
-        
+
         /// <summary>
         /// Author          Date        Comment
         /// BONGX           1/2/2013    Cap nhat chuc vu
         /// </summary>
-        private int UpdateChucVu()
+        private void UpdateChucVu()
         {
-            try
-            {
-                
-                return 1;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.StackTrace,ex.Message);
-                return 0;
-            }
+            
         }
         /// <summary>
         /// Author          Date        Comment
         /// BONGX           1/2/2013    load du lieu
         /// </summary>
-        private void prUpdateChucVu() {
-           
+        private void prUpdateChucVu()
+        {
+
         }
-        
+        OpenFileDialog ofd = new OpenFileDialog();
         private void btnChonLink_Click(object sender, EventArgs e)
         {
-           
+            ofd.Filter = "JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Files (*.gif)|*.gif|All files (*.*)|*.*";
+
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                mJob.ImagePath = ofd.FileName;
+                txtDuongDan.Text = "Đã có đường dẫn!";
+            }
         }
         /// <summary>
         /// Author          Date        Comment
