@@ -150,5 +150,19 @@ namespace eCenterTrainning
             UseControls.uClass oUClass = new UseControls.uClass(mAccount);
             plMain.Controls.Add(oUClass);
         }
+
+        private void navBarItemManageCandidate_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            plMain.Controls.Clear();
+            UseControls.uCandidate ucCan = new UseControls.uCandidate(mAccount);
+            plMain.Controls.Add(ucCan);
+        }
+
+        private void navBarItemAddRecuitment_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            plMain.Controls.Clear();
+            UseControls.uRecruitmentInfo ucRec = new UseControls.uRecruitmentInfo(mAccount);
+            plMain.Controls.Add(ucRec);
+        }
     }
 }

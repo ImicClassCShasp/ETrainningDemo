@@ -37,5 +37,9 @@ namespace IMIC.VALUEOBJECTS
         public Nullable<int> OrderNumber { get; set; }
         public Nullable<int> JobTitleId { get; set; }
         public Nullable<int> Status { get; set; }
+
+        public string Name { get; set; }
+        public string JobTitle { get; set; }
+        public string SexString { get; set; }
     }
 }

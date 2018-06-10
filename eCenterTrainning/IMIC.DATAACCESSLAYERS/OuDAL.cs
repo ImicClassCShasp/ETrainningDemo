@@ -28,5 +28,12 @@ namespace IMIC.DATAACCESSLAYERS
             }
             return lstOu;
         }
+        public override bool InsertElement(Ou oT)
+        {
+            TrainingCenterEntities oEntity = ConnectionEntities.getTrainingCenter(mAcount);
+
+            return oEntity.SP_Creat_PhongBan(oT.OuName,oT.ImagePath,oT.Description,oT.Email,oT.Phone,oT.Fax,oT.Website)
+                >0?true:false;
+        }
     }
 }

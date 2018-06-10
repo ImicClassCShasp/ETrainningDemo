@@ -9,6 +9,41 @@
           <Parameter Name="username" Type="nvarchar" Mode="In" />
           <Parameter Name="password" Type="nvarchar" Mode="In" />
         </Function>
+        <Function Name="SP_Creat_Candidate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="FirstName" Type="nvarchar" Mode="In" />
+          <Parameter Name="LastName" Type="nvarchar" Mode="In" />
+          <Parameter Name="FullName" Type="nvarchar" Mode="In" />
+          <Parameter Name="DateBirthday" Type="datetime" Mode="In" />
+          <Parameter Name="Sex" Type="int" Mode="In" />
+          <Parameter Name="ADDRESS" Type="nvarchar" Mode="In" />
+          <Parameter Name="DESCRIPTION" Type="nvarchar" Mode="In" />
+          <Parameter Name="YearsExperience" Type="int" Mode="In" />
+          <Parameter Name="UniversityDegree" Type="nvarchar" Mode="In" />
+          <Parameter Name="CenterId" Type="int" Mode="In" />
+          <Parameter Name="Avatar" Type="nvarchar" Mode="In" />
+          <Parameter Name="ImagePath" Type="nvarchar" Mode="In" />
+          <Parameter Name="Contents" Type="ntext" Mode="In" />
+          <Parameter Name="DocumentPath" Type="nvarchar" Mode="In" />
+          <Parameter Name="DateCreate" Type="datetime" Mode="In" />
+          <Parameter Name="DateLastUpdate" Type="datetime" Mode="In" />
+          <Parameter Name="DateInterview" Type="datetime" Mode="In" />
+          <Parameter Name="DateSent" Type="datetime" Mode="In" />
+          <Parameter Name="Notes" Type="nvarchar" Mode="In" />
+          <Parameter Name="RecruitmentId" Type="int" Mode="In" />
+          <Parameter Name="OrderNumber" Type="int" Mode="In" />
+          <Parameter Name="JobTitleId" Type="int" Mode="In" />
+          <Parameter Name="STATUS" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_Creat_CenterInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CenterName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Mobile" Type="nvarchar" Mode="In" />
+          <Parameter Name="Phone" Type="nvarchar" Mode="In" />
+          <Parameter Name="Fax" Type="nvarchar" Mode="In" />
+          <Parameter Name="ADDRESS" Type="nvarchar" Mode="In" />
+          <Parameter Name="Website" Type="nvarchar" Mode="In" />
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+          <Parameter Name="DESCRIPTION" Type="nvarchar" Mode="In" />
+        </Function>
         <Function Name="SP_Creat_Employees" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="EmployeeName" Type="nvarchar" Mode="In" />
           <Parameter Name="Sex" Type="int" Mode="In" />
@@ -33,6 +68,40 @@
           <Parameter Name="OuId" Type="int" Mode="In" />
           <Parameter Name="EmployeeCV" Type="ntext" Mode="In" />
         </Function>
+        <Function Name="SP_Creat_JobTitle" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="JobTitle" Type="nvarchar" Mode="In" />
+          <Parameter Name="DESCRIPTION" Type="nvarchar" Mode="In" />
+          <Parameter Name="ImageName" Type="nvarchar" Mode="In" />
+          <Parameter Name="ImagePath" Type="nvarchar" Mode="In" />
+          <Parameter Name="OrderNumber" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_Creat_PhongBan" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OuName" Type="nvarchar" Mode="In" />
+          <Parameter Name="ImagePath" Type="nvarchar" Mode="In" />
+          <Parameter Name="DESCRIPTION" Type="nvarchar" Mode="In" />
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+          <Parameter Name="Phone" Type="nvarchar" Mode="In" />
+          <Parameter Name="Fax" Type="nvarchar" Mode="In" />
+          <Parameter Name="Website" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SP_Creat_Recruitment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="NAME" Type="nvarchar" Mode="In" />
+          <Parameter Name="DESCRIPTION" Type="nvarchar" Mode="In" />
+          <Parameter Name="Contents" Type="ntext" Mode="In" />
+          <Parameter Name="DateCreate" Type="datetime" Mode="In" />
+          <Parameter Name="DateStart" Type="datetime" Mode="In" />
+          <Parameter Name="DateEnd" Type="datetime" Mode="In" />
+          <Parameter Name="Number" Type="int" Mode="In" />
+          <Parameter Name="Request" Type="nvarchar" Mode="In" />
+          <Parameter Name="CenterId" Type="int" Mode="In" />
+          <Parameter Name="OrderNumber" Type="int" Mode="In" />
+          <Parameter Name="Avatar" Type="nvarchar" Mode="In" />
+          <Parameter Name="ImagePath" Type="nvarchar" Mode="In" />
+          <Parameter Name="STATUS" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SP_Delete_Candidate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
         <Function Name="SP_DELETE_COMMENT_SUPPORT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="idComment" Type="int" Mode="In" />
         </Function>
@@ -42,21 +111,40 @@
         <Function Name="SP_DELETE_EXPERTINFO_XOA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="ExpertId" Type="int" Mode="In" />
         </Function>
+        <Function Name="SP_Delete_Recruitment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
         <Function Name="SP_DELETE_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="id" Type="int" Mode="In" />
         </Function>
         <Function Name="SP_GETALL_AYEAR_CLASS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_GetAll_CandidateV2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_GetAll_ChucVu" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_GETALL_COURSE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_GetAll_Employees" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_GETALL_EXPERT_INFO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_GETALL_EXPERTINFO_HIENTHI" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_GETALL_HOCVIEN_3MONTH" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_GetAll_JobTitle" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_GetAll_PhongBan" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_GetAll_Recruitment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_GetAll_RecruitmentV2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_GetAll_TrungTam" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_GETALL_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_GetByID_Candidate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_GetByID_CandidateV2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
         <Function Name="SP_GetByID_Employee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_GetByID_RecruitmentInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_GetCandidate_ByIdRecruitmentV2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IdRec" Type="int" Mode="In" />
         </Function>
         <Function Name="SP_GetComment_Support_ByStudentId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="idStudent" Type="int" Mode="In" />
@@ -182,6 +270,9 @@
           <Parameter Name="EmployeeId" Type="int" Mode="In" />
           <Parameter Name="isExpertId" Type="int" Mode="In" />
         </Function>
+        <Function Name="SP_InsertCV_toCandidate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Content" Type="nvarchar" Mode="In" />
+        </Function>
         <Function Name="SP_INSERTUPDATE_COMMENTSUPPORT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="flag" Type="int" Mode="In" />
           <Parameter Name="id" Type="int" Mode="In" />
@@ -206,6 +297,32 @@
           <Parameter Name="Email" Type="nvarchar" Mode="In" />
           <Parameter Name="Mobile" Type="nvarchar" Mode="In" />
           <Parameter Name="ExpertCV" Type="ntext" Mode="In" />
+        </Function>
+        <Function Name="SP_Update_Candidate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="FirstName" Type="nvarchar" Mode="In" />
+          <Parameter Name="LastName" Type="nvarchar" Mode="In" />
+          <Parameter Name="FullName" Type="nvarchar" Mode="In" />
+          <Parameter Name="DateBirthday" Type="datetime" Mode="In" />
+          <Parameter Name="Sex" Type="int" Mode="In" />
+          <Parameter Name="ADDRESS" Type="nvarchar" Mode="In" />
+          <Parameter Name="DESCRIPTION" Type="nvarchar" Mode="In" />
+          <Parameter Name="YearsExperience" Type="int" Mode="In" />
+          <Parameter Name="UniversityDegree" Type="nvarchar" Mode="In" />
+          <Parameter Name="CenterId" Type="int" Mode="In" />
+          <Parameter Name="Avatar" Type="nvarchar" Mode="In" />
+          <Parameter Name="ImagePath" Type="nvarchar" Mode="In" />
+          <Parameter Name="Contents" Type="ntext" Mode="In" />
+          <Parameter Name="DocumentPath" Type="nvarchar" Mode="In" />
+          <Parameter Name="DateCreate" Type="datetime" Mode="In" />
+          <Parameter Name="DateLastUpdate" Type="datetime" Mode="In" />
+          <Parameter Name="DateInterview" Type="datetime" Mode="In" />
+          <Parameter Name="DateSent" Type="datetime" Mode="In" />
+          <Parameter Name="Notes" Type="nvarchar" Mode="In" />
+          <Parameter Name="RecruitmentId" Type="int" Mode="In" />
+          <Parameter Name="OrderNumber" Type="int" Mode="In" />
+          <Parameter Name="JobTitleId" Type="int" Mode="In" />
+          <Parameter Name="STATUS" Type="int" Mode="In" />
         </Function>
         <Function Name="SP_Update_Employee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="IdEmployee" Type="int" Mode="In" />
@@ -248,6 +365,22 @@
           <Parameter Name="Email" Type="nvarchar" Mode="In" />
           <Parameter Name="Mobile" Type="nvarchar" Mode="In" />
           <Parameter Name="ExpertCV" Type="ntext" Mode="In" />
+        </Function>
+        <Function Name="SP_Update_Recruitment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="NAME" Type="nvarchar" Mode="In" />
+          <Parameter Name="DESCRIPTION" Type="nvarchar" Mode="In" />
+          <Parameter Name="Contents" Type="ntext" Mode="In" />
+          <Parameter Name="DateCreate" Type="datetime" Mode="In" />
+          <Parameter Name="DateStart" Type="datetime" Mode="In" />
+          <Parameter Name="DateEnd" Type="datetime" Mode="In" />
+          <Parameter Name="Number" Type="int" Mode="In" />
+          <Parameter Name="Request" Type="nvarchar" Mode="In" />
+          <Parameter Name="CenterId" Type="int" Mode="In" />
+          <Parameter Name="OrderNumber" Type="int" Mode="In" />
+          <Parameter Name="Avatar" Type="nvarchar" Mode="In" />
+          <Parameter Name="ImagePath" Type="nvarchar" Mode="In" />
+          <Parameter Name="STATUS" Type="nvarchar" Mode="In" />
         </Function>
         <Function Name="SP_UPDATE_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="UserId" Type="int" Mode="In" />
@@ -929,7 +1062,140 @@
             <Parameter Name="ExpertCV" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="SP_GETLITSTUDENT_BYID_CLASS_02" ReturnType="Collection(TrainingCenterModel.SP_GETLITSTUDENT_BYID_CLASS_02_Result)">
-            <Parameter Name="classid" Mode="In" Type="Int32" />
+          <Parameter Name="classid" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Creat_Recruitment">
+            <Parameter Name="NAME" Mode="In" Type="String" />
+            <Parameter Name="DESCRIPTION" Mode="In" Type="String" />
+            <Parameter Name="Contents" Mode="In" Type="String" />
+            <Parameter Name="DateCreate" Mode="In" Type="DateTime" />
+            <Parameter Name="DateStart" Mode="In" Type="DateTime" />
+            <Parameter Name="DateEnd" Mode="In" Type="DateTime" />
+            <Parameter Name="Number" Mode="In" Type="Int32" />
+            <Parameter Name="Request" Mode="In" Type="String" />
+            <Parameter Name="CenterId" Mode="In" Type="Int32" />
+            <Parameter Name="OrderNumber" Mode="In" Type="Int32" />
+            <Parameter Name="Avatar" Mode="In" Type="String" />
+            <Parameter Name="ImagePath" Mode="In" Type="String" />
+            <Parameter Name="STATUS" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Delete_Recruitment">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GetAll_CandidateV2" ReturnType="Collection(TrainingCenterModel.SP_GetAll_CandidateV2_Result)" />
+          <FunctionImport Name="SP_GetAll_JobTitle" ReturnType="Collection(TrainingCenterModel.SP_GetAll_JobTitle_Result)" />
+          <FunctionImport Name="SP_GetAll_Recruitment" ReturnType="Collection(TrainingCenterModel.SP_GetAll_Recruitment_Result)" />
+          <FunctionImport Name="SP_GetCandidate_ByIdRecruitmentV2" ReturnType="Collection(TrainingCenterModel.SP_GetCandidate_ByIdRecruitmentV2_Result)">
+          <Parameter Name="IdRec" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_InsertCV_toCandidate">
+          <Parameter Name="Content" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Update_Recruitment">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="NAME" Mode="In" Type="String" />
+            <Parameter Name="DESCRIPTION" Mode="In" Type="String" />
+            <Parameter Name="Contents" Mode="In" Type="String" />
+            <Parameter Name="DateCreate" Mode="In" Type="DateTime" />
+            <Parameter Name="DateStart" Mode="In" Type="DateTime" />
+            <Parameter Name="DateEnd" Mode="In" Type="DateTime" />
+            <Parameter Name="Number" Mode="In" Type="Int32" />
+            <Parameter Name="Request" Mode="In" Type="String" />
+            <Parameter Name="CenterId" Mode="In" Type="Int32" />
+            <Parameter Name="OrderNumber" Mode="In" Type="Int32" />
+            <Parameter Name="Avatar" Mode="In" Type="String" />
+            <Parameter Name="ImagePath" Mode="In" Type="String" />
+            <Parameter Name="STATUS" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Delete_Candidate">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Creat_Candidate">
+            <Parameter Name="FirstName" Mode="In" Type="String" />
+            <Parameter Name="LastName" Mode="In" Type="String" />
+            <Parameter Name="FullName" Mode="In" Type="String" />
+            <Parameter Name="DateBirthday" Mode="In" Type="DateTime" />
+            <Parameter Name="Sex" Mode="In" Type="Int32" />
+            <Parameter Name="ADDRESS" Mode="In" Type="String" />
+            <Parameter Name="DESCRIPTION" Mode="In" Type="String" />
+            <Parameter Name="YearsExperience" Mode="In" Type="Int32" />
+            <Parameter Name="UniversityDegree" Mode="In" Type="String" />
+            <Parameter Name="CenterId" Mode="In" Type="Int32" />
+            <Parameter Name="Avatar" Mode="In" Type="String" />
+            <Parameter Name="ImagePath" Mode="In" Type="String" />
+            <Parameter Name="Contents" Mode="In" Type="String" />
+            <Parameter Name="DocumentPath" Mode="In" Type="String" />
+            <Parameter Name="DateCreate" Mode="In" Type="DateTime" />
+            <Parameter Name="DateLastUpdate" Mode="In" Type="DateTime" />
+            <Parameter Name="DateInterview" Mode="In" Type="DateTime" />
+            <Parameter Name="DateSent" Mode="In" Type="DateTime" />
+            <Parameter Name="Notes" Mode="In" Type="String" />
+            <Parameter Name="RecruitmentId" Mode="In" Type="Int32" />
+            <Parameter Name="OrderNumber" Mode="In" Type="Int32" />
+            <Parameter Name="JobTitleId" Mode="In" Type="Int32" />
+            <Parameter Name="STATUS" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Update_Candidate">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="FirstName" Mode="In" Type="String" />
+            <Parameter Name="LastName" Mode="In" Type="String" />
+            <Parameter Name="FullName" Mode="In" Type="String" />
+            <Parameter Name="DateBirthday" Mode="In" Type="DateTime" />
+            <Parameter Name="Sex" Mode="In" Type="Int32" />
+            <Parameter Name="ADDRESS" Mode="In" Type="String" />
+            <Parameter Name="DESCRIPTION" Mode="In" Type="String" />
+            <Parameter Name="YearsExperience" Mode="In" Type="Int32" />
+            <Parameter Name="UniversityDegree" Mode="In" Type="String" />
+            <Parameter Name="CenterId" Mode="In" Type="Int32" />
+            <Parameter Name="Avatar" Mode="In" Type="String" />
+            <Parameter Name="ImagePath" Mode="In" Type="String" />
+            <Parameter Name="Contents" Mode="In" Type="String" />
+            <Parameter Name="DocumentPath" Mode="In" Type="String" />
+            <Parameter Name="DateCreate" Mode="In" Type="DateTime" />
+            <Parameter Name="DateLastUpdate" Mode="In" Type="DateTime" />
+            <Parameter Name="DateInterview" Mode="In" Type="DateTime" />
+            <Parameter Name="DateSent" Mode="In" Type="DateTime" />
+            <Parameter Name="Notes" Mode="In" Type="String" />
+            <Parameter Name="RecruitmentId" Mode="In" Type="Int32" />
+            <Parameter Name="OrderNumber" Mode="In" Type="Int32" />
+            <Parameter Name="JobTitleId" Mode="In" Type="Int32" />
+            <Parameter Name="STATUS" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GetByID_Candidate" ReturnType="Collection(TrainingCenterModel.SP_GetByID_Candidate_Result)">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GetByID_CandidateV2" ReturnType="Collection(TrainingCenterModel.SP_GetByID_CandidateV2_Result)">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GetByID_RecruitmentInfo" ReturnType="Collection(TrainingCenterModel.SP_GetByID_RecruitmentInfo_Result)">
+          <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Creat_CenterInfo">
+            <Parameter Name="CenterName" Mode="In" Type="String" />
+            <Parameter Name="Mobile" Mode="In" Type="String" />
+            <Parameter Name="Phone" Mode="In" Type="String" />
+            <Parameter Name="Fax" Mode="In" Type="String" />
+            <Parameter Name="ADDRESS" Mode="In" Type="String" />
+            <Parameter Name="Website" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="DESCRIPTION" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GetAll_RecruitmentV2" ReturnType="Collection(TrainingCenterModel.SP_GetAll_RecruitmentV2_Result)" />
+          <FunctionImport Name="SP_Creat_JobTitle">
+            <Parameter Name="JobTitle" Mode="In" Type="String" />
+            <Parameter Name="DESCRIPTION" Mode="In" Type="String" />
+            <Parameter Name="ImageName" Mode="In" Type="String" />
+            <Parameter Name="ImagePath" Mode="In" Type="String" />
+            <Parameter Name="OrderNumber" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Creat_PhongBan">
+            <Parameter Name="OuName" Mode="In" Type="String" />
+            <Parameter Name="ImagePath" Mode="In" Type="String" />
+            <Parameter Name="DESCRIPTION" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="Phone" Mode="In" Type="String" />
+            <Parameter Name="Fax" Mode="In" Type="String" />
+            <Parameter Name="Website" Mode="In" Type="String" />
           </FunctionImport>
         </EntityContainer>
         <ComplexType Name="GetListEmployees_Result">
@@ -2070,6 +2336,172 @@
           <Property Type="String" Name="Email" Nullable="true" MaxLength="500" />
           <Property Type="String" Name="Mobile" Nullable="true" MaxLength="200" />
         </ComplexType>
+        <ComplexType Name="SP_GetAll_CandidateV2_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="100" />
+          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="Sex" Nullable="true" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="1000" />
+          <Property Type="Int32" Name="YearsExperience" Nullable="true" />
+          <Property Type="String" Name="UniversityDegree" Nullable="true" MaxLength="250" />
+          <Property Type="Int32" Name="CenterId" Nullable="true" />
+          <Property Type="String" Name="Avatar" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="ImagePath" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Contents" Nullable="true" MaxLength="Max" />
+          <Property Type="String" Name="DocumentPath" Nullable="true" MaxLength="250" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateInterview" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateSent" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Notes" Nullable="true" MaxLength="2000" />
+          <Property Type="Int32" Name="RecruitmentId" Nullable="true" />
+          <Property Type="Int32" Name="OrderNumber" Nullable="true" />
+          <Property Type="Int32" Name="JobTitleId" Nullable="true" />
+          <Property Type="Int32" Name="Status" Nullable="true" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="JobTitle" Nullable="true" MaxLength="250" />
+        </ComplexType>
+        <ComplexType Name="SP_GetAll_JobTitle_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="JobTitle" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="ImageName" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="ImagePath" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="OrderNumber" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_GetAll_Recruitment_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="1000" />
+          <Property Type="String" Name="Contents" Nullable="true" MaxLength="Max" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateStart" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateEnd" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="Number" Nullable="true" />
+          <Property Type="String" Name="Request" Nullable="true" MaxLength="1000" />
+          <Property Type="Int32" Name="CenterId" Nullable="true" />
+          <Property Type="Int32" Name="OrderNumber" Nullable="true" />
+          <Property Type="String" Name="Avatar" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="ImagePath" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="SP_GetCandidate_ByIdRecruitmentV2_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="100" />
+          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="Sex" Nullable="true" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="1000" />
+          <Property Type="Int32" Name="YearsExperience" Nullable="true" />
+          <Property Type="String" Name="UniversityDegree" Nullable="true" MaxLength="250" />
+          <Property Type="Int32" Name="CenterId" Nullable="true" />
+          <Property Type="String" Name="Avatar" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="ImagePath" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Contents" Nullable="true" MaxLength="Max" />
+          <Property Type="String" Name="DocumentPath" Nullable="true" MaxLength="250" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateInterview" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateSent" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Notes" Nullable="true" MaxLength="2000" />
+          <Property Type="Int32" Name="RecruitmentId" Nullable="true" />
+          <Property Type="Int32" Name="OrderNumber" Nullable="true" />
+          <Property Type="Int32" Name="JobTitleId" Nullable="true" />
+          <Property Type="Int32" Name="Status" Nullable="true" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="JobTitle" Nullable="true" MaxLength="250" />
+        </ComplexType>
+        <ComplexType Name="SP_GetByID_Candidate_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="100" />
+          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="Sex" Nullable="true" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="1000" />
+          <Property Type="Int32" Name="YearsExperience" Nullable="true" />
+          <Property Type="String" Name="UniversityDegree" Nullable="true" MaxLength="250" />
+          <Property Type="Int32" Name="CenterId" Nullable="true" />
+          <Property Type="String" Name="Avatar" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="ImagePath" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Contents" Nullable="true" MaxLength="Max" />
+          <Property Type="String" Name="DocumentPath" Nullable="true" MaxLength="250" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateInterview" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateSent" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Notes" Nullable="true" MaxLength="2000" />
+          <Property Type="Int32" Name="RecruitmentId" Nullable="true" />
+          <Property Type="Int32" Name="OrderNumber" Nullable="true" />
+          <Property Type="Int32" Name="JobTitleId" Nullable="true" />
+          <Property Type="Int32" Name="Status" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_GetByID_CandidateV2_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="FullName" Nullable="true" MaxLength="100" />
+          <Property Type="DateTime" Name="DateBirthday" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="Sex" Nullable="true" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="1000" />
+          <Property Type="Int32" Name="YearsExperience" Nullable="true" />
+          <Property Type="String" Name="UniversityDegree" Nullable="true" MaxLength="250" />
+          <Property Type="Int32" Name="CenterId" Nullable="true" />
+          <Property Type="String" Name="Avatar" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="ImagePath" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Contents" Nullable="true" MaxLength="Max" />
+          <Property Type="String" Name="DocumentPath" Nullable="true" MaxLength="250" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateLastUpdate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateInterview" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateSent" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Notes" Nullable="true" MaxLength="2000" />
+          <Property Type="Int32" Name="RecruitmentId" Nullable="true" />
+          <Property Type="Int32" Name="OrderNumber" Nullable="true" />
+          <Property Type="Int32" Name="JobTitleId" Nullable="true" />
+          <Property Type="Int32" Name="Status" Nullable="true" />
+          <Property Type="String" Name="JobTitle" Nullable="true" MaxLength="250" />
+        </ComplexType>
+        <ComplexType Name="SP_GetByID_RecruitmentInfo_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="1000" />
+          <Property Type="String" Name="Contents" Nullable="true" MaxLength="Max" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateStart" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateEnd" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="Number" Nullable="true" />
+          <Property Type="String" Name="Request" Nullable="true" MaxLength="1000" />
+          <Property Type="Int32" Name="CenterId" Nullable="true" />
+          <Property Type="Int32" Name="OrderNumber" Nullable="true" />
+          <Property Type="String" Name="Avatar" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="ImagePath" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="SP_GetAll_RecruitmentV2_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="1000" />
+          <Property Type="String" Name="Contents" Nullable="true" MaxLength="Max" />
+          <Property Type="DateTime" Name="DateCreate" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateStart" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DateEnd" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="Number" Nullable="true" />
+          <Property Type="String" Name="Request" Nullable="true" MaxLength="1000" />
+          <Property Type="Int32" Name="CenterId" Nullable="true" />
+          <Property Type="Int32" Name="OrderNumber" Nullable="true" />
+          <Property Type="String" Name="Avatar" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="ImagePath" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="CenterName" Nullable="true" MaxLength="250" />
+        </ComplexType>
         <!--<ComplexType Name="SP_GetAll_TrungTam_Result">
           <Property Type="Int32" Name="Id" Nullable="false" />
           <Property Type="String" Name="CenterName" Nullable="true" MaxLength="250" />
@@ -2676,6 +3108,214 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Creat_Recruitment" FunctionName="TrainingCenterModel.Store.SP_Creat_Recruitment" />
+          <FunctionImportMapping FunctionImportName="SP_Delete_Recruitment" FunctionName="TrainingCenterModel.Store.SP_Delete_Recruitment" />
+          <FunctionImportMapping FunctionImportName="SP_GetAll_CandidateV2" FunctionName="TrainingCenterModel.Store.SP_GetAll_CandidateV2">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GetAll_CandidateV2_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="DateBirthday" ColumnName="DateBirthday" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="YearsExperience" ColumnName="YearsExperience" />
+                <ScalarProperty Name="UniversityDegree" ColumnName="UniversityDegree" />
+                <ScalarProperty Name="CenterId" ColumnName="CenterId" />
+                <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="Contents" ColumnName="Contents" />
+                <ScalarProperty Name="DocumentPath" ColumnName="DocumentPath" />
+                <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+                <ScalarProperty Name="DateLastUpdate" ColumnName="DateLastUpdate" />
+                <ScalarProperty Name="DateInterview" ColumnName="DateInterview" />
+                <ScalarProperty Name="DateSent" ColumnName="DateSent" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="RecruitmentId" ColumnName="RecruitmentId" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+                <ScalarProperty Name="JobTitleId" ColumnName="JobTitleId" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_GetAll_JobTitle" FunctionName="TrainingCenterModel.Store.SP_GetAll_JobTitle">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GetAll_JobTitle_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_GetAll_Recruitment" FunctionName="TrainingCenterModel.Store.SP_GetAll_Recruitment">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GetAll_Recruitment_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Contents" ColumnName="Contents" />
+                <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+                <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+                <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="Request" ColumnName="Request" />
+                <ScalarProperty Name="CenterId" ColumnName="CenterId" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+                <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_GetCandidate_ByIdRecruitmentV2" FunctionName="TrainingCenterModel.Store.SP_GetCandidate_ByIdRecruitmentV2">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GetCandidate_ByIdRecruitmentV2_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="DateBirthday" ColumnName="DateBirthday" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="YearsExperience" ColumnName="YearsExperience" />
+                <ScalarProperty Name="UniversityDegree" ColumnName="UniversityDegree" />
+                <ScalarProperty Name="CenterId" ColumnName="CenterId" />
+                <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="Contents" ColumnName="Contents" />
+                <ScalarProperty Name="DocumentPath" ColumnName="DocumentPath" />
+                <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+                <ScalarProperty Name="DateLastUpdate" ColumnName="DateLastUpdate" />
+                <ScalarProperty Name="DateInterview" ColumnName="DateInterview" />
+                <ScalarProperty Name="DateSent" ColumnName="DateSent" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="RecruitmentId" ColumnName="RecruitmentId" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+                <ScalarProperty Name="JobTitleId" ColumnName="JobTitleId" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_InsertCV_toCandidate" FunctionName="TrainingCenterModel.Store.SP_InsertCV_toCandidate" />
+          <FunctionImportMapping FunctionImportName="SP_Update_Recruitment" FunctionName="TrainingCenterModel.Store.SP_Update_Recruitment" />
+          <FunctionImportMapping FunctionImportName="SP_Delete_Candidate" FunctionName="TrainingCenterModel.Store.SP_Delete_Candidate" />
+          <FunctionImportMapping FunctionImportName="SP_Creat_Candidate" FunctionName="TrainingCenterModel.Store.SP_Creat_Candidate" />
+          <FunctionImportMapping FunctionImportName="SP_Update_Candidate" FunctionName="TrainingCenterModel.Store.SP_Update_Candidate" />
+          <FunctionImportMapping FunctionImportName="SP_GetByID_Candidate" FunctionName="TrainingCenterModel.Store.SP_GetByID_Candidate">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GetByID_Candidate_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="DateBirthday" ColumnName="DateBirthday" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="YearsExperience" ColumnName="YearsExperience" />
+                <ScalarProperty Name="UniversityDegree" ColumnName="UniversityDegree" />
+                <ScalarProperty Name="CenterId" ColumnName="CenterId" />
+                <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="Contents" ColumnName="Contents" />
+                <ScalarProperty Name="DocumentPath" ColumnName="DocumentPath" />
+                <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+                <ScalarProperty Name="DateLastUpdate" ColumnName="DateLastUpdate" />
+                <ScalarProperty Name="DateInterview" ColumnName="DateInterview" />
+                <ScalarProperty Name="DateSent" ColumnName="DateSent" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="RecruitmentId" ColumnName="RecruitmentId" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+                <ScalarProperty Name="JobTitleId" ColumnName="JobTitleId" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_GetByID_CandidateV2" FunctionName="TrainingCenterModel.Store.SP_GetByID_CandidateV2">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GetByID_CandidateV2_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="DateBirthday" ColumnName="DateBirthday" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="YearsExperience" ColumnName="YearsExperience" />
+                <ScalarProperty Name="UniversityDegree" ColumnName="UniversityDegree" />
+                <ScalarProperty Name="CenterId" ColumnName="CenterId" />
+                <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="Contents" ColumnName="Contents" />
+                <ScalarProperty Name="DocumentPath" ColumnName="DocumentPath" />
+                <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+                <ScalarProperty Name="DateLastUpdate" ColumnName="DateLastUpdate" />
+                <ScalarProperty Name="DateInterview" ColumnName="DateInterview" />
+                <ScalarProperty Name="DateSent" ColumnName="DateSent" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="RecruitmentId" ColumnName="RecruitmentId" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+                <ScalarProperty Name="JobTitleId" ColumnName="JobTitleId" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_GetByID_RecruitmentInfo" FunctionName="TrainingCenterModel.Store.SP_GetByID_RecruitmentInfo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GetByID_RecruitmentInfo_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Contents" ColumnName="Contents" />
+                <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+                <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+                <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="Request" ColumnName="Request" />
+                <ScalarProperty Name="CenterId" ColumnName="CenterId" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+                <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Creat_CenterInfo" FunctionName="TrainingCenterModel.Store.SP_Creat_CenterInfo" />
+          <FunctionImportMapping FunctionImportName="SP_GetAll_RecruitmentV2" FunctionName="TrainingCenterModel.Store.SP_GetAll_RecruitmentV2">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GetAll_RecruitmentV2_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Contents" ColumnName="Contents" />
+                <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+                <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+                <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="Request" ColumnName="Request" />
+                <ScalarProperty Name="CenterId" ColumnName="CenterId" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+                <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CenterName" ColumnName="CenterName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Creat_JobTitle" FunctionName="TrainingCenterModel.Store.SP_Creat_JobTitle" />
+          <FunctionImportMapping FunctionImportName="SP_Creat_PhongBan" FunctionName="TrainingCenterModel.Store.SP_Creat_PhongBan" />
           </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

@@ -150,6 +150,7 @@
             this.btnContent.Size = new System.Drawing.Size(57, 20);
             this.btnContent.TabIndex = 21;
             this.btnContent.Text = "Hồ sơ";
+            this.btnContent.Click += new System.EventHandler(this.btnContent_Click);
             // 
             // txtNoiDung
             // 
@@ -183,6 +184,7 @@
             this.btnAddMoreDepartment.Name = "btnAddMoreDepartment";
             this.btnAddMoreDepartment.Size = new System.Drawing.Size(25, 20);
             this.btnAddMoreDepartment.TabIndex = 16;
+            this.btnAddMoreDepartment.Click += new System.EventHandler(this.btnAddMoreDepartment_Click);
             // 
             // btnAddMoreCenter
             // 
@@ -191,6 +193,7 @@
             this.btnAddMoreCenter.Name = "btnAddMoreCenter";
             this.btnAddMoreCenter.Size = new System.Drawing.Size(25, 20);
             this.btnAddMoreCenter.TabIndex = 14;
+            this.btnAddMoreCenter.Click += new System.EventHandler(this.btnAddMoreCenter_Click);
             // 
             // btnAddMoreJob
             // 
@@ -199,6 +202,7 @@
             this.btnAddMoreJob.Name = "btnAddMoreJob";
             this.btnAddMoreJob.Size = new System.Drawing.Size(25, 20);
             this.btnAddMoreJob.TabIndex = 18;
+            this.btnAddMoreJob.Click += new System.EventHandler(this.btnAddMoreJob_Click);
             // 
             // txtMaThue
             // 
