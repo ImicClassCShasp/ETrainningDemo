@@ -7,14 +7,23 @@ using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using System.Linq;
+using IMIC.VALUEOBJECTS;
+using IMIC.BUSINESSLOGICLAYERS;
+
 namespace eCenterTrainning.UseControls
 {
-    public partial class uRecruitmentInfo : DevExpress.XtraEditors.XtraUserControl
+    public partial class uRecruitmentInfo : ucRightForm
     {
         public uRecruitmentInfo()
         {
             InitializeComponent();
         }
+
+        public uRecruitmentInfo(Account oAccount) : base(oAccount)
+        {
+            InitializeComponent();
+        }
+
         private int idRe = 0;
         private String RecruimentName = "";
         private void uRecruitmentInfo_Load(object sender, EventArgs e)
@@ -42,8 +51,7 @@ namespace eCenterTrainning.UseControls
         void actionMenuRecruitmentInfo_PressRefresh(object sender, EventArgs e)
         {
             checkExpiredRecruitment();
-            displayRecruitmentInfo();
-           
+            displayRecruitmentInfo();          
         }
 
         void actionMenuRecruitmentInfo_PressDelete(object sender, EventArgs e)
@@ -52,12 +60,12 @@ namespace eCenterTrainning.UseControls
             int.TryParse(value, out idRe);
             
             if (idRe > 0)
-            {
-                
+            {                
                 DialogResult dr = MessageBox.Show("Bạn chắc muốn xóa tuyển dụng này", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (dr == DialogResult.Yes)
                 {
-                    MessageBox.Show("");
+                    if (new RecruitmantBLL(mAccount).DeleteElement(idRe)) MessageBox.Show("Xóa thành công!");
+                    else MessageBox.Show("Xóa thất bại!");
                 }
             }
             else
@@ -76,7 +84,9 @@ namespace eCenterTrainning.UseControls
             int.TryParse(value, out idRe);
             if (idRe > 0)
             {
-                MessageBox.Show("");
+                frmRecruitmentInfo frm = new frmRecruitmentInfo(mAccount, idRe);
+                frm.ShowDialog();
+                displayRecruitmentInfo();
             }
             else
             {
@@ -90,7 +100,9 @@ namespace eCenterTrainning.UseControls
         /// </summary>
         void actionMenuRecruitmentInfo_PressNew(object sender, EventArgs e)
         {
-            MessageBox.Show("");
+            frmRecruitmentInfo frm = new frmRecruitmentInfo(mAccount);
+            frm.ShowDialog();
+            displayRecruitmentInfo();
         }
         /// <summary>
         /// Author          Date        Comment
@@ -98,7 +110,9 @@ namespace eCenterTrainning.UseControls
         /// </summary>
         private void displayRecruitmentInfo()
         {
-            
+            List<RecruitmentInfo> lstRec = new RecruitmantBLL(mAccount).getElements();
+            gridControlRecruitmentInfo.DataSource = lstRec;
+            this.Dock = DockStyle.Fill;
         }
 
         
@@ -109,7 +123,7 @@ namespace eCenterTrainning.UseControls
         /// </summary>
         private void checkExpiredRecruitment()
         {
-            MessageBox.Show("");
+            //MessageBox.Show("");
         }
 
         private void xtraTabControlRecruitmentCandiidate_Click(object sender, EventArgs e)
@@ -151,19 +165,21 @@ namespace eCenterTrainning.UseControls
                 int.TryParse(id, out idRe);
                 if (idRe > 0)
                 {
-                    MessageBox.Show("");
+                    RecruitmentInfo recruitmentInfo = new RecruitmantBLL(mAccount).GetByID_Recruitment(idRe);
+                    MessageBox.Show("Chi tiết tuyển dụng: \n\n" +
+                        "" + recruitmentInfo.Description, "Thông tin");
                 }
             }
         }
 
-        private void btnSuaUngVien_Click(object sender, EventArgs e)
-        {
-            int idCandidate = 0;
-            int.TryParse(""+gridViewCandidates.GetFocusedRowCellValue("Id"),out idCandidate);
-            if (idCandidate > 0)
-            {
-                MessageBox.Show("");
-            }
-        }
+        //private void btnSuaUngVien_Click(object sender, EventArgs e)
+        //{
+        //    int idCandidate = 0;
+        //    int.TryParse(""+gridViewCandidates.GetFocusedRowCellValue("Id"),out idCandidate);
+        //    if (idCandidate > 0)
+        //    {
+        //        MessageBox.Show("");
+        //    }
+        //}
     }
 }

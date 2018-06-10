@@ -64,14 +64,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.msgMessage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlCandidate)).BeginInit();
             this.groupControlCandidate.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEditDateSent.Properties.VistaTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditDateSent.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditDateSent.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLinkTaiLieu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditChucVu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditUngTuyen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTruongTotNghiep.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNamKinhNghiem.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgaySinh.Properties.VistaTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgaySinh.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditNgaySinh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboGioiTinh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).BeginInit();
@@ -128,7 +128,7 @@
             // 
             // btnCV
             // 
-            this.btnCV.Image = global::eCenterTrainning.Properties.Resources._002;
+            this.btnCV.ImageOptions.Image = global::eCenterTrainning.Properties.Resources._002;
             this.btnCV.Location = new System.Drawing.Point(420, 139);
             this.btnCV.Name = "btnCV";
             this.btnCV.Size = new System.Drawing.Size(75, 20);
@@ -143,11 +143,11 @@
             this.dateEditDateSent.Name = "dateEditDateSent";
             this.dateEditDateSent.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEditDateSent.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
             this.dateEditDateSent.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.dateEditDateSent.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.dateEditDateSent.Properties.Mask.EditMask = "dd/MM/yyyy";
-            this.dateEditDateSent.Properties.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
             this.dateEditDateSent.Size = new System.Drawing.Size(149, 20);
             this.dateEditDateSent.TabIndex = 12;
             // 
@@ -161,12 +161,11 @@
             // 
             // btnAddMoreJob
             // 
-            this.btnAddMoreJob.Image = global::eCenterTrainning.Properties.Resources._103;
+            this.btnAddMoreJob.ImageOptions.Image = global::eCenterTrainning.Properties.Resources._103;
             this.btnAddMoreJob.Location = new System.Drawing.Point(241, 245);
             this.btnAddMoreJob.Name = "btnAddMoreJob";
             this.btnAddMoreJob.Size = new System.Drawing.Size(25, 20);
             this.btnAddMoreJob.TabIndex = 11;
-            //this.btnAddMoreJob.Click += new System.EventHandler(this.btnAddMoreJob_Click);
             // 
             // txtLinkTaiLieu
             // 
@@ -203,7 +202,7 @@
             // 
             // btnImagePath
             // 
-            this.btnImagePath.Image = global::eCenterTrainning.Properties.Resources.folder;
+            this.btnImagePath.ImageOptions.Image = global::eCenterTrainning.Properties.Resources.folder;
             this.btnImagePath.Location = new System.Drawing.Point(470, 281);
             this.btnImagePath.Name = "btnImagePath";
             this.btnImagePath.Size = new System.Drawing.Size(25, 20);
@@ -251,7 +250,7 @@
             this.lookUpEditChucVu.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEditChucVu.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "Id", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "Id", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("JobTitle1", "Ứng Tuyển Vị Trí")});
             this.lookUpEditChucVu.Properties.NullText = "--- Chọn Vị Trí  ---";
             this.lookUpEditChucVu.Size = new System.Drawing.Size(121, 20);
@@ -264,7 +263,7 @@
             this.lookUpEditUngTuyen.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEditUngTuyen.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "Id", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "Id", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Ứng Tuyển Vị Trí")});
             this.lookUpEditUngTuyen.Properties.NullText = "--- Chọn Đợt  Ứng Tuyển ---";
             this.lookUpEditUngTuyen.Size = new System.Drawing.Size(381, 20);
@@ -318,11 +317,11 @@
             this.dateEditNgaySinh.Name = "dateEditNgaySinh";
             this.dateEditNgaySinh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEditNgaySinh.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
             this.dateEditNgaySinh.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.dateEditNgaySinh.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.dateEditNgaySinh.Properties.Mask.EditMask = "dd/MM/yyyy";
-            this.dateEditNgaySinh.Properties.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
             this.dateEditNgaySinh.Size = new System.Drawing.Size(121, 20);
             this.dateEditNgaySinh.TabIndex = 2;
             // 
@@ -420,20 +419,21 @@
             this.Controls.Add(this.actionUpdateCandidates);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmCandidate";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý Tuyển Dụng";
             this.Load += new System.EventHandler(this.frmCandidate_Load);
             ((System.ComponentModel.ISupportInitialize)(this.msgMessage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlCandidate)).EndInit();
             this.groupControlCandidate.ResumeLayout(false);
             this.groupControlCandidate.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEditDateSent.Properties.VistaTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditDateSent.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditDateSent.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLinkTaiLieu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditChucVu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditUngTuyen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTruongTotNghiep.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNamKinhNghiem.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgaySinh.Properties.VistaTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditNgaySinh.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditNgaySinh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboGioiTinh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).EndInit();

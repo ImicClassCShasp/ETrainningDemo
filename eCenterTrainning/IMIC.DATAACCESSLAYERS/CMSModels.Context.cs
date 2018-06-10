@@ -17,7 +17,7 @@ namespace IMIC.DATAACCESSLAYERS
     
     public partial class TrainingCenterEntities : DbContext
     {
-       public TrainingCenterEntities(string sValue)
+        public TrainingCenterEntities(string sValue)
             : base(sValue)
         {
         }
@@ -2377,6 +2377,500 @@ namespace IMIC.DATAACCESSLAYERS
                 new ObjectParameter("classid", typeof(int));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETLITSTUDENT_BYID_CLASS_02_Result>("SP_GETLITSTUDENT_BYID_CLASS_02", classidParameter);
+        }
+    
+        public virtual int SP_Creat_Recruitment(string nAME, string dESCRIPTION, string contents, Nullable<System.DateTime> dateCreate, Nullable<System.DateTime> dateStart, Nullable<System.DateTime> dateEnd, Nullable<int> number, string request, Nullable<int> centerId, Nullable<int> orderNumber, string avatar, string imagePath, string sTATUS)
+        {
+            var nAMEParameter = nAME != null ?
+                new ObjectParameter("NAME", nAME) :
+                new ObjectParameter("NAME", typeof(string));
+    
+            var dESCRIPTIONParameter = dESCRIPTION != null ?
+                new ObjectParameter("DESCRIPTION", dESCRIPTION) :
+                new ObjectParameter("DESCRIPTION", typeof(string));
+    
+            var contentsParameter = contents != null ?
+                new ObjectParameter("Contents", contents) :
+                new ObjectParameter("Contents", typeof(string));
+    
+            var dateCreateParameter = dateCreate.HasValue ?
+                new ObjectParameter("DateCreate", dateCreate) :
+                new ObjectParameter("DateCreate", typeof(System.DateTime));
+    
+            var dateStartParameter = dateStart.HasValue ?
+                new ObjectParameter("DateStart", dateStart) :
+                new ObjectParameter("DateStart", typeof(System.DateTime));
+    
+            var dateEndParameter = dateEnd.HasValue ?
+                new ObjectParameter("DateEnd", dateEnd) :
+                new ObjectParameter("DateEnd", typeof(System.DateTime));
+    
+            var numberParameter = number.HasValue ?
+                new ObjectParameter("Number", number) :
+                new ObjectParameter("Number", typeof(int));
+    
+            var requestParameter = request != null ?
+                new ObjectParameter("Request", request) :
+                new ObjectParameter("Request", typeof(string));
+    
+            var centerIdParameter = centerId.HasValue ?
+                new ObjectParameter("CenterId", centerId) :
+                new ObjectParameter("CenterId", typeof(int));
+    
+            var orderNumberParameter = orderNumber.HasValue ?
+                new ObjectParameter("OrderNumber", orderNumber) :
+                new ObjectParameter("OrderNumber", typeof(int));
+    
+            var avatarParameter = avatar != null ?
+                new ObjectParameter("Avatar", avatar) :
+                new ObjectParameter("Avatar", typeof(string));
+    
+            var imagePathParameter = imagePath != null ?
+                new ObjectParameter("ImagePath", imagePath) :
+                new ObjectParameter("ImagePath", typeof(string));
+    
+            var sTATUSParameter = sTATUS != null ?
+                new ObjectParameter("STATUS", sTATUS) :
+                new ObjectParameter("STATUS", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Creat_Recruitment", nAMEParameter, dESCRIPTIONParameter, contentsParameter, dateCreateParameter, dateStartParameter, dateEndParameter, numberParameter, requestParameter, centerIdParameter, orderNumberParameter, avatarParameter, imagePathParameter, sTATUSParameter);
+        }
+    
+        public virtual int SP_Delete_Recruitment(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Delete_Recruitment", idParameter);
+        }
+    
+        public virtual ObjectResult<SP_GetAll_CandidateV2_Result> SP_GetAll_CandidateV2()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GetAll_CandidateV2_Result>("SP_GetAll_CandidateV2");
+        }
+    
+        public virtual ObjectResult<SP_GetAll_JobTitle_Result> SP_GetAll_JobTitle()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GetAll_JobTitle_Result>("SP_GetAll_JobTitle");
+        }
+    
+        public virtual ObjectResult<SP_GetAll_Recruitment_Result> SP_GetAll_Recruitment()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GetAll_Recruitment_Result>("SP_GetAll_Recruitment");
+        }
+    
+        public virtual ObjectResult<SP_GetCandidate_ByIdRecruitmentV2_Result> SP_GetCandidate_ByIdRecruitmentV2(Nullable<int> idRec)
+        {
+            var idRecParameter = idRec.HasValue ?
+                new ObjectParameter("IdRec", idRec) :
+                new ObjectParameter("IdRec", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GetCandidate_ByIdRecruitmentV2_Result>("SP_GetCandidate_ByIdRecruitmentV2", idRecParameter);
+        }
+    
+        public virtual int SP_InsertCV_toCandidate(string content)
+        {
+            var contentParameter = content != null ?
+                new ObjectParameter("Content", content) :
+                new ObjectParameter("Content", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_InsertCV_toCandidate", contentParameter);
+        }
+    
+        public virtual int SP_Update_Recruitment(Nullable<int> id, string nAME, string dESCRIPTION, string contents, Nullable<System.DateTime> dateCreate, Nullable<System.DateTime> dateStart, Nullable<System.DateTime> dateEnd, Nullable<int> number, string request, Nullable<int> centerId, Nullable<int> orderNumber, string avatar, string imagePath, string sTATUS)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var nAMEParameter = nAME != null ?
+                new ObjectParameter("NAME", nAME) :
+                new ObjectParameter("NAME", typeof(string));
+    
+            var dESCRIPTIONParameter = dESCRIPTION != null ?
+                new ObjectParameter("DESCRIPTION", dESCRIPTION) :
+                new ObjectParameter("DESCRIPTION", typeof(string));
+    
+            var contentsParameter = contents != null ?
+                new ObjectParameter("Contents", contents) :
+                new ObjectParameter("Contents", typeof(string));
+    
+            var dateCreateParameter = dateCreate.HasValue ?
+                new ObjectParameter("DateCreate", dateCreate) :
+                new ObjectParameter("DateCreate", typeof(System.DateTime));
+    
+            var dateStartParameter = dateStart.HasValue ?
+                new ObjectParameter("DateStart", dateStart) :
+                new ObjectParameter("DateStart", typeof(System.DateTime));
+    
+            var dateEndParameter = dateEnd.HasValue ?
+                new ObjectParameter("DateEnd", dateEnd) :
+                new ObjectParameter("DateEnd", typeof(System.DateTime));
+    
+            var numberParameter = number.HasValue ?
+                new ObjectParameter("Number", number) :
+                new ObjectParameter("Number", typeof(int));
+    
+            var requestParameter = request != null ?
+                new ObjectParameter("Request", request) :
+                new ObjectParameter("Request", typeof(string));
+    
+            var centerIdParameter = centerId.HasValue ?
+                new ObjectParameter("CenterId", centerId) :
+                new ObjectParameter("CenterId", typeof(int));
+    
+            var orderNumberParameter = orderNumber.HasValue ?
+                new ObjectParameter("OrderNumber", orderNumber) :
+                new ObjectParameter("OrderNumber", typeof(int));
+    
+            var avatarParameter = avatar != null ?
+                new ObjectParameter("Avatar", avatar) :
+                new ObjectParameter("Avatar", typeof(string));
+    
+            var imagePathParameter = imagePath != null ?
+                new ObjectParameter("ImagePath", imagePath) :
+                new ObjectParameter("ImagePath", typeof(string));
+    
+            var sTATUSParameter = sTATUS != null ?
+                new ObjectParameter("STATUS", sTATUS) :
+                new ObjectParameter("STATUS", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Update_Recruitment", idParameter, nAMEParameter, dESCRIPTIONParameter, contentsParameter, dateCreateParameter, dateStartParameter, dateEndParameter, numberParameter, requestParameter, centerIdParameter, orderNumberParameter, avatarParameter, imagePathParameter, sTATUSParameter);
+        }
+    
+        public virtual int SP_Delete_Candidate(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Delete_Candidate", idParameter);
+        }
+    
+        public virtual int SP_Creat_Candidate(string firstName, string lastName, string fullName, Nullable<System.DateTime> dateBirthday, Nullable<int> sex, string aDDRESS, string dESCRIPTION, Nullable<int> yearsExperience, string universityDegree, Nullable<int> centerId, string avatar, string imagePath, string contents, string documentPath, Nullable<System.DateTime> dateCreate, Nullable<System.DateTime> dateLastUpdate, Nullable<System.DateTime> dateInterview, Nullable<System.DateTime> dateSent, string notes, Nullable<int> recruitmentId, Nullable<int> orderNumber, Nullable<int> jobTitleId, Nullable<int> sTATUS)
+        {
+            var firstNameParameter = firstName != null ?
+                new ObjectParameter("FirstName", firstName) :
+                new ObjectParameter("FirstName", typeof(string));
+    
+            var lastNameParameter = lastName != null ?
+                new ObjectParameter("LastName", lastName) :
+                new ObjectParameter("LastName", typeof(string));
+    
+            var fullNameParameter = fullName != null ?
+                new ObjectParameter("FullName", fullName) :
+                new ObjectParameter("FullName", typeof(string));
+    
+            var dateBirthdayParameter = dateBirthday.HasValue ?
+                new ObjectParameter("DateBirthday", dateBirthday) :
+                new ObjectParameter("DateBirthday", typeof(System.DateTime));
+    
+            var sexParameter = sex.HasValue ?
+                new ObjectParameter("Sex", sex) :
+                new ObjectParameter("Sex", typeof(int));
+    
+            var aDDRESSParameter = aDDRESS != null ?
+                new ObjectParameter("ADDRESS", aDDRESS) :
+                new ObjectParameter("ADDRESS", typeof(string));
+    
+            var dESCRIPTIONParameter = dESCRIPTION != null ?
+                new ObjectParameter("DESCRIPTION", dESCRIPTION) :
+                new ObjectParameter("DESCRIPTION", typeof(string));
+    
+            var yearsExperienceParameter = yearsExperience.HasValue ?
+                new ObjectParameter("YearsExperience", yearsExperience) :
+                new ObjectParameter("YearsExperience", typeof(int));
+    
+            var universityDegreeParameter = universityDegree != null ?
+                new ObjectParameter("UniversityDegree", universityDegree) :
+                new ObjectParameter("UniversityDegree", typeof(string));
+    
+            var centerIdParameter = centerId.HasValue ?
+                new ObjectParameter("CenterId", centerId) :
+                new ObjectParameter("CenterId", typeof(int));
+    
+            var avatarParameter = avatar != null ?
+                new ObjectParameter("Avatar", avatar) :
+                new ObjectParameter("Avatar", typeof(string));
+    
+            var imagePathParameter = imagePath != null ?
+                new ObjectParameter("ImagePath", imagePath) :
+                new ObjectParameter("ImagePath", typeof(string));
+    
+            var contentsParameter = contents != null ?
+                new ObjectParameter("Contents", contents) :
+                new ObjectParameter("Contents", typeof(string));
+    
+            var documentPathParameter = documentPath != null ?
+                new ObjectParameter("DocumentPath", documentPath) :
+                new ObjectParameter("DocumentPath", typeof(string));
+    
+            var dateCreateParameter = dateCreate.HasValue ?
+                new ObjectParameter("DateCreate", dateCreate) :
+                new ObjectParameter("DateCreate", typeof(System.DateTime));
+    
+            var dateLastUpdateParameter = dateLastUpdate.HasValue ?
+                new ObjectParameter("DateLastUpdate", dateLastUpdate) :
+                new ObjectParameter("DateLastUpdate", typeof(System.DateTime));
+    
+            var dateInterviewParameter = dateInterview.HasValue ?
+                new ObjectParameter("DateInterview", dateInterview) :
+                new ObjectParameter("DateInterview", typeof(System.DateTime));
+    
+            var dateSentParameter = dateSent.HasValue ?
+                new ObjectParameter("DateSent", dateSent) :
+                new ObjectParameter("DateSent", typeof(System.DateTime));
+    
+            var notesParameter = notes != null ?
+                new ObjectParameter("Notes", notes) :
+                new ObjectParameter("Notes", typeof(string));
+    
+            var recruitmentIdParameter = recruitmentId.HasValue ?
+                new ObjectParameter("RecruitmentId", recruitmentId) :
+                new ObjectParameter("RecruitmentId", typeof(int));
+    
+            var orderNumberParameter = orderNumber.HasValue ?
+                new ObjectParameter("OrderNumber", orderNumber) :
+                new ObjectParameter("OrderNumber", typeof(int));
+    
+            var jobTitleIdParameter = jobTitleId.HasValue ?
+                new ObjectParameter("JobTitleId", jobTitleId) :
+                new ObjectParameter("JobTitleId", typeof(int));
+    
+            var sTATUSParameter = sTATUS.HasValue ?
+                new ObjectParameter("STATUS", sTATUS) :
+                new ObjectParameter("STATUS", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Creat_Candidate", firstNameParameter, lastNameParameter, fullNameParameter, dateBirthdayParameter, sexParameter, aDDRESSParameter, dESCRIPTIONParameter, yearsExperienceParameter, universityDegreeParameter, centerIdParameter, avatarParameter, imagePathParameter, contentsParameter, documentPathParameter, dateCreateParameter, dateLastUpdateParameter, dateInterviewParameter, dateSentParameter, notesParameter, recruitmentIdParameter, orderNumberParameter, jobTitleIdParameter, sTATUSParameter);
+        }
+    
+        public virtual int SP_Update_Candidate(Nullable<int> id, string firstName, string lastName, string fullName, Nullable<System.DateTime> dateBirthday, Nullable<int> sex, string aDDRESS, string dESCRIPTION, Nullable<int> yearsExperience, string universityDegree, Nullable<int> centerId, string avatar, string imagePath, string contents, string documentPath, Nullable<System.DateTime> dateCreate, Nullable<System.DateTime> dateLastUpdate, Nullable<System.DateTime> dateInterview, Nullable<System.DateTime> dateSent, string notes, Nullable<int> recruitmentId, Nullable<int> orderNumber, Nullable<int> jobTitleId, Nullable<int> sTATUS)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var firstNameParameter = firstName != null ?
+                new ObjectParameter("FirstName", firstName) :
+                new ObjectParameter("FirstName", typeof(string));
+    
+            var lastNameParameter = lastName != null ?
+                new ObjectParameter("LastName", lastName) :
+                new ObjectParameter("LastName", typeof(string));
+    
+            var fullNameParameter = fullName != null ?
+                new ObjectParameter("FullName", fullName) :
+                new ObjectParameter("FullName", typeof(string));
+    
+            var dateBirthdayParameter = dateBirthday.HasValue ?
+                new ObjectParameter("DateBirthday", dateBirthday) :
+                new ObjectParameter("DateBirthday", typeof(System.DateTime));
+    
+            var sexParameter = sex.HasValue ?
+                new ObjectParameter("Sex", sex) :
+                new ObjectParameter("Sex", typeof(int));
+    
+            var aDDRESSParameter = aDDRESS != null ?
+                new ObjectParameter("ADDRESS", aDDRESS) :
+                new ObjectParameter("ADDRESS", typeof(string));
+    
+            var dESCRIPTIONParameter = dESCRIPTION != null ?
+                new ObjectParameter("DESCRIPTION", dESCRIPTION) :
+                new ObjectParameter("DESCRIPTION", typeof(string));
+    
+            var yearsExperienceParameter = yearsExperience.HasValue ?
+                new ObjectParameter("YearsExperience", yearsExperience) :
+                new ObjectParameter("YearsExperience", typeof(int));
+    
+            var universityDegreeParameter = universityDegree != null ?
+                new ObjectParameter("UniversityDegree", universityDegree) :
+                new ObjectParameter("UniversityDegree", typeof(string));
+    
+            var centerIdParameter = centerId.HasValue ?
+                new ObjectParameter("CenterId", centerId) :
+                new ObjectParameter("CenterId", typeof(int));
+    
+            var avatarParameter = avatar != null ?
+                new ObjectParameter("Avatar", avatar) :
+                new ObjectParameter("Avatar", typeof(string));
+    
+            var imagePathParameter = imagePath != null ?
+                new ObjectParameter("ImagePath", imagePath) :
+                new ObjectParameter("ImagePath", typeof(string));
+    
+            var contentsParameter = contents != null ?
+                new ObjectParameter("Contents", contents) :
+                new ObjectParameter("Contents", typeof(string));
+    
+            var documentPathParameter = documentPath != null ?
+                new ObjectParameter("DocumentPath", documentPath) :
+                new ObjectParameter("DocumentPath", typeof(string));
+    
+            var dateCreateParameter = dateCreate.HasValue ?
+                new ObjectParameter("DateCreate", dateCreate) :
+                new ObjectParameter("DateCreate", typeof(System.DateTime));
+    
+            var dateLastUpdateParameter = dateLastUpdate.HasValue ?
+                new ObjectParameter("DateLastUpdate", dateLastUpdate) :
+                new ObjectParameter("DateLastUpdate", typeof(System.DateTime));
+    
+            var dateInterviewParameter = dateInterview.HasValue ?
+                new ObjectParameter("DateInterview", dateInterview) :
+                new ObjectParameter("DateInterview", typeof(System.DateTime));
+    
+            var dateSentParameter = dateSent.HasValue ?
+                new ObjectParameter("DateSent", dateSent) :
+                new ObjectParameter("DateSent", typeof(System.DateTime));
+    
+            var notesParameter = notes != null ?
+                new ObjectParameter("Notes", notes) :
+                new ObjectParameter("Notes", typeof(string));
+    
+            var recruitmentIdParameter = recruitmentId.HasValue ?
+                new ObjectParameter("RecruitmentId", recruitmentId) :
+                new ObjectParameter("RecruitmentId", typeof(int));
+    
+            var orderNumberParameter = orderNumber.HasValue ?
+                new ObjectParameter("OrderNumber", orderNumber) :
+                new ObjectParameter("OrderNumber", typeof(int));
+    
+            var jobTitleIdParameter = jobTitleId.HasValue ?
+                new ObjectParameter("JobTitleId", jobTitleId) :
+                new ObjectParameter("JobTitleId", typeof(int));
+    
+            var sTATUSParameter = sTATUS.HasValue ?
+                new ObjectParameter("STATUS", sTATUS) :
+                new ObjectParameter("STATUS", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Update_Candidate", idParameter, firstNameParameter, lastNameParameter, fullNameParameter, dateBirthdayParameter, sexParameter, aDDRESSParameter, dESCRIPTIONParameter, yearsExperienceParameter, universityDegreeParameter, centerIdParameter, avatarParameter, imagePathParameter, contentsParameter, documentPathParameter, dateCreateParameter, dateLastUpdateParameter, dateInterviewParameter, dateSentParameter, notesParameter, recruitmentIdParameter, orderNumberParameter, jobTitleIdParameter, sTATUSParameter);
+        }
+    
+        public virtual ObjectResult<SP_GetByID_Candidate_Result> SP_GetByID_Candidate(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GetByID_Candidate_Result>("SP_GetByID_Candidate", idParameter);
+        }
+    
+        public virtual ObjectResult<SP_GetByID_CandidateV2_Result> SP_GetByID_CandidateV2(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GetByID_CandidateV2_Result>("SP_GetByID_CandidateV2", idParameter);
+        }
+    
+        public virtual ObjectResult<SP_GetByID_RecruitmentInfo_Result> SP_GetByID_RecruitmentInfo(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("id", id) :
+                new ObjectParameter("id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GetByID_RecruitmentInfo_Result>("SP_GetByID_RecruitmentInfo", idParameter);
+        }
+    
+        public virtual int SP_Creat_CenterInfo(string centerName, string mobile, string phone, string fax, string aDDRESS, string website, string email, string dESCRIPTION)
+        {
+            var centerNameParameter = centerName != null ?
+                new ObjectParameter("CenterName", centerName) :
+                new ObjectParameter("CenterName", typeof(string));
+    
+            var mobileParameter = mobile != null ?
+                new ObjectParameter("Mobile", mobile) :
+                new ObjectParameter("Mobile", typeof(string));
+    
+            var phoneParameter = phone != null ?
+                new ObjectParameter("Phone", phone) :
+                new ObjectParameter("Phone", typeof(string));
+    
+            var faxParameter = fax != null ?
+                new ObjectParameter("Fax", fax) :
+                new ObjectParameter("Fax", typeof(string));
+    
+            var aDDRESSParameter = aDDRESS != null ?
+                new ObjectParameter("ADDRESS", aDDRESS) :
+                new ObjectParameter("ADDRESS", typeof(string));
+    
+            var websiteParameter = website != null ?
+                new ObjectParameter("Website", website) :
+                new ObjectParameter("Website", typeof(string));
+    
+            var emailParameter = email != null ?
+                new ObjectParameter("Email", email) :
+                new ObjectParameter("Email", typeof(string));
+    
+            var dESCRIPTIONParameter = dESCRIPTION != null ?
+                new ObjectParameter("DESCRIPTION", dESCRIPTION) :
+                new ObjectParameter("DESCRIPTION", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Creat_CenterInfo", centerNameParameter, mobileParameter, phoneParameter, faxParameter, aDDRESSParameter, websiteParameter, emailParameter, dESCRIPTIONParameter);
+        }
+    
+        public virtual ObjectResult<SP_GetAll_RecruitmentV2_Result> SP_GetAll_RecruitmentV2()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GetAll_RecruitmentV2_Result>("SP_GetAll_RecruitmentV2");
+        }
+    
+        public virtual int SP_Creat_JobTitle(string jobTitle, string dESCRIPTION, string imageName, string imagePath, Nullable<int> orderNumber)
+        {
+            var jobTitleParameter = jobTitle != null ?
+                new ObjectParameter("JobTitle", jobTitle) :
+                new ObjectParameter("JobTitle", typeof(string));
+    
+            var dESCRIPTIONParameter = dESCRIPTION != null ?
+                new ObjectParameter("DESCRIPTION", dESCRIPTION) :
+                new ObjectParameter("DESCRIPTION", typeof(string));
+    
+            var imageNameParameter = imageName != null ?
+                new ObjectParameter("ImageName", imageName) :
+                new ObjectParameter("ImageName", typeof(string));
+    
+            var imagePathParameter = imagePath != null ?
+                new ObjectParameter("ImagePath", imagePath) :
+                new ObjectParameter("ImagePath", typeof(string));
+    
+            var orderNumberParameter = orderNumber.HasValue ?
+                new ObjectParameter("OrderNumber", orderNumber) :
+                new ObjectParameter("OrderNumber", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Creat_JobTitle", jobTitleParameter, dESCRIPTIONParameter, imageNameParameter, imagePathParameter, orderNumberParameter);
+        }
+    
+        public virtual int SP_Creat_PhongBan(string ouName, string imagePath, string dESCRIPTION, string email, string phone, string fax, string website)
+        {
+            var ouNameParameter = ouName != null ?
+                new ObjectParameter("OuName", ouName) :
+                new ObjectParameter("OuName", typeof(string));
+    
+            var imagePathParameter = imagePath != null ?
+                new ObjectParameter("ImagePath", imagePath) :
+                new ObjectParameter("ImagePath", typeof(string));
+    
+            var dESCRIPTIONParameter = dESCRIPTION != null ?
+                new ObjectParameter("DESCRIPTION", dESCRIPTION) :
+                new ObjectParameter("DESCRIPTION", typeof(string));
+    
+            var emailParameter = email != null ?
+                new ObjectParameter("Email", email) :
+                new ObjectParameter("Email", typeof(string));
+    
+            var phoneParameter = phone != null ?
+                new ObjectParameter("Phone", phone) :
+                new ObjectParameter("Phone", typeof(string));
+    
+            var faxParameter = fax != null ?
+                new ObjectParameter("Fax", fax) :
+                new ObjectParameter("Fax", typeof(string));
+    
+            var websiteParameter = website != null ?
+                new ObjectParameter("Website", website) :
+                new ObjectParameter("Website", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Creat_PhongBan", ouNameParameter, imagePathParameter, dESCRIPTIONParameter, emailParameter, phoneParameter, faxParameter, websiteParameter);
         }
     }
 }

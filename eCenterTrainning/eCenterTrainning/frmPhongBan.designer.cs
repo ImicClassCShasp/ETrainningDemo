@@ -91,12 +91,12 @@
             // 
             // btnOpenDialog
             // 
-            this.btnOpenDialog.Image = global::eCenterTrainning.Properties.Resources.folder;
+            this.btnOpenDialog.ImageOptions.Image = global::eCenterTrainning.Properties.Resources.folder;
             this.btnOpenDialog.Location = new System.Drawing.Point(400, 75);
             this.btnOpenDialog.Name = "btnOpenDialog";
             this.btnOpenDialog.Size = new System.Drawing.Size(30, 20);
             this.btnOpenDialog.TabIndex = 4;
-            //this.btnOpenDialog.Click += new System.EventHandler(this.btnOpenDialog_Click);
+            this.btnOpenDialog.Click += new System.EventHandler(this.btnOpenDialog_Click);
             // 
             // txtLinkAnh
             // 
@@ -194,7 +194,6 @@
             this.txtTenPhongBan.Properties.MaxLength = 250;
             this.txtTenPhongBan.Size = new System.Drawing.Size(329, 20);
             this.txtTenPhongBan.TabIndex = 1;
-            //this.txtTenPhongBan.Leave += new System.EventHandler(this.txtTenPhongBan_Leave);
             // 
             // labelControl1
             // 

@@ -6,12 +6,12 @@
 //     Manual changes to this file will be overwritten if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
 
-namespace IMIC.VALUEOBJECTS
+namespace IMIC.DATAACCESSLAYERS
 {
-    public class RecruitmentInfo
+    using System;
+    
+    public partial class SP_GetByID_RecruitmentInfo_Result
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -27,8 +27,5 @@ namespace IMIC.VALUEOBJECTS
         public string Avatar { get; set; }
         public string ImagePath { get; set; }
         public string Status { get; set; }
-
-        public string CenterName { get; set; }
-        public string strTrangThai { get; set; }
     }
 }

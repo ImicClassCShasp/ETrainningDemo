@@ -17,5 +17,9 @@ namespace IMIC.BUSINESSLOGICLAYERS
         {
             return new CenterInfoDAL(mAccount).getElements();
         }
+        public override bool InsertElement(CenterInfo oT)
+        {
+            return new CenterInfoDAL(mAccount).InsertElement(oT);
+        }
     }
 }
