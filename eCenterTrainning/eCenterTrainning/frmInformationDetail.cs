@@ -11,6 +11,7 @@ namespace eCenterTrainning
 {
     public partial class frmInformationDetail : DevExpress.XtraEditors.XtraForm
     {
+        
         public frmInformationDetail()
         {
             InitializeComponent();
