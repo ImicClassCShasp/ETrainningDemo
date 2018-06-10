@@ -260,7 +260,7 @@ namespace eCenterTrainning.UseControls
             ExpertInfo oExpertInfo = new ExpertInfo();
             frmGiangVienHeThong ofrm = new frmGiangVienHeThong(mAccount, oExpertInfo, mClasses);
             ofrm.ShowDialog();
-            if (oExpertInfo.Id > 0)
+            if (oExpertInfo.Id > 0 && oExpertInfo.iFlag == -1)
             {
                 //MessageBox.Show("- Ex: " + oExpertInfo.Id);
                 mClasses.ExpertId = oExpertInfo.Id;

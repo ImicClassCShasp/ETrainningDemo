@@ -77,7 +77,7 @@ namespace eCenterTrainning
 
         private void btnGiangVien_Click(object sender, EventArgs e)
         {
-            
+            mExpertInfo.iFlag = -1; // messenge box do not open when close form
             this.Close();
         }
     }

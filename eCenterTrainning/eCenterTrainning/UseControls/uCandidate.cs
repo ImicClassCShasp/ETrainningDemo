@@ -7,20 +7,28 @@ using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using System.Linq;
+using IMIC.VALUEOBJECTS;
+using IMIC.BUSINESSLOGICLAYERS;
 
 namespace eCenterTrainning.UseControls
 {
-    public partial class uCandidate : DevExpress.XtraEditors.XtraUserControl
+    public partial class uCandidate : ucRightForm
     {
         public uCandidate()
         {
             InitializeComponent();
         }
+
+        public uCandidate(Account oAccount) : base(oAccount)
+        {
+            InitializeComponent();
+        }
+
         private int idCan = 0;
         private void uCandidate_Load(object sender, EventArgs e)
         {
             this.Text = "Quản lý danh sách ứng viên";
-            loadJob();
+            //loadJob();
             loadRecuitmentInfo();
             actionMenuCandidate.PressNew += new EventHandler(actionMenuCandidate_PressNew);
             actionMenuCandidate.PressEdit += new EventHandler(actionMenuCandidate_PressEdit);
@@ -57,7 +65,10 @@ namespace eCenterTrainning.UseControls
                 DialogResult dr = MessageBox.Show("Bạn chắc muốn xóa ứng viên này ", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (dr == DialogResult.Yes)
                 {
-                    MessageBox.Show("");
+                    Candidate oCan = new Candidate() { Id = idCan };
+                    if (new CandidatesBLL(mAccount).DeleteElement(oCan.Id))
+                        MessageBox.Show("Xóa ứng viên thành công!");
+                    else MessageBox.Show("Xóa thất bại!");
                 }
             }
             else
@@ -76,7 +87,8 @@ namespace eCenterTrainning.UseControls
             int.TryParse(value, out idCan);
             if (idCan > 0)
             {
-                MessageBox.Show("");
+                frmCandidate frm = new frmCandidate(mAccount, idCan);
+                frm.ShowDialog();
             }
             else
             {
@@ -90,8 +102,8 @@ namespace eCenterTrainning.UseControls
         /// </summary>
         void actionMenuCandidate_PressNew(object sender, EventArgs e)
         {
-            frmCandidate frm = new frmCandidate();
-            MessageBox.Show("");
+            frmCandidate frm = new frmCandidate(mAccount);
+            frm.ShowDialog();
         }
         /// <summary>
         /// Author          Date        Comment
@@ -99,8 +111,9 @@ namespace eCenterTrainning.UseControls
         /// </summary>
         private void displayCandidate()
         {
-            MessageBox.Show("");
-
+            List<Candidate> lstCan = new CandidatesBLL(mAccount).getElements();
+            gridControlCandidates.DataSource = lstCan;
+            this.Dock = DockStyle.Fill;
         }
         /// <summary>
         /// Author          Date        Comment
@@ -124,19 +137,20 @@ namespace eCenterTrainning.UseControls
         //load tuyen dung
         private void loadRecuitmentInfo()
         {
-            MessageBox.Show("");
-
+            List<RecruitmentInfo> lstRec = new RecruitmantBLL(mAccount).getElements();
+            lookUpEditRecruiment.Properties.DataSource = lstRec;
+            lookUpEditRecruiment.Properties.DisplayMember = "Name";
+            lookUpEditRecruiment.Properties.ValueMember = "Id";
         }
 
-        private void lookUpEditChucVu_TextChanged(object sender, EventArgs e)
-        {
-            displayCandidate();
-        }
-
-        private void lookUpEditRecruiment_TextChanged(object sender, EventArgs e)
-        {
-            displayCandidate();
-        }
+        //private void lookUpEditChucVu_TextChanged(object sender, EventArgs e)
+        //{
+        //    displayCandidate();
+        //}
+        //private void lookUpEditRecruiment_TextChanged(object sender, EventArgs e)
+        //{
+        //    displayCandidate();
+        //}
         /// <summary>
         /// Author          Date        Comment
         /// BONGVX                      Hien thi ho so ung vien
@@ -150,9 +164,14 @@ namespace eCenterTrainning.UseControls
                 int.TryParse(value, out idCandidate);
                 if (idCandidate > 0)
                 {
-                    MessageBox.Show("");
+                    Candidate oCan = new CandidatesBLL(mAccount).getElementById(idCandidate);
+                    MessageBox.Show(
+                        "Họ tên: " +oCan.FullName + "\n" +
+                        "Tuổi: " + (DateTime.Now.Year-oCan.DateBirthday.Value.Year) + "\n" +
+                        "Chức vụ: " +oCan.JobTitle + "\n" +
+                        "------------------------------\n" +
+                        "Mô tả: "+oCan.Description, "Hồ Sơ");
                 }
-                displayCandidate();
             }
             
         }
@@ -162,16 +181,20 @@ namespace eCenterTrainning.UseControls
         /// </summary>
         private void lookUpEditRecruiment_EditValueChanged(object sender, EventArgs e)
         {
-            displayCandidate();
+            int idRec;
+            int.TryParse("" + lookUpEditRecruiment.EditValue, out idRec);
+            List<Candidate> ListCan = new CandidatesBLL(mAccount).GetElementByIDRecruitment(idRec);
+            gridControlCandidates.DataSource = ListCan;
+            this.Dock = DockStyle.Fill;
         }
         /// <summary>
         /// Author          Date        Comment
         /// BONGVX                      search theo chu vu 
         /// </summary>
-        private void lookUpEditChucVu_EditValueChanged(object sender, EventArgs e)
-        {
-            displayCandidate();
-        }
+        //private void lookUpEditChucVu_EditValueChanged(object sender, EventArgs e)
+        //{
+        //    displayCandidate();
+        //}
 
        
     }
