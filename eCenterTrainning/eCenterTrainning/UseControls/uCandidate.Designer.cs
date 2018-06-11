@@ -84,13 +84,12 @@
             this.lookUpEditRecruiment.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEditRecruiment.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "Id", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "Id", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Đợt Tuyển Dụng")});
             this.lookUpEditRecruiment.Properties.NullText = "--- Chọn Đợt Tuyển Tuyển Dụng ---";
             this.lookUpEditRecruiment.Size = new System.Drawing.Size(257, 20);
             this.lookUpEditRecruiment.TabIndex = 1;
             this.lookUpEditRecruiment.EditValueChanged += new System.EventHandler(this.lookUpEditRecruiment_EditValueChanged);
-            this.lookUpEditRecruiment.TextChanged += new System.EventHandler(this.lookUpEditRecruiment_TextChanged);
             // 
             // labelControl2
             // 
@@ -107,13 +106,13 @@
             this.lookUpEditChucVu.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEditChucVu.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "Id", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "Id", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("JobTitle1", "Vị Trí Tuyển Dụng")});
             this.lookUpEditChucVu.Properties.NullText = "--- Chọn Vị Trí  ---";
             this.lookUpEditChucVu.Size = new System.Drawing.Size(140, 20);
             this.lookUpEditChucVu.TabIndex = 2;
-            this.lookUpEditChucVu.EditValueChanged += new System.EventHandler(this.lookUpEditChucVu_EditValueChanged);
-            this.lookUpEditChucVu.TextChanged += new System.EventHandler(this.lookUpEditChucVu_TextChanged);
+            //this.lookUpEditChucVu.EditValueChanged += new System.EventHandler(this.lookUpEditChucVu_EditValueChanged);
+            //this.lookUpEditChucVu.TextChanged += new System.EventHandler(this.lookUpEditChucVu_TextChanged);
             // 
             // labelControl1
             // 
@@ -174,7 +173,7 @@
             // colSex
             // 
             this.colSex.Caption = "Giới Tính";
-            this.colSex.FieldName = "Sex";
+            this.colSex.FieldName = "SexString";
             this.colSex.Name = "colSex";
             this.colSex.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains;
             this.colSex.Visible = true;
@@ -196,7 +195,7 @@
             // colRecruitment
             // 
             this.colRecruitment.Caption = "Đợt Tuyển Dụng";
-            this.colRecruitment.FieldName = "NameRecruitment";
+            this.colRecruitment.FieldName = "Name";
             this.colRecruitment.Name = "colRecruitment";
             this.colRecruitment.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains;
             this.colRecruitment.Visible = true;
@@ -206,7 +205,7 @@
             // colViTri
             // 
             this.colViTri.Caption = "Vị Trí";
-            this.colViTri.FieldName = "JobTitle1";
+            this.colViTri.FieldName = "JobTitle";
             this.colViTri.Name = "colViTri";
             this.colViTri.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains;
             this.colViTri.Visible = true;

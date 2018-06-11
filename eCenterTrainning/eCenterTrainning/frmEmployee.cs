@@ -14,10 +14,12 @@ namespace eCenterTrainning
 {
     public partial class frmEmployee : Base.frmIMICBase
     {
+        int id;
         List<Ou> lstOu;
         List<JobTitle> lstJob;
         List<CenterInfo> lstCenter;
-        Employee TempEmployee=null;
+        Employee mEmployee;
+        int Flag;
 
         public frmEmployee()
         {
@@ -25,49 +27,53 @@ namespace eCenterTrainning
         }
         public frmEmployee(Account oAccount) : base(oAccount)
         {
-            List<JobTitle> lstJob = new List<JobTitle>();
-            List<Ou> lstOu = new List<Ou>();
-            List<CenterInfo> lstCenter = new List<CenterInfo>();
-            Employee oEmployee = new Employee();
+            Flag = 1;
+            lstJob = new List<JobTitle>();
+            lstOu = new List<Ou>();
+            lstCenter = new List<CenterInfo>();
+            mEmployee = new Employee();
 
             InitializeComponent();
         }
         public frmEmployee(Account oAccount, int IdEmp):base(oAccount)
         {
-            List<JobTitle> lstJob = new List<JobTitle>();
-            List<Ou> lstOu = new List<Ou>();
-            List<CenterInfo> lstCenter = new List<CenterInfo>();
+            Flag = 2;
+            lstJob = new List<JobTitle>();
+            lstOu = new List<Ou>();
+            lstCenter = new List<CenterInfo>();
+            mEmployee = new Employee();
             InitializeComponent();
+            id = IdEmp;
             DisplayEmployeeNow(IdEmp);
         }
 
         void DisplayEmployeeNow(int Id)
         {
-            TempEmployee = new EmployeeBLL(mAccount).getElementById(Id);
+            Employee oEmp = new EmployeeBLL(mAccount).getElementById(Id);
 
-            txtHoTen.Text = TempEmployee.EmployeeName;
-            txtEmail.Text = TempEmployee.Email;
-            txtDiaChi.Text = TempEmployee.Address;
-            txtMobile.Text = TempEmployee.Mobile;
-            txtCMND.Text = TempEmployee.IdentityNumber;
-            txtDienThoai.Text = TempEmployee.Phone;
-            txtMaThue.Text = TempEmployee.PersonalTaxCode;
-            txtMoTa.Text = TempEmployee.Description;
-            txtNoiCap.Text = TempEmployee.PlaceOfIssue;
-            txtNoiDung.Text = TempEmployee.EmployeeCV;
-            txtQueQuan.Text = TempEmployee.PlaceBirthday;
-            txtTruong.Text = TempEmployee.UniversityName;
+            txtHoTen.Text = ""+oEmp.EmployeeName;
+            txtEmail.Text = "" + oEmp.Email;
+            txtDiaChi.Text = "" + oEmp.Address;
+            txtMobile.Text = "" + oEmp.Mobile;
+            txtCMND.Text = "" + oEmp.IdentityNumber;
+            txtDienThoai.Text = "" + oEmp.Phone;
+            txtMaThue.Text = "" + oEmp.PersonalTaxCode;
+            txtMoTa.Text = "" + oEmp.Description;
+            txtNoiCap.Text = "" + oEmp.PlaceOfIssue;
+            txtNoiDung.Text = "" + oEmp.EmployeeCV;
+            txtQueQuan.Text = "" + oEmp.PlaceBirthday;
+            txtTruong.Text = "" + oEmp.UniversityName;
 
-            dateEditNgayCap.EditValue = TempEmployee.DateOfIssue;
-            dateEditNgaySinh.EditValue = TempEmployee.DateBirhday;
+            dateEditNgayCap.EditValue = "" + oEmp.DateOfIssue;
+            dateEditNgaySinh.EditValue = "" + oEmp.DateBirhday;
 
             //lookUpEditChucVu.EditValue
-            //lookUpEditPhongBan.EditValue 
-            //lookUpEditTrungTam.EditValue 
+            //lookUpEditPhongBan.EditValue
+            //lookUpEditTrungTam.EditValue
 
-            if (TempEmployee.Sex == 0)
+            if (oEmp.Sex == 0)
                 cboGioiTinh.Text = "Nam";
-            else if (TempEmployee.Sex == 1)
+            else if (oEmp.Sex == 1)
                 cboGioiTinh.Text = "Nữ";
         }
 
@@ -119,6 +125,12 @@ namespace eCenterTrainning
         {
             MessageBox.Show("Chức năng này chưa được cập nhật", "thông báo");
         }
+        bool CheckEmailFormat(string Email)
+        {
+            string Format = "@gmail.com";
+            if (Email.Contains(Format)) return false;
+            return true;
+        }
         /// <summary>
         /// Author          Date        Comment
         /// BONGVX                      Them hoac sua thong tin nhan vien
@@ -134,9 +146,18 @@ namespace eCenterTrainning
             }
             if (string.IsNullOrEmpty("" + txtEmail.Text))
             {
-                msgMessage.SetError(txtEmail, "Bạn cần nhập email");
+                msgMessage.SetError(txtEmail, " Bạn cần nhập thông tin email trước khi thực hiện");
                 txtEmail.Focus();
                 return;
+            }
+            else
+            {
+                if (CheckEmailFormat("" + txtEmail.Text))
+                {
+                    msgMessage.SetError(txtEmail, "Email không đúng định dạng!");
+                    txtEmail.Focus();
+                    return;
+                }
             }
             if (string.IsNullOrEmpty("" + txtMobile.Text))
             {
@@ -166,64 +187,63 @@ namespace eCenterTrainning
                 return;
             }
 
-            if (TempEmployee==null)
+            if (Flag==1)
             {
-                Employee oEmployee = new Employee
-                {
-                    EmployeeName = txtHoTen.Text,
-                    Email = txtEmail.Text,
-                    Mobile = txtMobile.Text,
-                    Address = txtDiaChi.Text,
-                    Phone = txtDienThoai.Text,
+                mEmployee.EmployeeName = txtHoTen.Text;
+                mEmployee.Email = txtEmail.Text;
+                mEmployee.Mobile = txtMobile.Text;
+                mEmployee.Address = txtDiaChi.Text;
+                mEmployee.Phone = txtDienThoai.Text;
 
-                    OuId = int.Parse("" + lookUpEditPhongBan.EditValue),
-                    CenterId = int.Parse("" + lookUpEditTrungTam.EditValue),
-                    JobTitleId = int.Parse("" + lookUpEditChucVu.EditValue),
+                mEmployee.OuId = int.Parse("" + lookUpEditPhongBan.EditValue);
+                mEmployee.CenterId = int.Parse("" + lookUpEditTrungTam.EditValue);
+                mEmployee.JobTitleId = int.Parse("" + lookUpEditChucVu.EditValue);
 
-                    Sex = (cboGioiTinh.Text == "Nam") ? 1 : 0,
-                    DateBirhday = dateEditNgaySinh.DateTime,
-                    UniversityName = txtTruong.Text,
-                    PlaceBirthday = txtQueQuan.Text,
-                    PersonalTaxCode = txtMaThue.Text,
-                    DateRegister = DateTime.Now,
-                    DateLastUpdate = DateTime.Now,
-                    DateCreate = DateTime.Now,
-                    IdentityNumber = txtCMND.Text,
-                    DateOfIssue = dateEditNgayCap.DateTime,
-                    PlaceOfIssue = txtNoiCap.Text,
-                    Description = txtNoiDung.Text
-                };
-                if (new EmployeeBLL(mAccount).InsertElement(oEmployee)) MessageBox.Show("Thêm thành công!");
+                mEmployee.Sex = (cboGioiTinh.Text == "Nam") ? 1 : 0;
+                mEmployee.DateBirhday = dateEditNgaySinh.DateTime;
+                mEmployee.UniversityName = txtTruong.Text;
+                mEmployee.PlaceBirthday = txtQueQuan.Text;
+                mEmployee.PersonalTaxCode = txtMaThue.Text;
+                mEmployee.DateRegister = DateTime.Now;
+                mEmployee.DateLastUpdate = DateTime.Now;
+                mEmployee.DateCreate = DateTime.Now;
+                mEmployee.IdentityNumber = txtCMND.Text;
+                mEmployee.DateOfIssue = dateEditNgayCap.DateTime;
+                mEmployee.PlaceOfIssue = txtNoiCap.Text;
+                mEmployee.Description = txtNoiDung.Text;
+                
+                if (new EmployeeBLL(mAccount).InsertElement(mEmployee)) MessageBox.Show("Thêm thành công!");
                 else MessageBox.Show("Thêm thất bại!");
             }
-            else
-            {
-                Employee oEmployee = new Employee
-                {
-                    Id=TempEmployee.Id,
+            else if(Flag==2)
+            {               
+                mEmployee.Id=id;
 
-                    EmployeeName = txtHoTen.Text,
-                    Email = txtEmail.Text,
-                    Mobile = txtMobile.Text,
-                    Address = txtDiaChi.Text,
-                    Phone = txtDienThoai.Text,
+                mEmployee.EmployeeName = txtHoTen.Text;
+                mEmployee.Email = txtEmail.Text;
+                mEmployee.Mobile = txtMobile.Text;
+                mEmployee.Address = txtDiaChi.Text;
+                mEmployee.Phone = txtDienThoai.Text;
 
-                    OuId = int.Parse("" + lookUpEditPhongBan.EditValue),
-                    CenterId = int.Parse("" + lookUpEditTrungTam.EditValue),
-                    JobTitleId = int.Parse("" + lookUpEditChucVu.EditValue),
+                mEmployee.OuId = int.Parse("" + lookUpEditPhongBan.EditValue);
+                mEmployee.CenterId = int.Parse("" + lookUpEditTrungTam.EditValue);
+                mEmployee.JobTitleId = int.Parse("" + lookUpEditChucVu.EditValue);
 
-                    Sex = (cboGioiTinh.Text == "Nam") ? 1 : 0,
-                    DateBirhday = dateEditNgaySinh.DateTime,
-                    UniversityName = txtTruong.Text,
-                    PlaceBirthday = txtQueQuan.Text,
-                    PersonalTaxCode = txtMaThue.Text,
-                    IdentityNumber = txtCMND.Text,
-                    DateOfIssue = dateEditNgayCap.DateTime,
-                    PlaceOfIssue = txtNoiCap.Text,
-                    Description = txtNoiDung.Text
-                };
+                mEmployee.Sex = (cboGioiTinh.Text == "Nam") ? 1 : 0;
+                mEmployee.DateBirhday = dateEditNgaySinh.DateTime;
+                mEmployee.UniversityName = txtTruong.Text;
+                mEmployee.PlaceBirthday = txtQueQuan.Text;
+                mEmployee.PersonalTaxCode = txtMaThue.Text;
+                mEmployee.DateRegister = DateTime.Now;
+                mEmployee.DateLastUpdate = DateTime.Now;
+                mEmployee.DateCreate = DateTime.Now;
+                mEmployee.IdentityNumber = txtCMND.Text;
+                mEmployee.DateOfIssue = dateEditNgayCap.DateTime;
+                mEmployee.PlaceOfIssue = txtNoiCap.Text;
+                mEmployee.Description = txtNoiDung.Text;
 
-                if (new EmployeeBLL(mAccount).InsertAndUpdateElement(oEmployee)) MessageBox.Show("Sửa thành công!");
+
+                if (new EmployeeBLL(mAccount).InsertAndUpdateElement(mEmployee)) MessageBox.Show("Sửa thành công!");
                 else MessageBox.Show("Sửa thất bại!");
             }
             this.Close();
@@ -231,7 +251,7 @@ namespace eCenterTrainning
 
         void LoadPhongBan()
         {
-            List<Ou> lstOu = new OuBLL(mAccount).getElements();
+            lstOu = new OuBLL(mAccount).getElements();
             lookUpEditPhongBan.Properties.DisplayMember = "OuName";
             lookUpEditPhongBan.Properties.ValueMember = "Id";
             lookUpEditPhongBan.Properties.DataSource = lstOu;
@@ -239,7 +259,7 @@ namespace eCenterTrainning
 
         void LoadChucVu()
         {
-            List<JobTitle> lstJob = new JobTitleBLL(mAccount).getElements();
+            lstJob = new JobTitleBLL(mAccount).getElements();
             lookUpEditChucVu.Properties.DisplayMember = "JobTitle1";
             lookUpEditChucVu.Properties.ValueMember = "Id";
             lookUpEditChucVu.Properties.DataSource = lstJob;
@@ -247,7 +267,7 @@ namespace eCenterTrainning
 
         void LoadTrungTam()
         {
-            List<CenterInfo> lstCenter = new CenterInfoBLL(mAccount).getElements();
+            lstCenter = new CenterInfoBLL(mAccount).getElements();
             lookUpEditTrungTam.Properties.DisplayMember = "CenterName";
             lookUpEditTrungTam.Properties.ValueMember = "Id";
             lookUpEditTrungTam.Properties.DataSource = lstCenter;
@@ -308,6 +328,34 @@ namespace eCenterTrainning
             lookUpEditPhongBan.RefreshEditValue();
             lookUpEditTrungTam.RefreshEditValue();
             txtHoTen.Focus();
+        }
+
+        private void btnContent_Click(object sender, EventArgs e)
+        {
+            frmInformationDetail frm = new frmInformationDetail(mEmployee);
+            frm.ShowDialog();
+            txtNoiDung.Text = "Đã có hồ sơ nhân viên";
+        }
+
+        private void btnAddMoreCenter_Click(object sender, EventArgs e)
+        {
+            frmCenterInfo frm = new frmCenterInfo(mAccount);
+            frm.ShowDialog();
+            LoadTrungTam();
+        }
+
+        private void btnAddMoreJob_Click(object sender, EventArgs e)
+        {
+            frmThongTinChucVu frm = new frmThongTinChucVu(mAccount);
+            frm.ShowDialog();
+            LoadChucVu();
+        }
+
+        private void btnAddMoreDepartment_Click(object sender, EventArgs e)
+        {
+            frmPhongBan frm = new frmPhongBan(mAccount);
+            frm.ShowDialog();
+            LoadPhongBan();
         }
     }
 }

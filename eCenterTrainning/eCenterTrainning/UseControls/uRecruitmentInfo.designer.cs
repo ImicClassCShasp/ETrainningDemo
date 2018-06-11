@@ -145,7 +145,7 @@
             // colTrungTam
             // 
             this.colTrungTam.Caption = "Trung Tâm";
-            this.colTrungTam.FieldName = "CenterInfo.CenterName";
+            this.colTrungTam.FieldName = "CenterName";
             this.colTrungTam.Name = "colTrungTam";
             this.colTrungTam.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains;
             this.colTrungTam.Visible = true;
@@ -189,7 +189,7 @@
             // colStatus
             // 
             this.colStatus.Caption = "Trạng Thái";
-            this.colStatus.FieldName = "Status";
+            this.colStatus.FieldName = "strTrangThai";
             this.colStatus.Name = "colStatus";
             this.colStatus.OptionsFilter.AutoFilterCondition = DevExpress.XtraGrid.Columns.AutoFilterCondition.Contains;
             this.colStatus.Visible = true;
@@ -330,18 +330,17 @@
             // btnSuaUngVien
             // 
             this.btnSuaUngVien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSuaUngVien.Image = global::eCenterTrainning.Properties.Resources.book_edit;
+            this.btnSuaUngVien.ImageOptions.Image = global::eCenterTrainning.Properties.Resources.book_edit;
             this.btnSuaUngVien.Location = new System.Drawing.Point(584, 10);
             this.btnSuaUngVien.Name = "btnSuaUngVien";
             this.btnSuaUngVien.Size = new System.Drawing.Size(102, 24);
             this.btnSuaUngVien.TabIndex = 5;
             this.btnSuaUngVien.Text = "Sửa Ứng Viên";
-            this.btnSuaUngVien.Click += new System.EventHandler(this.btnSuaUngVien_Click);
             // 
             // btnAddMoreCandidate
             // 
             this.btnAddMoreCandidate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddMoreCandidate.Image = global::eCenterTrainning.Properties.Resources._103;
+            this.btnAddMoreCandidate.ImageOptions.Image = global::eCenterTrainning.Properties.Resources._103;
             this.btnAddMoreCandidate.Location = new System.Drawing.Point(476, 10);
             this.btnAddMoreCandidate.Name = "btnAddMoreCandidate";
             this.btnAddMoreCandidate.Size = new System.Drawing.Size(102, 24);
@@ -352,6 +351,7 @@
             // lbTuyenDung
             // 
             this.lbTuyenDung.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.lbTuyenDung.Appearance.Options.UseFont = true;
             this.lbTuyenDung.Location = new System.Drawing.Point(111, 12);
             this.lbTuyenDung.Name = "lbTuyenDung";
             this.lbTuyenDung.Size = new System.Drawing.Size(108, 17);

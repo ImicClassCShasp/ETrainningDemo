@@ -7,30 +7,53 @@ using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using System.Linq;
+using IMIC.VALUEOBJECTS;
+using IMIC.BUSINESSLOGICLAYERS;
 
 namespace eCenterTrainning
 {
     public partial class frmRecruitmentInfo : Base.frmIMICBase
     {
+        int Flag, idRec;
+        RecruitmentInfo oRec=null;
+
         public frmRecruitmentInfo()
         {
             InitializeComponent();
         }
+
+        public frmRecruitmentInfo(Account oAccount) : base(oAccount)
+        {
+            InitializeComponent();
+            Flag = 0;
+            oRec = new RecruitmentInfo();
+
+        }
+
+        public frmRecruitmentInfo(Account oAccount, int Id) : base(oAccount, Id)
+        {
+            InitializeComponent();
+            Flag = 1;
+            oRec = new RecruitmentInfo();
+            idRec = Id;
+        }
+
         OpenFileDialog ofd = new OpenFileDialog();
         private void frmRecruitmentInfo_Load(object sender, EventArgs e)
         {
-            this.Text = "Thêm mới thông tin tuyển dụng";            
+            this.Text = "Thông tin tuyển dụng";
+            this.Dock = DockStyle.Fill;
             loadCenter();
             actionUpdateRecruitmentInfo.PressUpdate += new EventHandler(actionUpdateRecruitmentInfo_PressUpdate);
             actionUpdateRecruitmentInfo.PressNew += new EventHandler(actionUpdateRecruitmentInfo_PressNew);
             actionUpdateRecruitmentInfo.PressClose += new EventHandler(actionUpdateRecruitmentInfo_PressClose);
             actionUpdateRecruitmentInfo.PressHelp += new EventHandler(actionUpdateRecruitmentInfo_PressHelp);
             this.txtTen.Focus();
+            DisplayRecruitmentNow(idRec);
 
             dateEditBegin.EditValue = DateTime.Now;
             DateTime dateEnd = DateTime.Now.AddMonths(1);
             dateEditEnd.EditValue = dateEnd;
-
         }
         void actionUpdateRecruitmentInfo_PressHelp(object sender, EventArgs e)
         {
@@ -71,12 +94,12 @@ namespace eCenterTrainning
             }
             else
             {
-                /*if (Common.validateExp(txtSoLuong.Text) != 1)
-                {
-                    msgMessage.SetError(txtSoLuong, " Bạn cần nhập số lượng là số ");
-                    txtSoLuong.Focus();
-                    return;
-                }*/
+                //if (Common.validateExp(txtSoLuong.Text) != 1)
+                //{
+                //    msgMessage.SetError(txtSoLuong, " Bạn cần nhập số lượng là số ");
+                //    txtSoLuong.Focus();
+                //    return;
+                //}
             }
             if (string.IsNullOrEmpty("" + dateEditBegin.Text))
             {
@@ -93,43 +116,84 @@ namespace eCenterTrainning
             {
                 msgMessage.SetError(dateEditEnd, " Bạn cần chọn ngày kết thúc sau ngày bắt đầu tuyển dụng trước khi thực hiện");
                 return;
-            }*/            
+            }*/ 
+            
+            if (Flag==0)//them
+            {
+                oRec.Name = txtTen.Text;
+                oRec.Number = int.Parse(txtSoLuong.Text);
+                oRec.Description = txtMota.Text;
+
+                oRec.DateStart = dateEditBegin.DateTime;
+                oRec.DateEnd = dateEditEnd.DateTime;
+
+                oRec.CenterId = int.Parse("" + lookUpEditCenter.EditValue);
+
+                if (new RecruitmantBLL(mAccount).InsertElement(oRec))
+                    MessageBox.Show("Thêm thành công");
+                else MessageBox.Show("Thêm thất bại");
+            }
+            else if (Flag==1)
+            {
+                oRec.Id = idRec;
+                oRec.Name = txtTen.Text;
+                oRec.Number = int.Parse(txtSoLuong.Text);
+                oRec.Description = txtMota.Text;
+
+                oRec.DateStart = dateEditBegin.DateTime;
+                oRec.DateEnd = dateEditEnd.DateTime;
+
+                oRec.CenterId = int.Parse("" + lookUpEditCenter.EditValue);
+
+                if (new RecruitmantBLL(mAccount).InsertAndUpdateElement(oRec))
+                    MessageBox.Show("Sửa thành công");
+                else MessageBox.Show("Sửa thất bại");
+            }
             this.Close();
+        }
+        void DisplayRecruitmentNow(int id)
+        {
+            oRec = new RecruitmantBLL(mAccount).GetByID_Recruitment(id);
+            txtTen.Text = oRec.Name;
+            txtSoLuong.Text = "" + oRec.Number;
+            txtNoiDung.Text = oRec.Contents;
+            txtMota.Text = oRec.Description;
+            txtImagePath.Text = oRec.ImagePath;
         }
         /// <summary>
         /// Author      date        Comment
         /// BONGVX      24/2/2013    tạo mới
         /// </summary>
-        private int insertRecruitmentInfo()
-        {
-            try
-            {                
+        //private int insertRecruitmentInfo()
+        //{
+        //    try
+        //    {                
                
-                return 1;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.StackTrace, ex.Message);
-                return 0;
-            }
-        }
+        //        return 1;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.StackTrace, ex.Message);
+        //        return 0;
+        //    }
+        //}
         /// <summary>
         /// Author      date        Comment
         /// BONGVX      24/2/2013    cập nhật 
         /// </summary>
-        private int updateRecruitmentInfo()
-        {
-            try
-            {
+        //private int updateRecruitmentInfo()
+        //{
+        //    try
+        //    {
                 
-                return 1;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.StackTrace, ex.Message);
-                return 0;
-            }
-        }
+        //        return 1;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.StackTrace, ex.Message);
+        //        return 0;
+        //    }
+        //}
         
         /// <summary>
         /// Author      date        Comment
@@ -151,13 +215,17 @@ namespace eCenterTrainning
 
         private void loadCenter()
         {
-           
+            List<CenterInfo> lstCen = new CenterInfoBLL(mAccount).getElements();
+            lookUpEditCenter.Properties.DataSource = lstCen;
+            lookUpEditCenter.Properties.DisplayMember = "CenterName";
+            lookUpEditCenter.Properties.ValueMember = "Id";
         }
 
         private void btnAddMoreCenter_Click(object sender, EventArgs e)
         {
-            frmCenterInfo frm = new frmCenterInfo();
-            frm.ShowDialog();           
+            frmCenterInfo frm = new frmCenterInfo(mAccount);
+            frm.ShowDialog();
+            loadCenter();
         }
         /// <summary>
         /// Author      date        Comment
@@ -194,6 +262,14 @@ namespace eCenterTrainning
             btnImage.Enabled = false;
             txtMota.Enabled = false;
             txtNoiDung.Enabled = false;
-        }         
+        }
+
+        private void btnContent_Click(object sender, EventArgs e)
+        {
+            frmInformationDetail frm = new frmInformationDetail(oRec);
+            frm.ShowDialog();
+            txtNoiDung.Enabled = false;
+            txtNoiDung.Text = "Đã có nội dung đợt tuyển dụng!";
+        }
     }
 }
