@@ -28,15 +28,56 @@ namespace eCenterTrainning.UseControls
         private String RecruimentName = "";
         private void uRecruitmentInfo_Load(object sender, EventArgs e)
         {
-            actionMenuRecruitmentInfo.PressNew += new EventHandler(actionMenuRecruitmentInfo_PressNew);
-            actionMenuRecruitmentInfo.PressEdit += new EventHandler(actionMenuRecruitmentInfo_PressEdit);
-            actionMenuRecruitmentInfo.PressDelete += new EventHandler(actionMenuRecruitmentInfo_PressDelete);
+            
+            
+            
             actionMenuRecruitmentInfo.PressRefresh += new EventHandler(actionMenuRecruitmentInfo_PressRefresh);
             actionMenuRecruitmentInfo.PressClose += new EventHandler(actionMenuRecruitmentInfo_PressClose);
             actionMenuRecruitmentInfo.PressHelp += new EventHandler(actionMenuRecruitmentInfo_PressHelp);
             this.Text = "Thông Tin Tuyển Dụng";
             checkExpiredRecruitment();
             displayRecruitmentInfo();
+            stanfTabPermission mStanfTabPermission = new stanfTabPermission();
+            foreach (stanfTabPermission item in mAccount.ListTabPermissions)
+            {
+                if (item.UserId == mAccount.UserId && item.DisplayRoleName == "Đợt Tuyển Dụng")
+                {
+                    mStanfTabPermission.IsAdd = item.IsAdd;
+                    mStanfTabPermission.IsDelete = item.IsDelete;
+                    mStanfTabPermission.IsEdit = item.IsEdit;
+                    mStanfTabPermission.IsList = item.IsList;
+                    mStanfTabPermission.IsReport = item.IsReport;
+                }
+            }
+            if (mAccount.IsSuperUser == false)
+            {
+                int temp = 0;
+                gridControlRecruitmentInfo.Visible = false;
+                if (mStanfTabPermission.IsAdd == true)
+                {
+                    actionMenuRecruitmentInfo.PressNew += new EventHandler(actionMenuRecruitmentInfo_PressNew);
+                    temp++;
+                }
+                if (mStanfTabPermission.IsDelete == true)
+                {
+                    actionMenuRecruitmentInfo.PressDelete += new EventHandler(actionMenuRecruitmentInfo_PressDelete);
+                    temp++;
+                }
+                if (mStanfTabPermission.IsEdit == true)
+                {
+                    actionMenuRecruitmentInfo.PressEdit += new EventHandler(actionMenuRecruitmentInfo_PressEdit);
+                    temp++;
+                }
+                if (mStanfTabPermission.IsList == true)
+                {
+                    gridControlRecruitmentInfo.Visible = true;
+                    temp++;
+                }
+                if (temp == 0)
+                {
+                    actionMenuRecruitmentInfo.Enabled = false;
+                }
+            }
         }
         void actionMenuRecruitmentInfo_PressHelp(object sender, EventArgs e)
         {

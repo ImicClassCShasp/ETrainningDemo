@@ -34,9 +34,9 @@ namespace eCenterTrainning.UseControls
         private int idGV=0;
         private void uExpertInfo_Load(object sender, EventArgs e)
         {
-            actionMenuExpert.PressNew += new EventHandler(actionMenuExpert_PressNew);
-            actionMenuExpert.PressEdit += new EventHandler(actionMenuExpert_PressEdit);
-            actionMenuExpert.PressDelete += new EventHandler(actionMenuExpert_PressDelete);
+            
+            
+            
             actionMenuExpert.PressRefresh += new EventHandler(actionMenuExpert_PressRefresh);
             actionMenuExpert.PressClose += new EventHandler(actionMenuExpert_PressClose);
             actionMenuExpert.PressHelp += new EventHandler(actionMenuExpert_PressHelp);
@@ -48,6 +48,47 @@ namespace eCenterTrainning.UseControls
             //}
             this.Dock = DockStyle.Fill;
             displayExpert();
+            stanfTabPermission mStanfTabPermission = new stanfTabPermission();
+            foreach (stanfTabPermission item in mAccount.ListTabPermissions)
+            {
+                if (item.UserId == mAccount.UserId && item.DisplayRoleName == "Danh Sách Giảng Viên")
+                {
+                    mStanfTabPermission.IsAdd = item.IsAdd;
+                    mStanfTabPermission.IsDelete = item.IsDelete;
+                    mStanfTabPermission.IsEdit = item.IsEdit;
+                    mStanfTabPermission.IsList = item.IsList;
+                    mStanfTabPermission.IsReport = item.IsReport;
+                }
+            }
+            if (mAccount.IsSuperUser == false)
+            {
+                int temp = 0;
+                gridControlGiangVien.Visible = false;
+                if (mStanfTabPermission.IsAdd == true)
+                {
+                    actionMenuExpert.PressNew += new EventHandler(actionMenuExpert_PressNew);
+                    temp++;
+                }
+                if (mStanfTabPermission.IsDelete == true)
+                {
+                    actionMenuExpert.PressDelete += new EventHandler(actionMenuExpert_PressDelete);
+                    temp++;
+                }
+                if (mStanfTabPermission.IsEdit == true)
+                {
+                    actionMenuExpert.PressEdit += new EventHandler(actionMenuExpert_PressEdit);
+                    temp++;
+                }
+                if (mStanfTabPermission.IsList == true)
+                {
+                    gridControlGiangVien.Visible = true;
+                    temp++;
+                }
+                if (temp == 0)
+                {
+                    actionMenuExpert.Enabled = false;
+                }
+            }
         }
 
         void actionMenuExpert_PressHelp(object sender, EventArgs e)

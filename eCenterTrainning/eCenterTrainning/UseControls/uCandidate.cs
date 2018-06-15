@@ -30,13 +30,57 @@ namespace eCenterTrainning.UseControls
             this.Text = "Quản lý danh sách ứng viên";
             //loadJob();
             loadRecuitmentInfo();
-            actionMenuCandidate.PressNew += new EventHandler(actionMenuCandidate_PressNew);
-            actionMenuCandidate.PressEdit += new EventHandler(actionMenuCandidate_PressEdit);
-            actionMenuCandidate.PressDelete += new EventHandler(actionMenuCandidate_PressDelete);
+            
+            
+            
             actionMenuCandidate.PressClose += new EventHandler(actionMenuCandidate_PressClose);
             actionMenuCandidate.PressHelp += new EventHandler(actionMenuCandidate_PressHelp);
             actionMenuCandidate.PressRefresh += new EventHandler(actionMenuCandidate_PressRefresh);
             displayCandidate();
+            stanfTabPermission mStanfTabPermission = new stanfTabPermission();
+            foreach (stanfTabPermission item in mAccount.ListTabPermissions)
+            {
+                if (item.UserId == mAccount.UserId && item.DisplayRoleName == "Danh Sách Ứng Viên")
+                {
+                    mStanfTabPermission.IsAdd = item.IsAdd;
+                    mStanfTabPermission.IsDelete = item.IsDelete;
+                    mStanfTabPermission.IsEdit = item.IsEdit;
+                    mStanfTabPermission.IsList = item.IsList;
+                    mStanfTabPermission.IsReport = item.IsReport;
+                }
+            }
+            if (mAccount.IsSuperUser == false)
+            {
+                int temp = 0;
+                gridControlCandidates.Visible = false;
+                lookUpEditRecruiment.Visible = false;
+                if (mStanfTabPermission.IsAdd == true)
+                {
+                    actionMenuCandidate.PressNew += new EventHandler(actionMenuCandidate_PressNew);
+                    lookUpEditRecruiment.Visible = true;
+                    temp++;
+                }
+                if (mStanfTabPermission.IsDelete == true)
+                {
+                    actionMenuCandidate.PressDelete += new EventHandler(actionMenuCandidate_PressDelete);
+                    temp++;
+                }
+                if (mStanfTabPermission.IsEdit == true)
+                {
+                    actionMenuCandidate.PressEdit += new EventHandler(actionMenuCandidate_PressEdit);
+                    temp++;
+                }
+                if (mStanfTabPermission.IsList == true)
+                {
+                    gridControlCandidates.Visible = true;
+                    lookUpEditRecruiment.Visible = true;
+                    temp++;
+                }
+                if (temp == 0)
+                {
+                    actionMenuCandidate.Enabled = false;
+                }
+            }
         }
         void actionMenuCandidate_PressRefresh(object sender, EventArgs e)
         {
