@@ -36,7 +36,7 @@ namespace eCenterTrainning.UseControls
         private void uClass_Load(object sender, EventArgs e)
         {
             xtraTabPageClass.Focus();
-            actionMenu1.PressNew += new EventHandler(actionMenu1_PressNew);
+            
             actionMenu1.PressEdit += new EventHandler(actionMenu1_PressEdit);
             actionMenu1.PressRefresh += new EventHandler(actionMenu1_PressRefresh);
             actionMenu1.PressDelete += new EventHandler(actionMenu1_PressDelete);
@@ -47,6 +47,49 @@ namespace eCenterTrainning.UseControls
             dtClassesEndTime.Enabled = true;
             LoadLookUpEditClass();
             LoadDataClasses();
+            stanfTabPermission mStanfTabPermission = new stanfTabPermission();
+            foreach (stanfTabPermission item in mAccount.ListTabPermissions)
+            {
+                if (item.UserId == mAccount.UserId && item.DisplayRoleName == "Danh Sách Lớp Học")
+                {
+                    mStanfTabPermission.IsAdd = item.IsAdd;
+                    mStanfTabPermission.IsDelete = item.IsDelete;
+                    mStanfTabPermission.IsEdit = item.IsEdit;
+                    mStanfTabPermission.IsList = item.IsList;
+                    mStanfTabPermission.IsReport = item.IsReport;
+                }
+            }
+            if (mAccount.IsSuperUser == false)
+            {
+                int temp = 0;
+                gridControlClass.Visible = false;
+                xtraTabPageStudent.PageVisible = false;
+                if (mStanfTabPermission.IsAdd == true)
+                {
+                    actionMenu1.PressNew += new EventHandler(actionMenu1_PressNew);
+                    temp++;
+                }
+                if (mStanfTabPermission.IsDelete == true)
+                {
+                    actionMenu1.PressDelete += new EventHandler(actionMenu1_PressDelete);
+                    temp++;
+                }
+                if (mStanfTabPermission.IsEdit == true)
+                {
+                    actionMenu1.PressEdit += new EventHandler(actionMenu1_PressEdit);
+                    temp++;
+                }
+                if (mStanfTabPermission.IsList == true)
+                {
+                    gridControlClass.Visible = true;
+                    xtraTabPageStudent.PageVisible = true;
+                    temp++;
+                }
+                if (temp == 0)
+                {
+                    actionMenu1.Enabled = false;
+                }
+            }
             this.Dock = DockStyle.Fill;
         }
         void LoadDataClasses()

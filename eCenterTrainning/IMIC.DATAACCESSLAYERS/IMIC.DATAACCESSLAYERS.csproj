@@ -101,6 +101,7 @@
     <Compile Include="OuDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecruitmantDAL.cs" />
+    <Compile Include="RolesDAL.cs" />
     <Compile Include="SecurityDAL.cs" />
     <Compile Include="SP_CHECK_LOGIN_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
@@ -144,6 +145,9 @@
     <Compile Include="SP_GetAll_Recruitment_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
+    <Compile Include="SP_GETALL_ROLES_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
     <Compile Include="SP_GetAll_TrungTam_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
@@ -184,6 +188,9 @@
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_GETELEMENT_BYID_EXPERT_INFO_Result.cs">
+      <DependentUpon>CMSModels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GETELEMENT_BYUSERID_TABPERMISSION_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_GetElement_USER_Result.cs">
@@ -346,6 +353,7 @@
     <Compile Include="StudentListsDAL.cs" />
     <Compile Include="StudentListsTempSelectedDAL.cs" />
     <Compile Include="StudentRegisterOnlineDAL.cs" />
+    <Compile Include="TabPermissionDAL.cs" />
     <Compile Include="TimKiem_HocVien_TiemNang_Result.cs">
       <DependentUpon>CMSModels.tt</DependentUpon>
     </Compile>

@@ -1326,6 +1326,7 @@
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItemManageCandidate),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItemTuyenDung)});
             this.navBarGroup5.Name = "navBarGroup5";
+            this.navBarGroup5.TopVisibleLinkIndex = 2;
             // 
             // navBarItemAddRecuitment
             // 
@@ -1367,7 +1368,6 @@
             new DevExpress.XtraNavBar.NavBarItemLink(this.nbiQuangCaoOnline),
             new DevExpress.XtraNavBar.NavBarItemLink(this.nbiHocVienCu)});
             this.navBarGroup3.Name = "navBarGroup3";
-            this.navBarGroup3.TopVisibleLinkIndex = 2;
             // 
             // navBarItemHocVien
             // 
@@ -1422,7 +1422,6 @@
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarGiangVien),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navThemMoiGiangVien)});
             this.navBarGroup2.Name = "navBarGroup2";
-            this.navBarGroup2.TopVisibleLinkIndex = 1;
             // 
             // navBarGiangVien
             // 
@@ -1548,6 +1547,7 @@
             this.navBarItemUsers.Caption = "Quản Lý Người Dùng";
             this.navBarItemUsers.ImageOptions.LargeImage = global::eCenterTrainning.Properties.Resources.Login_Manager32x32;
             this.navBarItemUsers.Name = "navBarItemUsers";
+            this.navBarItemUsers.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItemUsers_LinkClicked);
             // 
             // navBarItem11
             // 
