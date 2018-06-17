@@ -126,6 +126,12 @@ namespace eCenterTrainning.UseControls
                     actionMenu1.Enabled = false;
                 }
             }
+            else
+            {
+                actionMenu1.PressNew += new EventHandler(actionMenu1_PressNew);
+                actionMenu1.PressDelete += new EventHandler(actionMenu1_PressDelete);
+                actionMenu1.PressEdit += new EventHandler(actionMenu1_PressEdit);
+            }
             this.Dock = DockStyle.Fill;
         }
 

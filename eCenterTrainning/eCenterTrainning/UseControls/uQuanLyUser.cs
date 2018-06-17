@@ -93,6 +93,10 @@ namespace eCenterTrainning.UseControls
                 DisplayOfNewAccount();
             }
             this.Dock = DockStyle.Fill;
+            if(mAccount.isAdmin == 0)
+            {
+                this.Controls.Clear();
+            }
 
 
 
