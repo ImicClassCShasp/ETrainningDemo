@@ -159,28 +159,47 @@ namespace eCenterTrainning.UseControls
             int rowIndex = gridView1.GetFocusedDataSourceRowIndex();
             if (e.Column == IsAdd)
             {
-                bool isAdd = (bool)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "IsAdd");
-                lst[rowIndex].IsAdd = isAdd;
+                if(gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "IsAdd") != null)
+                {
+                    bool isAdd = (bool)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "IsAdd");
+                    lst[rowIndex].IsAdd = isAdd;
+                }
             }
             if (e.Column == IsList)
             {
-                bool isList = (bool)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "IsList");
-                lst[rowIndex].IsList = isList;
+                if (gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "IsList") != null)
+                {
+                    bool isList = (bool)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "IsList");
+                    lst[rowIndex].IsList = isList;
+                }
+                
             }
             if (e.Column == IsEdit)
             {
-                bool isEdit = (bool)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "IsEdit");
-                lst[rowIndex].IsEdit = isEdit;
+                if (gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "IsEdit") != null)
+                {
+                    bool isEdit = (bool)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "IsEdit");
+                    lst[rowIndex].IsEdit = isEdit;
+                }
+                
             }
             if (e.Column == IsDelete)
             {
-                bool isDelete = (bool)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "IsDelete");
-                lst[rowIndex].IsDelete = isDelete;
+                if (gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "IsDelete") != null)
+                {
+                    bool isDelete = (bool)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "IsDelete");
+                    lst[rowIndex].IsDelete = isDelete;
+                }
+                
             }
             if (e.Column == IsReport)
             {
-                bool isReport = (bool)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "IsReport");
-                lst[rowIndex].IsReport = isReport;
+                if (gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "IsReport") != null)
+                {
+                    bool isReport = (bool)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "IsReport");
+                    lst[rowIndex].IsReport = isReport;
+                }
+                
             }
 
 
