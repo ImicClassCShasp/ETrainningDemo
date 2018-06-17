@@ -89,6 +89,12 @@ namespace eCenterTrainning.UseControls
                     actionMenuExpert.Enabled = false;
                 }
             }
+            else
+            {
+                actionMenuExpert.PressNew += new EventHandler(actionMenuExpert_PressNew);
+                actionMenuExpert.PressDelete += new EventHandler(actionMenuExpert_PressDelete);
+                actionMenuExpert.PressEdit += new EventHandler(actionMenuExpert_PressEdit);
+            }
         }
 
         void actionMenuExpert_PressHelp(object sender, EventArgs e)
