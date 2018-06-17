@@ -6,12 +6,14 @@
 //     Manual changes to this file will be overwritten if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
-namespace IMIC.VALUEOBJECTS
+
+namespace IMIC.DATAACCESSLAYERS
 {
-    public class stanfTabPermission
+    using System;
+    
+    public partial class SP_GETELEMENT_BYUSERID_TABPERMISSION_Result
     {
+        public string RoleName { get; set; }
         public int TabPermissionId { get; set; }
         public Nullable<int> PermissionId { get; set; }
         public Nullable<int> RoleId { get; set; }
@@ -26,6 +28,5 @@ namespace IMIC.VALUEOBJECTS
         public Nullable<bool> IsDelete { get; set; }
         public Nullable<bool> IsReport { get; set; }
         public string PermissionList { get; set; }
-        public string DisplayRoleName { get; set; }
     }
 }

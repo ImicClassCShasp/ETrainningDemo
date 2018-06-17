@@ -32,6 +32,8 @@ namespace IMIC.VALUEOBJECTS
         /* isClose = true: Exit login */
         public bool isClose { get; set; }
         public string DisplaySex { get; set; }
+        public int? isAdmin { get; set; }
+        public List<stanfTabPermission> ListTabPermissions { get; set; }
     }
 }
 

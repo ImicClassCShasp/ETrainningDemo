@@ -18,7 +18,7 @@ using IMIC.BUSINESSLOGICLAYERS;
 
 namespace eCenterTrainning.UseControls
 {
-   
+
     public partial class uStudent : ucRightForm
     {
         private StudentLists mStudentLists;
@@ -31,14 +31,14 @@ namespace eCenterTrainning.UseControls
         private bool isAction = false;
 
         public uStudent(Account oAccount) : base(oAccount)
-        {            
+        {
             InitializeComponent();
             mStudentLists = new StudentLists();
             mCommentSupport = new CommentSupport();
             mLisCommentSupport = new List<CommentSupport>();
             mStudentListsBll = new StudentListsBll(mAccount);
             dateEditFromDateCheckIn.EditValue = DateTime.Now.AddMonths(-3);
-          
+
             dateEditToDateCheckIn.EditValue = DateTime.Now;
             //dateEditFromDateCheckIn.Text = ;
             //dateEditToDateCheckIn.Text = dateEditToDateCheckIn.EditValue.ToString();
@@ -50,24 +50,24 @@ namespace eCenterTrainning.UseControls
         {
             InitializeComponent();
 
-            
-            
-        }        
+
+
+        }
         private void uStudent_Load(object sender, EventArgs e)
         {
             tabHocVienTiemNang.SelectedTabPage = xtraTabPageStudent;
-            actionMenu1.PressNew += new EventHandler(actionMenu1_PressNew);
+            
             actionMenu1.PressEdit += new EventHandler(actionMenu1_PressEdit);
             actionMenu1.PressRefresh += new EventHandler(actionMenu1_PressRefresh);
-            actionMenu1.PressDelete += new EventHandler(actionMenu1_PressDelete);
+            
             actionMenu1.PressClose += new EventHandler(actionMenu1_PressClose);
             actionMenu1.PressHelp += new EventHandler(actionMenu1_PressHelp);
             actionMenu1.SetHVTiemNangVisible();
             actionMenu1.SetVisibleReport();
             actionMenu1.PressReports += new EventHandler(actionMenu1_PressTimKiemKoMaHoa);
-            actionMenu1.PressHVTiemNang += new EventHandler(actionMenu1_PressHVTiemNang);            
+            actionMenu1.PressHVTiemNang += new EventHandler(actionMenu1_PressHVTiemNang);
             BindStudentList();
-            
+
             IFormatProvider mFomatter = new System.Globalization.CultureInfo("vi-VN");
             //Student_Register_Online oRegister = new StudentRegisterOnlineBll(mAccount).getElementById(0);
             //if (oRegister != null)
@@ -85,6 +85,47 @@ namespace eCenterTrainning.UseControls
             //    btnConfirms.Visible = false;
 
             //LoadClassesForComboBox();
+            stanfTabPermission mStanfTabPermission = new stanfTabPermission();
+            foreach (stanfTabPermission item in mAccount.ListTabPermissions)
+            {
+                if (item.UserId == mAccount.UserId && item.DisplayRoleName == "Danh Sách Học Viên")
+                {
+                    mStanfTabPermission.IsAdd = item.IsAdd;
+                    mStanfTabPermission.IsDelete = item.IsDelete;
+                    mStanfTabPermission.IsEdit = item.IsEdit;
+                    mStanfTabPermission.IsList = item.IsList;
+                    mStanfTabPermission.IsReport = item.IsReport;
+                }
+            }
+            if (mAccount.IsSuperUser == false)
+            {
+                int temp = 0;
+                gridControlStudent.Visible = false;
+                if (mStanfTabPermission.IsAdd == true)
+                {
+                    actionMenu1.PressNew += new EventHandler(actionMenu1_PressNew);
+                    temp++;
+                }
+                if (mStanfTabPermission.IsDelete == true)
+                {
+                    actionMenu1.PressDelete += new EventHandler(actionMenu1_PressDelete);
+                    temp++;
+                }
+                if (mStanfTabPermission.IsEdit == true)
+                {
+                    actionMenu1.PressEdit += new EventHandler(actionMenu1_PressEdit);
+                    temp++;
+                }
+                if (mStanfTabPermission.IsList == true)
+                {
+                    gridControlStudent.Visible = true;
+                    temp++;
+                }
+                if (temp == 0)
+                {
+                    actionMenu1.Enabled = false;
+                }
+            }
             this.Dock = DockStyle.Fill;
         }
 
@@ -95,7 +136,7 @@ namespace eCenterTrainning.UseControls
                 this.Cursor = Cursors.WaitCursor;
                 List<Classes> oLisClasses = new List<Classes>();
                 int iClassId = 0;
-                int.TryParse(""+uluClasses.EditValue, out iClassId);
+                int.TryParse("" + uluClasses.EditValue, out iClassId);
                 if (iClassId > 0)
                 {
 
@@ -173,25 +214,26 @@ namespace eCenterTrainning.UseControls
                 }
             }
             else
-            {                
+            {
                 MessageBox.Show("Bạn không có quyền sử dụng tính năng này.", "Thông báo",
                         MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
-        void actionMenu1_PressHVTiemNang(object sender, EventArgs e){}
+        void actionMenu1_PressHVTiemNang(object sender, EventArgs e) { }
         void actionMenu1_PressTimKiemKoMaHoa(object sender, EventArgs e)
         {
             if (mAccount.IsSuperUser == true)
             {
                 frmHocVienSearch ofrm = new frmHocVienSearch(mAccount);
                 ofrm.ShowDialog();
-            }else
+            }
+            else
             {
-                MessageBox.Show("Bạn không có quyền sử dụng tính năng này.","Thông báo", 
+                MessageBox.Show("Bạn không có quyền sử dụng tính năng này.", "Thông báo",
                         MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }            
+            }
         }
-        void actionMenu1_PressHelp(object sender, EventArgs e){}        
+        void actionMenu1_PressHelp(object sender, EventArgs e) { }
         void actionMenu1_PressClose(object sender, EventArgs e)
         {
             this.Dispose();
@@ -218,22 +260,23 @@ namespace eCenterTrainning.UseControls
                 }
                 else
                 {
-                     DialogResult opt =  MessageBox.Show("Hãy xác nhận Yes để làm mới lại dữ liệu trước khi thực hiện xóa.", "Thông báo",
-                        MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                    DialogResult opt = MessageBox.Show("Hãy xác nhận Yes để làm mới lại dữ liệu trước khi thực hiện xóa.", "Thông báo",
+                       MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                     if (opt == DialogResult.Yes)
                         BindStudentList();
-                    MessageBox.Show("Vui lòng chọn lại dữ liệu cần xóa khỏi hệ thống. Dữ liệu này sẽ được sao chép lại để phục hồi khi cần.", 
+                    MessageBox.Show("Vui lòng chọn lại dữ liệu cần xóa khỏi hệ thống. Dữ liệu này sẽ được sao chép lại để phục hồi khi cần.",
                                             "Thông báo",
                                         MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }                    
+                }
             }
             else
             {
                 MessageBox.Show("Bạn không có quyền sử dụng tính năng này.", "Thông báo",
                         MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }           
+            }
         }
-        void actionMenu1_PressRefresh(object sender, EventArgs e){
+        void actionMenu1_PressRefresh(object sender, EventArgs e)
+        {
             BindStudentList();
         }
         void actionMenu1_PressEdit(object sender, EventArgs e)
@@ -246,8 +289,8 @@ namespace eCenterTrainning.UseControls
                 StudentLists oStudentLists = new StudentListsBll(mAccount).getElementById(intStudentId);
                 //frmAddHocVien ofrm = new frmAddHocVien(mAccount, oStudentLists);
                 //ofrm.ShowDialog();
-                if(mAccount.isClose == false)
-                   BindStudentList();               
+                if (mAccount.isClose == false)
+                    BindStudentList();
             }
             else
             {
@@ -260,8 +303,8 @@ namespace eCenterTrainning.UseControls
             //ofrm.ShowDialog();
             if (mAccount.isClose == false)
                 BindStudentList();
-        }        
-        
+        }
+
         private void gridControlSupport_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             //int id = 0;
@@ -293,7 +336,8 @@ namespace eCenterTrainning.UseControls
             //        //}
             //    }
             //}
-            /*else*/ if (tabHocVienTiemNang.SelectedTabPageIndex == 2)
+            /*else*/
+            if (tabHocVienTiemNang.SelectedTabPageIndex == 2)
             {
                 //txtName.Text = "" + gridViewStudent.GetFocusedRowCellValue("FullName");
                 txt_Email.Text = "" + gridViewStudent.GetFocusedRowCellValue("Email");
@@ -322,7 +366,7 @@ namespace eCenterTrainning.UseControls
                 uluClasses.Properties.ValueMember = "ClassId";
                 uluClasses.Properties.DataSource = lstStudentClasses;
 
-                
+
             }
         }
 
@@ -330,7 +374,7 @@ namespace eCenterTrainning.UseControls
         {
             if (e.Column == ColAction)
             {
-                if(mAccount.IsSuperUser == true)
+                if (mAccount.IsSuperUser == true)
                 {
                     DialogResult opt = MessageBox.Show("Bạn chắc chắn muốn xóa nội dung này?",
                                 "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -351,7 +395,7 @@ namespace eCenterTrainning.UseControls
                                 foreach (CommentSupport o in mLisCommentSupport)
                                 {
                                     if (oComment.Id == o.Id)
-                                    {                                        
+                                    {
                                         mLisCommentSupport.Remove(o);
                                         break;
                                     }
@@ -367,11 +411,11 @@ namespace eCenterTrainning.UseControls
                               "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 }
             }
-        }                      
+        }
         private void btnAdd_Click(object sender, EventArgs e)
         {
             msgMessage.Clear();
-            string Id = ""+mStudentLists.Id;           
+            string Id = "" + mStudentLists.Id;
             if (btnAdd.Text.Equals("Thêm"))
             {
                 btnSua.Text = "Hủy Bỏ";
@@ -383,13 +427,13 @@ namespace eCenterTrainning.UseControls
 
                 dateEditSupport.Enabled = true;
                 richTextBoxContent.ReadOnly = false;
-                richTextBoxContent.Text = "";                
+                richTextBoxContent.Text = "";
                 dateEditSupport.EditValue = DateTime.Now;
                 gridControlSupport.Enabled = false;
                 lookUpEditCourse.Enabled = true;
             }
             else
-            {                
+            {
                 if (isAction)
                 {
                     //Flag > 0 : Insert & Flag <= 0 : Update
@@ -410,7 +454,7 @@ namespace eCenterTrainning.UseControls
                         if (mLisCommentSupport == null)
                             mLisCommentSupport = new List<CommentSupport>();
                         mLisCommentSupport.Insert(0, oCommentSupport);
-                    }                        
+                    }
                 }
                 else
                 {
@@ -422,7 +466,7 @@ namespace eCenterTrainning.UseControls
                             oCommentSupport = oComment;
                             mLisCommentSupport.Remove(oComment);
                             break;
-                        }                            
+                        }
                     }
                     oCommentSupport.Flag = 0; //Cập nhật  
                     oCommentSupport.Desription = richTextBoxContent.Text;
@@ -432,16 +476,16 @@ namespace eCenterTrainning.UseControls
                     oCommentSupport.Id = mCommentSupport.Id;
                     oCommentSupport.StudentId = mStudentLists.Id;
                     bool isResult = new CommentSupportBll(mAccount).InsertAndUpdateElement(oCommentSupport);
-                    if (isResult)                                          
-                        mLisCommentSupport.Insert(0, oCommentSupport);                                  
+                    if (isResult)
+                        mLisCommentSupport.Insert(0, oCommentSupport);
                 }
                 RefeshListCommentSupport(sender, e);
-                
+
                 btnAdd.Text = "Thêm";
                 btnSua.Text = "Sửa";
                 btnSua.Enabled = false;
                 gridControlSupport.Enabled = true;
-                btnSua.Image = eCenterTrainning.Properties.Resources.book_edit;                
+                btnSua.Image = eCenterTrainning.Properties.Resources.book_edit;
                 btnAdd.Image = eCenterTrainning.Properties.Resources._new;
                 lookUpEditCourse.Enabled = false;
                 dateEditSupport.Enabled = false;
@@ -466,17 +510,17 @@ namespace eCenterTrainning.UseControls
         }
 
         private void btnSua_Click(object sender, EventArgs e)
-        {            
+        {
             int idcomment = 0;
             int.TryParse("" + gridViewSupport.GetFocusedRowCellValue("Id"), out idcomment);
-            
+
             if (idcomment > 0)
             {
                 string sTemp = "" + gridViewSupport.GetFocusedRowCellValue("Desription");
                 if (btnSua.Text.Equals("Sửa"))
                 {
                     isAction = false;  //TH Cập nhật
-                    gridControlSupport.Enabled = false;                   
+                    gridControlSupport.Enabled = false;
                     btnSua.Text = "Hủy bỏ";
                     btnSua.Image = eCenterTrainning.Properties.Resources.deleted;
                     btnAdd.Text = "Lưu lại";
@@ -497,8 +541,8 @@ namespace eCenterTrainning.UseControls
                     dateEditSupport.Enabled = false;
                     richTextBoxContent.ReadOnly = true;
                 }
-            }                                  
-        }        
+            }
+        }
         private void resetAllfieldAndEnable()
         {
             lookUpEditCourse.Enabled = true;
@@ -518,18 +562,18 @@ namespace eCenterTrainning.UseControls
 
         private void lookUpEditUser_EditValueChanged_1(object sender, EventArgs e)
         {
-            
-        }       
+
+        }
         private void gridControlStudent_DoubleClick(object sender, EventArgs e)
         {
-            tabHocVienTiemNang.SelectedTabPage = xtraTabPageHistory;            
-        }        
+            tabHocVienTiemNang.SelectedTabPage = xtraTabPageHistory;
+        }
         private void gridControlHP_Click(object sender, EventArgs e)
         {
             listBoxHP.Items.Clear();
             int id = 0;
-            int.TryParse("" + gridViewHP.GetFocusedRowCellValue("Id"), out id);          
-            
+            int.TryParse("" + gridViewHP.GetFocusedRowCellValue("Id"), out id);
+
         }
         private void btnGhiHP_Click(object sender, EventArgs e)
         {
@@ -548,13 +592,13 @@ namespace eCenterTrainning.UseControls
             //    }
             //}
             //objHP.IdStudent = IdStudent;
-            
+
             //LoadHocPhi();
         }
         private void gridControlStudent_Click(object sender, EventArgs e)
         {
             int idStu = 0;
-            string value = "" + gridViewStudent.GetFocusedRowCellValue("Id");          
+            string value = "" + gridViewStudent.GetFocusedRowCellValue("Id");
             if (int.TryParse(value, out idStu))
             {
                 mStudentLists.Id = idStu;
@@ -562,7 +606,7 @@ namespace eCenterTrainning.UseControls
                 mStudentLists.Mobile = "" + gridViewStudent.GetFocusedRowCellValue("Mobile");
                 mStudentLists.Email = "" + gridViewStudent.GetFocusedRowCellValue("Email");
                 mStudentLists.CourseId = int.Parse("" + gridViewStudent.GetFocusedRowCellValue("CourseId"));
-                
+
                 //if (mStudentLists.Mobile != null)
                 //{
                 //    mStudentLists.Mobile = new Common().DecryptInfo(mStudentLists.Mobile);
@@ -591,42 +635,42 @@ namespace eCenterTrainning.UseControls
             {
                 string CommentDescription = mLisCommentSupport[0].Desription;
                 richTextBoxContent.Text = CommentDescription;
-                gridControlSupport.DataSource = mLisCommentSupport;                
+                gridControlSupport.DataSource = mLisCommentSupport;
             }
             btnSua.Enabled = false;
         }
 
         private void gridControlSupport_Click(object sender, EventArgs e)
         {
-            int idComment = 0;            
-            string value = "" + gridViewSupport.GetFocusedRowCellValue("Id");            
+            int idComment = 0;
+            string value = "" + gridViewSupport.GetFocusedRowCellValue("Id");
             int.TryParse(value, out idComment);
-            if(idComment > 0)
+            if (idComment > 0)
             {
                 mCommentSupport.Id = idComment;
-                mCommentSupport.Desription = ""+gridViewSupport.GetFocusedRowCellValue("Desription");                
+                mCommentSupport.Desription = "" + gridViewSupport.GetFocusedRowCellValue("Desription");
                 richTextBoxContent.Text = mCommentSupport.Desription;
                 btnSua.Enabled = true;
             }
             else
             {
-                DialogResult opt = MessageBox.Show("Bạn chắc chắn muốn sửa lại dữ liệu vừa thêm?",
-                                "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (opt == DialogResult.Yes)
-                {
-                    if (mStudentLists.Id > 0)
-                    {                        
-                        LoadData_Comment_Support_By_StudentId(mStudentLists.Id);
-                    }
-                    else
-                        MessageBox.Show("Bạn cần chọn lại 1 học viên nào đó để tiếp tục");
-                }
-                btnSua.Enabled = false;
-            }            
+                //DialogResult opt = MessageBox.Show("Bạn chắc chắn muốn sửa lại dữ liệu vừa thêm?",
+                //                "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                //if (opt == DialogResult.Yes)
+                //{
+                //    if (mStudentLists.Id > 0)
+                //    {                        
+                //        LoadData_Comment_Support_By_StudentId(mStudentLists.Id);
+                //    }
+                //    else
+                //        MessageBox.Show("Bạn cần chọn lại 1 học viên nào đó để tiếp tục");
+                //}
+                //btnSua.Enabled = false;
+            }
         }
         private int checkExistStudentClass(int idClass)
         {
-            
+
             return 0;
         }
         private void btnCapnhat_Click(object sender, EventArgs e)
@@ -643,7 +687,7 @@ namespace eCenterTrainning.UseControls
             //objHP.IdStudent = IdStudent;
             //objHP.IdClass = idClass;           
             //LoadHocPhi();
-        }            
+        }
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             msgMessage.Clear();
@@ -694,14 +738,14 @@ namespace eCenterTrainning.UseControls
             string fullName = "" + grdHocVienTiemNang.GetFocusedRowCellValue("FullName");
             string contents = "" + grdHocVienTiemNang.GetFocusedRowCellValue("Contents");
             int iStatus = int.Parse("" + grdHocVienTiemNang.GetFocusedRowCellValue("Status"));
-                        
+
         }
         private void grdHocVienTiemNang_DoubleClick(object sender, EventArgs e)
         {
             ThongTin_HocVien_TiemNang();
-        }       
-        private void btnSync_Click(object sender, EventArgs e){ }       
-        private void btnDecrypt_Click(object sender, EventArgs e){ }              
+        }
+        private void btnSync_Click(object sender, EventArgs e) { }
+        private void btnDecrypt_Click(object sender, EventArgs e) { }
 
         private void lblGetRegisterOnline_Click(object sender, EventArgs e)
         {
@@ -714,7 +758,7 @@ namespace eCenterTrainning.UseControls
                 gridControlStudent.DataSource = mLisStudentLists;
                 gridControlStudent.RefreshDataSource();
                 gridControlStudent.Update();
-            }            
+            }
         }
 
         private void dateEditToDateCheckIn_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
@@ -729,14 +773,14 @@ namespace eCenterTrainning.UseControls
 
         private void dateEditFromDateCheckIn_EditValueChanged(object sender, EventArgs e)
         {
-            if(dateEditToDateCheckIn.EditValue == null)
+            if (dateEditToDateCheckIn.EditValue == null)
                 dateEditToDateCheckIn.EditValue = DateTime.Now;
             BindStudentList();
         }
 
         private void uluClasses_EditValueChanged(object sender, EventArgs e)
         {
-           
+
             List<StudentClasses> lstStudentClasses = new StudentClassesBll(mAccount).CheckElementById(mStudentLists.Id);
             foreach (StudentClasses item in lstStudentClasses)
             {
@@ -753,6 +797,11 @@ namespace eCenterTrainning.UseControls
                     break;
                 }
             }
+        }
+
+        private void richTextBoxContent_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -92,6 +92,7 @@ namespace eCenterTrainning
                 mAccount.isSuccess = true;
                 mAccount.Sex = lisAccount[0].Sex;
                 mAccount.DisplayName = lisAccount[0].DisplayName;
+                mAccount.isAdmin = lisAccount[0].isAdmin;
                 this.Close();
             }
             else

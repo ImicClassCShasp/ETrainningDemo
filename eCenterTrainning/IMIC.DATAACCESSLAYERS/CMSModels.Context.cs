@@ -1395,7 +1395,7 @@ namespace IMIC.DATAACCESSLAYERS
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETALL_USER_Result>("SP_GETALL_USER");
         }
     
-        public virtual int SP_INSERT_USER(string userName, string firstName, string lastName, Nullable<bool> isSuperUser, string phone, string email, string displayName, string pASSWORD, Nullable<bool> updatePassword, string lastIPAddress, Nullable<bool> isDeleted, Nullable<int> createdByUserId, Nullable<System.DateTime> createOnDate, Nullable<int> lastModifiedByUserId, Nullable<System.DateTime> lastModifiedOnDate, Nullable<int> viewOrder, string aDDRESS, Nullable<int> ouId, Nullable<int> sex, Nullable<int> employeeId, Nullable<int> isExpertId)
+        public virtual int SP_INSERT_USER(string userName, string firstName, string lastName, Nullable<bool> isSuperUser, string phone, string email, string displayName, string pASSWORD, Nullable<bool> updatePassword, string lastIPAddress, Nullable<bool> isDeleted, Nullable<int> createdByUserId, Nullable<System.DateTime> createOnDate, Nullable<int> lastModifiedByUserId, Nullable<System.DateTime> lastModifiedOnDate, Nullable<int> viewOrder, string aDDRESS, Nullable<int> ouId, Nullable<int> sex, Nullable<int> employeeId, Nullable<int> isExpertId, Nullable<int> isAdmin)
         {
             var userNameParameter = userName != null ?
                 new ObjectParameter("UserName", userName) :
@@ -1481,7 +1481,11 @@ namespace IMIC.DATAACCESSLAYERS
                 new ObjectParameter("isExpertId", isExpertId) :
                 new ObjectParameter("isExpertId", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_INSERT_USER", userNameParameter, firstNameParameter, lastNameParameter, isSuperUserParameter, phoneParameter, emailParameter, displayNameParameter, pASSWORDParameter, updatePasswordParameter, lastIPAddressParameter, isDeletedParameter, createdByUserIdParameter, createOnDateParameter, lastModifiedByUserIdParameter, lastModifiedOnDateParameter, viewOrderParameter, aDDRESSParameter, ouIdParameter, sexParameter, employeeIdParameter, isExpertIdParameter);
+            var isAdminParameter = isAdmin.HasValue ?
+                new ObjectParameter("isAdmin", isAdmin) :
+                new ObjectParameter("isAdmin", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_INSERT_USER", userNameParameter, firstNameParameter, lastNameParameter, isSuperUserParameter, phoneParameter, emailParameter, displayNameParameter, pASSWORDParameter, updatePasswordParameter, lastIPAddressParameter, isDeletedParameter, createdByUserIdParameter, createOnDateParameter, lastModifiedByUserIdParameter, lastModifiedOnDateParameter, viewOrderParameter, aDDRESSParameter, ouIdParameter, sexParameter, employeeIdParameter, isExpertIdParameter, isAdminParameter);
         }
     
         public virtual int SP_DELETE_USER(Nullable<int> id)
@@ -2871,6 +2875,82 @@ namespace IMIC.DATAACCESSLAYERS
                 new ObjectParameter("Website", typeof(string));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Creat_PhongBan", ouNameParameter, imagePathParameter, dESCRIPTIONParameter, emailParameter, phoneParameter, faxParameter, websiteParameter);
+        }
+    
+        public virtual ObjectResult<SP_GETELEMENT_BYUSERID_TABPERMISSION_Result> SP_GETELEMENT_BYUSERID_TABPERMISSION(Nullable<int> userId)
+        {
+            var userIdParameter = userId.HasValue ?
+                new ObjectParameter("UserId", userId) :
+                new ObjectParameter("UserId", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETELEMENT_BYUSERID_TABPERMISSION_Result>("SP_GETELEMENT_BYUSERID_TABPERMISSION", userIdParameter);
+        }
+    
+        public virtual int SP_INSERT_TABPERMISSION(Nullable<int> permissionId, Nullable<int> roleId, Nullable<int> userId, Nullable<int> createdByUserId, Nullable<int> lastModifiedByUserId, string permissionList)
+        {
+            var permissionIdParameter = permissionId.HasValue ?
+                new ObjectParameter("PermissionId", permissionId) :
+                new ObjectParameter("PermissionId", typeof(int));
+    
+            var roleIdParameter = roleId.HasValue ?
+                new ObjectParameter("RoleId", roleId) :
+                new ObjectParameter("RoleId", typeof(int));
+    
+            var userIdParameter = userId.HasValue ?
+                new ObjectParameter("UserId", userId) :
+                new ObjectParameter("UserId", typeof(int));
+    
+            var createdByUserIdParameter = createdByUserId.HasValue ?
+                new ObjectParameter("CreatedByUserId", createdByUserId) :
+                new ObjectParameter("CreatedByUserId", typeof(int));
+    
+            var lastModifiedByUserIdParameter = lastModifiedByUserId.HasValue ?
+                new ObjectParameter("LastModifiedByUserId", lastModifiedByUserId) :
+                new ObjectParameter("LastModifiedByUserId", typeof(int));
+    
+            var permissionListParameter = permissionList != null ?
+                new ObjectParameter("PermissionList", permissionList) :
+                new ObjectParameter("PermissionList", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_INSERT_TABPERMISSION", permissionIdParameter, roleIdParameter, userIdParameter, createdByUserIdParameter, lastModifiedByUserIdParameter, permissionListParameter);
+        }
+    
+        public virtual ObjectResult<SP_GETALL_ROLES_Result> SP_GETALL_ROLES()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_GETALL_ROLES_Result>("SP_GETALL_ROLES");
+        }
+    
+        public virtual int SP_UPDATE_TABPERMISSION(Nullable<int> tABPER, Nullable<int> lASTMODUSER, Nullable<bool> iSLIST, Nullable<bool> iSADD, Nullable<bool> iSEDIT, Nullable<bool> iSDELETE, Nullable<bool> iSREPORT)
+        {
+            var tABPERParameter = tABPER.HasValue ?
+                new ObjectParameter("TABPER", tABPER) :
+                new ObjectParameter("TABPER", typeof(int));
+    
+            var lASTMODUSERParameter = lASTMODUSER.HasValue ?
+                new ObjectParameter("LASTMODUSER", lASTMODUSER) :
+                new ObjectParameter("LASTMODUSER", typeof(int));
+    
+            var iSLISTParameter = iSLIST.HasValue ?
+                new ObjectParameter("ISLIST", iSLIST) :
+                new ObjectParameter("ISLIST", typeof(bool));
+    
+            var iSADDParameter = iSADD.HasValue ?
+                new ObjectParameter("ISADD", iSADD) :
+                new ObjectParameter("ISADD", typeof(bool));
+    
+            var iSEDITParameter = iSEDIT.HasValue ?
+                new ObjectParameter("ISEDIT", iSEDIT) :
+                new ObjectParameter("ISEDIT", typeof(bool));
+    
+            var iSDELETEParameter = iSDELETE.HasValue ?
+                new ObjectParameter("ISDELETE", iSDELETE) :
+                new ObjectParameter("ISDELETE", typeof(bool));
+    
+            var iSREPORTParameter = iSREPORT.HasValue ?
+                new ObjectParameter("ISREPORT", iSREPORT) :
+                new ObjectParameter("ISREPORT", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_UPDATE_TABPERMISSION", tABPERParameter, lASTMODUSERParameter, iSLISTParameter, iSADDParameter, iSEDITParameter, iSDELETEParameter, iSREPORTParameter);
         }
     }
 }

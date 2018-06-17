@@ -29,7 +29,8 @@ namespace IMIC.DATAACCESSLAYERS
                     IsSuperUser = o.IsSuperUser,
                     Sex = o.Sex,
                     Phone = o.Phone,
-                    isSuccess = true                    
+                    isSuccess = true,
+                    isAdmin = o.isAdmin
                 };
                 if (oUser.Sex == 0)
                     oUser.DisplaySex = "Nam";
@@ -57,7 +58,8 @@ namespace IMIC.DATAACCESSLAYERS
                     DisplayName = o.DisplayName,
                     IsSuperUser = o.IsSuperUser,
                     Sex = o.Sex,
-                    Phone = o.Phone
+                    Phone = o.Phone,
+                    isAdmin = o.isAdmin
                 };
                 if (oUser.Sex == 0)
                     oUser.DisplaySex = "Nam";
@@ -75,7 +77,7 @@ namespace IMIC.DATAACCESSLAYERS
             TrainingCenterEntities oEntities = ConnectionEntities.getTrainingCenter(mAcount);
             return oEntities.SP_INSERT_USER(oT.UserName, null, null, oT.IsSuperUser, oT.Phone
                 , oT.Email, oT.DisplayName, oT.Password, null, null, false, mAcount.UserId, null
-                , null, null, null, null, null, oT.Sex, null, null) > 0; 
+                , null, null, null, null, null, oT.Sex, null, null, oT.isAdmin) > 0; 
         }
 
         public override bool DeleteElement(Account oT)

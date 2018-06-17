@@ -35,5 +35,7 @@ namespace IMIC.DATAACCESSLAYERS
         public Nullable<int> Sex { get; set; }
         public Nullable<int> EmployeeId { get; set; }
         public Nullable<int> isExpertId { get; set; }
+        public Nullable<int> isAdmin { get; set; }
+        public string GioiTinh { get; set; }
     }
 }

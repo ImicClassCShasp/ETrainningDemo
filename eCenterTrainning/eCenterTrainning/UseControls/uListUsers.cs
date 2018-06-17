@@ -33,14 +33,55 @@ namespace eCenterTrainning.UseControls
         private int idUser = 0;
         private void uEmployee_Load(object sender, EventArgs e)
         {
-            actionMenuUsers.PressNew += new EventHandler(actionMenuUsers_PressNew);
-            actionMenuUsers.PressEdit += new EventHandler(actionMenuUsers_PressEdit);
-            actionMenuUsers.PressDelete += new EventHandler(actionMenuUsers_PressDelete);
+            
+            
+            
             actionMenuUsers.PressRefresh += new EventHandler(actionMenuUsers_PressRefresh);
             actionMenuUsers.PressClose += new EventHandler(actionMenuUsers_PressClose);
             actionMenuUsers.PressHelp += new EventHandler(actionMenuUsers_PressHelp);
             txtTuKhoa.Focus();
             DisplayListUsers();
+            stanfTabPermission mStanfTabPermission = new stanfTabPermission();
+            foreach (stanfTabPermission item in mAccount.ListTabPermissions)
+            {
+                if(item.UserId == mAccount.UserId && item.DisplayRoleName == "Quản Lý Tài Khoản")
+                {
+                    mStanfTabPermission.IsAdd = item.IsAdd;
+                    mStanfTabPermission.IsDelete = item.IsDelete;
+                    mStanfTabPermission.IsEdit = item.IsEdit;
+                    mStanfTabPermission.IsList = item.IsList;
+                    mStanfTabPermission.IsReport = item.IsReport;
+                }
+            }
+            if (mAccount.IsSuperUser == false)
+            {
+                int temp = 0;
+                gridControlUser.Visible = false;
+                if(mStanfTabPermission.IsAdd == true)
+                {
+                    actionMenuUsers.PressNew += new EventHandler(actionMenuUsers_PressNew);
+                    temp++;
+                }
+                if(mStanfTabPermission.IsDelete == true)
+                {
+                    actionMenuUsers.PressDelete += new EventHandler(actionMenuUsers_PressDelete);
+                    temp++;
+                }
+                if(mStanfTabPermission.IsEdit == true)
+                {
+                    actionMenuUsers.PressEdit += new EventHandler(actionMenuUsers_PressEdit);
+                    temp++;
+                }        
+                if (mStanfTabPermission.IsList == true)
+                {
+                    gridControlUser.Visible = true;
+                    temp++;
+                }
+                if(temp == 0)
+                {
+                    actionMenuUsers.Enabled = false;
+                }
+            }
         }
         void actionMenuUsers_PressHelp(object sender, EventArgs e)
         {
@@ -126,8 +167,23 @@ namespace eCenterTrainning.UseControls
         /// </summary>
         void actionMenuUsers_PressNew(object sender, EventArgs e)
         {
+            List<Account> lstAcc = new List<Account>();
+            lstAcc = mAccountBiLL.getElements();
             frmStanUsers ofrmStanUsers = new frmStanUsers(mAccount);
             ofrmStanUsers.ShowDialog();
+            List<Account> lstAccNow = mAccountBiLL.getElements();
+            if(lstAcc.Count < lstAccNow.Count)
+            {
+                DialogResult h = MessageBox.Show("Bạn có muốn thiết lập quyền cho người dùng mới?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (h == DialogResult.Yes)
+                {
+                    this.Controls.Clear();
+                    Account newAccount = new Account();
+                    newAccount = lstAccNow.LastOrDefault();
+                    UseControls.uQuanLyUser oUQuanLyUser = new uQuanLyUser(mAccount, newAccount.UserId);
+                    this.Controls.Add(oUQuanLyUser);
+                }
+            }
             DisplayListUsers();
         }
         /// <summary>
