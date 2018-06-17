@@ -23,14 +23,55 @@ namespace eCenterTrainning.UseControls
         private int idEpm = 0;
         private void uEmployee_Load(object sender, EventArgs e)
         {
-            actionMenuEmployee.PressNew += new EventHandler(actionMenuEmployee_PressNew);
-            actionMenuEmployee.PressEdit += new EventHandler(actionMenuEmployee_PressEdit);
-            actionMenuEmployee.PressDelete += new EventHandler(actionMenuEmployee_PressDelete);
+            
+            
+            
             actionMenuEmployee.PressRefresh += new EventHandler(actionMenuEmployee_PressRefresh);
             actionMenuEmployee.PressClose += new EventHandler(actionMenuEmployee_PressClose);
             actionMenuEmployee.PressHelp += new EventHandler(actionMenuEmployee_PressHelp);
 
             displayEmployee();
+            stanfTabPermission mStanfTabPermission = new stanfTabPermission();
+            foreach (stanfTabPermission item in mAcc.ListTabPermissions)
+            {
+                if (item.UserId == mAcc.UserId && item.DisplayRoleName == "Danh Sách Nhân Viên")
+                {
+                    mStanfTabPermission.IsAdd = item.IsAdd;
+                    mStanfTabPermission.IsDelete = item.IsDelete;
+                    mStanfTabPermission.IsEdit = item.IsEdit;
+                    mStanfTabPermission.IsList = item.IsList;
+                    mStanfTabPermission.IsReport = item.IsReport;
+                }
+            }
+            if (mAcc.IsSuperUser == false)
+            {
+                int temp = 0;
+                gridControlEmployee.Visible = false;
+                if (mStanfTabPermission.IsAdd == true)
+                {
+                    actionMenuEmployee.PressNew += new EventHandler(actionMenuEmployee_PressNew);
+                    temp++;
+                }
+                if (mStanfTabPermission.IsDelete == true)
+                {
+                    actionMenuEmployee.PressDelete += new EventHandler(actionMenuEmployee_PressDelete);
+                    temp++;
+                }
+                if (mStanfTabPermission.IsEdit == true)
+                {
+                    actionMenuEmployee.PressEdit += new EventHandler(actionMenuEmployee_PressEdit);
+                    temp++;
+                }
+                if (mStanfTabPermission.IsList == true)
+                {
+                    gridControlEmployee.Visible = true;
+                    temp++;
+                }
+                if (temp == 0)
+                {
+                    actionMenuEmployee.Enabled = false;
+                }
+            }
         }
         void actionMenuEmployee_PressHelp(object sender, EventArgs e)
         {

@@ -38,6 +38,7 @@ namespace eCenterTrainning
             oFrmLogin.ShowDialog(); 
             if (mAccount.isSuccess)
             {
+                mAccount.ListTabPermissions = new TabPermissionBLL(mAccount).CheckElementById(mAccount.UserId);
                 barButtonItemLogin.Caption = "Đăng xuất";
                 this.Text = "Chào mừng " + mAccount.DisplayName;
                 
@@ -86,6 +87,7 @@ namespace eCenterTrainning
                 mAccount.isSuccess = false;
                 barButtonItemLogin.Caption = "Đăng nhập";
                 this.Text = "eTrainning";
+                plMain.Controls.Clear();
             }
             //frmLogin oFrmLogin = new frmLogin(mAccount);
             //oFrmLogin.ShowDialog();
@@ -163,6 +165,13 @@ namespace eCenterTrainning
             plMain.Controls.Clear();
             UseControls.uRecruitmentInfo ucRec = new UseControls.uRecruitmentInfo(mAccount);
             plMain.Controls.Add(ucRec);
+        }
+
+        private void navBarItemUsers_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            plMain.Controls.Clear();
+            UseControls.uQuanLyUser oUQuanLyUser = new UseControls.uQuanLyUser(mAccount);
+            plMain.Controls.Add(oUQuanLyUser);
         }
     }
 }

@@ -11,6 +11,21 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -156,6 +171,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Library\DevExpress.SpellChecker.v17.2.Core.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.TreeMap.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Library\DevExpress.Utils.v17.2.dll</HintPath>
@@ -352,6 +368,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Library\DevExpress.XtraTreeList.v17.2.resources.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.XtraTreeMap.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraVerticalGrid.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Library\DevExpress.XtraVerticalGrid.v17.2.dll</HintPath>
@@ -800,6 +817,12 @@
     <Compile Include="UseControls\uPromotion.Designer.cs">
       <DependentUpon>uPromotion.cs</DependentUpon>
     </Compile>
+    <Compile Include="UseControls\uQuanLyUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UseControls\uQuanLyUser.Designer.cs">
+      <DependentUpon>uQuanLyUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="UseControls\uRecruitmentInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1053,6 +1076,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UseControls\uPromotion.resx">
       <DependentUpon>uPromotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseControls\uQuanLyUser.resx">
+      <DependentUpon>uQuanLyUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UseControls\uRecruitmentInfo.resx">
       <DependentUpon>uRecruitmentInfo.cs</DependentUpon>
@@ -1441,6 +1467,18 @@
       <Project>{08b54b07-1ef6-4086-b2d3-e505a2cf5fcf}</Project>
       <Name>IMIC.VALUEOBJECTS</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

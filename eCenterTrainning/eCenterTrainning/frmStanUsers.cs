@@ -19,13 +19,13 @@ namespace eCenterTrainning
     {
         AccountBill mAccountBiLL;
         Account UpdateAcc = null;
-        public frmStanUsers(Account oAccount) : base(oAccount)
+        public frmStanUsers(Account oAccount) : base(oAccount) //Insert
         {
             InitializeComponent();
             mAccountBiLL = new AccountBill(mAccount);
 
         }
-        public frmStanUsers(Account oAccount, int UserId) : base(oAccount)
+        public frmStanUsers(Account oAccount, int UserId) : base(oAccount) //Update
         {
             InitializeComponent();
             mAccountBiLL = new AccountBill(mAccount);
@@ -49,10 +49,10 @@ namespace eCenterTrainning
                 else if (UpdateAcc.Sex == 1)
                     cboSex.Text = "Nữ";
 
-                if (UpdateAcc.IsSuperUser == false)
+                if (UpdateAcc.isAdmin == 0)
                     cboUserType.Text = "User";
-                else if (UpdateAcc.IsSuperUser == true)
-                    cboUserType.Text = "SuperUser";
+                else if (UpdateAcc.isAdmin == 1)
+                    cboUserType.Text = "Admin";
 
             }
         }
@@ -67,10 +67,9 @@ namespace eCenterTrainning
             actionUpdateStanUser.PressNew += new EventHandler(actionUpdateStanUser_PressNew);
             actionUpdateStanUser.PressClose += new EventHandler(actionUpdateStanUser_PressClose);
             actionUpdateStanUser.PressHelp += new EventHandler(actionUpdateStanUser_PressHelp);
-            cboUserType.Enabled = false;
             loadDepartment();
             loadEmployee();
-            this.Text = "Thêm mới thông tin người dùng"; 
+            this.Text = "Thêm mới thông tin người dùng";
             
         }
 
@@ -146,9 +145,9 @@ namespace eCenterTrainning
                 return;
             }
             int temp = 1;
-            bool isSuperAcc = true;
+            int mIsAdmin = 1;
             if (cboUserType.Text == "User")
-                isSuperAcc = false;
+                mIsAdmin = 0;
             if (cboSex.Text == "Nam")
                 temp = 0;
              Account objAcc = new Account()
@@ -158,18 +157,40 @@ namespace eCenterTrainning
                 Email = txtEmail.Text,
                 isOnline = false,
                 isSuccess = false,
-                IsSuperUser = isSuperAcc,
+                IsSuperUser = false,
+                isAdmin = mIsAdmin,
                 Password = Common.EncodePassword(txtPassword.Text),
                 Phone = txtMobile.Text,       
                 Sex = temp,
                 UserName = txtUserName.Text
             };
-            if(UpdateAcc == null)
+            if(UpdateAcc == null) //Insert
             {
                 
                 if (mAccountBiLL.InsertElement(objAcc))
                 {
                     MessageBox.Show("Thêm mới tài khoản thành công!");
+                    List<stanfRole> lstRoles = new List<stanfRole>();
+                    lstRoles = new RolesBLL(mAccount).getElements();
+                    TabPermissionBLL mTabPermissionBLL = new TabPermissionBLL(mAccount);
+                    List<Account> lstAcc = new List<Account>();
+                    lstAcc = mAccountBiLL.getElements();
+                    Account tempAcc = new Account();
+                    tempAcc = lstAcc.LastOrDefault();
+                    
+                    foreach (stanfRole o in lstRoles)
+                    {
+                        stanfTabPermission mStanfTabPermission = new stanfTabPermission
+                        {
+                            RoleId = o.RoleId,
+                            UserId = tempAcc.UserId
+                        };
+                        mTabPermissionBLL.InsertElement(mStanfTabPermission);
+                           
+                    }
+                    
+                    
+                    
                     
                 }
                 else
@@ -177,7 +198,7 @@ namespace eCenterTrainning
                     MessageBox.Show("Thêm mới tài khoản thất bại!");
                 }
             }
-            else
+            else //Update
             {
                 objAcc.UserId = UpdateAcc.UserId;
                 if (mAccountBiLL.UpdateElement(objAcc))

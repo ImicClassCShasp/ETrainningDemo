@@ -129,6 +129,7 @@
         <Function Name="SP_GetAll_PhongBan" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_GetAll_Recruitment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_GetAll_RecruitmentV2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_GETALL_ROLES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_GetAll_TrungTam" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_GETALL_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_GetByID_Candidate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
@@ -154,6 +155,9 @@
         </Function>
         <Function Name="SP_GETELEMENT_BYID_EXPERT_INFO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="IdExpert" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_GETELEMENT_BYUSERID_TABPERMISSION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
         </Function>
         <Function Name="SP_GETELEMENTBYID_EXPERTINFO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="ExpertId" Type="int" Mode="In" />
@@ -247,6 +251,14 @@
           <Parameter Name="STATUS" Type="tinyint" Mode="In" />
           <Parameter Name="UserIdConfirm" Type="bigint" Mode="In" />
         </Function>
+        <Function Name="SP_INSERT_TABPERMISSION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="PermissionId" Type="int" Mode="In" />
+          <Parameter Name="RoleId" Type="int" Mode="In" />
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="CreatedByUserId" Type="int" Mode="In" />
+          <Parameter Name="LastModifiedByUserId" Type="int" Mode="In" />
+          <Parameter Name="PermissionList" Type="nvarchar" Mode="In" />
+        </Function>
         <Function Name="SP_INSERT_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="UserName" Type="nvarchar" Mode="In" />
           <Parameter Name="FirstName" Type="nvarchar" Mode="In" />
@@ -269,6 +281,7 @@
           <Parameter Name="Sex" Type="int" Mode="In" />
           <Parameter Name="EmployeeId" Type="int" Mode="In" />
           <Parameter Name="isExpertId" Type="int" Mode="In" />
+          <Parameter Name="isAdmin" Type="int" Mode="In" />
         </Function>
         <Function Name="SP_InsertCV_toCandidate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="Content" Type="nvarchar" Mode="In" />
@@ -381,6 +394,15 @@
           <Parameter Name="Avatar" Type="nvarchar" Mode="In" />
           <Parameter Name="ImagePath" Type="nvarchar" Mode="In" />
           <Parameter Name="STATUS" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SP_UPDATE_TABPERMISSION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TABPER" Type="int" Mode="In" />
+          <Parameter Name="LASTMODUSER" Type="int" Mode="In" />
+          <Parameter Name="ISLIST" Type="bit" Mode="In" />
+          <Parameter Name="ISADD" Type="bit" Mode="In" />
+          <Parameter Name="ISEDIT" Type="bit" Mode="In" />
+          <Parameter Name="ISDELETE" Type="bit" Mode="In" />
+          <Parameter Name="ISREPORT" Type="bit" Mode="In" />
         </Function>
         <Function Name="SP_UPDATE_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="UserId" Type="int" Mode="In" />
@@ -813,6 +835,7 @@
             <Parameter Name="Sex" Mode="In" Type="Int32" />
             <Parameter Name="EmployeeId" Mode="In" Type="Int32" />
             <Parameter Name="isExpertId" Mode="In" Type="Int32" />
+            <Parameter Name="isAdmin" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="SP_DELETE_USER">
           <Parameter Name="id" Mode="In" Type="Int32" />
@@ -1197,6 +1220,27 @@
             <Parameter Name="Fax" Mode="In" Type="String" />
             <Parameter Name="Website" Mode="In" Type="String" />
           </FunctionImport>
+          <FunctionImport Name="SP_GETELEMENT_BYUSERID_TABPERMISSION" ReturnType="Collection(TrainingCenterModel.SP_GETELEMENT_BYUSERID_TABPERMISSION_Result)">
+          <Parameter Name="UserId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_INSERT_TABPERMISSION">
+            <Parameter Name="PermissionId" Mode="In" Type="Int32" />
+            <Parameter Name="RoleId" Mode="In" Type="Int32" />
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="CreatedByUserId" Mode="In" Type="Int32" />
+            <Parameter Name="LastModifiedByUserId" Mode="In" Type="Int32" />
+            <Parameter Name="PermissionList" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_GETALL_ROLES" ReturnType="Collection(TrainingCenterModel.SP_GETALL_ROLES_Result)" />
+          <FunctionImport Name="SP_UPDATE_TABPERMISSION">
+            <Parameter Name="TABPER" Mode="In" Type="Int32" />
+            <Parameter Name="LASTMODUSER" Mode="In" Type="Int32" />
+            <Parameter Name="ISLIST" Mode="In" Type="Boolean" />
+            <Parameter Name="ISADD" Mode="In" Type="Boolean" />
+            <Parameter Name="ISEDIT" Mode="In" Type="Boolean" />
+            <Parameter Name="ISDELETE" Mode="In" Type="Boolean" />
+            <Parameter Name="ISREPORT" Mode="In" Type="Boolean" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="GetListEmployees_Result">
           <Property Type="Int32" Name="Id" Nullable="false" />
@@ -1310,6 +1354,7 @@
           <Property Type="Int32" Name="Sex" Nullable="true" />
           <Property Type="Int32" Name="EmployeeId" Nullable="true" />
           <Property Type="Int32" Name="isExpertId" Nullable="true" />
+          <Property Type="Int32" Name="isAdmin" Nullable="true" />
         </ComplexType>
         <ComplexType Name="SP_DET_DIENDAN_TOP_500_ROWS_Result">
           <Property Type="Int64" Name="Id" Nullable="false" />
@@ -1899,6 +1944,8 @@
           <Property Type="Int32" Name="Sex" Nullable="true" />
           <Property Type="Int32" Name="EmployeeId" Nullable="true" />
           <Property Type="Int32" Name="isExpertId" Nullable="true" />
+          <Property Type="Int32" Name="isAdmin" Nullable="true" />
+          <Property Type="String" Name="GioiTinh" Nullable="false" MaxLength="3" />
         </ComplexType>
         <ComplexType Name="SP_GetElement_USER_Result">
           <Property Type="Int32" Name="UserId" Nullable="false" />
@@ -2502,6 +2549,35 @@
           <Property Type="String" Name="Status" Nullable="true" MaxLength="50" />
           <Property Type="String" Name="CenterName" Nullable="true" MaxLength="250" />
         </ComplexType>
+        <ComplexType Name="SP_GETELEMENT_BYUSERID_TABPERMISSION_Result">
+          <Property Type="String" Name="RoleName" Nullable="true" MaxLength="250" />
+          <Property Type="Int32" Name="TabPermissionId" Nullable="false" />
+          <Property Type="Int32" Name="PermissionId" Nullable="true" />
+          <Property Type="Int32" Name="RoleId" Nullable="true" />
+          <Property Type="Int32" Name="UserId" Nullable="true" />
+          <Property Type="Int32" Name="CreatedByUserId" Nullable="true" />
+          <Property Type="DateTime" Name="CreatedOnDate" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="LastModifiedByUserId" Nullable="true" />
+          <Property Type="DateTime" Name="LastModifiedOnDate" Nullable="true" Precision="23" />
+          <Property Type="Boolean" Name="IsList" Nullable="true" />
+          <Property Type="Boolean" Name="IsAdd" Nullable="true" />
+          <Property Type="Boolean" Name="IsEdit" Nullable="true" />
+          <Property Type="Boolean" Name="IsDelete" Nullable="true" />
+          <Property Type="Boolean" Name="IsReport" Nullable="true" />
+          <Property Type="String" Name="PermissionList" Nullable="true" MaxLength="250" />
+        </ComplexType>
+        <ComplexType Name="SP_GETALL_ROLES_Result">
+          <Property Type="Int32" Name="RoleId" Nullable="false" />
+          <Property Type="String" Name="RoleName" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="IconFile" Nullable="true" MaxLength="250" />
+          <Property Type="Int32" Name="CreatedByUserId" Nullable="true" />
+          <Property Type="DateTime" Name="CreatedByOnDate" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="LastModifiedByUserId" Nullable="true" />
+          <Property Type="DateTime" Name="LastModifiedOnDate" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="RoleGroupId" Nullable="true" />
+          <Property Type="Int32" Name="OrderNumber" Nullable="true" />
+        </ComplexType>
         <!--<ComplexType Name="SP_GetAll_TrungTam_Result">
           <Property Type="Int32" Name="Id" Nullable="false" />
           <Property Type="String" Name="CenterName" Nullable="true" MaxLength="250" />
@@ -2545,6 +2621,7 @@
                 <ScalarProperty Name="Sex" ColumnName="Sex" />
                 <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
                 <ScalarProperty Name="isExpertId" ColumnName="isExpertId" />
+                <ScalarProperty Name="isAdmin" ColumnName="isAdmin" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
@@ -2573,6 +2650,8 @@
                 <ScalarProperty Name="Sex" ColumnName="Sex" />
                 <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
                 <ScalarProperty Name="isExpertId" ColumnName="isExpertId" />
+                <ScalarProperty Name="isAdmin" ColumnName="isAdmin" />
+                <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
@@ -3316,6 +3395,45 @@
           </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="SP_Creat_JobTitle" FunctionName="TrainingCenterModel.Store.SP_Creat_JobTitle" />
           <FunctionImportMapping FunctionImportName="SP_Creat_PhongBan" FunctionName="TrainingCenterModel.Store.SP_Creat_PhongBan" />
+          <FunctionImportMapping FunctionImportName="SP_GETELEMENT_BYUSERID_TABPERMISSION" FunctionName="TrainingCenterModel.Store.SP_GETELEMENT_BYUSERID_TABPERMISSION">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GETELEMENT_BYUSERID_TABPERMISSION_Result">
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+                <ScalarProperty Name="TabPermissionId" ColumnName="TabPermissionId" />
+                <ScalarProperty Name="PermissionId" ColumnName="PermissionId" />
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="CreatedByUserId" ColumnName="CreatedByUserId" />
+                <ScalarProperty Name="CreatedOnDate" ColumnName="CreatedOnDate" />
+                <ScalarProperty Name="LastModifiedByUserId" ColumnName="LastModifiedByUserId" />
+                <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+                <ScalarProperty Name="IsList" ColumnName="IsList" />
+                <ScalarProperty Name="IsAdd" ColumnName="IsAdd" />
+                <ScalarProperty Name="IsEdit" ColumnName="IsEdit" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+                <ScalarProperty Name="IsReport" ColumnName="IsReport" />
+                <ScalarProperty Name="PermissionList" ColumnName="PermissionList" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_INSERT_TABPERMISSION" FunctionName="TrainingCenterModel.Store.SP_INSERT_TABPERMISSION" />
+          <FunctionImportMapping FunctionImportName="SP_GETALL_ROLES" FunctionName="TrainingCenterModel.Store.SP_GETALL_ROLES">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TrainingCenterModel.SP_GETALL_ROLES_Result">
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="IconFile" ColumnName="IconFile" />
+                <ScalarProperty Name="CreatedByUserId" ColumnName="CreatedByUserId" />
+                <ScalarProperty Name="CreatedByOnDate" ColumnName="CreatedByOnDate" />
+                <ScalarProperty Name="LastModifiedByUserId" ColumnName="LastModifiedByUserId" />
+                <ScalarProperty Name="LastModifiedOnDate" ColumnName="LastModifiedOnDate" />
+                <ScalarProperty Name="RoleGroupId" ColumnName="RoleGroupId" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_UPDATE_TABPERMISSION" FunctionName="TrainingCenterModel.Store.SP_UPDATE_TABPERMISSION" />
           </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

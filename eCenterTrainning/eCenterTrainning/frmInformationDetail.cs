@@ -12,10 +12,12 @@ namespace eCenterTrainning
 {
     public partial class frmInformationDetail : DevExpress.XtraEditors.XtraForm
     {
+
         RecruitmentInfo mRec;
         Employee mEmp;
         Candidate mCan;
         int Flag;
+
 
         public frmInformationDetail()
         {
